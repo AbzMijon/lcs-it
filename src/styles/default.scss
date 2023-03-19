@@ -1,0 +1,108 @@
+//Imports
+@import url(./reset.scss);
+
+//Defolt settings
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppinsRegular;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsMedium;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: code;
+    src: url(../assets/fonts/SpaceMono-Regular.ttf);
+}
+
+img {
+	max-width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+body {
+	background-size: cover;
+	font-family: 'poppinsRegular', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 135%;
+	letter-spacing: -0.01em;
+	color: #9E9EAC;
+	background: url('../assets/img/sectionBg.png') #000 no-repeat;
+    background-size: contain;
+}
+
+h1,
+.title1 {
+	font-family: 'poppinsBold', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+}
+
+h2,
+.title2 {
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 100px;
+}
+
+h3,
+.title3 {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 48px;
+}
+
+h4,
+.title4 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 135%;
+	letter-spacing: -0.01em;
+}
+
+h5,
+.title5 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 135%;
+	letter-spacing: -0.01em;
+}
+
+.btn-contact {
+	width: 312px;
+	height: 50px;
+	background-color: #2A2B3A;
+	border: 1px solid #2A2B3A;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+	padding: 14px 16px;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'poppinsRegular', sans-serif;
+	font-size: 16px;
+	line-height: 135%;
+	letter-spacing: -0.01em;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	border: none;
+	outline: none;
+	&:hover {
+		background-color: #9747FF;
+	}
+}
