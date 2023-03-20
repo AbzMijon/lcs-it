@@ -1,0 +1,102 @@
+.location {
+    position: relative;
+    padding-bottom: 329px;
+    background: url('../../../assets/img/locationBg.jpg') no-repeat bottom;
+    .location__title {
+        margin-bottom: 8px;
+        max-width: 1148px;
+        margin: 0 auto;
+        z-index: 14;
+        position: relative;
+    }
+    .location__content {
+        max-width: 1148px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        z-index: 14;
+        position: relative;
+        .location__selector {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background: #000000;
+            border: 1px solid #2A2B3A;
+            border-radius: 8px;
+            padding: 8px;
+            margin-right: 46px;
+            .location__selector-uk {
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                cursor: pointer;
+                .location__selector-img {
+                    width: 48px;
+                    height: 32px;
+                    margin-right: 7px;
+                }
+                .location__selector-name {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #9E9EAC;
+                }
+            }
+            .location__selector-poland {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .location__selector-img {
+                    margin-right: 12px;
+                }
+                .location__selector-name {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #9E9EAC;
+                }
+            }
+            .location__selector--active {
+                background: #2A2B3A;
+                border: 1px solid #2A2B3A;
+                border-radius: 4px;
+                padding: 8px    ;
+                .location__selector-name {
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .location__card {
+            border: 1px solid #2A2B3A;
+            border-radius: 8px;
+            padding-top: 55px;
+            max-width: 480px;
+            .location__card-item {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin: 0 25px;
+                .location__card-icon {
+                    margin-right: 24px;
+                }
+                .location__inf {
+                    font-size: 24px;
+                    line-height: 36px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                }
+            }
+            .location__card-item + .location__card-item {
+                margin-top: 36px;
+            }
+            .location__btn {
+                padding: 29px 82px;
+                margin-top: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: 1px solid #2A2B3A;
+            }
+        }
+    }
+}

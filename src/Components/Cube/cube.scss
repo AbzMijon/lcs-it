@@ -1,0 +1,12 @@
+.welcome__cube {
+    position: relative;
+    z-index: 3;
+    .cube {
+        width: 622px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100px);
+    }
+}

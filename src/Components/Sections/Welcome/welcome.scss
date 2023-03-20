@@ -1,0 +1,45 @@
+.welcome {
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1148px;
+    margin: 0 auto;
+    margin-top: 260px;
+    margin-bottom: 135px;
+    .welcome__info {
+        text-align: start;
+        padding-bottom: 20px;
+        margin-right: 137px;
+        align-self: flex-end;
+        z-index: 3;
+        .welcome__skills {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 40px;
+            .welcome__skills-item {
+                background: #3C3D4C;
+                border-radius: 100px;
+                padding: 3px 20px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                cursor: default;
+                &:hover {
+                    background-color: #9747FF;
+                }
+            }
+            .welcome__skills-item + .welcome__skills-item {
+                margin-left: 32px;
+            }
+        }
+        .welcome__title {
+            margin-bottom: 40px;
+        }
+        .welcome__subtitle {
+            margin-bottom: 29px;
+        }
+    }
+}

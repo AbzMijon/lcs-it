@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 23px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    .header__logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+        .header__logo-img {
+            margin-right: 13px;
+            width: 30px;
+            height: 27px;
+        }
+        .header__logo-name {
+            font-family: 'poppinsBold', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }
+    }
+    .header__list {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 130px;
+        .header__list-item {
+            color: #fff;
+            margin-right: 70px;
+            transition: 0.1s all;
+            cursor: pointer;
+            &:hover {
+                color: #9747FF;
+            }
+        }
+    }
+}
