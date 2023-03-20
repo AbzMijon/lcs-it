@@ -4,8 +4,39 @@ import { RxCross2 } from 'react-icons/rx';
 import logo from '../../assets/svg/lcsItLogo.svg';
 import modalUser from '../../assets/svg/modalUser.svg';
 import modalMessage from '../../assets/svg/modalMessage.svg';
+import { Formik, Form } from 'formik';
+import SendFormikInput from '../FormikInputs/SendFormikInput';
+import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
 
 function Modal({ setModal }) {
+
+    const initialFormValues = {
+        Name: '',
+        Email: '',
+        Message: '',
+    }
+
+    const validateForm = (formValues) => {
+        let isValid = true;
+        let errorsObject = {};
+
+        if(!formValues.Name) {
+            isValid = false;
+            errorsObject.Name = 'Enter your name';
+        }
+        if(!formValues.Email) {
+            isValid = false;
+            errorsObject.Email = 'Enter a valid Email';
+        }
+        if(!formValues.Message) {
+            isValid = false;
+            errorsObject.Message = 'Enter your message';
+        }
+        isValid = false;
+
+        if(!isValid) return errorsObject;
+    }
+
     return (
         <div className='modal-wrap' onClick={() => setModal(false)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -15,19 +46,23 @@ function Modal({ setModal }) {
                 </div>
                 <p className='modal__title'>Get in touch</p>
                 <p className='modal__subtitle'>Fill out this short form and our team will get back to you within 24 hours</p>
-                <div className='modal__input-wrap'>
-                    <input type="text" className='modal__input modal__input-name' placeholder='Name' />
-                    <img src={modalUser} alt="" />
-                </div>
-                <div className='modal__input-wrap'>
-                    <input type="text" className='modal__input modal__input-email' placeholder='Email' />
-                    <img src={modalMessage} alt="" />
-                </div>
-                <div className='modal__input-wrap'>
-                    <textarea cols="30" rows="10" className='modal__input modal__input-text' placeholder='Tell us'></textarea>
-                    <img src={modalMessage} alt="" />
-                </div>
-                <button className='btn-contact modal__btn'>Submit</button>
+                <Formik initialValues={initialFormValues} validate={validateForm} onSubmit={(formValues) => console.log(formValues)}>
+                    <Form>
+                        <div className='modal__input-wrap'>
+                            <SendFormikInput name='Name' type='text' placeholder='Name' required />
+                            <img src={modalUser} alt="" className='modal__input-icon modal__input-name' />
+                        </div>
+                        <div className='modal__input-wrap'>
+                            <SendFormikInput name='Email' type='email' placeholder='Email' required />
+                            <img src={modalMessage} alt="" className='modal__input-icon modal__input-email' />
+                        </div>
+                        <div className='modal__input-wrap'>
+                            <SendFormikTextArea name='Message' placeholder='Tell us' required />
+                            <img src={modalMessage} alt="" className='modal__input-icon modal__input-text' />
+                        </div>
+                        <button className='btn-contact modal__btn'>Submit</button>
+                    </Form>
+                </Formik>
             </div>
         </div>
     )

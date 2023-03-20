@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './experience.scss';
 import experienceCardShield1 from '../../../assets/img/experienceCardShield1.png';
 import experienceCardShield2 from '../../../assets/img/experienceCardShield2.png';
@@ -13,23 +13,57 @@ import nestIcon from '../../../assets/svg/nest-js.svg';
 import Marquee from "react-fast-marquee";
 
 function Experience() {
+
+    const [mouse, setMouse] = useState({            
+        X   : 0,
+        Y   : 0,
+        CX  : 0,
+        CY  : 0
+    });
+
+
+    const onMouseMove = () => {
+        const card = document.getElementById('ex_card');
+        document.body.onmousemove = function(e) {
+            setMouse({...mouse, X: e.clientX - card.offsetLeft, Y: e.clientY - card.offsetTop});
+        }
+    }
+
+    const step = () => {
+        let targetY = mouse.Y;
+        let dy = targetY - mouse.CY;
+        setMouse({ ...mouse, CY: dy * 0.05 });
+    
+        let targetX = mouse.X;
+        let dx = targetX - mouse.CX;
+        setMouse({ ...mouse, CX: dx * 0.05 });
+
+        const light = document.getElementById('light');
+
+        light.style.background = 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)';
+
+    };
+
+    requestAnimationFrame(step);
+
+
     return (
         <section className='experience'>
             <div className="experience__block">
                 <h2 className='experience__title'>Tremendous experience</h2>
                 <ul className='experience__list' id='experience__list'>
-                    <li className='experience__card'>
-                        <div className='experience__card-item'>
-                            <span class="circleLight"></span>
-                            <img src={experienceCardShield1} alt="" />
-                            <p className='experience__card-title'>Software development</p>
-                        </div>
+                    <li id="ex_card" className='experience__card' onMouseMove={onMouseMove} >
+                        <div id='light' className="light"></div>
+                        <img src={experienceCardShield1} alt="" />
+                        <p className='experience__card-title'>Software development</p>
                     </li>
-                    <li className='experience__card'>
+                    <li className='experience__card' onMouseMove={onMouseMove} >
                         <img src={experienceCardShield2} alt="" />
+                        <div className="light"></div>
                         <p className='experience__card-title'>Outsourcing</p>
                     </li>
-                    <li className='experience__card'>
+                    <li className='experience__card' onMouseMove={onMouseMove} >
+                        <div className="light"></div>
                         <img src={experienceCardShield3} alt="" />
                         <p className='experience__card-title'>Design</p>
                     </li>

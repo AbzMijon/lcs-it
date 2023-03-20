@@ -58,9 +58,6 @@
             position: relative;
             img {   
                 position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 11px;
             }
         }
         .modal__input-wrap + .modal__input-wrap {
@@ -85,18 +82,34 @@
                 border: 2px solid #9747FF
             }
         }
+        .modal__input-error {
+            border: 2px solid #F015B0;
+            &::placeholder {
+                color: #F015B0;
+            }
+        }
 
+        .modal__input-error ~ .modal__input-icon {
+            filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(5583%) hue-rotate(300deg) brightness(92%) contrast(109%);
+        }
+        
         .modal__input-text {
             margin-bottom: 36px;
             max-width: 100%;
             resize: none;
             max-height: 140px;
-        }
-        .modal__input-name ~ img {
-            right: 15px;
-        }
-        .modal__input-text ~ img {
+            right: 11px;
             top: 18px;
+        }
+        .modal__input-name {
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .modal__input-email {
+            right: 11px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .modal__btn {
             width: 100%;

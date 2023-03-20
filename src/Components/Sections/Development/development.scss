@@ -199,7 +199,177 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 100%;
+        width: 130px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing1 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 140px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing2 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 60px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing3 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 100px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing4 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 300px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing5 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 500px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing6 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 400px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing7 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 300px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing8 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 150px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing9 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 200px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing10 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 350px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing11 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 50px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing12 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 50px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing13 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 50px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing14 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 200px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing15 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 50px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing16 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 200px;
+        border-right: 1px solid transparent;
+    }
+}
+@keyframes typing17 {
+    from { 
+        width: 0;
+        border-right: 1px solid orange;
+    }
+    to { 
+        width: 50px;
         border-right: 1px solid transparent;
     }
 }
@@ -214,7 +384,7 @@
     overflow: hidden;
     letter-spacing: none;
     animation:
-    typing 2s steps(30, end),
+    typing 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 0s;
     white-space: nowrap;
@@ -224,14 +394,14 @@
 }
 .code__str2 {
     animation:
-    typing 2s steps(30, end),
+    typing1 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 0.5s;
     margin-left: 50px;
 }
 .code__str3 {
     animation:
-    typing 2s steps(30, end),
+    typing2 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 1s;
     white-space: nowrap;
@@ -239,7 +409,7 @@
 }
 .code__str4 {
     animation:
-    typing 2s steps(30, end),
+    typing3 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 1.5s;
     white-space: nowrap;
@@ -247,7 +417,7 @@
 }
 .code__str5 {
     animation:
-    typing 1s steps(30, end),
+    typing4 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 2s;
     white-space: nowrap;
@@ -255,89 +425,89 @@
 }
 .code__str6 {
     animation:
-    typing 1s steps(30, end),
+    typing5 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str7 {
     animation:
-    typing 2s steps(30, end),
+    typing6 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 4s;
+    animation-delay: 3s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str8 {
     animation:
-    typing 1s steps(30, end),
+    typing7 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 5s;
+    animation-delay: 3.5s;
     white-space: nowrap;
     margin-left: 110px;
 }
 .code__str9 {
     animation:
-    typing 1s steps(30, end),
+    typing8 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 5.5s;
+    animation-delay: 4s;
     white-space: nowrap;
     margin-left: 110px;
 }
 .code__str10 {
     animation:
-    typing 2s steps(30, end),
+    typing9 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 6s;
+    animation-delay: 4.5s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str11 {
     animation:
-    typing 2s steps(30, end),
+    typing10 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 6.5s;
+    animation-delay: 5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str12 {
     animation:
-    typing 2s steps(30, end),
+    typing11 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 7s;
+    animation-delay: 5.5s;
     white-space: nowrap;
     margin-left: 80px;
 }
 .code__str13 {
     animation:
-    typing 2s steps(30, end),
+    typing 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 7.5s;
+    animation-delay: 6s;
     white-space: nowrap;
     margin-left: 70px;
 }
 .code__str14 {
     animation:
-    typing 2s steps(30, end),
+    typing 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 8s;
+    animation-delay: 7s;
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str15 {
     animation:
-    typing 2s steps(30, end),
+    typing 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 8.5s;
+    animation-delay: 7.5s;
     white-space: nowrap;
     margin-left: 50px;
 }
 .code__str16 {
     animation:
-    typing 2s steps(30, end),
+    typing 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 9s;
+    animation-delay: 8s;
     white-space: nowrap;
 }
 
