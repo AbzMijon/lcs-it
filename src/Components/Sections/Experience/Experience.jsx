@@ -22,12 +22,10 @@ function Experience() {
     });
 
 
-    const onMouseMove = () => {
+    const onMouseMove = (e) => {
         const card = document.getElementById('ex_card');
         /* find inly first card  need get qsAll or create card with unique className*/
-        document.body.onmousemove = function(e) {
-            setMouse({...mouse, X: e.clientX - card.offsetLeft, Y: e.clientY - card.offsetTop});
-        }
+        setMouse({...mouse, X: e.clientX - card.offsetLeft, Y: e.clientY - card.offsetTop});
     }
 
     const step = () => {
