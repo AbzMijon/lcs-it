@@ -189,7 +189,7 @@ function Development({ setModal }) {
                                             <span className='tag-text'>Welcome to My Website</span>
                                             <span className='tag'>{'</'}</span>
                                             <span className='default-name-tage'>h1</span>
-                                            <span className='tag'>{'<'}</span>
+                                            <span className='tag'>{'>'}</span>
                                         </p>
                                         <span className='code__str-num'>14</span> 
                                         <p className='code__str14'>

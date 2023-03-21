@@ -14,7 +14,7 @@ import Marquee from "react-fast-marquee";
 
 function Experience() {
 
-    const [mouse, setMouse] = useState({            
+    const [mouse, setMouse] = useState({
         X   : 0,
         Y   : 0,
         CX  : 0,
@@ -24,23 +24,22 @@ function Experience() {
 
     const onMouseMove = () => {
         const card = document.getElementById('ex_card');
+        /* find inly first card  need get qsAll or create card with unique className*/
         document.body.onmousemove = function(e) {
             setMouse({...mouse, X: e.clientX - card.offsetLeft, Y: e.clientY - card.offsetTop});
         }
     }
 
     const step = () => {
-        let targetY = mouse.Y;
-        let dy = targetY - mouse.CY;
-        setMouse({ ...mouse, CY: dy * 0.05 });
-    
         let targetX = mouse.X;
         let dx = targetX - mouse.CX;
-        setMouse({ ...mouse, CX: dx * 0.05 });
+        let targetY = mouse.Y;
+        let dy = targetY - mouse.CY;
+        setMouse({...mouse, CX: dx * 0.2, CY: dy * 0.2 });
 
-        const light = document.getElementById('light');
+/*         const light = document.getElementById('light');
 
-        light.style.background = 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)';
+        light.style.background = 'radial-gradient(circle at ' + mouse.CX + 'px ' + 70 + 'px, #fff, transparent)'; */
 
     };
 
@@ -53,17 +52,29 @@ function Experience() {
                 <h2 className='experience__title'>Tremendous experience</h2>
                 <ul className='experience__list' id='experience__list'>
                     <li id="ex_card" className='experience__card' onMouseMove={onMouseMove} >
-                        <div id='light' className="light"></div>
+                        <div 
+                            id='light' 
+                            className="light" 
+                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
+                        </div>
                         <img src={experienceCardShield1} alt="" />
                         <p className='experience__card-title'>Software development</p>
                     </li>
                     <li className='experience__card' onMouseMove={onMouseMove} >
                         <img src={experienceCardShield2} alt="" />
-                        <div className="light"></div>
+                        <div 
+                            id='light' 
+                            className="light" 
+                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
+                        </div>
                         <p className='experience__card-title'>Outsourcing</p>
                     </li>
                     <li className='experience__card' onMouseMove={onMouseMove} >
-                        <div className="light"></div>
+                        <div 
+                            id='light' 
+                            className="light" 
+                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
+                        </div>
                         <img src={experienceCardShield3} alt="" />
                         <p className='experience__card-title'>Design</p>
                     </li>

@@ -6,21 +6,31 @@ import locationMain from '../../../assets/svg/locationMain.svg';
 import locationPhone from '../../../assets/svg/locationPhone.svg';
 import ukFlag from '../../../assets/svg/uk.svg';
 import ContactBtn from '../../ContactBtn/ContactBtn';
+import { useSelector, useDispatch } from 'react-redux';
+import { setActiveCountry } from '../../../store/reducers/locationReducer';
 
 function Location({ setModal }) {
+
+    const dispatch = useDispatch();
+    const locationButtons = useSelector((state) => state.locationReducer.locationButtons);
+
     return (
         <section className='location'>
             <h2 className='location__title'>Our Locations</h2>
             <div className="location__content">
                 <div className="location__selector">
-                    <div className="location__selector-uk location__selector--active">
-                        <img src={ukFlag} alt="" className='location__selector-img' />
-                        <p className='location__selector-name'>United Kingdom</p>
-                    </div>
-                    <div className="location__selector-poland">
-                        <img src={poland} alt="" className='location__selector-img' />
-                        <p className='location__selector-name'>Poland</p>
-                    </div>
+                    {locationButtons && locationButtons.map((locationBtn) => {
+                        return (
+                            <div 
+                                key={locationBtn.id}
+                                className={locationBtn.active ? "location__selector-uk location__selector--active" : 'location__selector-uk'}
+                                onClick={() => dispatch(setActiveCountry(locationBtn.id))}
+                                >
+                                <img src={locationBtn.src} alt="" className='location__selector-img' />
+                                <p className='location__selector-name'>{locationBtn.label}</p>
+                            </div>
+                        )
+                    })}
                 </div>
                 <div className="location__card">
                     <ul>

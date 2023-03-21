@@ -229,7 +229,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 100px;
+        width: 140px;
         border-right: 1px solid transparent;
     }
 }
@@ -259,7 +259,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 400px;
+        width: 300px;
         border-right: 1px solid transparent;
     }
 }
@@ -269,7 +269,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 300px;
+        width: 350px;
         border-right: 1px solid transparent;
     }
 }
@@ -279,7 +279,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 150px;
+        width: 500px;
         border-right: 1px solid transparent;
     }
 }
@@ -289,7 +289,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 200px;
+        width: 70px;
         border-right: 1px solid transparent;
     }
 }
@@ -299,7 +299,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 350px;
+        width: 70px;
         border-right: 1px solid transparent;
     }
 }
@@ -309,7 +309,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 50px;
+        width: 70px;
         border-right: 1px solid transparent;
     }
 }
@@ -319,7 +319,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 50px;
+        width: 220px;
         border-right: 1px solid transparent;
     }
 }
@@ -339,7 +339,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 200px;
+        width: 220px;
         border-right: 1px solid transparent;
     }
 }
@@ -349,27 +349,7 @@
         border-right: 1px solid orange;
     }
     to { 
-        width: 50px;
-        border-right: 1px solid transparent;
-    }
-}
-@keyframes typing16 {
-    from { 
-        width: 0;
-        border-right: 1px solid orange;
-    }
-    to { 
-        width: 200px;
-        border-right: 1px solid transparent;
-    }
-}
-@keyframes typing17 {
-    from { 
-        width: 0;
-        border-right: 1px solid orange;
-    }
-    to { 
-        width: 50px;
+        width: 70px;
         border-right: 1px solid transparent;
     }
 }
@@ -481,7 +461,7 @@
 }
 .code__str13 {
     animation:
-    typing 0.5s steps(30, end),
+    typing12 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 6s;
     white-space: nowrap;
@@ -489,7 +469,7 @@
 }
 .code__str14 {
     animation:
-    typing 0.5s steps(30, end),
+    typing13 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 7s;
     white-space: nowrap;
@@ -497,7 +477,7 @@
 }
 .code__str15 {
     animation:
-    typing 0.5s steps(30, end),
+    typing14 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 7.5s;
     white-space: nowrap;
@@ -505,7 +485,7 @@
 }
 .code__str16 {
     animation:
-    typing 0.5s steps(30, end),
+    typing15 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
     animation-delay: 8s;
     white-space: nowrap;

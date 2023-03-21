@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './seo.scss';
 import seoIcon1 from '../../../assets/svg/seoIcon1.svg';
 import seoIcon2 from '../../../assets/svg/seoIcon2.svg';
@@ -15,18 +15,29 @@ import ukResult from '../../../assets/svg/ukResult.svg';
 import canadaResult from '../../../assets/svg/canadaResult.svg';
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 import ContactBtn from '../../ContactBtn/ContactBtn';
+import { useDispatch, useSelector } from 'react-redux';
+import { setActiveButton } from '../../../store/reducers/seoReducer';
 
 function Seo({ setModal }) {
+    const dispatch = useDispatch();
+    const seoBtns = useSelector(state => state.seoReducer.seoButtons);
+
     return (
         <section className='seo'>
             <h2 className='seo__title'>SEO</h2>
             <div className="seo__navigate">
                 <div className="seo__titles">
-                    <button className='seo__navigate-btn seo__navigate-btn--active'>Keyword Research</button>
-                    <button className='seo__navigate-btn'>Proactive Strategy</button>
-                    <button className='seo__navigate-btn'>Content Optimization</button>
-                    <button className='seo__navigate-btn'>Site Performance</button>
-                    <button className='seo__navigate-btn'>Monitoring And Reporting</button>
+                    {seoBtns && seoBtns.map((seoBtn) => {
+                        return (
+                            <button 
+                                key={seoBtn.id} 
+                                className={seoBtn.active ? 'seo__navigate-btn seo__navigate-btn--active' : 'seo__navigate-btn'}
+                                onClick={() => dispatch(setActiveButton(seoBtn.id))}
+                            >
+                                {seoBtn.label}
+                            </button>
+                        )
+                    })}
                 </div>
                 <div className="seo__icons">
                     <button>
