@@ -193,6 +193,11 @@
     }
 }
 
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
 @keyframes typing {
     from { 
         width: 0;
@@ -364,8 +369,7 @@
     overflow: hidden;
     letter-spacing: none;
     animation:
-    typing 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing 0.5s steps(30, end);
     animation-delay: 0s;
     white-space: nowrap;
     font-size: 14px;
@@ -374,87 +378,76 @@
 }
 .code__str2 {
     animation:
-    typing1 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing1 0.5s steps(30, end);
     animation-delay: 0.5s;
     margin-left: 50px;
 }
 .code__str3 {
     animation:
-    typing2 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing2 0.5s steps(30, end);
     animation-delay: 1s;
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str4 {
     animation:
-    typing3 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing3 0.5s steps(30, end);
     animation-delay: 1.5s;
     white-space: nowrap;
     margin-left: 70px;
 }
 .code__str5 {
     animation:
-    typing4 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing4 0.5s steps(30, end);
     animation-delay: 2s;
     white-space: nowrap;
     margin-left: 80px;
 }
 .code__str6 {
     animation:
-    typing5 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing5 0.5s steps(30, end);
     animation-delay: 2.5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str7 {
     animation:
-    typing6 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing6 0.5s steps(30, end);
     animation-delay: 3s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str8 {
     animation:
-    typing7 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing7 0.5s steps(30, end);
     animation-delay: 3.5s;
     white-space: nowrap;
     margin-left: 110px;
 }
 .code__str9 {
     animation:
-    typing8 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing8 0.5s steps(30, end);
     animation-delay: 4s;
     white-space: nowrap;
     margin-left: 110px;
 }
 .code__str10 {
     animation:
-    typing9 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing9 0.5s steps(30, end);
     animation-delay: 4.5s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str11 {
     animation:
-    typing10 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing10 0.5s steps(30, end);
     animation-delay: 5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str12 {
     animation:
-    typing11 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    typing11 0.5s steps(30, end);
     animation-delay: 5.5s;
     white-space: nowrap;
     margin-left: 80px;
@@ -462,7 +455,7 @@
 .code__str13 {
     animation:
     typing12 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
+    blink-caret .6s step-end infinite;
     animation-delay: 6s;
     white-space: nowrap;
     margin-left: 70px;
@@ -470,16 +463,15 @@
 .code__str14 {
     animation:
     typing13 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
-    animation-delay: 7s;
+    blink-caret 6.5s step-end infinite;
+    animation-delay: 6.5s;
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str15 {
     animation:
-    typing14 0.5s steps(30, end),
-    blink-caret .7s step-end infinite;
-    animation-delay: 7.5s;
+    typing14 0.5s steps(30, end);
+    animation-delay: 7s;
     white-space: nowrap;
     margin-left: 50px;
 }
@@ -487,7 +479,7 @@
     animation:
     typing15 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 8s;
+    animation-delay: 7.5s;
     white-space: nowrap;
 }
 

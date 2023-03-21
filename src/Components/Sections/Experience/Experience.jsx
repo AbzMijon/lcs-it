@@ -11,29 +11,51 @@ import pgsqlIcon from '../../../assets/svg/pgsql.svg';
 import mongoIcon from '../../../assets/svg/mongodb.svg';
 import nestIcon from '../../../assets/svg/nest-js.svg';
 import Marquee from "react-fast-marquee";
+import ExperienceCard from '../../Cards/ExperienceCard';
 
 function Experience() {
 
-    const [mouse, setMouse] = useState({
+    const [globalMousePos, setGlobalMousePos] = useState({
         X   : 0,
         Y   : 0,
-        CX  : 0,
-        CY  : 0
     });
 
+    const [localMousePos, setLocalMousePos] = useState({
+        X   : 0,
+        Y   : 0,
+    });
 
-    const onMouseMove = (e) => {
-        const card = document.getElementById('ex_card');
+    const onMouseMove = (event) => {
         /* find inly first card  need get qsAll or create card with unique className*/
-        setMouse({...mouse, X: e.clientX - card.offsetLeft, Y: e.clientY - card.offsetTop});
+
+        console.log('eventTar', event.target)
+        console.log('event.target.offsetTop', event.currentTarget.offsetTop);
+
+        const localX = event.clientX - event.currentTarget.offsetLeft;
+        const localY = event.clientY - event.currentTarget.offsetTop;
+        
+        console.log('HELLLO', event.clientY - event.currentTarget.offsetTop);
+        console.log('offsetLeft', event.target.offsetLeft)
+        console.log('clientX', event.clientX)
+        console.log('clientY', event.clientY);
+        console.log('diff', event.clientX - event.target.offsetLeft);
+        console.log('event.currentTarget', event.target.clientHeight);
+
+        setLocalMousePos({ X: localX, Y: localY });
     }
 
     const step = () => {
-        let targetX = mouse.X;
-        let dx = targetX - mouse.CX;
-        let targetY = mouse.Y;
-        let dy = targetY - mouse.CY;
-        setMouse({...mouse, CX: dx * 0.2, CY: dy * 0.2 });
+        // let targetX = mouse.X;
+        // let dx = targetX - mouse.CX;
+        // let targetY = mouse.Y;
+        // let dy = targetY - mouse.CY;
+        // setMouse({...mouse, CX: mouse.X , CY: mouse.Y });
+
+        /*
+            offsetY - 976!!!
+            cursor по Y always change
+            180 - x ||| 130 - y
+        */
 
 /*         const light = document.getElementById('light');
 
@@ -41,41 +63,47 @@ function Experience() {
 
     };
 
-    requestAnimationFrame(step);
+    requestAnimationFrame(step); 
 
+    useEffect(() => {
+        const onMouseGlobalMove = (e) => {
+            const { scrollHeight, scrollTop, clientHeight } = e.target.scrollingElement;
+            console.log('clientHEight', clientHeight)
+            setGlobalMousePos({X: e.clientX, Y: e.clientY});
+        };
+        window.addEventListener('mousemove', onMouseGlobalMove);
+        return () => {
+            window.removeEventListener('mousemove', onMouseGlobalMove);
+            cancelAnimationFrame(step)
+        }
+    }, []);
+
+    // console.log(localMousePos);
+    console.log('GLOBAL X Y',globalMousePos);
 
     return (
         <section className='experience'>
             <div className="experience__block">
                 <h2 className='experience__title'>Tremendous experience</h2>
                 <ul className='experience__list' id='experience__list'>
-                    <li id="ex_card" className='experience__card' onMouseMove={onMouseMove} >
-                        <div 
-                            id='light' 
-                            className="light" 
-                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
-                        </div>
-                        <img src={experienceCardShield1} alt="" />
-                        <p className='experience__card-title'>Software development</p>
-                    </li>
-                    <li className='experience__card' onMouseMove={onMouseMove} >
-                        <img src={experienceCardShield2} alt="" />
-                        <div 
-                            id='light' 
-                            className="light" 
-                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
-                        </div>
-                        <p className='experience__card-title'>Outsourcing</p>
-                    </li>
-                    <li className='experience__card' onMouseMove={onMouseMove} >
-                        <div 
-                            id='light' 
-                            className="light" 
-                            style={{background: 'radial-gradient(circle at ' + mouse.CX + 'px ' + mouse.CY + 'px, #fff, transparent)'}}>
-                        </div>
-                        <img src={experienceCardShield3} alt="" />
-                        <p className='experience__card-title'>Design</p>
-                    </li>
+                    <ExperienceCard 
+                        src={experienceCardShield1} 
+                        label={'Software development'} 
+                        onMouseMove={onMouseMove}
+                        mouse={localMousePos}
+                    />
+                    {/* <ExperienceCard 
+                        src={experienceCardShield2} 
+                        label={'Outsourcing'} 
+                        onMouseMove={onMouseMove}
+                        mouse={localMousePos}
+                    />
+                    <ExperienceCard 
+                        src={experienceCardShield3} 
+                        label={'Design'} 
+                        onMouseMove={onMouseMove}
+                        mouse={localMousePos}
+                    /> */}
                 </ul>
                 <p className='experience__text'>LCS-IT is a modern and creative IT company, where products of any complexityand scale are created! Our team consists of only experienced developers,designers, and friendly managers who implement all your bold ideas using thelatest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7.</p>
             </div>
