@@ -15,6 +15,14 @@ function Design() {
             <h2 className='design__title'>Design</h2>
             <p className='design__text'>As a full-service UX design agency, we work closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</p>
             <ul className='design__types'>
+            <Marquee
+                delay={0}
+                speed={30}
+                loop={0}
+                gradient={false}
+                className='swiper'
+                direction='right'
+            >
                 <li className='design__types-item'>
                     <FiArrowUpRight className='design__types-arrow'/>
                     <p>Graphic Design</p>
@@ -39,6 +47,31 @@ function Design() {
                     <FiArrowUpRight className='design__types-arrow'/>
                     <p>Digital Advertising</p>
                 </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Graphic Design</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Branding</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Competitor Analysis</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Packaging Design</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Social Media</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>Digital Advertising</p>
+                </li>
+            </Marquee>
             </ul>
             <Marquee
                 delay={0}

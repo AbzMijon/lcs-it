@@ -14,10 +14,10 @@ function Outsourcing({ setModal }) {
                 <h2 className='outsourcing__title'>Outsourcing</h2>
                 <ul className="outsourcing__table">
                     <li className="outsourcing__table-wrapper outsourcing__card-sharp">
-                        <span style={{zIndex: '100000'}}></span>
-                        <span style={{zIndex: '100000'}}></span>
-                        <span style={{zIndex: '100000'}}></span>
-                        <span style={{zIndex: '100000'}}></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <div className="outsourcing__card">
                             <img src={outsourcingCard1} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>C# .NET</h4>

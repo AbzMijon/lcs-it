@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.scss';
 import logo from '../../assets/svg/lcsItLogo.svg';
 
 function Header() {
+    const [scroll, setScroll] = useState(window.scrollY);
+    const handleScroll = () => {
+        setScroll(window.scrollY);
+    };
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
-        <header className="header">
+        <header className={!scroll ? "header" : "header header__active"}>
             <div className="header__logo">
                 <img src={logo} alt="" className='header__logo-img' />
                 <p className='header__logo-name'>LCS-IT</p>
