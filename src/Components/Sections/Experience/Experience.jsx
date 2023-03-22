@@ -67,7 +67,7 @@ function Experience() {
 
     useEffect(() => {
         const onMouseGlobalMove = (e) => {
-            const { scrollHeight, scrollTop, clientHeight } = e.target.scrollingElement;
+            const { scrollHeight, scrollTop, clientHeight } = e.target/* .scrollingElement */;
             console.log('clientHEight', clientHeight)
             setGlobalMousePos({X: e.clientX, Y: e.clientY});
         };
@@ -79,7 +79,7 @@ function Experience() {
     }, []);
 
     // console.log(localMousePos);
-    console.log('GLOBAL X Y',globalMousePos);
+    console.log('GLOBAL X Y', globalMousePos);
 
     return (
         <section className='experience'>
@@ -92,7 +92,7 @@ function Experience() {
                         onMouseMove={onMouseMove}
                         mouse={localMousePos}
                     />
-                    {/* <ExperienceCard 
+                    <ExperienceCard 
                         src={experienceCardShield2} 
                         label={'Outsourcing'} 
                         onMouseMove={onMouseMove}
@@ -103,7 +103,7 @@ function Experience() {
                         label={'Design'} 
                         onMouseMove={onMouseMove}
                         mouse={localMousePos}
-                    /> */}
+                    />
                 </ul>
                 <p className='experience__text'>LCS-IT is a modern and creative IT company, where products of any complexityand scale are created! Our team consists of only experienced developers,designers, and friendly managers who implement all your bold ideas using thelatest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7.</p>
             </div>
