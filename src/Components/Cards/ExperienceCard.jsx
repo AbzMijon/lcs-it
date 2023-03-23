@@ -5,10 +5,10 @@ function ExperienceCard({ src, label, onMouseMove, mouse }) {
     console.log('experience card');
     return (
         <li className='experience__card' onMouseMove={onMouseMove} >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span style={{zIndex: '100'}}></span>
+            <span style={{zIndex: '100'}}></span>
+            <span style={{zIndex: '100'}}></span>
+            <span style={{zIndex: '100'}}></span>
             <div className='card' id="ex_card">
                 <img src={src} alt="" />
                 <p className='experience__card-title'>{label}</p>
