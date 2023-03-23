@@ -2,6 +2,7 @@ import React from 'react';
 import './experienceCard.scss';
 
 function ExperienceCard({ src, label, onMouseMove, mouse }) {
+    console.log('experience card');
     return (
         <li className='experience__card' onMouseMove={onMouseMove} >
             <span></span>
