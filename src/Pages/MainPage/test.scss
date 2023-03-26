@@ -6,17 +6,13 @@
 .container {
     width: 100%;
     height: 100vh;
-    scroll-snap-type: y mandatory !important;
-    overflow-y: scroll !important;
 }
 
 .wrap {
     height: 100vh;
-    overflow-y: scroll !important;
 }
 
-.container div {
-    scroll-snap-align: start !important;
+.container {
     width: 100%;
     height: 100vh;
     font-size: 5em;
@@ -24,31 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-stop: always;
 }
 
-.container div:nth-of-type(even) {
+.container:nth-of-type(even) {
     background-color: rgba(75, 214, 253, 0.84);
     color: white;
 }
-
-/* Scrollbar modification */
-
-/* ::-webkit-scrollbar {
-    width: 6px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-    background-color: white;
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-    background-color: rgba(219, 69, 219, 0.8);
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(29,17,138,0.6);
-} */
+.swiper  {
+    height: 100vh !important;
+}
+.swiper-slide, .swiper-slide-active {
+    transition: 5s all !important;
+}
