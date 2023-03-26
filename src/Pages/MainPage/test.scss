@@ -10,6 +10,12 @@
 
 .wrap {
     height: 100vh;
+    .swiper  {
+        height: 100vh !important;
+    }
+    .swiper-slide, .swiper-slide-active {
+        transition: 5s all !important;
+    }
 }
 
 .container {
@@ -25,10 +31,4 @@
 .container:nth-of-type(even) {
     background-color: rgba(75, 214, 253, 0.84);
     color: white;
-}
-.swiper  {
-    height: 100vh !important;
-}
-.swiper-slide, .swiper-slide-active {
-    transition: 5s all !important;
 }
