@@ -101,15 +101,15 @@ function Seo({ setModal }) {
                             <p className='seo__card-result-title'>Result</p>
                         </div>
                         <div className="seo__card-kd">
-                            <p className='seo__card-kd-proccent'>55%</p>
+                            <p className='seo__card-kd-proccent'>60%</p>
                             <p className='seo__card-kd-title'>KD</p>
                         </div>
                         <div className="seo__card-volume">
-                            <p className='seo__card-volume-count'>1,2K</p>
+                            <p className='seo__card-volume-count'>309K</p>
                             <p className='seo__card-volume-title'>Volume</p>
                         </div>
                     </div>
-                    <p className='seo__card-text'>You have a decent chance of ranking for</p>
+                    <p className='seo__card-text'>Will bring in targeted traffic</p>
                     <div className='seo-btn'>
                         <ContactBtn setModal={setModal}/>
                     </div>
@@ -132,15 +132,15 @@ function Seo({ setModal }) {
                             <p className='seo__card-result-title'>Result</p>
                         </div>
                         <div className="seo__card-kd">
-                            <p className='seo__card-kd-proccent'>55%</p>
+                            <p className='seo__card-kd-proccent'>62%</p>
                             <p className='seo__card-kd-title'>KD</p>
                         </div>
                         <div className="seo__card-volume">
-                            <p className='seo__card-volume-count'>1,2K</p>
+                            <p className='seo__card-volume-count'>519K</p>
                             <p className='seo__card-volume-title'>Volume</p>
                         </div>
                     </div>
-                    <p className='seo__card-text'>You have a decent chance of ranking for</p>
+                    <p className='seo__card-text'>Will result in a positive ROI</p>
                     <div className='seo-btn'>
                         <ContactBtn setModal={setModal}/>
                     </div>

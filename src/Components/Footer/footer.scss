@@ -49,6 +49,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                &:hover .footer__folow-img {
+                    filter: brightness(0) saturate(100%) invert(33%) sepia(74%) saturate(4015%) hue-rotate(251deg) brightness(101%) contrast(101%);
+                }
             }
             .footer__folow-item + .footer__folow-item {
                 margin-left: 42px;

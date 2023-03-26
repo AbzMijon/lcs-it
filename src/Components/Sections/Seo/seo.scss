@@ -197,6 +197,14 @@
         align-items: center;
         margin-right: 30px;
         cursor: pointer;
+        &:hover {
+            background: #2A2B3A;
+            border: 1px solid #2A2B3A;
+            backdrop-filter: blur(4px);
+        }
+        &:hover .seo__pagination-icon {
+            color: #fff;
+        }
         .seo__pagination-icon {
             color: #9E9EAC;
             font-size: 25px;

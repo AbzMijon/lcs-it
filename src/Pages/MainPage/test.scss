@@ -3,20 +3,20 @@
     box-sizing: border-box;
 }
 
-/* .container {
+.container {
     width: 100%;
     height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    scroll-snap-type: y mandatory !important;
+    overflow-y: scroll !important;
 }
 
 .wrap {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
 .container div {
-    scroll-snap-align: start;
+    scroll-snap-align: start !important;
     width: 100%;
     height: 100vh;
     font-size: 5em;
@@ -30,7 +30,7 @@
 .container div:nth-of-type(even) {
     background-color: rgba(75, 214, 253, 0.84);
     color: white;
-} */
+}
 
 /* Scrollbar modification */
 
