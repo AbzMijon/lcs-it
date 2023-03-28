@@ -9,10 +9,10 @@ function Test() {
     return (
         <div className='wrap'>
             <ul className='wrap__list'>
-                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(1, 2000)}>1</li>
-                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(2, 2000)}>2</li>
-                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(3, 2000)}>3</li>
-                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(4, 2000)}>4</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(1, 1000)}>1</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(2, 1000)}>2</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(3, 1000)}>3</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(4, 1000)}>4</li>
             </ul>
             <Swiper
                 onSlideChange={() => console.log('slide change')}
