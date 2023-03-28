@@ -16,6 +16,23 @@
     .swiper-slide, .swiper-slide-active {
         transition: 5s all !important;
     }
+    .wrap__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        z-index: 123;
+        .wrap__item {
+            margin-right: 15px;
+            font-size: 36px;
+            color: #fff;
+            z-index: 1457;
+            cursor: pointer;
+            &:hover {
+                font-size: 40px;
+            }
+        }
+    }
 }
 
 .container {

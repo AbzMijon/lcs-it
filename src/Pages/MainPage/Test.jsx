@@ -2,10 +2,18 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from "swiper";
 import './test.scss';
+import { useRef } from 'react';
 
 function Test() {
+    const swiperRef = useRef(null)
     return (
         <div className='wrap'>
+            <ul className='wrap__list'>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(1, 2000)}>1</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(2, 2000)}>2</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(3, 2000)}>3</li>
+                <li className='wrap__item' onClick={() => swiperRef.current.swiper.slideToLoop(4, 2000)}>4</li>
+            </ul>
             <Swiper
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
@@ -16,6 +24,7 @@ function Test() {
                 grabCursor={true} // менять иконку курсора
                 modules={[Mousewheel, Pagination]}
                 speed={1100}
+                ref={swiperRef}
             >
                 <SwiperSlide>
                     <section className='container'>
@@ -38,33 +47,6 @@ function Test() {
                     </section>
                 </SwiperSlide>
             </Swiper>
-            {/* <section class="slider">
-                <div class="container">
-                    <div class="slider__flex">
-                        <div class="slider__images">
-                            <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="https://picsum.photos/1920/1080" alt=""/></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="https://picsum.photos/1920/1081" alt=""/></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="https://picsum.photos/1920/1082" alt=""/></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="https://picsum.photos/1920/1083" alt=""/></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider__image"><img src="https://picsum.photos/1920/1084" alt=""/></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
         </div>
     )
 }

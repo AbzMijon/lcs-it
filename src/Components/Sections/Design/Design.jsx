@@ -7,6 +7,9 @@ import designCard1 from '../../../assets/img/designCard1.png';
 import designCard2 from '../../../assets/img/designCard2.png';
 import designCard3 from '../../../assets/img/designCard3.png';
 import { FiArrowUpRight } from 'react-icons/fi';
+import arrow from '../../../assets/svg/arrow.svg';
+import pin from '../../../assets/img/Pin.png';
+import motion from '../../../assets/img/motion.png';
 import './design.scss';
 
 function Design() {
@@ -89,7 +92,9 @@ function Design() {
                 className='swiper-design'
             >
                 <div className="design__card">
-                    <img src={designCard1} alt="" className='design__card-img' />
+                    <div className='design__card-img design__card-img--pin'>
+                        <img src={pin} alt="" />
+                    </div>
                     <p className='design__card-title'>Product Strategy</p>
                     <p className='design__card-text'>We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts.</p>
                 </div>
@@ -100,7 +105,9 @@ function Design() {
                     <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
                 </div>
                 <div className="design__card">
-                    <img src={designCard3} alt="" className='design__card-img' />
+                    <div className='design__card-img design__card-img--browser'>
+                        <img src={arrow} alt="" />
+                    </div>
                     <p className='design__card-title'>UI/UX Design</p>
                     <p className='design__card-text'>Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design.</p>
                 </div>
@@ -108,13 +115,15 @@ function Design() {
                     <div className="design__card-square"></div>
                     <img src={server} alt="" className='design__card-server-img' />
                     <img src={activeServer} alt="" className='design__card-server-img--active' />
-                    {/* <img src={designCard4} alt="" className='design__card-img' /> */}
                     <p className='design__card-logo-title'>Logo</p>
                     <p className='design__card-title'>Prototype</p>
                     <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
                 </div>
                 <div className="design__card">
-                    <img src={designCard3} alt="" className='design__card-img' />
+                    <div className='design__card-img design__card-img--motion'>
+                        <span className='design__card-circle design__card-circle--pink'></span>
+                        <span className='design__card-circle design__card-circle--purple'></span>
+                    </div>
                     <p className='design__card-title'>Web Design</p>
                     <p className='design__card-text'>The process of planning and building the elements of the website. Creation of the overall visual appearance of the website.</p>
                 </div>

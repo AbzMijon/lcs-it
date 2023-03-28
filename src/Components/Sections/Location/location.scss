@@ -30,6 +30,10 @@
                 display: flex;
                 align-items: center;
                 margin-right: 16px;
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 8px;
                 cursor: pointer;
                 .location__selector-img {
                     width: 48px;
@@ -46,6 +50,10 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                padding: 8px;
                 .location__selector-img {
                     margin-right: 12px;
                 }
@@ -60,7 +68,7 @@
                 background: #2A2B3A;
                 border: 1px solid #2A2B3A;
                 border-radius: 4px;
-                padding: 8px    ;
+                padding: 8px;
                 .location__selector-name {
                     color: #FFFFFF;
                 }

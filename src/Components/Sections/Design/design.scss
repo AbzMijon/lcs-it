@@ -114,6 +114,74 @@
                 object-fit: cover;
                 width: 100%;
             }
+            .design__card-img--browser {
+                background: url(../../../assets/img/Browser.png) no-repeat center;
+                position: relative;
+                transition: 0.2s all;
+                img {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 117px;
+                    transition: 0.3s ease-out;
+                }
+                &:hover {
+                    background: url(../../../assets/img/browserHover.png) no-repeat center;
+                    img {
+                        bottom: 100px;
+                        left: 200px;
+                    }
+                }
+            }
+            .design__card-img--pin {
+                background: url(../../../assets/img/graph.png) no-repeat center;
+                position: relative;
+                transition: 0.2s all;
+                img {
+                    position: absolute;
+                    bottom: -5px;
+                    left: 16px;
+                    transition: 0.3s ease-out;
+                }
+                &:hover {
+                    background: url(../../../assets/img/graphHover.png) no-repeat center;
+                    img {
+                        bottom: 27px;
+                        left: 94px;
+                    }
+                }
+            }
+            .design__card-img--motion {
+                background: url(../../../assets/img/motion.png) no-repeat center;
+                position: relative;
+                transition: 0.3s all;
+                .design__card-circle {
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                    background-color: #F015B0;
+                    border-radius: 50%;
+                    position: absolute;
+                    transition: 0.5s ease-in-out;
+                }
+                .design__card-circle--pink {
+                    top: 49px;
+                    left: 100px;
+                }
+                .design__card-circle--purple {
+                    background-color: #9747FF;
+                    top: 97px;
+                    left: 225px;
+                }
+                &:hover {
+                    background: url(../../../assets/img/motionHover.png) no-repeat center;
+                    .design__card-circle--pink {
+                        left: 230px;
+                    }
+                    .design__card-circle--purple {
+                        left: 100px;
+                    }
+                }
+            }
             .design__card-img-letter {
                 position: absolute;
                 left: 50%;
