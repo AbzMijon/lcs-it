@@ -49,6 +49,10 @@ function Design() {
                 </li>
                 <li className='design__types-item'>
                     <FiArrowUpRight className='design__types-arrow'/>
+                    <p>UX/UI</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
                     <p>Graphic Design</p>
                 </li>
                 <li className='design__types-item'>
@@ -70,6 +74,10 @@ function Design() {
                 <li className='design__types-item'>
                     <FiArrowUpRight className='design__types-arrow'/>
                     <p>Digital Advertising</p>
+                </li>
+                <li className='design__types-item'>
+                    <FiArrowUpRight className='design__types-arrow'/>
+                    <p>UX/UI</p>
                 </li>
             </Marquee>
             </ul>

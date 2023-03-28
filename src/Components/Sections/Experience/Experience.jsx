@@ -26,8 +26,6 @@ function Experience() {
     });
 
     const onMouseMove = (event) => {
-        /* find inly first card  need get qsAll or create card with unique className*/
-
         console.log('eventTar', event.target)
         console.log('event.target.offsetTop', event.currentTarget.offsetTop);
 

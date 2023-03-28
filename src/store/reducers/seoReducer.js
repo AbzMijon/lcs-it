@@ -4,28 +4,18 @@ const initialState = {
   seoButtons: [
     {
       id: 0,
-      label: 'Keyword Research',
+      label: 'Context Advertising',
       active: true,
     },
     {
-        id: 1,
-        label: 'Proactive Strategy',
-        active: false,
+      id: 1,
+      label: 'SEO Promotion',
+      active: false,
     },
     {
-        id: 2,
-        label: 'Content Optimization',
-        active: false,
-    },
-    {
-        id: 3,
-        label: 'Site Performance',
-        active: false,
-    },
-    {
-        id: 4,
-        label: 'Monitoring And Reporting',
-        active: false,
+      id: 2,
+      label: 'Competitive Audit',
+      active: false,
     },
   ]
 }

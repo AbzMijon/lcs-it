@@ -28,7 +28,7 @@
             align-items: center;
             width: 240px;
             padding: 14px 5px;
-            margin: 0 30px;
+            margin: 0 15px;
             background: #000000;
             border: 1px solid #3C3D4C;
             border-radius: 8px;
@@ -58,7 +58,6 @@
             padding-bottom: 35px;
             width: 367px;
             height: 426px;
-            margin-left: 30px;
             transition: 0.2s ease-in;
             position: relative;
             &:hover .design__card-img-letter {
@@ -130,7 +129,11 @@
                 margin: 0 35px 0px 35px;
             }
         }
-        .design__card + .design__card {
-            margin-left: 30px;
+        .swiper {
+            gap: 0px;
+        }
+
+        .swiper .marquee {
+            gap: 0px;
         }
 }
