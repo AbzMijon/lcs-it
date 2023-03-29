@@ -42,6 +42,9 @@ body {
 	background: url('../assets/img/sectionBg.png') #000 no-repeat;
     background-size: contain;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 h1,
 .title1 {

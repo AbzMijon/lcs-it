@@ -26,61 +26,25 @@ function Experience() {
     });
 
     const onMouseMove = (event) => {
-        console.log('eventTar', event.target)
-        console.log('event.target.offsetTop', event.currentTarget.offsetTop);
-
         const localX = event.clientX - event.currentTarget.offsetLeft;
         const localY = event.clientY - event.currentTarget.offsetTop;
-        
-        console.log('HELLLO', event.clientY - event.currentTarget.offsetTop);
-        console.log('offsetLeft', event.target.offsetLeft)
-        console.log('clientX', event.clientX)
-        console.log('clientY', event.clientY);
-        console.log('diff', event.clientX - event.target.offsetLeft);
-        console.log('event.currentTarget', event.target.clientHeight);
-
         setLocalMousePos({ X: localX, Y: localY });
     }
 
-    const step = () => {
-        // let targetX = mouse.X;
-        // let dx = targetX - mouse.CX;
-        // let targetY = mouse.Y;
-        // let dy = targetY - mouse.CY;
-        // setMouse({...mouse, CX: mouse.X , CY: mouse.Y });
-
-        /*
-            offsetY - 976!!!
-            cursor по Y always change
-            180 - x ||| 130 - y
-        */
-
-/*         const light = document.getElementById('light');
-
-        light.style.background = 'radial-gradient(circle at ' + mouse.CX + 'px ' + 70 + 'px, #fff, transparent)'; */
-
-    };
-
-    requestAnimationFrame(step); 
 
     useEffect(() => {
         const onMouseGlobalMove = (e) => {
             const { scrollHeight, scrollTop, clientHeight } = e.target/* .scrollingElement */;
-            console.log('clientHEight', clientHeight)
             setGlobalMousePos({X: e.clientX, Y: e.clientY});
         };
         window.addEventListener('mousemove', onMouseGlobalMove);
         return () => {
             window.removeEventListener('mousemove', onMouseGlobalMove);
-            cancelAnimationFrame(step)
         }
     }, []);
 
-    // console.log(localMousePos);
-    console.log('GLOBAL X Y', globalMousePos);
-
     return (
-        <section className='experience'>
+        <section className='experience' id='services'>
             <div className="experience__block">
                 <h2 className='experience__title'>Tremendous experience</h2>
                 <ul className='experience__list' id='experience__list'>

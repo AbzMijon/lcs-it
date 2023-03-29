@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 23px 140px;
+    padding: 23px 180px 23px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,19 +36,26 @@
         justify-content: right;
         align-items: center;
         margin-right: 130px;
+        z-index: 101;
         .header__list-item {
             color: #fff;
             margin-right: 70px;
             transition: 0.1s all;
             cursor: pointer;
+            z-index: 100;
             &:hover {
                 color: #9747FF;
+            }
+            a {
+                text-decoration: none;
+                z-index: 100;
+                color: inherit;
             }
         }
     }
 }
 .header__active {
-    background-color: #3C3D4C;
+    background: rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid #3C3D4C;
     backdrop-filter: blur(7.5px);
 }

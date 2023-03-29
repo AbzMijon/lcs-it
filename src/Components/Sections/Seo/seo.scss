@@ -26,9 +26,11 @@
                 text-align: center;
                 font-size: 14px;
                 line-height: 20px;
-                margin-right: 16px;
                 color: #9E9EAC;
                 cursor: pointer;
+            }
+            .seo__navigate-btn + .seo__navigate-btn, .seo__navigate-btn--active + .seo__navigate-btn--active {
+                margin-left: 16px;
             }
             .seo__navigate-btn--active {
                 background: #2A2B3A;

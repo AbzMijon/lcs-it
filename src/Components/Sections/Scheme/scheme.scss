@@ -21,7 +21,7 @@
                 align-items: center;
                 margin-right: 116px;
                 .scheme__row-icon-wrap {
-                    background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);
+                    background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%) no-repeat center;
                     border: 1px solid #2A2B3A;
                     backdrop-filter: blur(2px);
                     border-radius: 50%;
@@ -30,13 +30,36 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: 0.2s all;
+                    .scheme-user--active {
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 3;
+                        transition: 0.4s all;
+                    }
+                    .scheme-user {
+                        position: absolute;
+                        transition: transform 0.4s;
+                    }
+                    &:hover {
+                        .scheme-user--active {
+                            opacity: 1;
+                        }
+                        .scheme-user {
+                            transform: scale(0.8) translateX(20px) translateY(4px);
+                            filter: brightness(0) saturate(100%) invert(35%) sepia(75%) saturate(3365%) hue-rotate(248deg) brightness(98%) contrast(106%);
+                        }
+                    }
                 }
                 .scheme__row-line {
                     width: 3px;
                     height: 156px;
-                    background: #9747FF;
+                    background: #FFF;
                     border-radius: 100px;
                     margin: 20px 0;
+                }
+                .scheme__row-line--active {
+                    background: #9747FF;
                 }
             }
             .scheme__row-cards {

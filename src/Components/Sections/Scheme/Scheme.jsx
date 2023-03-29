@@ -1,5 +1,6 @@
 import React from 'react';
 import './scheme.scss';
+import userActive from '../../../assets/img/userActive.png';
 import user from '../../../assets/svg/user.svg';
 import blocknot from '../../../assets/svg/blaknot.svg';
 import rocket from '../../../assets/svg/rocket.svg';
@@ -27,9 +28,10 @@ function Scheme() {
                 <div className="scheme__list">
                     <div className="scheme__row-icons">
                         <div className="scheme__row-icon-wrap">
-                            <img src={user} alt="" className='scheme__row-icon' />
+                            <img src={userActive} alt="" className='scheme__row-icon scheme-user--active' />
+                            <img src={user} alt="" className='scheme__row-icon scheme-user' />
                         </div>
-                        <div className='scheme__row-line'></div>
+                        <div className='scheme__row-line scheme__row-line--active'></div>
 
                         <div className="scheme__row-icon-wrap">
                             <img src={blocknot} alt="" className='scheme__row-icon' />

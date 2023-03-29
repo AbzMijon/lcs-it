@@ -30,7 +30,6 @@ function Outsourcing({ setModal }) {
     useEffect(() => {
         const onMouseGlobalMove = (e) => {
             const { scrollHeight, scrollTop, clientHeight } = e.target/* .scrollingElement */;
-            console.log('clientHEight', clientHeight)
             setGlobalMousePos({X: e.clientX, Y: e.clientY});
         };
         window.addEventListener('mousemove', onMouseGlobalMove);
@@ -40,7 +39,7 @@ function Outsourcing({ setModal }) {
     }, []);
 
     return (
-        <section className='outsourcing'>
+        <section className='outsourcing' id='outsourcing'>
             <div className="outsourcing__wrap">
                 <h2 className='outsourcing__title'>Outsourcing</h2>
                 <ul className="outsourcing__table">

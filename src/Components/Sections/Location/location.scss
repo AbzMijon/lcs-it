@@ -2,6 +2,7 @@
     position: relative;
     padding-bottom: 329px;
     background: url('../../../assets/img/locationBg.jpg') no-repeat bottom;
+    padding-top: 47px;
     .location__title {
         margin-bottom: 8px;
         max-width: 1148px;
@@ -29,7 +30,6 @@
             .location__selector-uk {
                 display: flex;
                 align-items: center;
-                margin-right: 16px;
                 background: transparent;
                 border: 1px solid transparent;
                 border-radius: 4px;
@@ -46,6 +46,9 @@
                     color: #9E9EAC;
                 }
             }
+            .location__selector-uk + .location__selector-uk {
+                margin-left: 16px;
+            }
             .location__selector-poland {
                 display: flex;
                 align-items: center;
@@ -53,6 +56,7 @@
                 background: transparent;
                 border: 1px solid transparent;
                 border-radius: 4px;
+                margin-right: 0;
                 padding: 8px;
                 .location__selector-img {
                     margin-right: 12px;

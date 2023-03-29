@@ -1,5 +1,5 @@
 .development {
-    margin-bottom: 52px;
+    margin-bottom: 5px;
     .development__title {
         max-width: 1148px;
         margin: 0 auto;
@@ -481,6 +481,8 @@
     blink-caret .7s step-end infinite;
     animation-delay: 7.5s;
     white-space: nowrap;
+    /* border-right: .15em solid orange; */
+    width: fit-content;
 }
 
 .code__str-num {

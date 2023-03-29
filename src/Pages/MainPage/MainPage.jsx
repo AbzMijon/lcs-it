@@ -26,7 +26,7 @@ function MainPage() {
                 <Modal setModal={setModal} />
             }
             <Header/>
-            <main className="main">
+            <main className="main" id='company'>
                 <Welcome setModal={setModal} />
                 <p className='main__scroll-text'>scroll down <AiOutlineArrowDown className='main__scroll-icon' onClick={() => navigate('/test')} /></p>
                 <Experience />

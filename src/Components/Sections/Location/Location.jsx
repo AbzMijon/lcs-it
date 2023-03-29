@@ -15,7 +15,7 @@ function Location({ setModal }) {
     const locationButtons = useSelector((state) => state.locationReducer.locationButtons);
 
     return (
-        <section className='location'>
+        <section className='location' id='contacts'>
             <h2 className='location__title'>Our Locations</h2>
             <div className="location__content">
                 <div className="location__selector">

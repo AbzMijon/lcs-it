@@ -1,6 +1,7 @@
 .outsourcing {
     position: relative;
     margin-bottom: 85px;
+    padding-top: 47px;
     overflow: hidden;
     .outsourcing__wrap {
         max-width: 1148px;
@@ -141,7 +142,7 @@
     .outsourcing__bg1 {
         position: absolute;
         top: 50%;
-        left: -50px;
+        left: -178px;
         z-index: 3;
         filter: blur(5px);
         transition: 0.3s all;
@@ -152,8 +153,8 @@
     }
     .outsourcing__bg2 {
         position: absolute;
-        top: 10%;
-        left: 50%;
+        top: 20%;
+        left: 46%;
         transform: translateX(-50%);
         transition: 0.3s all;
         &:hover {
@@ -163,11 +164,11 @@
     .outsourcing__bg3 {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-43%);
         right: 0;
         transition: 0.3s all;
         &:hover {
-            transform: scale(1.04) translateY(-48%);
+            transform: scale(1.04) translateY(-41%);
         }
     }
 }
