@@ -20,6 +20,23 @@
                 justify-content: center;
                 align-items: center;
                 margin-right: 116px;
+                position: relative;
+                .scheme__row-example {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    position: absolute;
+                    left: -360px;
+                    top: 65px;
+                    .scheme__triangles--transform {
+                        transform: rotate(270deg);
+                        position: relative;
+                        top: 0px;
+                        left: 24px;
+                        margin-left: 8px;
+                    }
+                    
+                }
                 .scheme__row-icon-wrap {
                     background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%) no-repeat center;
                     border: 1px solid #2A2B3A;
@@ -85,6 +102,8 @@
         .scheme__ilustration {
             .scheme__ilustration-content {
                 transform: translateY(-160px);
+                width: 682px;
+                height: 748px;
                 .scheme__ilustration-circle {
                     width: 210px;
                     height: 210px;
@@ -153,41 +172,6 @@
                         top: 7px;
                         left: 6px;
                     }
-                }
-                .scheme__triangles, .scheme__triangles-plan {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    top: -90px;
-                    right: 0;
-                    .scheme__triangle {
-                        width: 0;
-                        height: 0;
-                        border-radius: 10px;
-                    }
-                    .scheme__triangle-mini {
-                        border-left: 17px solid transparent;
-                        border-right: 17px solid transparent;
-                        border-top: 18px solid #171D29;
-                        margin-bottom: 10px;
-                    }
-                    .scheme__triangle-mid {
-                        border-left: 19px solid transparent;
-                        border-right: 19px solid transparent;
-                        border-top: 19px solid #2A2B3A;
-                        margin-bottom: 7px;
-                    }
-                    .scheme__triangle-big {
-                        border-left: 23px solid transparent;
-                        border-right: 23px solid transparent;
-                        border-top: 24px solid #4D4F6C;
-                    }
-                }
-                .scheme__triangles-plan {
-                    right: 100%;
-                    transform: translateX(100%);
                 }
                 .sheme__cards-wrap {
                     display: flex;
@@ -273,3 +257,38 @@
         }
     }
 }
+    .scheme__triangles, .scheme__triangles-plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -90px;
+        right: 0;
+        .scheme__triangle {
+            width: 0;
+            height: 0;
+            border-radius: 10px;
+        }
+        .scheme__triangle-mini {
+            border-left: 17px solid transparent;
+            border-right: 17px solid transparent;
+            border-top: 18px solid #171D29;
+            margin-bottom: 10px;
+        }
+        .scheme__triangle-mid {
+            border-left: 19px solid transparent;
+            border-right: 19px solid transparent;
+            border-top: 19px solid #2A2B3A;
+            margin-bottom: 7px;
+        }
+        .scheme__triangle-big {
+            border-left: 23px solid transparent;
+            border-right: 23px solid transparent;
+            border-top: 24px solid #4D4F6C;
+        }
+    }
+    .scheme__triangles-plan {
+        right: 100%;
+        transform: translateX(100%);
+    }

@@ -11,6 +11,7 @@ import outsourcingBg2 from '../../../assets/img/molecula2.png';
 import outsourcingBg3 from '../../../assets/img/molecula3.png';
 
 function Outsourcing({ setModal }) {
+    
     const [globalMousePos, setGlobalMousePos] = useState({
         X   : 0,
         Y   : 0,

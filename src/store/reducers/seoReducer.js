@@ -5,7 +5,7 @@ const initialState = {
     {
       id: 0,
       label: 'Context Advertising',
-      active: true,
+      active: false,
     },
     {
       id: 1,
@@ -15,7 +15,7 @@ const initialState = {
     {
       id: 2,
       label: 'Competitive Audit',
-      active: false,
+      active: true,
     },
   ]
 }
