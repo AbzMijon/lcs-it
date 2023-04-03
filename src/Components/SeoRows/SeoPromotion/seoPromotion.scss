@@ -1,0 +1,26 @@
+.seo__card {
+    .seo__card-title {
+        margin: 19px 26px 31px 26px;
+    }
+    .seo__card-body {
+        border-top: 1px solid #2A2B3A;
+        border-bottom: 1px solid #2A2B3A;
+        padding: 26px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .seo__card-body-img {
+            height: 152px;
+            transition: 0.3s all;
+            opacity: 1;
+        }
+        .seo__card-body-img--hidden {
+            opacity: 0;
+        }
+    }
+    .seo__card-subtitle {
+        margin: 18px 26px 22px 26px;
+        color: #fff;
+    }
+}

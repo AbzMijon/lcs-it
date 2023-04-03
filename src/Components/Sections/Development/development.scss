@@ -375,6 +375,10 @@
     font-size: 14px;
     line-height: 21px;
     margin-left: 44px;
+    span {
+        position: static;
+        z-index: 0;
+    }
 }
 .code__str2 {
     animation:

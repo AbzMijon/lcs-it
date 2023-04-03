@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setActiveButton } from '../../../store/reducers/seoReducer';
 import SeoAnalysis from '../../SeoRows/SeoAnalysis/SeoAnalysis';
 import SeoKeyword from '../../SeoRows/SeoKeyword/SeoKeyword';
+import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
 
 function Seo({ setModal }) {
     const dispatch = useDispatch();
@@ -18,6 +19,8 @@ function Seo({ setModal }) {
         switch(buttonIndex) {
             case 0:
                 return <SeoKeyword setModal={setModal} />
+            case 1:
+                return <SeoPromotion setModal={setModal}/>
             case 2:
                 return <SeoAnalysis setModal={setModal} />
             default:

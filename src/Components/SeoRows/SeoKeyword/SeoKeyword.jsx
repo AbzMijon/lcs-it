@@ -11,15 +11,36 @@ function SeoKeyword({ setModal }) {
                     <p className='seo__card-head-title'>Keywords</p>
                     <p>KD%</p>
                 </div>
-                <div className='seo__card-procents'>
-                    <div className="seo__card-procents-values">
-                        <p className='seo__card-procents-title'>Keyword 1</p>
-                        <p className='seo__card-procents-value'>100</p>
+                <div className="seo__card-list">
+                    <div className='seo__card-procents'>
+                        <div className="seo__card-procents-values">
+                            <p className='seo__card-procents-title'>Keyword 1</p>
+                            <p className='seo__card-procents-value'>100</p>
+                        </div>
+                        <div className="seo__card-procents-line">
+                            <span className='seo__card-procents-line--active'></span>
+                        </div>
+                    </div>
+                    <div className='seo__card-procents'>
+                        <div className="seo__card-procents-values">
+                            <p className='seo__card-procents-title'>Keyword 2</p>
+                            <p className='seo__card-procents-value'>80</p>
+                        </div>
+                        <div className="seo__card-procents-line">
+                            <span className='seo__card-procents-line--active'></span>
+                        </div>
+                    </div>
+                    <div className='seo__card-procents'>
+                        <div className="seo__card-procents-values">
+                            <p className='seo__card-procents-title'>Keyword 3</p>
+                            <p className='seo__card-procents-value'>50</p>
+                        </div>
+                        <div className="seo__card-procents-line">
+                            <span className='seo__card-procents-line--active'></span>
+                        </div>
                     </div>
                 </div>
-                <div className="seo__card-procents-line">
-                    <span className='seo__card-procents-line--active'></span>
-                </div>
+                <p className='seo__card-subtitle'>Selection of Keywords</p>
                 <div className='seo-btn'>
                     <ContactBtn setModal={setModal}/>
                 </div>

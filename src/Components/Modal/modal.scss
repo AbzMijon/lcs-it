@@ -1,3 +1,12 @@
+@keyframes showModal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .modal-wrap {
     position: fixed;
     top: 0;
@@ -22,6 +31,7 @@
         position: relative;
         max-width: 459px;
         max-height: 673px;
+        animation: showModal 0.3s linear;
         .modal__close {
             position: absolute;
             top: 25px;

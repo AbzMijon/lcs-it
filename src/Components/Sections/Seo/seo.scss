@@ -1,3 +1,12 @@
+@keyframes showCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .seo {
     max-width: 1148px;
     margin: 0 auto;
@@ -66,8 +75,11 @@
             backdrop-filter: blur(5px);
             border: 1px solid #2A2B3A;
             border-radius: 10px;
+            height: 426px;
+            transition: 0.3s all;
+            animation: showCard 0.3s linear;
             .seo__card-header {
-                padding: 0 24px;
+                padding: 10px 24px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
