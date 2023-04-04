@@ -5,8 +5,22 @@ import facebook from '../../../assets/svg/facebook.svg';
 import instagram from '../../../assets/svg/inst.svg';
 import linkedIn from '../../../assets/svg/linkedIn.svg';
 import telegram from '../../../assets/svg/telegram.svg';
+import { HiPlus } from 'react-icons/hi';
+import seoKeywordCard3 from '../../../assets/img/seoKeywordCard3.png';
+import seoKeywordCard2 from '../../../assets/img/SeoKeywordCard2.png';
+import seoKeywordLine from '../../../assets/img/seoKeyWorldLine.png';
+import { useState } from 'react';
 
 function SeoKeyword({ setModal }) {
+    const [activeGraphic, setActiveGraphic] = useState(true);
+
+    const setActiveGrapicHiddent = () => {
+        setActiveGraphic(false);
+        setTimeout(() => {
+            setActiveGraphic(true);
+        }, 1500);
+    }
+
     return (
         <ul className="seo__row">
 
@@ -61,31 +75,50 @@ function SeoKeyword({ setModal }) {
                         <p>Product 2</p>
                     </div>
                 </div>
-                <p className='seo__card-text'>Strategy Development</p>
+                <div className="seo__card-body-graphic" onClick={setActiveGrapicHiddent}>
+                    <img src={seoKeywordCard2} alt="" className='seo__card-body-img' />
+                    <img src={seoKeywordLine} alt="" className={activeGraphic ? 'seo__card-body-line' : 'seo__card-body-line seo__card-body-line--hidden'} />
+                    <ul className='seo__card-body-month'>
+                        <li className='seo__card-body-monthName'>Jan</li>
+                        <li className='seo__card-body-monthName'>Feb</li>
+                        <li className='seo__card-body-monthName'>Mar</li>
+                        <li className='seo__card-body-monthName'>Apl</li>
+                        <li className='seo__card-body-monthName'>Mai</li>
+                        <li className='seo__card-body-monthName'>Jun</li>
+                    </ul>
+                </div>
+                <p className='seo__card-subtitle'>Strategy Development</p>
                 <div className='seo-btn'>
                     <ContactBtn setModal={setModal}/>
                 </div>
             </li>
             <li className='seo__card'>
-                <div className='seo__card-head'>
-                    <div className='seo__card-head-title'>
-                        <ul className='footer__folow-list'>
-                            <li className='footer__folow-item'>
-                                <img src={facebook} alt="" className='footer__folow-img' />
-                            </li>
-                            <li className='footer__folow-item'>
-                                <img src={instagram} alt="" className='footer__folow-img' />
-                            </li>
-                            <li className='footer__folow-item'>
-                                <img src={linkedIn} alt="" className='footer__folow-img' />
-                            </li>
-                            <li className='footer__folow-item'>
-                                <img src={telegram} alt="" className='footer__folow-img' />
-                            </li>
-                        </ul>
+                <div className='seo__card-head-icons'>
+                    <ul className='seo__card-head-list'>
+                        <li className='seo__card-item'>
+                            <img src={facebook} alt="" className='seo__card-list-img' />
+                        </li>
+                        <li className='seo__card-item'>
+                            <img src={instagram} alt="" className='seo__card-list-img' />
+                        </li>
+                        <li className='seo__card-item'>
+                            <img src={linkedIn} alt="" className='seo__card-list-img' />
+                        </li>
+                        <li className='seo__card-item'>
+                            <img src={telegram} alt="" className='seo__card-list-img' />
+                        </li>
+                    </ul>
+                    <HiPlus className='seo__card-item-plus' />
+                </div>
+                <div className="seo__card-body-full">
+                    <img src={seoKeywordCard3} alt="" className='seo__card-body-imgElem' />
+                    <div className="seo__card-body-content">
+                        <div className="seo__card-body-title"></div>
+                        <div className="seo__card-body-subtitle"></div>
+                        <div className="seo__card-body-btn">Create</div>
                     </div>
                 </div>
-                <p className='seo__card-text'>Creative Creation</p>
+                <p className='seo__card-subtitle'>Creative Creation</p>
                 <div className='seo-btn'>
                     <ContactBtn setModal={setModal}/>
                 </div>

@@ -1,4 +1,4 @@
-.seo__card-head {
+.seo__card-head, .seo__card-head-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,122 @@
             background: #F015B0;
         }
     }
+    .seo__card-head-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .seo__card-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 48px;
+            width: 18px;
+            height: 20px;
+            cursor: pointer;
+            &:hover .seo__card-list-img {
+                filter: brightness(0) saturate(100%) invert(33%) sepia(74%) saturate(4015%) hue-rotate(251deg) brightness(101%) contrast(101%);
+            }
+        }
+    }
+    .seo__card-item-plus {
+        font-size: 23px;
+        margin-left: 14px;
+        cursor: pointer;
+    }
 }
+
+.seo__card-body-graphic {
+    position: relative;
+    border-top: 1px solid #2A2B3A;
+    border-bottom: 1px solid #2A2B3A;
+    padding: 26px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .seo__card-body-img {
+        width: 100%;
+        max-height: 138px;
+    }
+    .seo__card-body-line {
+        position: absolute;
+        width: 100%;
+        height: 106px;
+        top: 37px;
+        transform: translateX(3px);
+        opacity: 1;
+        transition: 0.2s all;
+    }
+    .seo__card-body-line--hidden {
+        opacity: 0;
+    }
+    .seo__card-body-month {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding: 0 25px;
+        align-content: baseline;
+        .seo__card-body-monthName + .seo__card-body-monthName {
+            margin-left: 22px;
+        }
+        .seo__card-body-monthName {
+            color: #fff;
+            &:last-child {
+                margin-left: 27px;
+            }
+        }
+    }
+}
+
+.seo__card-body-full {
+    border-top: 1px solid #2A2B3A;
+    border-bottom: 1px solid #2A2B3A;
+    display: flex;
+    justify-content: start;
+    padding: 26px 25px;
+    align-items: center;
+    cursor: pointer;
+    .seo__card-body-imgElem {
+        height: 144px;
+    }
+    .seo__card-body-content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 18px;
+        align-items: start;
+        .seo__card-body-title, .seo__card-body-subtitle {
+            background: #3C3D4C;
+            border-radius: 50px;
+            height: 17px;
+        }
+        .seo__card-body-title {
+            width: 100%;
+            margin-bottom: 14px;
+        }
+        .seo__card-body-subtitle {
+            width: 70%;
+            margin-bottom: 24px;
+        }
+        .seo__card-body-btn {
+            background: #3C3D4C;
+            border-radius: 8px;
+            color: #9E9EAC;
+            width: 100%;
+            padding: 7px 39px;
+        }
+    }
+}
+
+.seo__card-head-icons {
+    padding-left: 30px;
+    padding-right: 29px;
+}
+
 .seo__card-list {
     padding: 26px;
     border-top: 1px solid #2A2B3A;
@@ -56,5 +171,4 @@
     .seo__card-procents + .seo__card-procents {
         margin-top: 18px;
     }
-
 }

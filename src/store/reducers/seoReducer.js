@@ -4,7 +4,7 @@ const initialState = {
   seoButtons: [
     {
       id: 0,
-      label: 'Context Advertising',
+      label: 'Keyword Research',
       active: false,
     },
     {
