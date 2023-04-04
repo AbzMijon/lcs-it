@@ -8,6 +8,24 @@
         letter-spacing: -0.01em;
         color: #9E9EAC;
     }
+    .seo__card-head-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .seo__card-head-circle {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: block;
+            margin-right: 12px;
+        }
+        .seo__card-head-circle--purple{
+            background: #9747FF;
+        }
+        .seo__card-head-circle--pink {
+            background: #F015B0;
+        }
+    }
 }
 .seo__card-list {
     padding: 26px;
@@ -38,4 +56,5 @@
     .seo__card-procents + .seo__card-procents {
         margin-top: 18px;
     }
+
 }
