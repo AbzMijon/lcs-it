@@ -10,7 +10,7 @@ import seoKeywordCard3 from '../../../assets/img/seoKeywordCard3.png';
 import seoKeywordCard2 from '../../../assets/img/SeoKeywordCard2.png';
 import seoKeywordLine from '../../../assets/img/seoKeyWorldLine.png';
 import { useState } from 'react';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 function SeoKeyword({ setModal }) {
     const [activeGraphic, setActiveGraphic] = useState(false);
@@ -29,7 +29,7 @@ function SeoKeyword({ setModal }) {
         }, 1000);
     }
     
-    useEffect(() => {
+    useLayoutEffect(() => {
         setTimeout(() => {
             setActiveGraphic(true);
             setActiveLines(true);

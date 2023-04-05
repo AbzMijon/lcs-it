@@ -3,13 +3,10 @@ import Marquee from "react-fast-marquee";
 import letterA from '../../../assets/img/letterA.png';
 import server from '../../../assets/img/Server.png';
 import activeServer from '../../../assets/img/activeServer.png';
-import designCard1 from '../../../assets/img/designCard1.png';
 import designCard2 from '../../../assets/img/designCard2.png';
-import designCard3 from '../../../assets/img/designCard3.png';
 import { FiArrowUpRight } from 'react-icons/fi';
 import arrow from '../../../assets/svg/arrow.svg';
 import pin from '../../../assets/img/Pin.png';
-import motion from '../../../assets/img/motion.png';
 import './design.scss';
 
 function Design() {

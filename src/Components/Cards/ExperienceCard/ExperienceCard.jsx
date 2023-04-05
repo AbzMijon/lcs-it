@@ -4,10 +4,10 @@ import './experienceCard.scss';
 function ExperienceCard({ src, label, onMouseMove, mouse }) {
     return (
         <li className='experience__card' onMouseMove={onMouseMove} >
-            <span style={{zIndex: '100'}}></span>
-            <span style={{zIndex: '100'}}></span>
-            <span style={{zIndex: '100'}}></span>
-            <span style={{zIndex: '100'}}></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div className='card' id="ex_card">
                 <img src={src} alt="" />
                 <p className='experience__card-title'>{label}</p>

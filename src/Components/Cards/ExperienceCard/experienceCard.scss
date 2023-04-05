@@ -2,13 +2,13 @@
     height: 266px;
     position: relative;
     &:nth-child(1) .card {
-        background-image: url('../../assets/img/experienceCard1.jpg');
+        background-image: url('../../../assets/img/experienceCard1.jpg');
     }
     &:nth-child(2) .card {
-        background-image: url('../../assets/img/experienceCard2.jpg');
+        background-image: url('../../../assets/img/experienceCard2.jpg');
     }
     &:nth-child(3) .card {
-        background-image: url('../../assets/img/experienceCard3.jpg');
+        background-image: url('../../../assets/img/experienceCard3.jpg');
     }
     .card {
         position: relative;

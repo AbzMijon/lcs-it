@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './experience.scss';
 import experienceCardShield1 from '../../../assets/img/experienceCardShield1.png';
 import experienceCardShield2 from '../../../assets/img/experienceCardShield2.png';
@@ -11,14 +11,9 @@ import pgsqlIcon from '../../../assets/svg/pgsql.svg';
 import mongoIcon from '../../../assets/svg/mongodb.svg';
 import nestIcon from '../../../assets/svg/nest-js.svg';
 import Marquee from "react-fast-marquee";
-import ExperienceCard from '../../Cards/ExperienceCard';
+import ExperienceCard from '../../Cards/ExperienceCard/ExperienceCard';
 
 function Experience() {
-
-    const [globalMousePos, setGlobalMousePos] = useState({
-        X   : 0,
-        Y   : 0,
-    });
 
     const [localMousePos, setLocalMousePos] = useState({
         X   : 0,
@@ -30,18 +25,6 @@ function Experience() {
         const localY = event.clientY - event.currentTarget.offsetTop;
         setLocalMousePos({ X: localX, Y: localY + 220 });
     }
-
-
-    useEffect(() => {
-        const onMouseGlobalMove = (e) => {
-            const { scrollHeight, scrollTop, clientHeight } = e.target/* .scrollingElement */;
-            setGlobalMousePos({X: e.clientX, Y: e.clientY});
-        };
-        window.addEventListener('mousemove', onMouseGlobalMove);
-        return () => {
-            window.removeEventListener('mousemove', onMouseGlobalMove);
-        }
-    }, []);
 
     return (
         <section className='experience' id='services'>
@@ -76,6 +59,11 @@ function Experience() {
                 gradient={false}
                 className='swiper'
             >
+                {/* {SKILLS_CARDS && SKILLS_CARDS.map((card) => {
+                    return (
+
+                    )
+                })} */}
                 <div className='experience__skills-card'>
                     <img src={cssIcon} alt="" className='experience__skills-img' />
                     <h5 className='experience__skills-name'>CSS 3</h5>
