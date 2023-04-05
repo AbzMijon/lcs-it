@@ -122,7 +122,7 @@
                     position: absolute;
                     bottom: 30px;
                     left: 117px;
-                    transition: 0.3s ease-out;
+                    transition: 0.4s all cubic-bezier(.25,.75,.5,1.25);
                 }
                 &:hover {
                     background: url(../../../assets/img/browserHover.png) no-repeat center;
@@ -140,7 +140,7 @@
                     position: absolute;
                     bottom: -5px;
                     left: 16px;
-                    transition: 0.3s ease-out;
+                    transition: 0.3s all cubic-bezier(.25,.75,.5,1.25);
                 }
                 &:hover {
                     background: url(../../../assets/img/graphHover.png) no-repeat center;
@@ -187,7 +187,7 @@
                 left: 50%;
                 transform: translateX(-58%);
                 top: 35px;
-                transition: 0.3s ease-in-out;
+                transition: 0.3s all cubic-bezier(.25,.75,.5,1.25);
             }
             .design__card-title {
                 margin: 0 35px 26px 35px;
