@@ -40,8 +40,8 @@ function Development({ setModal }) {
     }
 
 
-    useEffect(() => {
-        document.addEventListener('scroll', onScroll)
+    useEffect((e) => {
+        document.addEventListener('scroll', onScroll);
         return () => {
             document.removeEventListener('scroll', onScroll);
         }

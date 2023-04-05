@@ -23,7 +23,7 @@ function Business() {
     const onMouseMove = (event) => {
         const localX = event.clientX - event.currentTarget.offsetLeft;
         const localY = event.clientY - event.currentTarget.offsetTop;
-        setLocalMousePos({ X: localX, Y: localY + 6500 });
+        setLocalMousePos({ X: localX, Y: localY + 6300 });
     }
 
     useEffect(() => {

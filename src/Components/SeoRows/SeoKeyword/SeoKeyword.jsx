@@ -10,16 +10,31 @@ import seoKeywordCard3 from '../../../assets/img/seoKeywordCard3.png';
 import seoKeywordCard2 from '../../../assets/img/SeoKeywordCard2.png';
 import seoKeywordLine from '../../../assets/img/seoKeyWorldLine.png';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 function SeoKeyword({ setModal }) {
-    const [activeGraphic, setActiveGraphic] = useState(true);
+    const [activeGraphic, setActiveGraphic] = useState(false);
+    const [activeLines, setActiveLines] = useState(false);
 
-    const setActiveGrapicHiddent = () => {
+    const startGraphicAnimation = () => {
         setActiveGraphic(false);
         setTimeout(() => {
             setActiveGraphic(true);
-        }, 1500);
+        }, 1000);
     }
+    const startLinesAnimation = () => {
+        setActiveLines(false);
+        setTimeout(() => {
+            setActiveLines(true);
+        }, 1000);
+    }
+    
+    useEffect(() => {
+        setTimeout(() => {
+            setActiveGraphic(true);
+            setActiveLines(true);
+        }, 1000);
+    }, [])
 
     return (
         <ul className="seo__row">
@@ -29,32 +44,44 @@ function SeoKeyword({ setModal }) {
                     <p className='seo__card-head-title'>Keywords</p>
                     <p>KD%</p>
                 </div>
-                <div className="seo__card-list">
+                <div className="seo__card-list" onClick={startLinesAnimation}>
                     <div className='seo__card-procents'>
                         <div className="seo__card-procents-values">
                             <p className='seo__card-procents-title'>Keyword 1</p>
-                            <p className='seo__card-procents-value'>100</p>
+                            <p className={activeLines
+                            ? 'seo__card-procents-value seo__card-procents-value--active'
+                            : 'seo__card-procents-value'}>100</p>
                         </div>
                         <div className="seo__card-procents-line">
-                            <span className='seo__card-procents-line--active'></span>
+                            <span className={activeLines 
+                                ? 'seo__card-procents-line--active keyword1-line' 
+                                : 'seo__card-procents-line--active keyword1-line seo__card-procents-line--hidden'}></span>
                         </div>
                     </div>
                     <div className='seo__card-procents'>
                         <div className="seo__card-procents-values">
                             <p className='seo__card-procents-title'>Keyword 2</p>
-                            <p className='seo__card-procents-value'>80</p>
+                            <p className={activeLines
+                            ? 'seo__card-procents-value seo__card-procents-value--active'
+                            : 'seo__card-procents-value'}>80</p>
                         </div>
                         <div className="seo__card-procents-line">
-                            <span className='seo__card-procents-line--active'></span>
+                        <span className={activeLines 
+                            ? 'seo__card-procents-line--active keyword2-line' 
+                            : 'seo__card-procents-line--active keyword2-line seo__card-procents-line--hidden'}></span>
                         </div>
                     </div>
                     <div className='seo__card-procents'>
                         <div className="seo__card-procents-values">
                             <p className='seo__card-procents-title'>Keyword 3</p>
-                            <p className='seo__card-procents-value'>50</p>
+                            <p className={activeLines
+                            ? 'seo__card-procents-value seo__card-procents-value--active'
+                            : 'seo__card-procents-value'}>50</p>
                         </div>
                         <div className="seo__card-procents-line">
-                            <span className='seo__card-procents-line--active'></span>
+                        <span className={activeLines 
+                            ? 'seo__card-procents-line--active keyword3-line' 
+                            : 'seo__card-procents-line--active keyword3-line seo__card-procents-line--hidden'}></span>
                         </div>
                     </div>
                 </div>
@@ -75,7 +102,7 @@ function SeoKeyword({ setModal }) {
                         <p>Product 2</p>
                     </div>
                 </div>
-                <div className="seo__card-body-graphic" onClick={setActiveGrapicHiddent}>
+                <div className="seo__card-body-graphic" onClick={startGraphicAnimation}>
                     <img src={seoKeywordCard2} alt="" className='seo__card-body-img' />
                     <img src={seoKeywordLine} alt="" className={activeGraphic ? 'seo__card-body-line' : 'seo__card-body-line seo__card-body-line--hidden'} />
                     <ul className='seo__card-body-month'>
@@ -86,6 +113,20 @@ function SeoKeyword({ setModal }) {
                         <li className='seo__card-body-monthName'>Mai</li>
                         <li className='seo__card-body-monthName'>Jun</li>
                     </ul>
+                    <div className="seo__card-body-table--vertical">
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                    </div>
+                    <div className="seo__card-body-table--horisontal">
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                        <span className={activeGraphic ? 'seo__card-body-table-line' : ' seo__card-body-table-line seo__card-body-table-line--hidden'}></span>
+                    </div>
                 </div>
                 <p className='seo__card-subtitle'>Strategy Development</p>
                 <div className='seo-btn'>

@@ -60,28 +60,31 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 204px;
     cursor: pointer;
     .seo__card-body-img {
         width: 100%;
-        max-height: 138px;
+        z-index: 100;
+        /* max-height: 138px; */
     }
     .seo__card-body-line {
         position: absolute;
-        width: 100%;
-        height: 106px;
-        top: 37px;
-        transform: translateX(3px);
+        z-index: 100;
+        width: 97%;
+        top: 19px;
+        transform: translateX(1px);
         opacity: 1;
         transition: 0.2s all;
     }
     .seo__card-body-line--hidden {
         opacity: 0;
     }
-    .seo__card-body-month {
+    .seo__card-body-month, .seo__card-body-table--vertical, .seo__card-body-table--horisontal {
         width: 100%;
         display: flex;
         justify-content: start;
         padding: 0 25px;
+        transform: translateY(-33px);
         align-content: baseline;
         .seo__card-body-monthName + .seo__card-body-monthName {
             margin-left: 22px;
@@ -91,6 +94,55 @@
             &:last-child {
                 margin-left: 27px;
             }
+        }
+    }
+    .seo__card-body-table--vertical {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        z-index: 13;
+        height: 115px;
+        transform: translateY(-25px);
+        .seo__card-body-table-line + .seo__card-body-table-line {
+            margin-left: 49px;
+        }
+        .seo__card-body-table-line {
+            justify-content: space-between;
+            width: 2px;
+            height: 121px;
+            background-color: #3C3D4C;
+            transition: 0.5s cubic-bezier(.25,.75,.5,1.25);
+            &:last-child {
+                margin-left: 50px;
+            }
+        }
+        .seo__card-body-table-line--hidden {
+            height: 1px;
+            transition: none;
+        }
+    }
+    .seo__card-body-table--horisontal {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        position: absolute;
+        z-index: 13;
+        height: 132px;
+        transform: translateY(-25px);
+        .seo__card-body-table-line + .seo__card-body-table-line {
+            margin-top: 39px;
+        }
+        .seo__card-body-table-line {
+            justify-content: space-between;
+            width: 100%;
+            height: 2px;
+            background-color: #3C3D4C;
+            transition: 0.5s cubic-bezier(.25,.75,.5,1.25);
+        }
+        .seo__card-body-table-line--hidden {
+            width: 1px;
+            transition: none;
         }
     }
 }
@@ -146,6 +198,7 @@
     padding: 26px;
     border-top: 1px solid #2A2B3A;
     border-bottom: 1px solid #2A2B3A;
+    cursor: pointer;
     .seo__card-procents {
         width: 100%;
         .seo__card-procents-values {
@@ -159,6 +212,15 @@
                 font-size: 16px;
                 line-height: 135%;
                 letter-spacing: -0.01em;
+                transition: 0.2s all;
+            }
+            .seo__card-procents-value--active {
+                position: absolute;
+                right: 25px;
+                transform: scale(1.2);
+                line-height: 135%;
+                letter-spacing: -0.01em;
+                color: #9747FF;
             }
         }
         .seo__card-procents-line {
@@ -166,6 +228,29 @@
             height: 7px;
             background: #3C3D4C;
             border-radius: 100px;
+            position: relative;
+            .seo__card-procents-line--active {
+                position: absolute;
+                left: 0;
+                height: 100%;
+                background: linear-gradient(90deg, #4D3F6F 0%, #9747FF 48.57%);
+                box-shadow: 0px 5px 20px rgba(151, 71, 255, 0.8);
+                border-radius: 100px;
+                transition: 0.5s cubic-bezier(.25,.75,.5,1.25);
+            }
+            .keyword1-line {
+                width: 100%;
+            }
+            .keyword2-line {
+                width: 80%;
+            }
+            .keyword3-line {
+                width: 50%;
+            }
+            .seo__card-procents-line--hidden {
+                width: 1%;
+                transition: 0s all;
+            }
         }
     }
     .seo__card-procents + .seo__card-procents {
