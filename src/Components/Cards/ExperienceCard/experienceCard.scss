@@ -2,13 +2,13 @@
     height: 266px;
     position: relative;
     &:nth-child(1) .card {
-        background-image: url('../../../assets/img/experienceCard1.jpg');
+        background-image: url('../../../assets/img/expCard1.jpg');
     }
     &:nth-child(2) .card {
-        background-image: url('../../../assets/img/experienceCard2.jpg');
+        background-image: url('../../../assets/img/expCard2.jpg');
     }
     &:nth-child(3) .card {
-        background-image: url('../../../assets/img/experienceCard3.jpg');
+        background-image: url('../../../assets/img/expCard3.jpg');
     }
     .card {
         position: relative;
@@ -21,6 +21,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border: 1px solid #2A2B3A;
         .experience__card-item {
             height: 100%;
         }
@@ -58,7 +59,7 @@
         width: 50%;
         height: 50%;
         position: absolute;
-        z-index: 9999999999999999999999;
+        z-index: 999;
         &:first-child, &:nth-child(2) {
             top: 0;
         }

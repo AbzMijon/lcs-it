@@ -52,7 +52,7 @@ function Outsourcing({ setModal }) {
                         <div className="outsourcing__card">
                             <img src={outsourcingCard1} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>C# .NET</h4>
-                            <p className='outsourcing__text'>The power of C# stems from its universality. Because it’s used by various frameworks, the number of things this language can create is indefinite. </p>
+                            <p className='outsourcing__text'>The power of C# stems from its universality. Because it’s used by various frameworks.</p>
                             <div 
                                 id='light' 
                                 className="light" 
@@ -68,7 +68,7 @@ function Outsourcing({ setModal }) {
                         <div className='outsourcing__card'>
                             <img src={outsourcingCard2} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>React/ Angular </h4>
-                            <p className='outsourcing__text'>React.js/AngularJS is one of the most popular toolkits for web application development. Based on great technical strength and open source code</p>
+                            <p className='outsourcing__text'>React.js/AngularJS is one of the most popular toolkits for web development. Based on open source code</p>
                             <div 
                                 id='light' 
                                 className="light" 
@@ -84,7 +84,7 @@ function Outsourcing({ setModal }) {
                         <div className='outsourcing__card'>
                             <img src={outsourcingCard3} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>Android/ IOS</h4>
-                            <p className='outsourcing__text'>The unique expertise of our mobile app outsourcing in various technologies and industries allows us to be a reliable partner in the launch and development of your mobile application.</p>
+                            <p className='outsourcing__text'>Expertise in the industry allows us to be a reliable partner in the development of your mobile application.</p>
                             <div 
                                 id='light' 
                                 className="light" 
@@ -100,7 +100,7 @@ function Outsourcing({ setModal }) {
                         <div className='outsourcing__card'>
                             <img src={outsourcingCard4} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>Java</h4>
-                            <p className='outsourcing__text'>Java is the world’s most commonly used language for developing corporate solutions. We can help your business hire Java developers with vast experience and competence.</p>
+                            <p className='outsourcing__text'>Java is the world’s most commonly used language for developing corporate solutions.</p>
                             <div 
                                 id='light' 
                                 className="light" 
@@ -116,7 +116,7 @@ function Outsourcing({ setModal }) {
                         <div className='outsourcing__card'>
                             <img src={outsourcingCard5} alt="" className="outsourcing__img" />
                             <h4 className='outsourcing__card-name'>PHP</h4>
-                            <p className='outsourcing__text'>PHP is one of the main backend languages. It is applied in projects of all scales.  In fact, it’s hard to find a site that doesn’t use this language.</p>
+                            <p className='outsourcing__text'>PHP is one of the main backend languages. It’s hard to find a site that doesn’t use this language.</p>
                             <div 
                                 id='light' 
                                 className="light" 

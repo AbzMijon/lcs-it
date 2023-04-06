@@ -10,6 +10,9 @@ import activity from '../../../assets/img/Activity.png';
 import overview from '../../../assets/img/Overview.png';
 import logo from '../../../assets/svg/lcsItLogo.svg';
 import ContactBtn from '../../ContactBtn/ContactBtn';
+import Lottie from "lottie-react";
+import activityLottie from '../../../assets/lottieAnimations/activityLottie.json';
+import overviewLottie from '../../../assets/lottieAnimations/overviewLottie.json';
 
 function Development({ setModal }) {
 
@@ -47,13 +50,34 @@ function Development({ setModal }) {
         }
     }, []);
 
+/*     const interactivity = {
+        mode: "scroll",
+        actions: [
+            {
+                visibility: [0, 0.2],
+                type: "seek",
+                frames: [0],
+            },
+            {
+                visibility: [0.2, 0.45],
+                type: "seek",
+                frames: [0, 45],
+            },
+            {
+                visibility: [0.45, 1.0],
+                type: "loop",
+                frames: [45, 60],
+            },
+        ],
+    }; */
+
     return (
         <section className='development'>
             <h2 className='development__title'>Software development</h2>
             <div className="development__code">
                 <div className="development__blocks">
                     <div className="development__blocks-overview">
-                        <img src={overview} alt="" />
+                        <Lottie animationData={overviewLottie} loop={false}  /* interactivity={interactivity} */ />
                     </div>
                     <div className="development__blocks-code">
                         <div className="development__code-left">
@@ -222,7 +246,7 @@ function Development({ setModal }) {
                     </div>
                     <div className="development__blocks-activityAndDevelopers">
                         <div className="development__blocks-activity">
-                            <img src={activity} alt="" />
+                            <Lottie animationData={activityLottie} loop={false} /* interactivity={interactivity} */ />
                         </div>
                         <div className="development__blocks-developers">
                             <div className="development__developers-head">
