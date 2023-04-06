@@ -12,6 +12,8 @@ import mongoIcon from '../../../assets/svg/mongodb.svg';
 import nestIcon from '../../../assets/svg/nest-js.svg';
 import Marquee from "react-fast-marquee";
 import ExperienceCard from '../../Cards/ExperienceCard/ExperienceCard';
+import ExperienceSkills from '../../Cards/ExperienceSkills/ExperienceSkills';
+import { SKILLS_CARDS } from '../../../constants/skillsCards';
 
 function Experience() {
 
@@ -59,98 +61,14 @@ function Experience() {
                 gradient={false}
                 className='swiper'
             >
-                {/* {SKILLS_CARDS && SKILLS_CARDS.map((card) => {
+                {SKILLS_CARDS && SKILLS_CARDS.map((card) => {
                     return (
-
+                        <ExperienceSkills id={card.id} src={card.src} label={card.label} />
                     )
-                })} */}
-                <div className='experience__skills-card'>
-                    <img src={cssIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>CSS 3</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={figmaIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Figma</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={gitIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Git</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mssqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MSSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={pgsqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>PostgreSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mongoIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MongoDB</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={nestIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Nest.Js</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={cssIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>CSS 3</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={figmaIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Figma</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={gitIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Git</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mssqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MSSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={pgsqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>PostgreSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mongoIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MongoDB</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={nestIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Nest.Js</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={cssIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>CSS 3</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={figmaIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Figma</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={gitIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Git</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mssqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MSSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={pgsqlIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>PostgreSQL</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={mongoIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>MongoDB</h5>
-                </div>
-                <div className='experience__skills-card'>
-                    <img src={nestIcon} alt="" className='experience__skills-img' />
-                    <h5 className='experience__skills-name'>Nest.Js</h5>
-                </div>
+                })}
             </Marquee>
         </section>
-    ) 
+    )
 }
 
 export default Experience;

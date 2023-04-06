@@ -1,0 +1,12 @@
+.experience__skills-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    white-space: nowrap;
+    margin-right: 70px;
+    .experience__skills-img {
+        margin-right: 25px;
+    }
+}

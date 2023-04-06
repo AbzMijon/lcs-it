@@ -77,7 +77,11 @@ function Development({ setModal }) {
             <div className="development__code">
                 <div className="development__blocks">
                     <div className="development__blocks-overview">
-                        <Lottie animationData={overviewLottie} loop={false}  /* interactivity={interactivity} */ />
+                        <Lottie 
+                            animationData={overviewLottie} 
+                            loop={false}  
+                            /* interactivity={interactivity} */
+                        />
                     </div>
                     <div className="development__blocks-code">
                         <div className="development__code-left">
