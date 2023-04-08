@@ -4,28 +4,21 @@ import userActive from '../../../assets/img/userActive.png';
 import user from '../../../assets/svg/user.svg';
 import blocknot from '../../../assets/svg/blaknot.svg';
 import rocket from '../../../assets/svg/rocket.svg';
-import circleIcon1 from '../../../assets/svg/facebookPurple.svg';
-import circleIcon2 from '../../../assets/svg/ELEMENTS.svg';
-import circleIcon3 from '../../../assets/svg/telegaPurple.svg';
-import circleIcon4 from '../../../assets/svg/Subtract.svg';
-import circleIcon5 from '../../../assets/svg/Group 9.svg';
-import circleIcon6 from '../../../assets/svg/Group 81.svg';
-import circleIcon7 from '../../../assets/svg/isntPurple.svg';
-import moonkle from '../../../assets/svg/moonkle.svg';
-import softTech from '../../../assets/svg/softTech.svg';
-import plaid from '../../../assets/svg/plaid.svg';
-import estimation from '../../../assets/img/estimation.png';
-import teamSelection from '../../../assets/img/teamSelection.png';
-import contract from '../../../assets/img/contract.png';
-import payment from '../../../assets/img/payment.png';
-import logo from '../../../assets/svg/lcsItLogo.svg';
 import schemeActiveExample from '../../../assets/img/schemeActiveExample.png';
 import Lottie from "lottie-react";
 import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
+import { motion } from 'framer-motion';
+import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Scheme() {
     return (
-        <section className='scheme'>
+        <motion.section
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.2, once: true }} 
+            className='scheme'
+            variants={motionAnimation}
+        >
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">
                 <div className="scheme__list">
@@ -78,7 +71,7 @@ function Scheme() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

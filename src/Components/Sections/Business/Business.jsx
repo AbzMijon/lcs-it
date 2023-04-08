@@ -4,6 +4,8 @@ import teamBg from '../../../assets/img/teamBg.png';
 import grid from '../../../assets/img/grid.png';
 import outsourcingCard1 from '../../../assets/svg/outsorcingCard6.svg';
 import modelOut from '../../../assets/svg/modelOut.svg';
+import { motion } from 'framer-motion';
+import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Business() {
 
@@ -19,7 +21,13 @@ function Business() {
     }
 
     return (
-        <section className='business'>
+        <motion.section 
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.2, once: true }}
+            className='business'
+            variants={motionAnimation}
+        >
             <h2 className='business__title'>Business model</h2>
             <div className="business__model">
                 <div className="business__big-coubes" onMouseMove={onMouseMove}>
@@ -78,7 +86,7 @@ function Business() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

@@ -9,6 +9,8 @@ import { setActiveButton } from '../../../store/reducers/seoReducer';
 import SeoAnalysis from '../../SeoRows/SeoAnalysis/SeoAnalysis';
 import SeoKeyword from '../../SeoRows/SeoKeyword/SeoKeyword';
 import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
+import { motion } from 'framer-motion';
+import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Seo({ setModal }) {
     const dispatch = useDispatch();
@@ -29,7 +31,13 @@ function Seo({ setModal }) {
     }
 
     return (
-        <section className='seo'>
+        <motion.section 
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.3, once: true }}
+            className='seo'
+            variants={motionAnimation}
+        >
             <h2 className='seo__title'>SEO</h2>
             <div className="seo__navigate">
                 <div className="seo__titles">
@@ -66,7 +74,7 @@ function Seo({ setModal }) {
                     <HiArrowRight className='seo__pagination-icon' />
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './experienceCard.scss';
+import { motion } from 'framer-motion';
 
-function ExperienceCard({ src, label, onMouseMove, mouse }) {
+const ExperienceCard = forwardRef(({ src, label, onMouseMove, mouse }, ref) => {
     return (
-        <li className='experience__card' onMouseMove={onMouseMove} >
+        <li className='experience__card' onMouseMove={onMouseMove} ref={ref} >
             <span></span>
             <span></span>
             <span></span>
@@ -19,6 +20,7 @@ function ExperienceCard({ src, label, onMouseMove, mouse }) {
             </div>
         </li>
     )
-}
+});
 
 export default ExperienceCard;
+export const MExperienceCard = motion(ExperienceCard);

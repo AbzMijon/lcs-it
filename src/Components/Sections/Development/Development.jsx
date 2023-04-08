@@ -6,13 +6,13 @@ import developers2 from '../../../assets/svg/developers2.svg';
 import developers3 from '../../../assets/svg/developers3.svg';
 import developers4 from '../../../assets/svg/developers4.svg';
 import searchIcon from '../../../assets/svg/search-normal.svg';
-import activity from '../../../assets/img/Activity.png';
-import overview from '../../../assets/img/Overview.png';
 import logo from '../../../assets/svg/lcsItLogo.svg';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Lottie from "lottie-react";
 import activityLottie from '../../../assets/lottieAnimations/activityLottie.json';
 import overviewLottie from '../../../assets/lottieAnimations/overviewLottie.json';
+import { motion } from 'framer-motion';
+import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Development({ setModal }) {
 
@@ -50,37 +50,20 @@ function Development({ setModal }) {
         }
     }, []);
 
-/*     const interactivity = {
-        mode: "scroll",
-        actions: [
-            {
-                visibility: [0, 0.2],
-                type: "seek",
-                frames: [0],
-            },
-            {
-                visibility: [0.2, 0.45],
-                type: "seek",
-                frames: [0, 45],
-            },
-            {
-                visibility: [0.45, 1.0],
-                type: "loop",
-                frames: [45, 60],
-            },
-        ],
-    }; */
-
     return (
-        <section className='development'>
-            <h2 className='development__title'>Software development</h2>
+        <motion.section 
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.2, once: true }}
+            className='development'
+        >
+            <motion.h2 variants={motionAnimation} className='development__title'>Software development</motion.h2>
             <div className="development__code">
-                <div className="development__blocks">
+                <motion.div className="development__blocks" variants={motionAnimation}>
                     <div className="development__blocks-overview">
                         <Lottie 
                             animationData={overviewLottie} 
                             loop={false}  
-                            /* interactivity={interactivity} */
                         />
                     </div>
                     <div className="development__blocks-code">
@@ -301,16 +284,21 @@ function Development({ setModal }) {
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div className="development__keyboard">
-                    <img src={developmentKeyboard} alt="" />
-                    <div className="development__keyboard-info">
+                </motion.div>
+                <motion.div 
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ amount: 0.2, once: true }}
+                    className="development__keyboard"
+                >
+                    <motion.img src={developmentKeyboard} alt="" variants={motionAnimation} />
+                    <motion.div className="development__keyboard-info" variants={motionAnimation}>
                         <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
                         <ContactBtn setModal={setModal}/>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

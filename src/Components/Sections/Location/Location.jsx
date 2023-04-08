@@ -8,6 +8,8 @@ import ukFlag from '../../../assets/svg/uk.svg';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveCountry } from '../../../store/reducers/locationReducer';
+import { motion } from 'framer-motion';
+import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Location({ setModal }) {
 
@@ -15,10 +17,16 @@ function Location({ setModal }) {
     const locationButtons = useSelector((state) => state.locationReducer.locationButtons);
 
     return (
-        <section className='location' id='contacts'>
-            <h2 className='location__title'>Our Locations</h2>
+        <motion.section
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.3, once: true }}
+            className='location' 
+            id='contacts'
+        >
+            <motion.h2 className='location__title' variants={motionAnimation}>Our Locations</motion.h2>
             <div className="location__content">
-                <div className="location__selector">
+                <motion.div className="location__selector" variants={motionAnimation}>
                     {locationButtons && locationButtons.map((locationBtn) => {
                         return (
                             <div 
@@ -31,8 +39,8 @@ function Location({ setModal }) {
                             </div>
                         )
                     })}
-                </div>
-                <div className="location__card">
+                </motion.div>
+                <motion.div className="location__card" variants={motionAnimation}>
                     <ul>
                         <li className='location__card-item'>
                             <img src={locationPhone} alt="" className='location__card-icon' />
@@ -50,9 +58,9 @@ function Location({ setModal }) {
                     <div className="location__btn">
                         <ContactBtn setModal={setModal}/>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
