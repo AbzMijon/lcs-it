@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './scheme.scss';
 import userActive from '../../../assets/img/userActive.png';
 import user from '../../../assets/svg/user.svg';
@@ -7,10 +7,20 @@ import rocket from '../../../assets/svg/rocket.svg';
 import schemeActiveExample from '../../../assets/img/schemeActiveExample.png';
 import Lottie from "lottie-react";
 import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 function Scheme() {
+    const ref = useRef();
+    const isInView = useInView(ref);
+    const [animationStart, setAnimationStart] = useState(false);
+    useEffect(() => {
+        if(isInView) {
+            setAnimationStart(true);
+        }
+    }, [isInView])
     return (
         <motion.section
             initial='hidden'
@@ -57,7 +67,7 @@ function Scheme() {
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Discovery call</h3>
-                            <p className='scheme__row-text'>Andrew - our CEO will arrange a video meeting with you in order to clarify the project assumptions</p>
+                            <p className='scheme__row-text' ref={ref}>Andrew - our CEO will arrange a video meeting with you in order to clarify the project assumptions</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Project estimation</h3>
@@ -67,7 +77,9 @@ function Scheme() {
                 </div>
                 <div className="scheme__ilustration">
                     <div className="scheme__ilustration-content">
-                        <Lottie animationData={animation} loop={true} />
+                        {animationStart &&
+                            <Lottie animationData={animation} loop={false} />
+                        }
                     </div>
                 </div>
             </div>
