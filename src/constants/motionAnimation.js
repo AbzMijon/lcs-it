@@ -3,7 +3,7 @@ export const motionAnimation = {
         opacity: 0,
     },
     visible: {
-        transition: { delay: 0.1, duration: 1.2, },
+        transition: { delay: 0.2, duration: 1.2, },
         opacity: 1,
     },
 }

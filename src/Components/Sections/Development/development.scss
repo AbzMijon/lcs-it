@@ -369,8 +369,7 @@
     overflow: hidden;
     letter-spacing: none;
     animation:
-    typing 0.5s steps(30, end);
-    animation-delay: 0s;
+    typing 0.3s steps(20, end);
     white-space: nowrap;
     font-size: 14px;
     line-height: 21px;
@@ -382,49 +381,42 @@
 }
 .code__str2 {
     animation:
-    typing1 0.5s steps(30, end);
-    animation-delay: 0.5s;
+    typing1 0.3s steps(20, end);
     margin-left: 50px;
 }
 .code__str3 {
     animation:
-    typing2 0.5s steps(30, end);
-    animation-delay: 1s;
+    typing2 0.3s steps(20, end);
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str4 {
     animation:
-    typing3 0.5s steps(30, end);
-    animation-delay: 1.5s;
+    typing3 0.3s steps(20, end);
     white-space: nowrap;
     margin-left: 70px;
 }
 .code__str5 {
     animation:
     typing4 0.5s steps(30, end);
-    animation-delay: 2s;
     white-space: nowrap;
     margin-left: 80px;
 }
 .code__str6 {
     animation:
     typing5 0.5s steps(30, end);
-    animation-delay: 2.5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str7 {
     animation:
     typing6 0.5s steps(30, end);
-    animation-delay: 3s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str8 {
     animation:
     typing7 0.5s steps(30, end);
-    animation-delay: 3.5s;
     white-space: nowrap;
     margin-left: 110px;
 }
@@ -518,4 +510,8 @@
 }
 .atribut-value {
     color: #4986CC;
+}
+
+.development__blocks-overview {
+    width: 307px;
 }

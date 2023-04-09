@@ -13,14 +13,17 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 
 function Scheme() {
+
     const ref = useRef();
     const isInView = useInView(ref);
     const [animationStart, setAnimationStart] = useState(false);
+    
     useEffect(() => {
         if(isInView) {
             setAnimationStart(true);
         }
     }, [isInView])
+
     return (
         <motion.section
             initial='hidden'
