@@ -24,7 +24,7 @@ function Business() {
         <motion.section 
             initial='hidden'
             whileInView='visible'
-            viewport={{ amount: 0.2, once: true }}
+            viewport={{ amount: 0.4, once: true }}
             className='business'
             variants={motionAnimation}
         >

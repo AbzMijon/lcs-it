@@ -18,7 +18,7 @@
     .main__scroll-icon {
         font-size: 19px;
         margin-left: 10px;
-        animation: 0.5s linear 1s infinite alternate arrow;
+        animation: 0.5s cubic-bezier(.51,.92,.24,1.15) 1s infinite alternate arrow;
     }
 }
 

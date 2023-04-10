@@ -201,161 +201,160 @@
 @keyframes typing {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 130px;
-        border-right: 1px solid transparent;
     }
 }
 @keyframes typing1 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+        border-right: .13em solid orange;
     }
     to { 
         width: 140px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing2 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+        border-right: .13em solid orange;
     }
     to { 
         width: 60px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing3 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+        border-right: .13em solid orange;
     }
     to { 
-        width: 140px;
-        border-right: 1px solid transparent;
+        width: 160px;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing4 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+        border-right: .13em solid orange;
     }
     to { 
-        width: 300px;
-        border-right: 1px solid transparent;
+        width: 650px;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing5 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+        border-right: .13em solid orange;
     }
     to { 
         width: 500px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing6 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 300px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing7 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
-        width: 350px;
-        border-right: 1px solid transparent;
+        width: 360px;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing8 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 500px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing9 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 70px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing10 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 70px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing11 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 70px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing12 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
-        width: 220px;
-        border-right: 1px solid transparent;
+        width: 250px;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing13 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 50px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing14 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
-        width: 220px;
-        border-right: 1px solid transparent;
+        width: 250px;
+        border-right: .13em solid orange;
     }
 }
 @keyframes typing15 {
     from { 
         width: 0;
-        border-right: 1px solid orange;
+       border-right: .13em solid orange;
     }
     to { 
         width: 70px;
-        border-right: 1px solid transparent;
+        border-right: .13em solid orange;
     }
 }
 
@@ -369,7 +368,7 @@
     overflow: hidden;
     letter-spacing: none;
     animation:
-    typing 0.3s steps(20, end);
+    typing 0.5s steps(20, end);
     white-space: nowrap;
     font-size: 14px;
     line-height: 21px;
@@ -381,18 +380,18 @@
 }
 .code__str2 {
     animation:
-    typing1 0.3s steps(20, end);
+    typing1 0.5s steps(20, end);
     margin-left: 50px;
 }
 .code__str3 {
     animation:
-    typing2 0.3s steps(20, end);
+    typing2 0.5s steps(20, end);
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str4 {
     animation:
-    typing3 0.3s steps(20, end);
+    typing3 0.5s steps(20, end);
     white-space: nowrap;
     margin-left: 70px;
 }
@@ -423,28 +422,24 @@
 .code__str9 {
     animation:
     typing8 0.5s steps(30, end);
-    animation-delay: 4s;
     white-space: nowrap;
     margin-left: 110px;
 }
 .code__str10 {
     animation:
     typing9 0.5s steps(30, end);
-    animation-delay: 4.5s;
     white-space: nowrap;
     margin-left: 100px;
 }
 .code__str11 {
     animation:
     typing10 0.5s steps(30, end);
-    animation-delay: 5s;
     white-space: nowrap;
     margin-left: 90px;
 }
 .code__str12 {
     animation:
     typing11 0.5s steps(30, end);
-    animation-delay: 5.5s;
     white-space: nowrap;
     margin-left: 80px;
 }
@@ -452,7 +447,6 @@
     animation:
     typing12 0.5s steps(30, end),
     blink-caret .6s step-end infinite;
-    animation-delay: 6s;
     white-space: nowrap;
     margin-left: 70px;
 }
@@ -460,14 +454,12 @@
     animation:
     typing13 0.5s steps(30, end),
     blink-caret 6.5s step-end infinite;
-    animation-delay: 6.5s;
     white-space: nowrap;
     margin-left: 60px;
 }
 .code__str15 {
     animation:
     typing14 0.5s steps(30, end);
-    animation-delay: 7s;
     white-space: nowrap;
     margin-left: 50px;
 }
@@ -475,9 +467,9 @@
     animation:
     typing15 0.5s steps(30, end),
     blink-caret .7s step-end infinite;
-    animation-delay: 7.5s;
     white-space: nowrap;
-    /* border-right: .15em solid orange; */
+    padding-right: 5px;
+    border-right: .13em solid orange;
     width: fit-content;
 }
 

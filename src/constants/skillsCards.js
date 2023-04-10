@@ -5,6 +5,14 @@ import mssqlIcon from '../assets/svg/mssql.svg';
 import pgsqlIcon from '../assets/svg/pgsql.svg';
 import mongoIcon from '../assets/svg/mongodb.svg';
 import nestIcon from '../assets/svg/nest-js.svg';
+import dockerIcon from '../assets/svg/skillsDocker.svg';
+import htmlIcon from '../assets/svg/skillsHtml.svg';
+import tsIcon from '../assets/svg/skillsTypescript.svg';
+import reactIcon from '../assets/svg/skillsReactjs.svg';
+import tailwindIcon from '../assets/svg/skillsTailwindcss.svg';
+import vueIcon from '../assets/svg/skillsVue.svg';
+import nodejsIcon from '../assets/svg/skillsNodejs.svg';
+import jsIcon from '../assets/svg/skillsJs.svg';
 
 export const SKILLS_CARDS = [
     {
@@ -44,37 +52,42 @@ export const SKILLS_CARDS = [
     },
     {
         id: 7,
-        label: 'CSS 3',
-        src: cssIcon,
+        label: 'Docker',
+        src: dockerIcon,
     },
     {
         id: 8,
-        label: 'Figma',
-        src: figmaIcon,
+        label: 'HTML 5',
+        src: htmlIcon,
     },
     {
         id: 9,
-        label: 'Git',
-        src: gitIcon,
+        label: 'TypeScript',
+        src: tsIcon,
     },
     {
         id: 10,
-        label: 'MSSQL',
-        src: mssqlIcon,
+        label: 'React',
+        src: reactIcon,
     },
     {
         id: 11,
-        label: 'PostgreSQL',
-        src: pgsqlIcon,
+        label: 'TailwindCSS',
+        src: tailwindIcon,
     },
     {
         id: 12,
-        label: 'MongoDB',
-        src: mongoIcon,
+        label: 'Vue',
+        src: vueIcon,
     },
     {
         id: 13,
-        label: 'Nest.Js',
-        src: nestIcon,
+        label: 'Node.Js',
+        src: nodejsIcon,
+    },
+    {
+        id: 14,
+        label: 'JavaScript',
+        src: jsIcon,
     },
 ]

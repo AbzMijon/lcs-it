@@ -39,21 +39,21 @@ function Development({ setModal }) {
         const { scrollHeight, scrollTop, clientHeight } = event.target.scrollingElement;
         if(scrollTop >= VIEW_BLOCK1_IN_HTML_SECTION) {
             setTimeout(() => setCodeStr1(true), 1000);
-            setTimeout(() => setCodeStr2(true), 2000);
-            setTimeout(() => setCodeStr3(true), 3000);
-            setTimeout(() => setCodeStr4(true), 4000);
-            setTimeout(() => setCodeStr5(true), 5000);
-            setTimeout(() => setCodeStr6(true), 6000);
-            setTimeout(() => setCodeStr7(true), 7000);
-            setTimeout(() => setCodeStr8(true), 8000);
-            setTimeout(() => setCodeStr9(true), 9000);
-            setTimeout(() => setCodeStr10(true), 10000);
-            setTimeout(() => setCodeStr11(true), 11000);
-            setTimeout(() => setCodeStr12(true), 12000);
-            setTimeout(() => setCodeStr13(true), 13000);
-            setTimeout(() => setCodeStr14(true), 14000);
-            setTimeout(() => setCodeStr15(true), 15000);
-            setTimeout(() => setCodeStr16(true), 16000);
+            setTimeout(() => setCodeStr2(true), 1500);
+            setTimeout(() => setCodeStr3(true), 2000);
+            setTimeout(() => setCodeStr4(true), 2500);
+            setTimeout(() => setCodeStr5(true), 3000);
+            setTimeout(() => setCodeStr6(true), 3500);
+            setTimeout(() => setCodeStr7(true), 4000);
+            setTimeout(() => setCodeStr8(true), 4500);
+            setTimeout(() => setCodeStr9(true), 5000);
+            setTimeout(() => setCodeStr10(true), 5500);
+            setTimeout(() => setCodeStr11(true), 6000);
+            setTimeout(() => setCodeStr12(true), 6500);
+            setTimeout(() => setCodeStr13(true), 7000);
+            setTimeout(() => setCodeStr14(true), 7500);
+            setTimeout(() => setCodeStr15(true), 8000);
+            setTimeout(() => setCodeStr16(true), 8500);
         }
     }
 
@@ -205,120 +205,101 @@ function Development({ setModal }) {
                                         }
                                         {codeStr9 &&
                                             <>
-
+                                                <span className='code__str-num'>9</span> 
+                                                <p className='code__str9'>
+                                                    <span className='tag'>{'<'}</span>
+                                                    <span className='default-name-tage'>link </span>
+                                                    <span className='atribut'>rel</span>
+                                                    <span className='atribut-value'>="icon" </span>
+                                                    <span className='atribut'>href</span>
+                                                    <span className='atribut-value'>="./favicon.ico" </span>
+                                                    <span className='atribut'>type</span>
+                                                    <span className='atribut-value'>="image/x-icon"</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr10 &&
                                             <>
-
+                                                <span className='code__str-num'>10</span> 
+                                                <p className='code__str10'>
+                                                    <span className='tag'>{'</'}</span>
+                                                    <span className='default-name-tage'>head</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr11 &&
                                             <>
-
+                                                <span className='code__str-num'>11</span> 
+                                                <p className='code__str11'>
+                                                    <span className='tag'>{'<'}</span>
+                                                    <span className='default-name-tage'>body</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr12 &&
                                             <>
-
+                                                <span className='code__str-num'>12</span> 
+                                                <p className='code__str12'>
+                                                    <span className='tag'>{'<'}</span>
+                                                    <span className='default-name-tage'>main</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr13 &&
                                             <>
-
+                                                <span className='code__str-num'>13</span> 
+                                                <p className='code__str13'>
+                                                    <span className='tag'>{'<'}</span>
+                                                    <span className='default-name-tage'>h1</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                    <span className='tag-text'>Welcome to My Website</span>
+                                                    <span className='tag'>{'</'}</span>
+                                                    <span className='default-name-tage'>h1</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr14 &&
                                             <>
-
+                                                <span className='code__str-num'>14</span> 
+                                            <p className='code__str14'>
+                                                <span className='tag'>{'</'}</span>
+                                                <span className='default-name-tage'>main</span>
+                                                <span className='tag'>{'>'}</span>
+                                            </p>
                                             </>
                                         }
                                         {codeStr15 &&
                                             <>
-
+                                                <span className='code__str-num'>15</span> 
+                                                <p className='code__str15'>
+                                                    <span className='tag'>{'<'}</span>
+                                                    <span className='default-name-tage'>script </span>
+                                                    <span className='atribut'>src</span>
+                                                    <span className='atribut-value'>="index.js"</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                    <span className='tag'>{'</'}</span>
+                                                    <span className='default-name-tage'>script</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                         {codeStr16 &&
                                             <>
-
+                                                <span className='code__str-num'>16</span> 
+                                                <p className='code__str16'>
+                                                    <span className='tag'>{'</'}</span>
+                                                    <span className='default-name-tage'>body</span>
+                                                    <span className='tag'>{'>'}</span>
+                                                </p>
                                             </>
                                         }
                                     <>
-                                        
-                                    
                                     </>
-                                
-                                {/* {viewThirdBlock &&
-                                    <>
-                                        <span className='code__str-num'>9</span> 
-                                        <p className='code__str9'>
-                                            <span className='tag'>{'<'}</span>
-                                            <span className='default-name-tage'>link </span>
-                                            <span className='atribut'>rel</span>
-                                            <span className='atribut-value'>="icon" </span>
-                                            <span className='atribut'>href</span>
-                                            <span className='atribut-value'>="./favicon.ico" </span>
-                                            <span className='atribut'>type</span>
-                                            <span className='atribut-value'>="image/x-icon"</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>10</span> 
-                                        <p className='code__str10'>
-                                            <span className='tag'>{'</'}</span>
-                                            <span className='default-name-tage'>head</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>11</span> 
-                                        <p className='code__str11'>
-                                            <span className='tag'>{'<'}</span>
-                                            <span className='default-name-tage'>body</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>12</span> 
-                                        <p className='code__str12'>
-                                            <span className='tag'>{'<'}</span>
-                                            <span className='default-name-tage'>main</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                    </>
-                                }
-                                {viewFouthBlock &&
-                                    <>
-                                        <span className='code__str-num'>13</span> 
-                                        <p className='code__str13'>
-                                            <span className='tag'>{'<'}</span>
-                                            <span className='default-name-tage'>h1</span>
-                                            <span className='tag'>{'>'}</span>
-                                            <span className='tag-text'>Welcome to My Website</span>
-                                            <span className='tag'>{'</'}</span>
-                                            <span className='default-name-tage'>h1</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>14</span> 
-                                        <p className='code__str14'>
-                                            <span className='tag'>{'</'}</span>
-                                            <span className='default-name-tage'>main</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>15</span> 
-                                        <p className='code__str15'>
-                                            <span className='tag'>{'<'}</span>
-                                            <span className='default-name-tage'>script </span>
-                                            <span className='atribut'>src</span>
-                                            <span className='atribut-value'>="index.js"</span>
-                                            <span className='tag'>{'>'}</span>
-                                            <span className='tag'>{'</'}</span>
-                                            <span className='default-name-tage'>script</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                        <span className='code__str-num'>16</span> 
-                                        <p className='code__str16'>
-                                            <span className='tag'>{'</'}</span>
-                                            <span className='default-name-tage'>body</span>
-                                            <span className='tag'>{'>'}</span>
-                                        </p>
-                                    </>
-                                } */}
                             </div>
 
                         </div>

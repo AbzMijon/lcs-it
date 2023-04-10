@@ -10,6 +10,7 @@ import pin from '../../../assets/img/Pin.png';
 import './design.scss';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import { SKILLS_TYPES } from '../../../constants/skillsTypes';
 
 function Design() {
     return (
@@ -30,62 +31,14 @@ function Design() {
                     className='swiper'
                     direction='right'
                 >
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Graphic Design</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Branding</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Competitor Analysis</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Packaging Design</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Social Media</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Digital Advertising</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>UX/UI</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Graphic Design</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Branding</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Competitor Analysis</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Packaging Design</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Social Media</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>Digital Advertising</p>
-                    </li>
-                    <li className='design__types-item'>
-                        <FiArrowUpRight className='design__types-arrow'/>
-                        <p>UX/UI</p>
-                    </li>
+                    {SKILLS_TYPES && SKILLS_TYPES.map((skillType) => {
+                        return (
+                            <li className='design__types-item' key={skillType.id}>
+                                <FiArrowUpRight className='design__types-arrow'/>
+                                <p>{skillType.label}</p>
+                            </li>
+                        )
+                    })}
                 </Marquee>
             </motion.ul>
             <motion.div variants={motionAnimation}>
