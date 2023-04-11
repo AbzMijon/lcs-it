@@ -16,13 +16,45 @@ function Scheme() {
 
     const ref = useRef();
     const isInView = useInView(ref);
+
+    const scrollRef = useRef();
+    const startScroll = useInView(scrollRef);
+
     const [animationStart, setAnimationStart] = useState(false);
+    const [animationScrollAmount, setAnimationScrollAmount] = useState(0);
+    const [scrollAnimation, setScrollAnimation] = useState(false);
     
     useEffect(() => {
         if(isInView) {
             setAnimationStart(true);
         }
-    }, [isInView])
+    }, [isInView]);
+
+    useEffect(() => {
+        if(startScroll && !scrollAnimation) {
+            setAnimationScrollAmount(0);
+            document.body.className = 'body-scroll-hidden';
+        }
+    }, [startScroll]);
+
+    useEffect(() => {
+        if(animationScrollAmount === 3) {
+            document.body.className = 'body-scroll-default';
+            setAnimationScrollAmount(0);
+            setScrollAnimation(true);
+        }   else if(animationScrollAmount === -1) {
+                document.body.className = 'body-scroll-default';
+                setAnimationScrollAmount(0);
+        }
+    }, [animationScrollAmount]);
+
+    const setScrollAmount = (scrollDown) => {
+        if(scrollDown.deltaY === -100) {
+            setAnimationScrollAmount((prev) => prev - 1);
+        }   else {
+                setAnimationScrollAmount((prev) => prev + 1);
+        }
+    }
 
     return (
         <motion.section
@@ -31,6 +63,7 @@ function Scheme() {
             viewport={{ amount: 0.2, once: true }} 
             className='scheme'
             variants={motionAnimation}
+            onWheel={setScrollAmount}
         >
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">
@@ -74,7 +107,7 @@ function Scheme() {
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Project estimation</h3>
-                            <p className='scheme__row-text'>On the basis of the collected information, we will prepare an estimate of the costs and  duration of the project</p>
+                            <p ref={scrollRef} className='scheme__row-text'>On the basis of the collected information, we will prepare an estimate of the costs and  duration of the project</p>
                         </li>
                     </ul>
                 </div>

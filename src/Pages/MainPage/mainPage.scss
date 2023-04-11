@@ -7,6 +7,11 @@
     100% { transform: translateY(10px); }
 }
 
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .main {
     z-index: 3;
     .main__scroll-text {
@@ -35,4 +40,7 @@
         gap: 30px;
         min-width: none;
     }
+}
+.body-scroll-hidden {
+    overflow: hidden;
 }
