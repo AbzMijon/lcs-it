@@ -2,6 +2,7 @@ import React from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import promotionCard1 from '../../../assets/img/promotionCard1.png';
 import promotionCard2 from '../../../assets/img/promotionCard2.png';
+import promotionCard3 from '../../../assets/img/promotionCard3.png';
 import './seoPromotion.scss';
 import { useState } from 'react';
 
@@ -41,7 +42,7 @@ function SeoPromotion({ setModal }) {
             <li className='seo__card'>
                 <p className="seo__card-title">Website's structure construction</p>
                 <div className="seo__card-body">
-                    <img src={promotionCard1} alt="" className='seo__card-body-img' />
+                    <img src={promotionCard3} alt="" className='seo__card-body-img seo__card-body-structure' />
                 </div>
                 <p className='seo__card-subtitle'>Semantic Core Formation</p>
                 <div className='seo-btn'>
