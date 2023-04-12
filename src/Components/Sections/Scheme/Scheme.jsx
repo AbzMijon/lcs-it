@@ -22,6 +22,7 @@ function Scheme() {
 
     const [animationStart, setAnimationStart] = useState(false);
     const [animationScrollAmount, setAnimationScrollAmount] = useState(0);
+    console.log(animationScrollAmount);
     const [scrollAnimation, setScrollAnimation] = useState(false);
     
     useEffect(() => {
@@ -85,12 +86,12 @@ function Scheme() {
                             <img src={userActive} alt="" className='scheme__row-icon scheme-user--active' />
                             <img src={user} alt="" className='scheme__row-icon scheme-user' />
                         </div>
-                        <div className='scheme__row-line scheme__row-line--active'></div>
+                        <div className={animationScrollAmount === 1 ? 'scheme__row-line scheme__row-line--active' : 'scheme__row-line'}></div>
 
                         <div className="scheme__row-icon-wrap">
                             <img src={blocknot} alt="" className='scheme__row-icon' />
                         </div>
-                        <div className='scheme__row-line'></div>
+                        <div className={animationScrollAmount === 2 ? 'scheme__row-line scheme__row-line--active' : 'scheme__row-line'}></div>
 
                         <div className="scheme__row-icon-wrap">
                             <img src={rocket} alt="" className='scheme__row-icon' />
