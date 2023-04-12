@@ -48,24 +48,24 @@
                     justify-content: center;
                     align-items: center;
                     transition: 0.2s all;
+                    .scheme__row-icon {
+                        transition: 0.4s all;
+                    }
+                    .scheme__row-icon--active {
+                        filter: brightness(0) saturate(100%) invert(31%) sepia(36%) saturate(4140%) hue-rotate(250deg) brightness(100%) contrast(103%);
+                    }
                     .scheme-user--active {
                         position: absolute;
                         opacity: 0;
                         z-index: 3;
                         transition: 0.4s all;
+                        opacity: 1;
                     }
                     .scheme-user {
+                       /*  transform: scale(0.8) translateX(20px) translateY(4px);
+                        filter: brightness(0) saturate(100%) invert(35%) sepia(75%) saturate(3365%) hue-rotate(248deg) brightness(98%) contrast(106%); */
                         position: absolute;
                         transition: transform 0.4s;
-                    }
-                    &:hover {
-                        .scheme-user--active {
-                            opacity: 1;
-                        }
-                        .scheme-user {
-                            transform: scale(0.8) translateX(20px) translateY(4px);
-                            filter: brightness(0) saturate(100%) invert(35%) sepia(75%) saturate(3365%) hue-rotate(248deg) brightness(98%) contrast(106%);
-                        }
                     }
                 }
                 .scheme__row-line {
@@ -75,8 +75,26 @@
                     border-radius: 100px;
                     margin: 20px 0;
                 }
+                @keyframes lineAnimation {
+                    0% {
+                        height: 0%;
+                    }
+                    100% {
+                        height: 100%;
+                    }
+                }
                 .scheme__row-line--active {
-                    background: #9747FF;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        animation: lineAnimation 0.4s linear;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #9747FF;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
             .scheme__row-cards {
@@ -95,6 +113,9 @@
                         font-size: 24px;
                         line-height: 36px;
                         color: #9E9EAC;
+                    }
+                    .scheme__row-text--active {
+                        color: #fff;
                     }
                 }
             }

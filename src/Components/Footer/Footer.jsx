@@ -11,25 +11,25 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className="footer__content">
-                <div className="footer__logo">
+                <a href='#company' className="footer__logo">
                     <img src={logo} alt="" className='footer__logo-img' />
                     <p className='footer__logo-name'>LCS-IT</p>
-                </div>
+                </a>
                 <div className="footer__adress">
                     <p className='footer__adress-title'>Adress</p>
                     <ul className='footer__adress-list'>
                         <li className='footer__adress-item'>1 Knightsbridge Green London SW1X 7NE United Kingdom</li>
                         <li className='footer__adress-item'>info@lcs-it.com</li>
-                        <li className='footer__adress-item'>+44(0)2070 528 406</li>
+                        <li className='footer__adress-item'> <a href="tel:+44(0)2070528406">+44(0)2070 528 406</a> </li>
                     </ul>
                 </div>
                 <div className="footer__about">
                     <p className='footer__about-title'>About</p>
                     <ul className="footer__about-list">
-                        <li className='footer__about-item'>Contacts</li>
-                        <li className='footer__about-item'>Company</li>
-                        <li className='footer__about-item'>Outsourcing</li>
-                        <li className='footer__about-item'>Services</li>
+                        <li className='footer__about-item'> <a href="#contacts">Contacts</a> </li>
+                        <li className='footer__about-item'> <a href="#company">Company</a></li>
+                        <li className='footer__about-item'> <a href="#outsourcing">Outsourcing</a></li>
+                        <li className='footer__about-item'> <a href="#services">Services</a></li>
                     </ul>
                 </div>
                 <div className="footer__folow">
