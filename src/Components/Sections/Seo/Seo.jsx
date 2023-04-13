@@ -5,7 +5,7 @@ import seoIcon2 from '../../../assets/svg/seoIcon2.svg';
 import seoIcon3 from '../../../assets/svg/seoIcon3.svg';
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 import { useDispatch, useSelector } from 'react-redux';
-import { setActiveButton } from '../../../store/reducers/seoReducer';
+import { setActiveButton, setNavigation } from '../../../store/reducers/seoReducer';
 import SeoAnalysis from '../../SeoRows/SeoAnalysis/SeoAnalysis';
 import SeoKeyword from '../../SeoRows/SeoKeyword/SeoKeyword';
 import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
@@ -27,6 +27,12 @@ function Seo({ setModal }) {
                 return <SeoAnalysis setModal={setModal} />
             default:
                 return <SeoAnalysis setModal={setModal} />
+        }
+    }
+
+    const handleLeftNavigation = (btnId) => {
+        if(btnId >= 0 && btnId <= 3) {
+            dispatch(setNavigation(btnId - 1));
         }
     }
 

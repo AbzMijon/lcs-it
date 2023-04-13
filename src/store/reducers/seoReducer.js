@@ -3,17 +3,17 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   seoButtons: [
     {
-      id: 0,
+      id: 1,
       label: 'Keyword Research',
       active: false,
     },
     {
-      id: 1,
+      id: 2,
       label: 'SEO Promotion',
       active: false,
     },
     {
-      id: 2,
+      id: 3,
       label: 'Competitive Audit',
       active: true,
     },
@@ -32,10 +32,19 @@ const seoReducer = createSlice({
           seoBtn.active = false;
         }
       })
+    },
+    setNavigation(state, action) {
+      state.seoButtons.forEach((btn) => {
+        if(action.payload === btn.id) {
+          btn.active = true;
+        } else {
+            btn.active = false;
+        }
+      })
     }
   },
 });
 
 export default seoReducer.reducer;
 
-export const { setActiveButton } = seoReducer.actions;
+export const { setActiveButton, setNavigation } = seoReducer.actions;
