@@ -507,3 +507,74 @@
 .development__blocks-overview {
     width: 307px;
 }
+
+@media only screen and (max-width: 500px) {
+    .development {
+        margin-bottom: 50px;
+        .development__title {
+            max-width: 320px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .development__code {
+            .development__blocks {
+                margin-bottom: 30px;
+                .development__blocks-code {
+                    margin: 0 20px;
+                }
+                .development__blocks-activityAndDevelopers {
+                    display: none;
+                }
+                .development__blocks-developers {
+                    display: none;
+                }
+            }
+            }
+        .development__keyboard {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            img {
+                display: none;
+            }
+            .development__keyboard-info {
+                margin-left: 23px;
+                .development__keyboard-text {
+                    max-width: 320px;
+                    text-align: start;
+                    margin-bottom: 27px;
+                    color: #9E9EAC;
+                }
+            }
+        }
+        .development__blocks-overview {
+            display: none;
+        }
+    }
+    
+    .code__text {
+        position: relative;
+        padding: 14px 0;
+    }
+    
+    .code__str1, .code__str2, .code__str3, .code__str4, .code__str5, .code__str6, .code__str7, .code__str8, .code__str9, .code__str10, .code__str11, .code__str12, .code__str13, .code__str14, .code__str15, .code__str16 {
+        font-family: 'code', sans-serif;
+        overflow: hidden;
+        letter-spacing: none;
+        animation:
+        typing 0.5s steps(20, end);
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 44px;
+    }
+    
+    .code__str-num {
+        font-family: 'Space Mono';
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #3C3D4C;
+    }
+}

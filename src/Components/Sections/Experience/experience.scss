@@ -23,3 +23,31 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .experience {
+        padding: 0 20px;
+        max-width: 360px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        .experience__block {
+            .experience__title {
+                margin-bottom: 30px;
+            }
+            .experience__list {
+                grid-template-columns: repeat(1, 1fr);
+                column-gap: 0px;
+                row-gap: 30px;
+                margin-bottom: 30px;
+            }
+            .experience__text {
+                max-width: 320px;
+                margin: 0 auto;
+                margin-bottom: 36px;
+            }
+        }
+        .experience__skills {
+            margin-left: -20px;
+        }
+    }
+}

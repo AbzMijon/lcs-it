@@ -43,3 +43,40 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .welcome {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+        padding-top: 160px;
+        margin-bottom: 50px;
+        max-width: 310px;
+        .welcome__info {
+            margin-right: 0px;
+            .welcome__skills {
+                margin-bottom: 30px;
+                .welcome__skills-item {
+                    font-size: 10px;
+                    line-height: 15px;
+                    height: 22px;
+                    color: #fff;
+                    cursor: default;
+                    &:hover {
+                        background-color: #9747FF;
+                    }
+                }
+                .welcome__skills-item + .welcome__skills-item {
+                    margin-left: 21px;
+                }
+            }
+            .welcome__title {
+                margin-bottom: 30px;
+                font-size: 42px;
+                line-height: 100%;
+            }
+            .welcome__subtitle {
+                margin-bottom: 29px;
+            }
+        }
+    }
+}

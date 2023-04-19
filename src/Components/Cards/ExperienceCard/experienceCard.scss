@@ -98,3 +98,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .experience__card {
+        height: 231px;
+        .card {
+            .experience__card-title {
+                position: absolute;
+                bottom: 18px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #FFFFFF;
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                width: 63px;
+                height: 55px;
+            }
+        }
+    }
+}

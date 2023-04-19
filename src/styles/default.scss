@@ -109,3 +109,18 @@ h5,
 		background-color: #9747FF;
 	}
 }
+
+@media only screen and (max-width:500px) {
+	.btn-contact {
+		width: 270px;
+		margin-left: 8%;
+	}
+	h2 {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 50px;
+	}
+	body {
+		background-size: auto;
+	}
+}
