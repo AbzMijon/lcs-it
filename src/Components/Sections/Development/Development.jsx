@@ -35,10 +35,12 @@ function Development({ setModal }) {
     const [codeStr15, setCodeStr15] = useState(false);
     const [codeStr16, setCodeStr16] = useState(false);
 
+    const [str, setStr] = useState(0); //incudes
+
     const onScroll = (event) => {
         const { scrollHeight, scrollTop, clientHeight } = event.target.scrollingElement;
         if(scrollTop >= VIEW_BLOCK1_IN_HTML_SECTION) {
-            setTimeout(() => setCodeStr1(true), 1000);
+            setTimeout(() => setCodeStr1(true), 1000); //вложение таймаутов
             setTimeout(() => setCodeStr2(true), 1500);
             setTimeout(() => setCodeStr3(true), 2000);
             setTimeout(() => setCodeStr4(true), 2500);

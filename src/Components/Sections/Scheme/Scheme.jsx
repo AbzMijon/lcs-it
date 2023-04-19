@@ -31,7 +31,7 @@ function Scheme() {
         }
     }, [isInView]);
 
-    useEffect(() => {
+/*     useEffect(() => {
         if(startScroll && !scrollAnimation) {
             setAnimationScrollAmount(0);
             document.body.className = 'body-scroll-hidden';
@@ -58,7 +58,9 @@ function Scheme() {
         }   else if(scrollActive) {
                 setAnimationScrollAmount((prev) => prev + 1);
         }
-    }
+    } */
+
+   /*  onWheel={/* setScrollAmount  (e) => console.log(e)} */
 
     return (
         <motion.section
@@ -67,7 +69,6 @@ function Scheme() {
             viewport={{ amount: 0.2, once: true }} 
             className='scheme'
             variants={motionAnimation}
-            onWheel={setScrollAmount}
         >
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">

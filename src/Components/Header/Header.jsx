@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './header.scss';
 import logo from '../../assets/svg/lcsItLogo.svg';
+import burger from '../../assets/svg/burger.svg';
 
 function Header() {
     const [scroll, setScroll] = useState(window.scrollY);
@@ -25,6 +26,7 @@ function Header() {
                     <li className="header__list-item"> <a href="#services">Services</a> </li>
                 </ul>
             </nav>
+            <img src={burger} alt="" className='header__burger' />
         </header>
     )
 }

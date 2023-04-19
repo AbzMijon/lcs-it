@@ -61,3 +61,21 @@
     border-bottom: 1px solid #3C3D4C;
     backdrop-filter: blur(7.5px);
 }
+
+.header__burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        padding: 23px 20px 20px 20px;
+        .header__burger {
+            display: block;
+        }
+        .header__nav {
+            display: none;
+        }
+    }
+}
