@@ -313,3 +313,98 @@
         right: 100%;
         transform: translateX(100%);
     }
+
+    @media only screen and (max-width: 500px) {
+        .scheme {
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-bottom: 50px;
+            .scheme__title {
+                margin-bottom: 31px;
+            }
+            .scheme__content {
+                grid-template-columns: repeat(1, 1fr);
+                .scheme__list {
+                    margin-right: 0px;
+                    .scheme__row-icons {
+                        margin-right: 24px;
+                        .scheme__row-example {
+                            display: none;
+                        }
+                        .scheme__row-icon-wrap {
+                            width: 42px;
+                            height: 42px;
+                            .scheme__row-icon {
+                                transition: 0.4s all;
+                                width: 18px;
+                            }
+                            .scheme__row-icon--active {
+                                width: 18px;
+                            }
+                        }
+                        .scheme__row-line {
+                            width: 1.5px;
+                            height: 78px;
+                            margin: 10px 0;
+                        }
+                    }
+                    .scheme__row-cards {
+                        .scheme__row-card + .scheme__row-card {
+                            margin-top: 30px;
+                        }
+                        .scheme__row-card {
+                            width: 250px;
+                            .scheme__row-title {
+                                font-size: 24px;
+                                line-height: 36px;
+                                margin-bottom: 20px;
+                            }
+                            .scheme__row-text {
+                                font-size: 16px;
+                                line-height: 135%;
+                            }
+                        }
+                    }
+                }
+                .scheme__ilustration {
+                    display: none;
+                }
+            }
+        }
+            .scheme__triangles, .scheme__triangles-plan {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -90px;
+                right: 0;
+                .scheme__triangle {
+                    width: 0;
+                    height: 0;
+                    border-radius: 10px;
+                }
+                .scheme__triangle-mini {
+                    border-left: 17px solid transparent;
+                    border-right: 17px solid transparent;
+                    border-top: 18px solid #171D29;
+                    margin-bottom: 10px;
+                }
+                .scheme__triangle-mid {
+                    border-left: 19px solid transparent;
+                    border-right: 19px solid transparent;
+                    border-top: 19px solid #2A2B3A;
+                    margin-bottom: 7px;
+                }
+                .scheme__triangle-big {
+                    border-left: 23px solid transparent;
+                    border-right: 23px solid transparent;
+                    border-top: 24px solid #4D4F6C;
+                }
+            }
+            .scheme__triangles-plan {
+                right: 100%;
+                transform: translateX(100%);
+            }
+    }

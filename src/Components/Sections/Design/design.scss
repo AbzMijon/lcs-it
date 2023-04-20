@@ -227,90 +227,18 @@
             margin-bottom: 32px;
             .design__types-item {
                 width: 240px;
-                background: #000000;
-                border: 1px solid #3C3D4C;
-                border-radius: 8px;
-                cursor: pointer;
-                z-index: 13;
-                &:hover {
-                    background: #2A2B3A;
-                }
-                &:hover {
-                    .design__types-arrow {
-                        transform: rotate(45deg);
-                    }
-                }
-                .design__types-arrow {
-                    margin-right: 9px;
-                    font-size: 22px;
-                    color: #9E9EAC;
-                }
             }
         }
             .design__card {
-                border-radius: 30px;
-                background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);;
-                background-repeat: no-repeat;
-                border: 1px solid #2A2B3A;
-                backdrop-filter: blur(2px);
-                padding-bottom: 35px;
-                width: 367px;
-                height: 426px;
-                transition: 0.2s ease-in;
-                position: relative;
-                &:hover .design__card-img-letter {
-                    top: 15px;
-                }
-                &:hover .design__card-logo-title {
-                    color: #9747FF;
-                }
-                &:hover .design__card-square {
-                    transform: matrix(0.87, 0.5, -0.87, 0.5, 0, 0);
-                }
-                &:hover .design__card-server-img--active {
-                    opacity: 1;
-                    transform: translateX(-50%) scale(0.9);
-                    top: 50px;
-                }
-                &:hover .design__card-server-img {
-                    transform: translateX(-50%) scale(0.9);
-                }
+                width: 320px;
+                height: 448px;
                 .design__card-logo-title {
-                    text-align: center;
-                    font-size: 24px;
-                    line-height: 36px;
-                    color: #9E9EAC;
-                    margin-bottom: 20px;
-                }
-                .design__card-server-img {
-                    position: absolute;
-                    top: 20px;
-                    left: 50%;
-                    transform: translateX(-50%) scale(1);
-                    transition: 0.5s all;
-                }
-                .design__card-server-img--active {
-                    opacity: 0;
-                    position: absolute;
-                    top: 47px;
-                    left: 50%;
-                    transform: translateX(-50%) scale(1);
-                    transition: 0.5s all;
-                }
-                .design__card-square {
-                    width: 80px;
-                    height: 80px;
-                    border: 1px solid #9E9EAC;
-                    border-radius: 8px;
-                    transform: matrix(0.87, -0.49, 0.87, 0.49, 0, 0);
-                    margin: 60px auto 15px auto;
-                    transition: 0.3s all;
+                    font-size: 16px;
+                    line-height: 135%;
+                    margin-bottom: 26px;
                 }
                 .design__card-img {
-                    transition: 0.2s ease-in;
-                    height: 211px;
-                    object-fit: cover;
-                    width: 100%;
+                    border-radius: 30px;
                 }
                 .design__card-img--browser {
                     background: url(../../../assets/img/Browser.png) no-repeat center;

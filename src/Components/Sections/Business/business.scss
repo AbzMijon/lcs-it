@@ -165,3 +165,9 @@ span {
     filter: blur(69px);
     border-radius: 50%;
 } 
+
+@media only screen and (max-width: 500px) {
+    .business {
+        display: none;
+    }
+}
