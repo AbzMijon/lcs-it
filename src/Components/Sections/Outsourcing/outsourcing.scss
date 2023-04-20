@@ -173,3 +173,77 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .outsourcing {
+        max-width: 360px;
+        padding: 0 20px;
+        position: relative;
+        margin-bottom: 50px;
+        padding-top: 0px;
+        overflow: hidden;
+        .outsourcing__wrap {
+            max-width: 1148px;
+            margin: 0 auto;
+            .outsourcing__title {
+                margin-bottom: 30px;
+            }
+            .outsourcing__table {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: auto;
+                gap: 30px;
+                padding: 0;
+                .outsourcing__table-wrapper {
+                    position: relative;
+                    z-index: 10;
+                    height: 249px;
+                    .outsourcing__card {
+                        padding: 40px 35px 35px 35px;
+                        .outsourcing__img {
+                            width: 40px;
+                        }
+                        .outsourcing__card-name {
+                            color: #fff;
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+                .outsourcing__card-sharp {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+                .outsourcing__card-react {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+                .outsourcing__card-mob {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+                .outsourcing__card-java {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+                .outsourcing__card-php {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+                .outsourcing__card-btn {
+                    grid-column: auto;
+                    grid-row: auto;
+                    align-self: end;
+                }
+            }
+        }
+        .outsourcing__bg1 {
+            display: none;
+        }
+        .outsourcing__bg2 {
+            display: none;
+        }
+        .outsourcing__bg3 {
+            display: none;
+        }
+    }
+}
