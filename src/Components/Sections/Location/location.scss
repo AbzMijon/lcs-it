@@ -113,3 +113,47 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .location {
+        padding-bottom: 60px;
+        background: none;
+        padding-top: 0px;
+        .location__title {
+            max-width: 320px;
+            margin-bottom: 9px;
+        }
+        .location__content {
+            max-width: 360px;
+            display: block;
+            padding: 0 20px;
+            .location__selector {
+                display: none;
+            }
+            .location__card {
+                padding-top: 30px;
+                max-width: 320px;
+                .location__card-item {
+                    .location__card-icon {
+                        margin-right: 20px;
+                    }
+                    .location__inf {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+                .location__card-item + .location__card-item {
+                    margin-top: 30px;
+                }
+                .location__btn {
+                    padding: 15px 24px;
+                    margin-top: 0px;
+                    margin-top: 29px;
+                    button {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

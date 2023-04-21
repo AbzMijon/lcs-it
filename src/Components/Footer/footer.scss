@@ -89,3 +89,90 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        .footer__content {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 360px;
+            padding: 50px 0px 36px 0px;
+            .footer__logo {
+                display: none;
+            }
+            .footer__adress {
+                display: none;
+            }
+            .footer__about {
+                border-bottom: 1px solid #3C3D4C;
+                margin-bottom: 36px;
+                padding: 0 20px;
+            }
+            .footer__adress-title, .footer__about-title, .footer__folow-title {
+                display: none;
+            }
+            .footer__adress-list, .footer__about-list {
+                max-width: 320px;
+            }
+            .footer__adress-item, .footer__about-item, .footer__folow_item {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                margin-bottom: 30px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    letter-spacing: -0.01em;
+                    color: #9E9EAC;
+                }
+            }
+            .footer__about-item a {
+                &:hover {
+                    color: #fff;
+                }
+            }
+            .footer__folow-list {
+                padding: 0 25px;
+            }
+        }
+        .footer__container-down {
+            .footer__terms-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row: auto;
+                max-width: 320px;
+                row-gap: 33px;
+                column-gap: 18px;
+                .footer__terms-item {
+                    font-size: 14px;
+                    line-height: 135%;
+                    letter-spacing: -0.01em;
+                }
+                .footer__terms-item + .footer__terms-item {
+                    margin-left: 0px;
+                }
+                .footer__terms-item--reversed {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                .footer__terms-logo {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    .footer__terms-img {
+                        margin-right: 13px;
+                        width: 30px;
+                        height: 27px;
+                        filter: brightness(0) saturate(100%) invert(71%) sepia(8%) saturate(350%) hue-rotate(201deg) brightness(89%) contrast(87%);
+                    }
+                    .footer__terms-name {
+                        font-family: 'poppinsBold', sans-serif;
+                        color: #9E9EAC;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 135%;
+                    }
+                }
+            }
+        }
+    }
+}

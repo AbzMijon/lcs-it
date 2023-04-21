@@ -55,9 +55,15 @@ function Footer() {
             </div>
             <div className="footer__container-down">
                 <ul className="footer__terms-list">
-                    <li className="footer__terms-item">All right reserved 2022 Ⓒ LCS-IT</li>
+                    <li className="footer__terms-item footer__terms-item--reversed">All right reserved 2022 Ⓒ LCS-IT</li>
                     <li className="footer__terms-item">Privacy policy</li>
                     <li className="footer__terms-item">Therm of use</li>
+                    <li className="footer__terms-item">
+                        <a href='#company' className="footer__terms-logo">
+                            <img src={logo} alt="" className='footer__terms-img' />
+                            <p className='footer__terms-name'>LCS-IT</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </footer>

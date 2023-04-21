@@ -168,6 +168,119 @@ span {
 
 @media only screen and (max-width: 500px) {
     .business {
-        display: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        .business__title {
+            max-width: 320px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+        .business__model {
+            display: flex;
+            gap: 30px;
+            padding-left: 20px;
+            .business__big-coubes {
+                display: none;
+            }
+            .business__cards {
+                position: relative;
+                grid-column: 2/3;
+                grid-row: 1/3;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                div + div {
+                    margin-top: 30px;
+                }
+                div {
+                    background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);
+                    border: 1px solid #3C3D4C;
+                    backdrop-filter: blur(2px);
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 60px 34px 50px;
+                    max-height: 206px;
+                    white-space: nowrap;
+                    .business__outstaffing-icon, .business__outsorcing-icon {
+                        margin-bottom: 21px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .business__outstaffing-title, .business__team-title, .business__outsorcing-title {
+                        color: #fff;
+                    }
+                }
+                .business__outsorcing {
+                    position: relative;
+                    .business__outsorcing-bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .business__team {
+                    padding-top: 17px;
+                    .business__team-bg {
+                        display: flex;
+                        margin: 0 auto;
+                        transform: translateX(-25px);
+                    }
+                }
+            }
+            .business__keyboard {
+                display: none;
+            }
+            .business__mini-coubes {
+                display: none;
+            }
+        }
+        .business__card--big {
+        background: url(../../../assets/img/bigCoubes.png) no-repeat center;
     }
+    .business__card--keyboard {
+        background: url(../../../assets/img/keyboard.png) no-repeat center;
+    }
+    .business__card--mini {
+        background: url(../../../assets/img/miniCoubes.png) no-repeat center;
+    }
+    .business__card {
+        position: relative;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s all;
+        .light{
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            transition: opacity .3s;
+            background: radial-gradient(circle at 52.8095px 0px, rgb(255, 255, 255), transparent);
+            border-radius: 15px;
+        }
+        &:hover{
+            .light{
+                opacity: 0.4;
+            }
+        }
+    }
+    }
+    .business__outsorcing-circle {
+        position: absolute;
+        top: -114px;
+        left: 8px;
+        width: 245px;
+        height: 133px;
+        background: #9747ff4d;
+        mix-blend-mode: multiply;
+        filter: blur(69px);
+        border-radius: 50%;
+    } 
 }
