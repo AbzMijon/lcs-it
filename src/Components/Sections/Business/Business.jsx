@@ -6,6 +6,7 @@ import outsourcingCard1 from '../../../assets/svg/outsorcingCard6.svg';
 import modelOut from '../../../assets/svg/modelOut.svg';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import Marquee from 'react-fast-marquee';
 
 function Business() {
 
@@ -71,6 +72,31 @@ function Business() {
                         <img src={grid} alt="" className='business__outsorcing-bg' />
                         {/* <div className="business__outsorcing-circle"></div> */}
                     </div>
+                </div>
+                <div className='business__cards--mobile'>
+                    <Marquee
+                        delay={0}
+                        speed={30}
+                        loop={0}
+                        gradient={false}
+                        className='swiper'
+                        direction='right'
+                    >
+                        <div className="business__outstaffing business__card" onMouseMove={onMouseMove}>
+                            <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' />
+                            <h4 className='business__outstaffing-title'>Outstaffing</h4>
+                        </div>
+                        <div className="business__team business__card" onMouseMove={onMouseMove}>
+                            <img src={teamBg} alt="" className='business__team-bg' />
+                            <h4 className='business__team-title'>Dedicated Team</h4>
+                        </div>
+                        <div className="business__outsorcing business__card" onMouseMove={onMouseMove}>
+                            <img src={modelOut} alt="" className='business__outsorcing-icon' />
+                            <h4 className='business__outsorcing-title'>Outsourcing</h4>
+                            <img src={grid} alt="" className='business__outsorcing-bg' />
+                            {/* <div className="business__outsorcing-circle"></div> */}
+                        </div>
+                    </Marquee>
                 </div>
                 <div className="business__mini-coubes" onMouseMove={onMouseMove}>
                 <span></span>
