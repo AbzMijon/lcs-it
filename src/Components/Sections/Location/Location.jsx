@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setActiveCountry } from '../../../store/reducers/locationReducer';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import MobileCountrySelector from '../../MobilesComponents/MobileCountrySelector/MobileCountrySelector';
 
 function Location({ setModal }) {
 
@@ -40,6 +41,9 @@ function Location({ setModal }) {
                         )
                     })}
                 </motion.div>
+                <div className='location__selector--mobile'>
+                    <MobileCountrySelector />
+                </div>
                 <motion.div className="location__card" variants={motionAnimation}>
                     <ul>
                         <li className='location__card-item'>

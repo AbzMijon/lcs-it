@@ -78,6 +78,9 @@
                 }
             }
         }
+        .location__selector--mobile {
+            display: none;
+        }
         .location__card {
             border: 1px solid #2A2B3A;
             border-radius: 8px;
@@ -126,13 +129,16 @@
         .location__content {
             max-width: 360px;
             display: block;
-            padding: 0 20px;
             .location__selector {
                 display: none;
+            }
+            .location__selector--mobile {
+                display: block;
             }
             .location__card {
                 padding-top: 30px;
                 max-width: 320px;
+                margin: 0 20px;
                 .location__card-item {
                     .location__card-icon {
                         margin-right: 20px;

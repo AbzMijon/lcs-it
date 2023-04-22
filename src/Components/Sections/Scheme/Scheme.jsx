@@ -99,7 +99,7 @@ function Scheme() {
                         <div className={animationScrollAmount === 3 ? 'scheme__row-line scheme__row-line--active' : 'scheme__row-line'}></div>
 
                         <div className="scheme__row-icon-wrap">
-                            <img src={rocket} alt="" className={animationScrollAmount === 3 ? 'scheme__row-icon scheme__row-icon--active' : 'scheme__row-icon'} />
+                            <img src={rocket} alt="" className={animationScrollAmount === 3 ? 'scheme__row-icon scheme__row-icon--active scheme__row-rocket' : 'scheme__row-icon scheme__row-rocket'} />
                         </div>
                     </div>
                     <ul className='scheme__row-cards'>

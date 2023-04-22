@@ -37,7 +37,7 @@ function Header() {
                 <img src={burger} alt="" className='header__burger' onClick={() => setMobileMenu(true)} />
             }
             {mobileMenu &&
-                <MobileMenu />
+                <MobileMenu setMobileMenu={setMobileMenu} />
             }
         </header>
     )

@@ -1,0 +1,61 @@
+.countrySelector {
+    .countrySelector__current {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 11px 20px;
+        width: 100%;
+        transition: 0.1s all;
+        cursor: pointer;
+        .countrySelector__currentItem-img {
+            width: 42px;
+            height: 28px;
+            margin-right: 9px;
+        }
+        .countrySelector__currentItem-name {
+            margin-right: 11px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .countrySelector__arrow {
+            color: #fff;
+            font-size: 24px ;
+        }
+    }
+    .countrySelector__current--active {
+        background-color: #2A2B3A;
+    }
+    .countrySelector__list {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        .countrySelector__item {
+            padding: 11px 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            cursor: pointer;
+            width: 100%;
+            background: #000000;
+            border-bottom: 1px solid #3C3D4C;
+            .countrySelector__item-img {
+                width: 42px;
+                height: 28px;
+                margin-right: 12px;
+            }
+            .countrySelector__item-name {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #9E9EAC;
+                margin-right: 11px;
+            }
+            .countrySelector__arrow {
+                color: #9E9EAC;
+                font-size: 24px;
+            }
+        }
+    }
+}
