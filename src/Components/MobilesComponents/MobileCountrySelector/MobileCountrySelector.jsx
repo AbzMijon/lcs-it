@@ -21,7 +21,7 @@ function MobileCountrySelector() {
         <div className='countrySelector'>
             <div 
                 className={open ? "countrySelector__current countrySelector__current--active" : "countrySelector__current"} 
-                onClick={() => setOpen(!open)}
+                onClick={() => setOpen((prev) => !prev)}
             >
                 <img src={activeCountry.src} alt="" className='countrySelector__currentItem-img' />
                 <p className='countrySelector__currentItem-name'>{activeCountry.label}</p>

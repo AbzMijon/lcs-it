@@ -65,6 +65,7 @@
             }
         }
         .business__cards--mobile {
+            display: none;
             max-width: 100vw;
             .swiper {
                 gap: 30px;
@@ -239,6 +240,9 @@ span {
             }
             .business__mini-coubes {
                 display: none;
+            }
+            .business__cards--mobile {
+                display: block;
             }
         }
         .business__card--big {

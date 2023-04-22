@@ -11,6 +11,7 @@ import SeoKeyword from '../../SeoRows/SeoKeyword/SeoKeyword';
 import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import MobileSeoSelector from '../../MobilesComponents/MobileSeoSelector/MobileSeoSelector';
 
 function Seo({ setModal }) {
     const dispatch = useDispatch();
@@ -59,6 +60,9 @@ function Seo({ setModal }) {
                             </button>
                         )
                     })}
+                </div>
+                <div className="seo__titles--mobile">
+                    <MobileSeoSelector />
                 </div>
                 <div className="seo__icons">
                     <button>
