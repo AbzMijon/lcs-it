@@ -43,6 +43,7 @@ function Seo({ setModal }) {
             viewport={{ amount: 0.3, once: true }}
             className='seo'
             variants={motionAnimation}
+            id='seo'
         >
             <h2 className='seo__title'>SEO</h2>
             <div className="seo__navigate">

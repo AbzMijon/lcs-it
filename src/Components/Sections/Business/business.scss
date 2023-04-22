@@ -65,14 +65,45 @@
             }
         }
         .business__cards--mobile {
+            max-width: 100vw;
+            .swiper {
+                gap: 30px;
+                min-height: auto;
+                .marquee {
+                    gap: 30px;
+                }
+            }
+            .marquee {
+                min-width: none;
+            }
+            .business__outsorcing {
+                position: relative;
+                .business__outsorcing-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .business__team-bg {
+                position: absolute;
+                top: 20px;
+            }
             .business__card {
-                width: 256px;
+                width: 265px;
                 height: 206px;
                 background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);
                 border: 1px solid #3C3D4C;
                 backdrop-filter: blur(2px);
                 border-radius: 20px;
                 white-space: nowrap;
+                padding: 61px 34px 50px 34px;
+                background-position: center;
+                display: flex;
+                align-items: start;
+                justify-content: end;
+                flex-direction: column;
                 .business__outstaffing-icon, .business__outsorcing-icon {
                     margin-bottom: 21px;
                     width: 40px;
@@ -197,7 +228,6 @@ span {
         .business__model {
             display: flex;
             gap: 30px;
-            padding-left: 20px;
             .business__big-coubes {
                 display: none;
             }

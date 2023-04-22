@@ -19,6 +19,7 @@ function Design() {
             whileInView='visible'
             viewport={{ amount: 0.2, once: true }} 
             className='design'
+            id='design'
         >
             <motion.h2 className='design__title' variants={motionAnimation}>Design</motion.h2>
             <motion.p className='design__text' variants={motionAnimation}>As a full-service UX design agency, we work closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</motion.p>

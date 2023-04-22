@@ -69,6 +69,7 @@ function Scheme() {
             viewport={{ amount: 0.2, once: true }} 
             className='scheme'
             variants={motionAnimation}
+            id='scheme'
         >
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">

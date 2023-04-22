@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './header.scss';
 import logo from '../../assets/svg/lcsItLogo.svg';
 import burger from '../../assets/svg/burger.svg';
+import burgerClose from '../../assets/svg/burgerClose.svg';
+import MobileMenu from '../MobilesComponents/MobileMenu/MobileMenu';
 
 function Header() {
+
     const [scroll, setScroll] = useState(window.scrollY);
+    const [mobileMenu, setMobileMenu] = useState(false);
     const handleScroll = () => {
         setScroll(window.scrollY);
     };
@@ -12,6 +16,7 @@ function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     return (
         <header className={!scroll ? "header" : "header header__active"}>
             <div className="header__logo">
@@ -26,7 +31,14 @@ function Header() {
                     <li className="header__list-item"> <a href="#services">Services</a> </li>
                 </ul>
             </nav>
-            <img src={burger} alt="" className='header__burger' />
+            {mobileMenu ?
+                <img src={burgerClose} alt="" className='header__burger header__burger--close' onClick={() => setMobileMenu(false)} />
+            :    
+                <img src={burger} alt="" className='header__burger' onClick={() => setMobileMenu(true)} />
+            }
+            {mobileMenu &&
+                <MobileMenu />
+            }
         </header>
     )
 }

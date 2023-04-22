@@ -86,6 +86,9 @@
             .footer__terms-item + .footer__terms-item {
                 margin-left: 16px;
             }
+            .footer__terms-item--mob {
+                display: none;
+            }
         }
     }
 }
@@ -142,6 +145,9 @@
                 max-width: 320px;
                 row-gap: 33px;
                 column-gap: 18px;
+                .footer__terms-item--mob {
+                    display: block;
+                }
                 .footer__terms-item {
                     font-size: 14px;
                     line-height: 135%;

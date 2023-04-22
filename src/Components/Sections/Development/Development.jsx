@@ -83,6 +83,7 @@ function Development({ setModal }) {
             whileInView='visible'
             viewport={{ amount: 0.2, once: true }}
             className='development'
+            id='software'
         >
             <motion.h2 variants={motionAnimation} className='development__title'>Software development</motion.h2>
             <div className="development__code">
