@@ -5,7 +5,7 @@ import seoIcon2 from '../../../assets/svg/seoIcon2.svg';
 import seoIcon3 from '../../../assets/svg/seoIcon3.svg';
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 import { useDispatch, useSelector } from 'react-redux';
-import { setActiveButton, setNavigation } from '../../../store/reducers/seoReducer';
+import { setActiveButton, setPrevNavigation, setNextNavigation } from '../../../store/reducers/seoReducer';
 import SeoAnalysis from '../../SeoRows/SeoAnalysis/SeoAnalysis';
 import SeoKeyword from '../../SeoRows/SeoKeyword/SeoKeyword';
 import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
@@ -31,9 +31,15 @@ function Seo({ setModal }) {
         }
     }
 
-    const handleLeftNavigation = (btnId) => {
-        if(btnId >= 0 && btnId <= 3) {
-            dispatch(setNavigation(btnId - 1));
+    const handlePrevNavigation = (btnId) => {
+        if(btnId > 0) {
+            dispatch(setPrevNavigation(btnId));
+        }
+    }
+
+    const handleNextNavigation = (btnId) => {
+        if(btnId < 2) {
+            dispatch(setNextNavigation(btnId));
         }
     }
 
@@ -78,10 +84,10 @@ function Seo({ setModal }) {
             </div>
             {renderSeoCards(selectedBtn.id)}
             <div className="seo__pagination">
-                <div className="seo__pagination-wrap">
+                <div className="seo__pagination-wrap" onClick={() => handlePrevNavigation(selectedBtn.id)}>
                     <HiArrowLeft className='seo__pagination-icon'/>
                 </div>
-                <div className="seo__pagination-wrap">
+                <div className="seo__pagination-wrap" onClick={() => handleNextNavigation(selectedBtn.id)}>
                     <HiArrowRight className='seo__pagination-icon' />
                 </div>
             </div>

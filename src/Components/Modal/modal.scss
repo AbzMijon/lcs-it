@@ -139,9 +139,12 @@
         .modal {
             width: 100vw;
             height: 100vh;
+            max-height: none;
+            max-width: none;
+            justify-content: center;
             .modal__close {
                 position: absolute;
-                top: 75px;
+                top: 85px;
             }
             button {
                 margin-left: 0;
