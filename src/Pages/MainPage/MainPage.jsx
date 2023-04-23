@@ -14,16 +14,21 @@ import Business from '../../Components/Sections/Business/Business';
 import Location from '../../Components/Sections/Location/Location';
 import Footer from '../../Components/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
+import Cookies from '../../Components/Cookies/Cookies';
 
 function MainPage() {
 
     const [modal, setModal] = useState(false);
     const navigate = useNavigate();
+    const [cookies, setCookies] = useState(false);
 
     return (
         <React.Fragment>
             {modal &&
                 <Modal setModal={setModal} />
+            }
+            {!cookies &&
+                <Cookies setCookies={setCookies} />
             }
             <Header/>
             <main className="main" id='company'>
