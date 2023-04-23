@@ -97,7 +97,6 @@
     .footer {
         .footer__content {
             grid-template-columns: repeat(1, 1fr);
-            max-width: 360px;
             padding: 50px 0px 36px 0px;
             .footer__logo {
                 display: none;
@@ -114,7 +113,9 @@
                 display: none;
             }
             .footer__adress-list, .footer__about-list {
-                max-width: 320px;
+                max-width: 360px;
+                padding: 0 20px;
+                margin: 0 auto;
             }
             .footer__adress-item, .footer__about-item, .footer__folow_item {
                 font-weight: 400;
@@ -134,7 +135,9 @@
                 }
             }
             .footer__folow-list {
-                padding: 0 25px;
+                max-width: 360px;
+                padding: 0 20px;
+                margin: 0 auto;
             }
         }
         .footer__container-down {

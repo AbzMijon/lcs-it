@@ -534,11 +534,14 @@
             display: flex;
             justify-content: start;
             align-items: center;
+            max-width: 360px;
+            padding: 0 20px;
+            margin: 0 auto;
             img {
                 display: none;
             }
             .development__keyboard-info {
-                margin-left: 23px;
+                margin-left: 0px;
                 .development__keyboard-text {
                     max-width: 320px;
                     text-align: start;

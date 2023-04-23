@@ -26,11 +26,12 @@
 
 @media only screen and (max-width: 500px) {
     .experience {
-        padding: 0 20px;
-        max-width: 360px;
-        margin: 0 auto;
         margin-bottom: 50px;
+        padding-top: 0;
         .experience__block {
+            padding: 0 20px;
+            max-width: 360px;
+            margin: 0 auto;
             .experience__title {
                 margin-bottom: 30px;
             }
