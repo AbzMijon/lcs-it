@@ -29,7 +29,7 @@
     .seo__card-head-list {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         .seo__card-item {
             display: flex;
@@ -255,5 +255,46 @@
     }
     .seo__card-procents + .seo__card-procents {
         margin-top: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .seo__card-body-graphic {
+        .seo__card-body-table--vertical {
+            height: 105px;
+            transform: translateY(-24px);
+            .seo__card-body-table-line + .seo__card-body-table-line {
+                margin-left: 42px;
+            }
+        }
+        .seo__card-body-line {
+            top: 27px;
+        }
+        .seo__card-body-img {
+            width: 97%;
+        }
+        .seo__card-body-month, .seo__card-body-table--vertical, .seo__card-body-table--horisontal {
+            .seo__card-body-monthName + .seo__card-body-monthName {
+                margin-left: 18px;
+            }
+        }   
+    }
+    .seo__card-body-full {
+        .seo__card-body-imgElem {
+            height: 105px;
+        }
+    }
+    .seo__card-head, .seo__card-head-icons {
+        .seo__card-head-list {
+            .seo__card-item {
+                margin-right: 35px;
+                width: 18px;
+                height: 20px;
+                cursor: pointer;
+                &:hover .seo__card-list-img {
+                    filter: brightness(0) saturate(100%) invert(33%) sepia(74%) saturate(4015%) hue-rotate(251deg) brightness(101%) contrast(101%);
+                }
+            }
+        }
     }
 }

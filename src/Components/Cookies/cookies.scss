@@ -7,7 +7,7 @@
     background-color: #000000;
     border-top: 1px solid #2A2B3A;
     backdrop-filter: blur(2px);
-    z-index: 100;
+    z-index: 999999;
     .cookies__text {
         letter-spacing: -0.01em;
         color: #FFFFFF;
@@ -49,6 +49,27 @@
             background-color: #2A2B3A;
             border: 1px solid #2A2B3A;
             box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cookies {
+        padding: 40px 5px 27px 5px;
+        .cookies__text {
+            margin-bottom: 25px;
+            max-width: 320px;
+        }
+        .cookies__button-container {
+            max-width: 320px;
+            .cookies__btn {
+                width: 160px;
+                height: 50px;
+                padding: 10px 13px 10px 12px;
+            }
+            .cookies__btn-accept {
+                margin-left: 20px;
+            }
         }
     }
 }
