@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './cookies.scss';
 
 function Cookies({ setCookies }) {
-    localStorage.setItem('cookiesAccept', false);
     const acceptCookies = () => {
         localStorage.setItem('cookiesAccept', true);
         setCookies(true);

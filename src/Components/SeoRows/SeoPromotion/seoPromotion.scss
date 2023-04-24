@@ -5,13 +5,13 @@
     .seo__card-body {
         border-top: 1px solid #2A2B3A;
         border-bottom: 1px solid #2A2B3A;
-        padding: 26px 0;
+        height: 204px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         .seo__card-body-img {
-            height: 152px;
+            height: 204px;
             transition: 0.3s all;
             opacity: 1;
         }

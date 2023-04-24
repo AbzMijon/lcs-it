@@ -13,14 +13,12 @@ import Scheme from '../../Components/Sections/Scheme/Scheme';
 import Business from '../../Components/Sections/Business/Business';
 import Location from '../../Components/Sections/Location/Location';
 import Footer from '../../Components/Footer/Footer';
-import { useNavigate } from 'react-router-dom';
 import Cookies from '../../Components/Cookies/Cookies';
 
 function MainPage() {
 
     const [modal, setModal] = useState(false);
-    const navigate = useNavigate();
-    const [cookies, setCookies] = useState(false);
+    const [cookies, setCookies] = useState(localStorage.getItem('cookiesAccept'));
 
     return (
         <React.Fragment>
@@ -33,7 +31,7 @@ function MainPage() {
             <Header/>
             <main className="main" id='company'>
                 <Welcome setModal={setModal} />
-                <p className='main__scroll-text'>scroll down <AiOutlineArrowDown className='main__scroll-icon' onClick={() => navigate('/test')} /></p>
+                <p className='main__scroll-text'>scroll down <AiOutlineArrowDown className='main__scroll-icon' /></p>
                 <Experience />
                 <Development setModal={setModal} />
                 <Outsourcing setModal={setModal} />
