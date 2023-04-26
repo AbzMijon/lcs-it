@@ -4,7 +4,7 @@ import logo from '../../../../../assets/svg/lcsItLogo.svg';
 import './developmentCodeBlock.scss';
 import { useEffect } from 'react';
 
-function DevelopmentCodeBlock({ animationStart }) {
+function DevelopmentCodeBlock({ animationStart, codeRef }) {
 
     const [blockName, setBlockName] = useState([]);
 
@@ -39,7 +39,7 @@ function DevelopmentCodeBlock({ animationStart }) {
                     <button className='development__code-btn'>script.js</button>
                     <button className='development__code-btn'>package.json</button>
                 </div>
-                <div className="code__text">
+                <div className="code__text" ref={codeRef}>
                     {blockName.includes('block1') &&
                         <>
                             <span className='code__str-num'>1</span>

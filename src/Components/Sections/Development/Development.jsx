@@ -38,14 +38,16 @@ function Development({ setModal }) {
                             <Lottie animationData={overviewLottie} loop={false} />
                         }
                     </div>
-                    <DevelopmentCodeBlock animationStart={animationStart} />
+                    <div /* ref={ref} */>
+                        <DevelopmentCodeBlock animationStart={animationStart} codeRef={ref} />
+                    </div>
                     <div className="development__blocks-activityAndDevelopers">
                         <div className="development__blocks-activity">
                             {animationStart &&
                                 <Lottie animationData={activityLottie} loop={false} />
                             }
                         </div>
-                        <div className="development__blocks-developers" ref={ref}>
+                        <div className="development__blocks-developers">
                             <DevelopmentDevelopersBlock />
                         </div>
                     </div>
