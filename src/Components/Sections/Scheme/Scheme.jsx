@@ -16,51 +16,13 @@ function Scheme() {
 
     const ref = useRef();
     const isInView = useInView(ref);
-
-    const scrollRef = useRef();
-    const startScroll = useInView(scrollRef);
-
     const [animationStart, setAnimationStart] = useState(false);
-    const [animationScrollAmount, setAnimationScrollAmount] = useState(0);
-    const [scrollAnimation, setScrollAnimation] = useState(false);
-    const [scrollActive, setScrollActive] = useState(false);
     
     useEffect(() => {
         if(isInView) {
             setAnimationStart(true);
         }
     }, [isInView]);
-
-/*     useEffect(() => {
-        if(startScroll && !scrollAnimation) {
-            setAnimationScrollAmount(0);
-            document.body.className = 'body-scroll-hidden';
-            setScrollActive(true);
-        }
-    }, [startScroll]);
-    
-    useEffect(() => {
-        if(animationScrollAmount === 3) {
-            document.body.className = 'body-scroll-default';
-            setAnimationScrollAmount(3);
-            setScrollAnimation(true);
-            setScrollActive(false);
-        }   else if(animationScrollAmount === -1) {
-                document.body.className = 'body-scroll-default';
-                setAnimationScrollAmount(0);
-                setScrollActive(false);
-        }
-    }, [animationScrollAmount]);
-
-    const setScrollAmount = (scrollDown) => {
-        if(scrollDown.deltaY === -100 && scrollActive) {
-            setAnimationScrollAmount((prev) => prev - 1);
-        }   else if(scrollActive) {
-                setAnimationScrollAmount((prev) => prev + 1);
-        }
-    } */
-
-   /*  onWheel={/* setScrollAmount  (e) => console.log(e)} */
 
     return (
         <motion.section
@@ -88,32 +50,31 @@ function Scheme() {
                             <img src={schemeActiveExample} alt="" className='scheme__row-example-img' />
                         </div>
                         <div className="scheme__row-icon-wrap">
-                            {/* <img src={userActive} alt="" className='scheme__row-icon scheme-user--active' /> */}
-                            <img src={user} alt="" className={animationScrollAmount === 1 ? 'scheme__row-icon scheme__row-icon--active' : 'scheme__row-icon'}/*  scheme-user  *//>
+                            <img src={user} alt="" className='scheme__row-icon scheme__row-icon--active'/>
                         </div>
-                        <div className={animationScrollAmount === 2 ? 'scheme__row-line scheme__row-line--active' : 'scheme__row-line'}></div>
+                        <div className='scheme__row-line scheme__row-line--active'></div>
 
                         <div className="scheme__row-icon-wrap">
-                            <img src={blocknot} alt="" className={animationScrollAmount === 2 ? 'scheme__row-icon scheme__row-icon--active' : 'scheme__row-icon'} />
+                            <img src={blocknot} alt="" className='scheme__row-icon' />
                         </div>
-                        <div className={animationScrollAmount === 3 ? 'scheme__row-line scheme__row-line--active' : 'scheme__row-line'}></div>
+                        <div className='scheme__row-line'></div>
 
                         <div className="scheme__row-icon-wrap">
-                            <img src={rocket} alt="" className={animationScrollAmount === 3 ? 'scheme__row-icon scheme__row-icon--active scheme__row-rocket' : 'scheme__row-icon scheme__row-rocket'} />
+                            <img src={rocket} alt="" className='scheme__row-icon scheme__row-rocket' />
                         </div>
                     </div>
                     <ul className='scheme__row-cards'>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Contact us</h3>
-                            <p className={animationScrollAmount === 1 ? 'scheme__row-text scheme__row-text--active' : 'scheme__row-text'}>Fill out the contact form, brifle descride your project or ask us a question</p>
+                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, brifle descride your project or ask us a question</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Discovery call</h3>
-                            <p className={animationScrollAmount === 2 ? 'scheme__row-text scheme__row-text--active' : 'scheme__row-text'} ref={ref}>Andrew - our CEO will arrange a video meeting with you in order to clarify the project assumptions</p>
+                            <p className='scheme__row-text' ref={ref}>Andrew - our CEO will arrange a video meeting with you in order to clarify the project assumptions</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Project estimation</h3>
-                            <p className={animationScrollAmount === 3 ? 'scheme__row-text scheme__row-text--active' : 'scheme__row-text'}>On the basis of the collected information, we will prepare an estimate of the costs and  duration of the <span ref={scrollRef} >project</span> </p>
+                            <p className='scheme__row-text'>On the basis of the collected information, we will prepare an estimate of the costs and  duration of the project </p>
                         </li>
                     </ul>
                 </div>

@@ -13,11 +13,6 @@ import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 
 function Outsourcing({ setModal }) {
-    
-    const [globalMousePos, setGlobalMousePos] = useState({
-        X   : 0,
-        Y   : 0,
-    });
 
     const [localMousePos, setLocalMousePos] = useState({
         X   : 0,
@@ -29,17 +24,6 @@ function Outsourcing({ setModal }) {
         const localY = event.clientY - event.currentTarget.offsetTop;
         setLocalMousePos({ X: localX, Y: localY });
     }
-
-    useEffect(() => {
-        const onMouseGlobalMove = (e) => {
-            const { scrollHeight, scrollTop, clientHeight } = e.target/* .scrollingElement */;
-            setGlobalMousePos({X: e.clientX, Y: e.clientY});
-        };
-        window.addEventListener('mousemove', onMouseGlobalMove);
-        return () => {
-            window.removeEventListener('mousemove', onMouseGlobalMove);
-        }
-    }, []);
 
     return (
         <motion.section 

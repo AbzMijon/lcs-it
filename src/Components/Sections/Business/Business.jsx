@@ -70,7 +70,6 @@ function Business() {
                         <img src={modelOut} alt="" className='business__outsorcing-icon' />
                         <h4 className='business__outsorcing-title'>Outsourcing</h4>
                         <img src={grid} alt="" className='business__outsorcing-bg' />
-                        {/* <div className="business__outsorcing-circle"></div> */}
                     </div>
                 </div>
                 <div className='business__cards--mobile'>
@@ -94,7 +93,6 @@ function Business() {
                             <img src={modelOut} alt="" className='business__outsorcing-icon' />
                             <h4 className='business__outsorcing-title'>Outsourcing</h4>
                             <img src={grid} alt="" className='business__outsorcing-bg' />
-                            {/* <div className="business__outsorcing-circle"></div> */}
                         </div>
                     </Marquee>
                 </div>

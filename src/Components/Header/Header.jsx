@@ -9,6 +9,7 @@ function Header() {
 
     const [scroll, setScroll] = useState(window.scrollY);
     const [mobileMenu, setMobileMenu] = useState(false);
+    
     const handleScroll = () => {
         setScroll(window.scrollY);
     };

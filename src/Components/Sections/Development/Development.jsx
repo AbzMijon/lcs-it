@@ -18,7 +18,7 @@ function Development({ setModal }) {
 
     const VIEW_BLOCK1_IN_HTML_SECTION = 1062;
 
-    const [codeStr1, setCodeStr1] = useState(false);
+/*     const [codeStr1, setCodeStr1] = useState(false);
     const [codeStr2, setCodeStr2] = useState(false);
     const [codeStr3, setCodeStr3] = useState(false);
     const [codeStr4, setCodeStr4] = useState(false);
@@ -33,39 +33,52 @@ function Development({ setModal }) {
     const [codeStr13, setCodeStr13] = useState(false);
     const [codeStr14, setCodeStr14] = useState(false);
     const [codeStr15, setCodeStr15] = useState(false);
-    const [codeStr16, setCodeStr16] = useState(false);
+    const [codeStr16, setCodeStr16] = useState(false); */
 
-    const [str, setStr] = useState(0); //incudes
-
-    const onScroll = (event) => {
-        const { scrollHeight, scrollTop, clientHeight } = event.target.scrollingElement;
-        if(scrollTop >= VIEW_BLOCK1_IN_HTML_SECTION) {
-            setTimeout(() => setCodeStr1(true), 1000); //вложение таймаутов
-            setTimeout(() => setCodeStr2(true), 1500);
-            setTimeout(() => setCodeStr3(true), 2000);
-            setTimeout(() => setCodeStr4(true), 2500);
-            setTimeout(() => setCodeStr5(true), 3000);
-            setTimeout(() => setCodeStr6(true), 3500);
-            setTimeout(() => setCodeStr7(true), 4000);
-            setTimeout(() => setCodeStr8(true), 4500);
-            setTimeout(() => setCodeStr9(true), 5000);
-            setTimeout(() => setCodeStr10(true), 5500);
-            setTimeout(() => setCodeStr11(true), 6000);
-            setTimeout(() => setCodeStr12(true), 6500);
-            setTimeout(() => setCodeStr13(true), 7000);
-            setTimeout(() => setCodeStr14(true), 7500);
-            setTimeout(() => setCodeStr15(true), 8000);
-            setTimeout(() => setCodeStr16(true), 8500);
-        }
-    }
+    const [count, setCount] = useState(0);
+    const [blockName, setBlockName] = useState([]);
+    console.log(count);
+    console.log(blockName);
 
 
+    
     useEffect((e) => {
+        const onScroll = (event) => {
+            const { scrollHeight, scrollTop, clientHeight } = event.target.scrollingElement;
+            if (scrollTop > VIEW_BLOCK1_IN_HTML_SECTION) {
+                const setStrInterval = setInterval(() => {
+                    setBlockName((prev) => [...prev, `block${count}`]);
+                    setCount(prev => prev++);
+                }, 500);
+    
+                if (count === 15) {
+                    clearInterval(setStrInterval);
+                }
+    
+                /* setTimeout(() => setCodeStr1(true), 1000); //вложение таймаутов
+                setTimeout(() => setCodeStr2(true), 1500);
+                setTimeout(() => setCodeStr3(true), 2000);
+                setTimeout(() => setCodeStr4(true), 2500);
+                setTimeout(() => setCodeStr5(true), 3000);
+                setTimeout(() => setCodeStr6(true), 3500);
+                setTimeout(() => setCodeStr7(true), 4000);
+                setTimeout(() => setCodeStr8(true), 4500);
+                setTimeout(() => setCodeStr9(true), 5000);
+                setTimeout(() => setCodeStr10(true), 5500);
+                setTimeout(() => setCodeStr11(true), 6000);
+                setTimeout(() => setCodeStr12(true), 6500);
+                setTimeout(() => setCodeStr13(true), 7000);
+                setTimeout(() => setCodeStr14(true), 7500);
+                setTimeout(() => setCodeStr15(true), 8000);
+                setTimeout(() => setCodeStr16(true), 8500); */
+            }
+        }
         document.addEventListener('scroll', onScroll);
         return () => {
             document.removeEventListener('scroll', onScroll);
         }
     }, []);
+
 
     const ref = useRef();
     const isInView = useInView(ref);
@@ -110,14 +123,14 @@ function Development({ setModal }) {
                                 <button className='development__code-btn'>package.json</button>
                             </div>
 
-                            <div className="code__text">
-                                        {codeStr1 &&
+                            {/* <div className="code__text">
+                                        {blockName === 'block1' &&
                                         <>
                                             <span className='code__str-num'>1</span>
                                             <p className='code__str1 doctype-name-tag'>{'<!DOCTYPE html>'}</p>
                                         </>
                                         }
-                                        {codeStr2 &&
+                                        {blockName === 'block2' &&
                                         <>
                                             <span className='code__str-num'>2</span> 
                                             <p className='code__str2'>
@@ -303,7 +316,7 @@ function Development({ setModal }) {
                                         }
                                     <>
                                     </>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>

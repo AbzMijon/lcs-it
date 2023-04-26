@@ -1,10 +1,8 @@
 import React from 'react';
 import './location.scss';
-import poland from '../../../assets/svg/poland.svg';
 import locationLocation from '../../../assets/svg/locationLocation.svg';
 import locationMain from '../../../assets/svg/locationMain.svg';
 import locationPhone from '../../../assets/svg/locationPhone.svg';
-import ukFlag from '../../../assets/svg/uk.svg';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveCountry } from '../../../store/reducers/locationReducer';

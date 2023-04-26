@@ -30,15 +30,12 @@
             margin-bottom: 20px;
             font-weight: 700;
             font-size: 12px;
-            line-height: 135%;
         }
         .footer__adress-list, .footer__about-list {
             max-width: 170px;
         }
         .footer__adress-item, .footer__about-item, .footer__folow_item {
-            font-weight: 400;
             font-size: 12px;
-            line-height: 135%;
             margin-bottom: 15px;
             cursor: pointer;
             a {
@@ -118,9 +115,6 @@
                 margin: 0 auto;
             }
             .footer__adress-item, .footer__about-item, .footer__folow_item {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 135%;
                 margin-bottom: 30px;
                 cursor: pointer;
                 a {

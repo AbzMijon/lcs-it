@@ -14,6 +14,7 @@ import { motionAnimation } from '../../../constants/motionAnimation';
 import MobileSeoSelector from '../../MobilesComponents/MobileSeoSelector/MobileSeoSelector';
 
 function Seo({ setModal }) {
+    
     const dispatch = useDispatch();
     const seoBtns = useSelector(state => state.seoReducer.seoButtons);
     const selectedBtn = seoBtns.find((seoBtn) => seoBtn.active);

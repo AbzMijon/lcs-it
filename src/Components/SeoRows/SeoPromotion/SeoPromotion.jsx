@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
-import promotionCard1 from '../../../assets/img/promotionCard1.png';
-import promotionCard2 from '../../../assets/img/promotionCard2.png';
-import promotionCard3 from '../../../assets/img/promotionCard3.png';
-import './seoPromotion.scss';
-import { useState } from 'react';
 import Lottie from "lottie-react";
 import seoPromotionLottie1 from '../../../assets/lottieAnimations/Lottie_Create_Unique_Content.json';
 import seoPromotionLottie2 from '../../../assets/lottieAnimations/position.json';
 import seoPromotionLottie3 from '../../../assets/lottieAnimations/core.json';
+import './seoPromotion.scss';
 
 function SeoPromotion({ setModal }) {
 
