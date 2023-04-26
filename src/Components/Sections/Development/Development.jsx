@@ -40,7 +40,6 @@ function Development({ setModal }) {
     console.log(count);
     console.log(blockName);
 
-
     
     useEffect((e) => {
         const onScroll = (event) => {
