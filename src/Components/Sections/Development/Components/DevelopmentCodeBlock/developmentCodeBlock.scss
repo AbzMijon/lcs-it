@@ -1,0 +1,394 @@
+.development__blocks-code {
+    max-width: 873px;
+    max-height: 455px;
+    background: #0D1117;
+    border: 1px solid #2A2B3A;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: 0 30px;
+    .development__code-left {
+        grid-column: 1/2;
+        grid-row: 1/13;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background: #161B22;
+        border: 1px solid #2A2B3A;
+        border-radius: 12px 0px 0px 12px;
+        padding: 15px 17px;
+        .development__code-logo {
+            filter: brightness(0) saturate(100%) invert(70%) sepia(14%) saturate(207%) hue-rotate(201deg) brightness(89%) contrast(90%);
+        }
+    }
+    .development__code-head {
+        grid-column: 2/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        background: #161B22;
+        border: 1px solid #2A2B3A;
+        border-radius: 0px 12px 0px 0px;
+        padding: 11px 0;
+        align-items: center;
+        .development__code-stroke {
+            background: #282C35;
+            border-radius: 5.01667px;
+            padding: 4px 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .development__code-str {
+                margin-right: 45px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #9E9EAC;
+                text-decoration: none;
+            }
+        }
+    }
+    .development__code-main {
+        grid-column: 2/13;
+        grid-row: 2/13;
+        .development__code-main-row {
+            background: #161B22;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-top: 13px;
+            .development__code-btn {
+                font-family: "poppinsRegular", sans-serif;
+                border-radius: 6px 6px 0px 0px;
+                padding: 5px 12px;
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 18px;
+                color: #3C3D4C;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            .development__code-btn--active {
+                background: #0D1117;
+                color: #fff;
+            }
+        }
+        .code {
+            padding-bottom: 23px;
+            width: 100%;
+            border-radius: 0 0 10px 0px;
+        }
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+@keyframes typing {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 130px;
+    }
+}
+@keyframes typing1 {
+    from { 
+        width: 0;
+        border-right: .13em solid orange;
+    }
+    to { 
+        width: 140px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing2 {
+    from { 
+        width: 0;
+        border-right: .13em solid orange;
+    }
+    to { 
+        width: 60px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing3 {
+    from { 
+        width: 0;
+        border-right: .13em solid orange;
+    }
+    to { 
+        width: 160px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing4 {
+    from { 
+        width: 0;
+        border-right: .13em solid orange;
+    }
+    to { 
+        width: 650px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing5 {
+    from { 
+        width: 0;
+        border-right: .13em solid orange;
+    }
+    to { 
+        width: 500px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing6 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 300px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing7 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 360px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing8 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 500px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing9 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 70px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing10 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 70px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing11 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 70px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing12 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 250px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing13 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 50px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing14 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 250px;
+        border-right: .13em solid orange;
+    }
+}
+@keyframes typing15 {
+    from { 
+        width: 0;
+       border-right: .13em solid orange;
+    }
+    to { 
+        width: 70px;
+        border-right: .13em solid orange;
+    }
+}
+
+.code__text {
+    position: relative;
+    padding: 14px 0;
+}
+
+.code__str1, .code__str2, .code__str3, .code__str4, .code__str5, .code__str6, .code__str7, .code__str8, .code__str9, .code__str10, .code__str11, .code__str12, .code__str13, .code__str14, .code__str15, .code__str16 {
+    font-family: 'code', sans-serif;
+    overflow: hidden;
+    letter-spacing: none;
+    animation:
+    typing 0.5s steps(20, end);
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 44px;
+    span {
+        position: static;
+        z-index: 0;
+    }
+}
+.code__str2 {
+    animation:
+    typing1 0.5s steps(20, end);
+    margin-left: 50px;
+}
+.code__str3 {
+    animation:
+    typing2 0.5s steps(20, end);
+    white-space: nowrap;
+    margin-left: 60px;
+}
+.code__str4 {
+    animation:
+    typing3 0.5s steps(20, end);
+    white-space: nowrap;
+    margin-left: 70px;
+}
+.code__str5 {
+    animation:
+    typing4 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 80px;
+}
+.code__str6 {
+    animation:
+    typing5 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 90px;
+}
+.code__str7 {
+    animation:
+    typing6 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 100px;
+}
+.code__str8 {
+    animation:
+    typing7 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 110px;
+}
+.code__str9 {
+    animation:
+    typing8 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 110px;
+}
+.code__str10 {
+    animation:
+    typing9 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 100px;
+}
+.code__str11 {
+    animation:
+    typing10 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 90px;
+}
+.code__str12 {
+    animation:
+    typing11 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 80px;
+}
+.code__str13 {
+    animation:
+    typing12 0.5s steps(30, end),
+    blink-caret .6s step-end infinite;
+    white-space: nowrap;
+    margin-left: 70px;
+}
+.code__str14 {
+    animation:
+    typing13 0.5s steps(30, end),
+    blink-caret 6.5s step-end infinite;
+    white-space: nowrap;
+    margin-left: 60px;
+}
+.code__str15 {
+    animation:
+    typing14 0.5s steps(30, end);
+    white-space: nowrap;
+    margin-left: 50px;
+}
+.code__str16 {
+    animation:
+    typing15 0.5s steps(30, end),
+    blink-caret .7s step-end infinite;
+    white-space: nowrap;
+    padding-right: 5px;
+    border-right: .13em solid orange;
+    width: fit-content;
+}
+
+.code__str-num {
+    font-family: 'Space Mono';
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3C3D4C;
+}
+
+.doctype-name-tag {
+    color: #4986CC;
+}
+.default-name-tage {
+    color: #9747FF;
+}
+.tag {
+    color: #4986CC;
+}
+.atribut {
+    color: #D2A8FF;
+}
+.tag-text {
+    color: #E2E2E5;
+}
+.blue-atribut {
+    color: #4986CC;
+}
+.atribut-value {
+    color: #4986CC;
+}

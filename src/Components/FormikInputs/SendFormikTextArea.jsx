@@ -4,7 +4,7 @@ import { useField } from 'formik';
 function SendFormikTextArea(props) {
 	const [field, meta, helpers] = useField(props.name);
 	return (
-		<textArea 
+		<textarea 
                   cols="30"
                   rows="10"
                   {...props} 

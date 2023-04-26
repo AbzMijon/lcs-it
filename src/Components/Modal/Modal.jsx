@@ -46,7 +46,9 @@ function Modal({ setModal }) {
                 </div>
                 <p className='modal__title'>Get in touch</p>
                 <p className='modal__subtitle'>Fill out this short form and our team will get back to you within 24 hours</p>
-                <Formik initialValues={initialFormValues} validate={validateForm} onSubmit={(formValues) => console.log(formValues)}>
+                <Formik initialValues={initialFormValues} validate={validateForm} onSubmit={(formValues) => {
+                    setModal(false);
+                }}>
                     <Form>
                         <div className='modal__input-wrap'>
                             <SendFormikInput name='Name' type='text' placeholder='Name' required />
