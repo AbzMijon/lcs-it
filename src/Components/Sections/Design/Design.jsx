@@ -10,7 +10,7 @@ import pin from '../../../assets/img/Pin.png';
 import './design.scss';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import { SKILLS_TYPES } from '../../../constants/skillsTypes';
+import { SKILLS_TYPES } from '../../../constants/skillsCards';
 
 function Design() {
     return (
