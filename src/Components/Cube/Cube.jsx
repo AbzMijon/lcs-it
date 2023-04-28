@@ -1,4 +1,3 @@
-import React from 'react';
 import './cube.scss';
 
 function Cube() {

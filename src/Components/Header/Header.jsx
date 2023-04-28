@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './header.scss';
 import logo from '../../assets/svg/lcsItLogo.svg';
 import burger from '../../assets/svg/burger.svg';

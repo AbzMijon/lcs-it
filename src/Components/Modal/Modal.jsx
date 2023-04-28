@@ -1,4 +1,3 @@
-import React from 'react';
 import './modal.scss';
 import { RxCross2 } from 'react-icons/rx';
 import logo from '../../assets/svg/lcsItLogo.svg';

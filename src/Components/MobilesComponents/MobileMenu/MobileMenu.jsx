@@ -1,4 +1,3 @@
-import React from 'react';
 import facebook from '../../../assets/svg/facebook.svg';
 import instagram from '../../../assets/svg/inst.svg';
 import linkedIn from '../../../assets/svg/linkedIn.svg';

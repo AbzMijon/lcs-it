@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import searchIcon from '../../../../../assets/svg/search-normal.svg';
 import logo from '../../../../../assets/svg/lcsItLogo.svg';
 import './developmentCodeBlock.scss';

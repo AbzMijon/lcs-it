@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './outsourcing.scss';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import outsourcingBg1 from '../../../assets/img/molecula1.png';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './mainPage.scss';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import Modal from '../../Components/Modal/Modal';
@@ -21,7 +21,7 @@ function MainPage() {
     const [cookies, setCookies] = useState(localStorage.getItem('cookiesAccept'));
 
     return (
-        <React.Fragment>
+        <>
             {modal &&
                 <Modal setModal={setModal} />
             }
@@ -42,7 +42,7 @@ function MainPage() {
                 <Location setModal={setModal} />
             </main>
             <Footer />
-        </React.Fragment>
+        </>
     )
 }
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './cookies.scss';
 
 function Cookies({ setCookies }) {
