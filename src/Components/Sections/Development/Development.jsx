@@ -38,7 +38,7 @@ function Development({ setModal }) {
                             <Lottie animationData={overviewLottie} loop={false} />
                         }
                     </div>
-                    <div /* ref={ref} */>
+                    <div>
                         <DevelopmentCodeBlock animationStart={animationStart} codeRef={ref} />
                     </div>
                     <div className="development__blocks-activityAndDevelopers">
