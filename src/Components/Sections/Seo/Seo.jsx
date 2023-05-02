@@ -11,6 +11,7 @@ import SeoPromotion from '../../SeoRows/SeoPromotion/SeoPromotion';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import MobileSeoSelector from '../../MobilesComponents/MobileSeoSelector/MobileSeoSelector';
+import SeoOptimization from '../../SeoRows/SeoOptimizationn/SeoOptimization';
 
 function Seo({ setModal }) {
     
@@ -25,6 +26,8 @@ function Seo({ setModal }) {
             case 1:
                 return <SeoPromotion setModal={setModal}/>
             case 2:
+                return <SeoOptimization setModal={setModal}/>
+            case 3:
                 return <SeoAnalysis setModal={setModal} />
             default:
                 return <SeoAnalysis setModal={setModal} />

@@ -14,7 +14,12 @@ const initialState = {
     },
     {
       id: 2,
-      label: 'Competitive Audit',
+      label: 'Optimization',
+      active: false,
+    },
+    {
+      id: 3,
+      label: 'Competitor analysis',
       active: true,
     },
   ]

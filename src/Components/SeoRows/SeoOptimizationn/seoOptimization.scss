@@ -1,0 +1,29 @@
+.seo__card {
+    .seo__card-title {
+        margin: 19px 26px 31px 26px;
+    }
+    .seo__card-body {
+        border-top: 1px solid #2A2B3A;
+        border-bottom: 1px solid #2A2B3A;
+        height: 204px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .seo__card-body-img {
+            height: 204px;
+            transition: 0.3s all;
+            opacity: 1;
+        }
+        .seo__card-body-img--hidden {
+            opacity: 0;
+        }
+        .seo__card-body-structure {
+            width: 100%;
+        }
+    }
+    .seo__card-subtitle {
+        margin: 18px 26px 22px 26px;
+        color: #fff;
+    }
+}
