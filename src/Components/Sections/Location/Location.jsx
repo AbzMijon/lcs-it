@@ -1,4 +1,3 @@
-import React from 'react';
 import './location.scss';
 import locationLocation from '../../../assets/svg/locationLocation.svg';
 import locationMain from '../../../assets/svg/locationMain.svg';

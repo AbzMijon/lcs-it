@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './experience.scss';
 import experienceCardShield1 from '../../../assets/img/experienceCardShield1.png';
 import experienceCardShield2 from '../../../assets/img/experienceCardShield2.png';

@@ -1,4 +1,3 @@
-import React from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import { FiArrowUpRight } from 'react-icons/fi';
 import usaFlag from '../../../assets/svg/usa.svg';

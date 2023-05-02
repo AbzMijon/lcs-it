@@ -1,4 +1,3 @@
-import React from 'react';
 import './footer.scss';
 import facebook from '../../assets/svg/facebook.svg';
 import instagram from '../../assets/svg/inst.svg';

@@ -1,4 +1,3 @@
-import React from 'react';
 import developers1 from '../../../../../assets/svg/developers1.svg';
 import developers2 from '../../../../../assets/svg/developers2.svg';
 import developers3 from '../../../../../assets/svg/developers3.svg';

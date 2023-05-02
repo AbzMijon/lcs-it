@@ -1,4 +1,3 @@
-import React from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import './seoKeyword.scss';
 import facebook from '../../../assets/svg/facebook.svg';

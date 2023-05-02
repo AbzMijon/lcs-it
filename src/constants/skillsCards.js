@@ -14,6 +14,37 @@ import vueIcon from '../assets/svg/skillsVue.svg';
 import nodejsIcon from '../assets/svg/skillsNodejs.svg';
 import jsIcon from '../assets/svg/skillsJs.svg';
 
+export const SKILLS_TYPES = [
+    {
+        id: 0,
+        label: 'Graphic Design',
+    },
+    {
+        id: 1,
+        label: 'Branding',
+    },
+    {
+        id: 2,
+        label: 'Competitor Analysis',
+    },
+    {
+        id: 3,
+        label: 'Packaging Design',
+    },
+    {
+        id: 4,
+        label: 'Social Media',
+    },
+    {
+        id: 5,
+        label: 'Digital Advertising',
+    },
+    {
+        id: 6,
+        label: 'UX/UI',
+    },
+];
+
 export const SKILLS_CARDS = [
     {
         id: 0,

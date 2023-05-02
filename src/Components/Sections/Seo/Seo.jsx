@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './seo.scss';
 import seoIcon1 from '../../../assets/svg/seoIcon1.svg';
 import seoIcon2 from '../../../assets/svg/seoIcon2.svg';

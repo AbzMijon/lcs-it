@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './development.scss';
 import developmentKeyboard from '../../../assets/img/developmentKeyboard.jpg';
 import ContactBtn from '../../ContactBtn/ContactBtn';

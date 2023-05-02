@@ -1,4 +1,3 @@
-import React from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Cube from '../../Cube/Cube';
 import './welcome.scss';

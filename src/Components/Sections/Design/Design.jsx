@@ -1,4 +1,3 @@
-import React from 'react';
 import Marquee from "react-fast-marquee";
 import letterA from '../../../assets/img/letterA.png';
 import server from '../../../assets/img/Server.png';
@@ -10,7 +9,7 @@ import pin from '../../../assets/img/Pin.png';
 import './design.scss';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import { SKILLS_TYPES } from '../../../constants/skillsTypes';
+import { SKILLS_TYPES } from '../../../constants/skillsCards';
 
 function Design() {
     return (

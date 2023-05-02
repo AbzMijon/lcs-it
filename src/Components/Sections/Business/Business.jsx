@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './business.scss';
 import teamBg from '../../../assets/img/teamBg.png';
 import grid from '../../../assets/img/grid.png';

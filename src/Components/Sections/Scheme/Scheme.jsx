@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './scheme.scss';
 import userActive from '../../../assets/img/userActive.png';
 import user from '../../../assets/svg/user.svg';
@@ -9,8 +9,6 @@ import Lottie from "lottie-react";
 import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import { useRef } from 'react';
-import { useEffect } from 'react';
 
 function Scheme() {
 

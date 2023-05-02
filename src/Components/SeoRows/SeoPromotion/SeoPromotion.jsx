@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Lottie from "lottie-react";
 import seoPromotionLottie1 from '../../../assets/lottieAnimations/Lottie_Create_Unique_Content.json';
