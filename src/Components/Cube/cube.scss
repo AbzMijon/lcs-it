@@ -1,6 +1,7 @@
-.welcome__cube {
+.welcome__cube, .welcome__cube--hidden {
     position: relative;
     z-index: 3;
+    display: block;
     .cube {
         width: 622px;
         height: 550px;
@@ -9,6 +10,9 @@
         left: 0;
         transform: translateY(-100px);
     }
+}
+.welcome__cube--hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 500px) {
