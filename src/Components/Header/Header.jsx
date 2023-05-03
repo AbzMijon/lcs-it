@@ -26,10 +26,10 @@ function Header() {
             </div>
             <nav className="header__nav">
                 <ul className="header__list">
-                    <li className="header__list-item"> <a href="#contacts">Contacts</a> </li>
                     <li className="header__list-item"> <a href="#company">Company</a> </li>
-                    <li className="header__list-item"> <a href="#outsourcing">Outsourcing</a> </li>
                     <li className="header__list-item"> <a href="#services">Services</a> </li>
+                    <li className="header__list-item"> <a href="#outsourcing">Outsourcing</a> </li>
+                    <li className="header__list-item"> <a href="#contacts">Contacts</a> </li>
                 </ul>
             </nav>
             {mobileMenu ?

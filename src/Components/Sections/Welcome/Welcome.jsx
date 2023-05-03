@@ -1,16 +1,10 @@
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Cube from '../../Cube/Cube';
 import './welcome.scss';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import { useRef } from 'react';
 
 function Welcome({ setModal }) {
-
-    const cubeRef = useRef();
-    const isCubeInView = useInView(cubeRef);
-    console.log(isCubeInView);
-
     return (
         <motion.section 
             initial='hidden'
@@ -28,11 +22,7 @@ function Welcome({ setModal }) {
                 <motion.p className="welcome__subtitle" variants={motionAnimation}>LCS-IT is a prompt solution to issues, complex unique technological developments.</motion.p>
                 <ContactBtn setModal={setModal}/>
             </div>
-            <div ref={cubeRef}>
-                {isCubeInView &&
-                    <Cube/>
-                }
-            </div>
+            <Cube/>
         </motion.section>
     )
 }

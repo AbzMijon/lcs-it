@@ -64,11 +64,11 @@ function Scheme() {
                     <ul className='scheme__row-cards'>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Contact us</h3>
-                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, brifle descride your project or ask us a question</p>
+                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, briefly descride your project or ask us a question</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Discovery call</h3>
-                            <p className='scheme__row-text' ref={ref}>Andrew - our CEO will arrange a video meeting with you in order to clarify the project assumptions</p>
+                            <p className='scheme__row-text' ref={ref}> Our Project Manager will arrange a video meeting with you in order to clarify the project assumptions</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Project estimation</h3>

@@ -25,10 +25,10 @@ function Footer() {
                 <div className="footer__about">
                     <p className='footer__about-title'>About</p>
                     <ul className="footer__about-list">
-                        <li className='footer__about-item'> <a href="#contacts">Contacts</a> </li>
                         <li className='footer__about-item'> <a href="#company">Company</a></li>
-                        <li className='footer__about-item'> <a href="#outsourcing">Outsourcing</a></li>
                         <li className='footer__about-item'> <a href="#services">Services</a></li>
+                        <li className='footer__about-item'> <a href="#outsourcing">Outsourcing</a></li>
+                        <li className='footer__about-item'> <a href="#contacts">Contacts</a> </li>
                     </ul>
                 </div>
                 <div className="footer__folow">
