@@ -9,7 +9,6 @@ function Welcome({ setModal }) {
 
     const cubeRef = useRef();
     const isCubeInView = useInView(cubeRef);
-    console.log(isCubeInView);
 
     return (
         <motion.section 
