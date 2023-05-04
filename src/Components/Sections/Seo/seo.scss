@@ -230,6 +230,39 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .seo {
+        max-width: 1018px;
+        padding: 0 20px;
+        .seo__title {
+            margin-bottom: 29px;
+        }
+        .seo__icons {
+            display: none;
+        }
+        .seo__row {
+            margin-bottom: 65px;
+            .seo__card {
+                height: 410px;
+                padding: 0;
+                .seo__card-header {
+                    padding: 5px 16px;
+                }
+                .seo__card-statistic {
+                    padding: 84px 16px 17px 16px;
+                }
+            }
+            .seo__card-text {
+                margin: 0 16px;
+            }
+            .seo-btn {
+                margin: 0 16px;
+                width: 272px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .seo {
         margin-bottom: 40px;

@@ -41,7 +41,7 @@ function Seo({ setModal }) {
     }
 
     const handleNextNavigation = (btnId) => {
-        if(btnId < 2) {
+        if(btnId < 3) {
             dispatch(setNextNavigation(btnId));
         }
     }

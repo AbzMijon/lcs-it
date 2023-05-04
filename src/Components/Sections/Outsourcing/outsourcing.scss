@@ -177,6 +177,7 @@
 @media only screen and (max-width: 1060px) {
     .outsourcing {
         padding-top: 66px;
+        margin-bottom: 70px;
         .outsourcing__wrap {
             max-width: 1018px;
             padding: 0 20px;
@@ -185,6 +186,7 @@
             }
             .outsourcing__table {
                 grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
                 gap: 24px;
                 .outsourcing__card-sharp, .outsourcing__card-react, .outsourcing__card-mob, .outsourcing__card-java, .outsourcing__card-php, .outsourcing__card-btn {
                     grid-column: auto;
@@ -203,6 +205,21 @@
                     }
                 } 
             }
+        }
+        .outsourcing__bg1 {
+            top: 55%;
+            left: -57px;
+            width: 153px;
+        }
+        .outsourcing__bg2 {
+            top: 48%;
+            left: 46%;
+            width: 157px;
+        }
+        .outsourcing__bg3 {
+            top: 65%;
+            right: 0;
+            width: 283px;
         }
     }
 }
