@@ -24,6 +24,34 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .experience {
+        padding-top: 31px;
+        margin-bottom: 40px;
+        .experience__block {
+            max-width: 1018px;
+            padding: 0 20px;
+            .experience__title  {
+                margin-bottom: 30px;
+            }
+            .experience__list {
+                margin-bottom: 60px;
+                .experience__card {
+                    height: 220px;
+                    .card {
+                        img {
+                            width: 65px;
+                        }
+                    }
+                }
+            }
+            .experience__text {
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .experience {
         margin-bottom: 50px;

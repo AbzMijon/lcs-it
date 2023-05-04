@@ -44,6 +44,23 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .welcome {
+        max-width: 1018px;
+        padding: 160px 20px 0 20px;
+        margin-bottom: 50px;
+        .welcome__info {
+            margin-right: 54px;
+            .welcome__title {
+                font-size: 42px;
+            }
+            .welcome__subtitle {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .welcome {
         grid-template-columns: repeat(1, 1fr);

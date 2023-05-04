@@ -1,5 +1,4 @@
 .development {
-    margin-bottom: 5px;
     .development__title {
         max-width: 1148px;
         margin: 0 auto;
@@ -113,6 +112,52 @@
 
 .development__blocks-overview {
     width: 307px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .development {
+        .development__title {
+            max-width: 1018px;
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+        .development__keyboard {
+            img {
+                display: none;
+            }
+            .development__keyboard-info {
+                .development__keyboard-text {
+                    max-width: 100%;
+                    margin-bottom: 49px;
+                }
+            }
+        }
+        .development__code {
+            .development__blocks-overview {
+                display: none;
+            }
+            .development__blocks {
+                margin-bottom: 65px;
+                .development__blocks-activityAndDevelopers {
+                    transform: translateY(0);
+                    .development__developers-head {
+                        margin-bottom: 10px;
+                    }
+                }
+                .development__blocks-developers {
+                    .development__developers-list {
+                        .development__developers-item {
+                            padding: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .development__blocks-code {
+            max-height: 470px;
+            margin: 0 20px;
+        }
+    }
 }
 
 @media only screen and (max-width: 500px) {

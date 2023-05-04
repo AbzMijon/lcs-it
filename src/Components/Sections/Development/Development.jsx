@@ -15,7 +15,7 @@ function Development({ setModal }) {
     const [animationStart, setAnimationStart] = useState(false);
     const ref = useRef();
     const isInView = useInView(ref);
-    
+
     useEffect(() => {
         if(isInView) {
             setAnimationStart(true);
