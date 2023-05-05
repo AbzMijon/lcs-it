@@ -70,7 +70,7 @@ function SeoAnalysis({ setModal }) {
                         <p className='seo__card-volume-title'>Volume</p>
                     </div>
                 </div>
-                <p className='seo__card-text'>Will bring in targeted traffic</p>
+                <p className='seo__card-text seo__card-text-uk'>Will bring in targeted traffic</p>
                 <div className='seo-btn'>
                     <ContactBtn setModal={setModal}/>
                 </div>
@@ -101,7 +101,7 @@ function SeoAnalysis({ setModal }) {
                         <p className='seo__card-volume-title'>Volume</p>
                     </div>
                 </div>
-                <p className='seo__card-text'>Will result in a positive ROI</p>
+                <p className='seo__card-text seo__card-text-canada'>Will result in a positive ROI</p>
                 <div className='seo-btn'>
                     <ContactBtn setModal={setModal}/>
                 </div>

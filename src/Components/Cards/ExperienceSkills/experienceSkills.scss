@@ -11,6 +11,24 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .experience__skills-card {
+        width: auto;
+        height: auto;
+        .experience__skills-img {
+            margin-right: 11px;
+            width: 45px;
+            height: 45px;
+        }
+        .experience__skills-name {
+            font-size: 15px;
+            line-height: 135%;
+            letter-spacing: -0.01em;
+            color: #FFFFFF;
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .experience__skills-card {
         width: 40px;

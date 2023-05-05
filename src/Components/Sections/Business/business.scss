@@ -23,10 +23,10 @@
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
-            div + div {
+            .business__card + .business__card {
                 margin-top: 30px;
             }
-            div {
+            .business__card {
                 background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);
                 border: 1px solid #3C3D4C;
                 backdrop-filter: blur(2px);
@@ -216,6 +216,53 @@ span {
     filter: blur(69px);
     border-radius: 50%;
 } 
+
+@media only screen and (max-width: 1018px) {
+    .business {
+        max-width: 1018px;
+        padding: 0 20px;
+        margin-bottom: 66px;
+        .business__title {
+            margin-bottom: 33px;
+        }
+        .business__model {
+            display: grid;
+            grid-template-columns: 304px 222px 368px;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 25px;
+            .business__cards {
+                .business__card + .business__card {
+                    margin-top: 24px;
+                }
+                .business__card {
+                    padding: 50px 34px 40px;
+                   /*  max-height: 177px; */
+                    .business__outstaffing-icon, .business__outsorcing-icon {
+                        margin-bottom: 24px;
+                        width: 44px;
+                    }
+                    .business__outstaffing-title, .business__team-title, .business__outsorcing-title {
+                        font-size: 20px;
+                        line-height: 135%;
+                        letter-spacing: -0.01em;
+                    }
+                }
+                .business__team {
+                    padding: 50px 28px 40px;
+                    .business__team-bg {
+                        transform: translateX(0);
+                    }
+                }
+            }
+            .business__keyboard, .business__mini-coubes {
+                height: 277px;
+            }
+        }
+        .business__card {
+            background-size: contain;
+        }
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .business {

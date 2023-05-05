@@ -234,6 +234,7 @@
     .seo {
         max-width: 1018px;
         padding: 0 20px;
+        margin-bottom: 65px;
         .seo__title {
             margin-bottom: 29px;
         }
@@ -255,10 +256,22 @@
             .seo__card-text {
                 margin: 0 16px;
             }
+            .seo__card-text-canada {
+                padding: 0 33px;
+            }
+            .seo__card-text-uk {
+                padding: 0 27px;
+            }
             .seo-btn {
                 margin: 0 16px;
                 width: 272px;
             }
+        }
+    }
+    .seo__pagination {
+        .seo__pagination-wrap {
+            width: 65px;
+            height: 65px;
         }
     }
 }

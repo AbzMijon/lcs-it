@@ -58,15 +58,15 @@ function Business() {
                     </div>
                 </div>
                 <div className="business__cards">
-                    <div className="business__outstaffing" onMouseMove={onMouseMove}>
+                    <div className="business__card business__outstaffing" onMouseMove={onMouseMove}>
                         <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' />
                         <h4 className='business__outstaffing-title'>Outstaffing</h4>
                     </div>
-                    <div className="business__team" onMouseMove={onMouseMove}>
+                    <div className="business__card business__team" onMouseMove={onMouseMove}>
                         <img src={teamBg} alt="" className='business__team-bg' />
                         <h4 className='business__team-title'>Dedicated Team</h4>
                     </div>
-                    <div className="business__outsorcing" onMouseMove={onMouseMove}>
+                    <div className="business__card business__outsorcing" onMouseMove={onMouseMove}>
                         <img src={modelOut} alt="" className='business__outsorcing-icon' />
                         <h4 className='business__outsorcing-title'>Outsourcing</h4>
                         <img src={grid} alt="" className='business__outsorcing-bg' />

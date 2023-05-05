@@ -49,6 +49,14 @@
                 margin-bottom: 70px;
             }
         }
+        .experience__skills {
+            .swiper {
+                gap: 0;
+                .marquee {
+                    gap: 0;
+                }
+            }
+        }
     }
 }
 

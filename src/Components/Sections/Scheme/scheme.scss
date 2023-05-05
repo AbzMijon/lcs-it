@@ -243,6 +243,66 @@
         transform: translateX(100%);
     }
 
+    @media only screen and (max-width: 1018px) {
+        .scheme {
+            max-width: 1018px;
+            padding: 0 20px;
+            margin-bottom: 83px;
+            .scheme__title {
+                margin-bottom: 64px;
+            }
+            .scheme__content {
+                .scheme__list {
+                    margin-right: 59px;
+                    .scheme__row-icons {
+                        margin-right: 67px;
+                        .scheme__row-icon-wrap {
+                            width: 63px;
+                            height: 63px;
+                            img {
+                                width: 27px;
+                            }
+                            .scheme__row-rocket {
+                                width: 39px;
+                            }
+                        }
+                        .scheme__row-line {
+                            width: 2px;
+                            height: 117px;
+                        }
+                    }
+                    .scheme__row-cards {
+                        .scheme__row-card {
+                            width: 258px;
+                            .scheme__row-title {
+                                font-size: 24px;
+                                line-height: 36px;
+                            }
+                            .scheme__row-text {
+                                font-size: 16px;
+                                line-height: 135%;
+                                letter-spacing: -0.01em;
+                            }
+                        }
+                        .scheme__row-card + .scheme__row-card {
+                            margin-top: 70px;
+                        }
+                    }
+                }
+                .scheme__ilustration {
+                    .scheme__ilustration-content {
+                        width: 511px;
+                        height: 560px;
+                        transform: translateY(-129px);
+                    }
+                }
+            }
+            .scheme__content {
+                display: flex;
+            }
+        }
+    }
+
     @media only screen and (max-width: 500px) {
         .scheme {
             max-width: 360px;
