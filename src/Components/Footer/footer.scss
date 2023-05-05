@@ -90,6 +90,40 @@
     }
 }
 
+@media only screen and (max-width: 1018px) {
+    .footer {
+        .footer__content {
+            max-width: 1018px;
+            padding: 50px 20px 60px 20px;
+            .footer__folow-list {
+                .footer__folow-item + .footer__folow-item {
+                    margin-left: 31px;
+                }
+            }
+        }
+        .footer__container-down {
+            padding: 28px 0 34px 0;
+            .footer__terms-list {
+                max-width: 1018px;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                .footer__terms-item {
+                    &:first-child {
+                        grid-column: 2/3;
+                    }
+                }
+                .footer__terms-item + .footer__terms-item {
+                    margin-left: 0px;
+                }
+                .footer__terms-item-terms {
+                    margin-left: -120px !important;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .footer {
         .footer__content {

@@ -53,7 +53,7 @@ function Location({ setModal }) {
                         </li>
                         <li className='location__card-item'>
                             <img src={locationLocation} alt="" className='location__card-icon' />
-                            <p className='location__inf'>One Knightsbridge Green London, SW1X 7NE <br />United Kingdom </p>
+                            <p className='location__inf'>1 Knightsbridge Green London SW1X 7NE United Kingdom</p>
                         </li>
                     </ul>
                     <div className="location__btn">
