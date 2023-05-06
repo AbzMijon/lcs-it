@@ -137,6 +137,9 @@
                 display: none;
             }
             .development__blocks {
+                max-width: 1018px;
+                padding: 0 20px;
+                margin: 0 auto;
                 margin-bottom: 65px;
                 .development__blocks-activityAndDevelopers {
                     transform: translateY(0);
@@ -155,7 +158,7 @@
         }
         .development__blocks-code {
             max-height: 470px;
-            margin: 0 20px;
+            margin: 0 20px 0 0;
         }
     }
 }

@@ -27,3 +27,18 @@
         color: #fff;
     }
 }
+
+@media only screen and (max-width: 1060px) {
+    .seo__card {
+        .seo__card-title {
+            margin: 12px 26px 12px 26px;
+        }
+        .seo__card-body {
+            height: 210px;
+        }
+        .seo__card-subtitle {
+            margin: 18px 26px 22px 26px;
+            color: #fff;
+        }
+    }
+}

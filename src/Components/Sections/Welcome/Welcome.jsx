@@ -27,7 +27,7 @@ function Welcome({ setModal }) {
                 <motion.p className="welcome__subtitle" variants={motionAnimation}>LCS-IT is a prompt solution to issues, complex unique technological developments.</motion.p>
                 <ContactBtn setModal={setModal}/>
             </div>
-            <div ref={cubeRef}>
+            <div ref={cubeRef} className='welcome__cube'>
                 <Cube isCubeInView={isCubeInView}/>
             </div>
         </motion.section>

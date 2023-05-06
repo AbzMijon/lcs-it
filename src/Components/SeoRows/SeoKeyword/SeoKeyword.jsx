@@ -89,7 +89,6 @@ function SeoKeyword({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </li>
-
             <li className='seo__card'>
                 <div className='seo__card-head'>
                     <div className='seo__card-head-title'>

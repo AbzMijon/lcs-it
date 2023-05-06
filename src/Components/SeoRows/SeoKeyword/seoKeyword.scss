@@ -65,7 +65,6 @@
     .seo__card-body-img {
         width: 100%;
         z-index: 100;
-        /* max-height: 138px; */
     }
     .seo__card-body-line {
         position: absolute;
@@ -258,6 +257,48 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .seo__card-head, .seo__card-head-icons {
+        padding: 12px 26px 12px 26px;
+        height: 70px;
+        .seo__card-head-list {
+            .seo__card-item {
+                margin-right: 35px;
+                width: 17px;
+                height: 19px;
+            }
+        }
+        .seo__card-item-plus {
+            margin-left: 4px;
+        }
+    }
+    .seo__card-body-full {
+        height: 204px;
+        .seo__card-body-imgElem {
+            height: 120px;
+        }
+        .seo__card-body-content {
+            justify-content: center;
+            .seo__card-body-btn {
+                padding: 7px 15px;
+            }
+        }
+    }
+    .seo__card-body-graphic {
+        .seo__card-body-month, .seo__card-body-table--vertical, .seo__card-body-table--horisontal {
+            .seo__card-body-monthName + .seo__card-body-monthName {
+                margin-left: 12px;
+            }
+            .seo__card-body-monthName {
+                color: #fff;
+                &:last-child {
+                    margin-left: 27px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .seo__card-body-graphic {
         .seo__card-body-table--vertical {
@@ -291,9 +332,6 @@
                 width: 18px;
                 height: 20px;
                 cursor: pointer;
-                &:hover .seo__card-list-img {
-                    filter: brightness(0) saturate(100%) invert(33%) sepia(74%) saturate(4015%) hue-rotate(251deg) brightness(101%) contrast(101%);
-                }
             }
         }
     }

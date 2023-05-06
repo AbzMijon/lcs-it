@@ -243,11 +243,12 @@
         transform: translateX(100%);
     }
 
-    @media only screen and (max-width: 1018px) {
+    @media only screen and (max-width: 1060px) {
         .scheme {
             max-width: 1018px;
             padding: 0 20px;
             margin-bottom: 83px;
+            overflow-x: hidden;
             .scheme__title {
                 margin-bottom: 64px;
             }
@@ -256,6 +257,9 @@
                     margin-right: 59px;
                     .scheme__row-icons {
                         margin-right: 67px;
+                        .scheme__row-example {
+                            display: none;
+                        }
                         .scheme__row-icon-wrap {
                             width: 63px;
                             height: 63px;
