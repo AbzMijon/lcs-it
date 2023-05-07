@@ -14,6 +14,9 @@
                 transform: translateY(110px);
                 .development__blocks-activity {
                     margin-bottom: 30px;
+                    .development__keyboard-info--planshet {
+                        display: none;
+                    }
                 }
             }
             .development__blocks-developers {
@@ -161,6 +164,65 @@
             margin: 0 20px 0 0;
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+        .development {
+            .development__title {
+                max-width: 767px;
+                margin-bottom: 35px;
+            }
+            .development__code {
+                .development__blocks-overview {
+                    display: none;
+                }
+                .development__blocks {
+                    max-width: 767px;
+                    padding: 0 20px;
+                    margin: 0 auto;
+                    margin-bottom: 65px;
+                    flex-direction: column;
+                    align-items: start;
+                    .development__blocks-activityAndDevelopers {
+                        .development__blocks-activity {
+/*                             width: 225px;
+                            height: 200px; */
+                        }
+                    }
+                    .development__blocks-developers {
+                        display: none;
+                    }
+                    .development__blocks-activityAndDevelopers {
+                        .development__blocks-activity {
+                            display: flex;
+                            justify-content: start;
+                            align-items: end;
+                            .development__blocks-activity-lottie {
+                                margin-right: 21px;
+                                div {
+                                    width: 225px;
+                                    height: 200px;
+                                }
+                            }
+                            .development__keyboard-info--planshet {
+                                display: block;
+                                .development__keyboard-text {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .development__keyboard-info {
+                    display: none;
+                }
+            }
+            .development__blocks-code {
+                max-height: 470px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+        }
 }
 
 @media only screen and (max-width: 500px) {

@@ -60,6 +60,39 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .experience {
+        margin-bottom: 35px;
+        .experience__block {
+            max-width: 767px;
+            .experience__title {
+                margin-bottom: 34px;
+                text-align: center;
+            }
+            .experience__list {
+                column-gap: 19px;
+                margin-bottom: 69px;
+                .experience__card {
+                    height: 165px;
+                    .card {
+                        img {
+                            width: 45px;
+                        }
+                        .experience__card-title {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+            .experience__text {
+                max-width: none;
+                width: 100%;
+                margin-bottom: 105px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .experience {
         margin-bottom: 50px;

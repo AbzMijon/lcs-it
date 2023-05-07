@@ -43,9 +43,15 @@ function Development({ setModal }) {
                     </div>
                     <div className="development__blocks-activityAndDevelopers">
                         <div className="development__blocks-activity">
-                            {animationStart &&
-                                <Lottie animationData={activityLottie} loop={false} />
-                            }
+                            <div className='development__blocks-activity-lottie'>
+                                {animationStart &&
+                                    <Lottie animationData={activityLottie} loop={false} />
+                                }
+                            </div>
+                            <div className="development__keyboard-info development__keyboard-info--planshet" variants={motionAnimation}>
+                                <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
+                                <ContactBtn setModal={setModal}/>
+                            </div>
                         </div>
                         <div className="development__blocks-developers">
                             <DevelopmentDevelopersBlock />

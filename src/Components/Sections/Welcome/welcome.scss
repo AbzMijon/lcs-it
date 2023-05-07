@@ -48,7 +48,7 @@
     .welcome {
         max-width: 1018px;
         padding: 160px 20px 0 20px;
-        margin-bottom: 50px;
+        margin-bottom: 109px;
         .welcome__info {
             margin-right: 54px;
             .welcome__title {
@@ -61,6 +61,12 @@
         .welcome__cube {
             display: none;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome {
+        max-width: 767px;
     }
 }
 

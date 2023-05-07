@@ -229,7 +229,7 @@ span {
         }
         .business__model {
             display: grid;
-            grid-template-columns: 304px 222px 368px;
+            grid-template-columns: minmax(204px, 304px) 222px minmax(204px, 386px);
             grid-template-rows: repeat(2, 1fr);
             gap: 25px;
             .business__cards {

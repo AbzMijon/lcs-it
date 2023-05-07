@@ -3,6 +3,7 @@
     margin: 0 auto;
     margin-bottom: 85px;
     position: relative;
+    overflow-x: hidden;
     .scheme__title {
         margin-bottom: 118px;
     }
@@ -248,7 +249,6 @@
             max-width: 1018px;
             padding: 0 20px;
             margin-bottom: 83px;
-            overflow-x: hidden;
             .scheme__title {
                 margin-bottom: 64px;
             }
@@ -303,6 +303,18 @@
             }
             .scheme__content {
                 display: flex;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .scheme {
+            max-width: 767px;
+            margin-bottom: 60px;
+            .scheme__content {
+                .scheme__list {
+                    margin-right: 37px;
+                }
             }
         }
     }
