@@ -50,3 +50,14 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .seo__card {
+        .seo__card-body {
+            height: 135px;
+            .seo__card-body-img {
+                height: 135px;
+            }
+        }
+    }
+}
