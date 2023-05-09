@@ -1,0 +1,107 @@
+.seo__card-head-analysis {
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .seo__card-header-left {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .seo__card-flag {
+            width: 54px;
+            height: 35px;
+            margin-right: 16px;
+        }
+        .seo__card-country {
+            margin-right: 7px;
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .seo__card-arrow {
+            font-size: 19px;
+            color: #2A2B3A;
+            transform: translateY(-15px);
+        }
+    }
+    .seo__card-volume-btn {
+        border: none;
+        outline: none;
+        padding: 3px 12px;
+        text-align: center;
+        background: #361E54;
+        border-radius: 16px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #9747FF;
+    }
+    .uk-volume {
+        background: #131F31;
+        color: #175CD3;
+    }
+    .canada-volume {
+        background: #31132E;
+        color: #C11574;
+    }
+}
+.seo__card-statistic {
+    position: relative;
+    padding: 103px 48px 22px 34px;
+    border-top: 1px solid #2A2B3A;
+    border-bottom: 1px solid #2A2B3A;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+    height: 204px;
+    .seo__graphic-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .seo__card-result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .seo__card-result-img {
+            background: #2A2B3A;
+            border: 1px solid #3C3D4C;
+            border-radius: 1000px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        .seo__card-result-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .seo__card-kd {
+        text-align: center;
+        .seo__card-kd-proccent {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+        }
+        .seo__card-kd-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .seo__card-volume {
+        text-align: center;
+        .seo__card-volume-count {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #fff;
+        }
+        .seo__card-volume-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

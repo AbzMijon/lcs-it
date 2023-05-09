@@ -9,12 +9,13 @@ import canadaLine from '../../../assets/img/canadaLine.png';
 import usaResult from '../../../assets/svg/usaResult.svg';
 import ukResult from '../../../assets/svg/ukResult.svg';
 import canadaResult from '../../../assets/svg/canadaResult.svg';
+import './seoAnalysis.scss';
 
 function SeoAnalysis({ setModal }) {
     return (
         <ul className="seo__row">
             <li className='seo__card'>
-                <div className="seo__card-header">
+                <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
                         <img src={usaFlag} alt="" className='seo__card-flag' />
                         <p className='seo__card-country'>USA</p>
@@ -45,7 +46,7 @@ function SeoAnalysis({ setModal }) {
                 </div>
             </li>
             <li className='seo__card'>
-                <div className="seo__card-header">
+                <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
                         <img src={ukFlag} alt="" className='seo__card-flag' />
                         <p className='seo__card-country'>UK</p>
@@ -76,7 +77,7 @@ function SeoAnalysis({ setModal }) {
                 </div>
             </li>
             <li className='seo__card'>
-                <div className="seo__card-header">
+                <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
                         <img src={canadaFlag} alt="" className='seo__card-flag' />
                         <p className='seo__card-country'>CAN</p>

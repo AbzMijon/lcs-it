@@ -34,7 +34,9 @@ function SeoOptimization({ setModal }) {
     return (
         <ul className="seo__row">
             <li className='seo__card'>
-                <p className="seo__card-title">Content creation and distribution</p>
+                <div className="seo__card-head">
+                    <p className="seo__card-title">Content creation and distribution</p>
+                </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard1}>
                     {showImgCard1 &&
                         <Lottie animationData={seoOptimizationLottie1} loop={false} className='seo__card-body-img' />
@@ -46,7 +48,9 @@ function SeoOptimization({ setModal }) {
                 </div>
             </li>
             <li className='seo__card'>
-                <p className="seo__card-title">Track a website's daily rankings</p>
+                <div className="seo__card-head">
+                    <p className="seo__card-title">Track a website's daily rankings</p>
+                </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard2}>
                     {showImgCard2 &&
                         <Lottie animationData={seoOptimizationLottie2} loop={false} className='seo__card-body-img' />
@@ -58,7 +62,9 @@ function SeoOptimization({ setModal }) {
                 </div>
             </li>
             <li className='seo__card'>
-                <p className="seo__card-title">Website's structure construction</p>
+                <div className="seo__card-head">
+                    <p className="seo__card-title">Website's structure construction</p>
+                </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard3}>
                     {showImgCard3 &&
                         <Lottie animationData={seoOptimizationLottie3} loop={false} className='seo__card-body-img' />
