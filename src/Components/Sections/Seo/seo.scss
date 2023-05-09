@@ -363,7 +363,6 @@
             row-gap: 30px;
             margin-bottom: 40px;
             .seo__card {
-                height: auto;
                 width: 320px;
                 .seo__card-statistic {
                     position: relative;
@@ -376,7 +375,9 @@
                     margin-bottom: 20px;
                 }
                 .seo-btn {
-                    margin-left: -8%;
+                    button {
+                        margin-left: 0;
+                    }
                 }
             }
         }
