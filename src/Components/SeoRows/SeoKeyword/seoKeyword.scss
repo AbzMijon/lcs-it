@@ -299,6 +299,46 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .seo__card-head, .seo__card-head-icons {
+        .seo__card-head-list {
+            .seo__card-item {
+                margin-right: 20px;
+                width: 15px;
+                height: 17px;
+            }
+        }
+        .seo__card-item-plus {
+            margin-left: 2px;
+        }
+    }
+    .seo__card-body-full {
+        height: 135px;
+        .seo__card-body-imgElem {
+            height: 70px;
+        }
+        .seo__card-body-content {
+            justify-content: center;
+            .seo__card-body-btn {
+                padding: 7px 15px;
+            }
+        }
+    }
+    .seo__card-body-graphic {
+        .seo__card-body-month, .seo__card-body-table--vertical, .seo__card-body-table--horisontal {
+            .seo__card-body-monthName + .seo__card-body-monthName {
+                margin-left: 12px;
+            }
+            .seo__card-body-monthName {
+                color: #fff;
+                &:last-child {
+                    margin-left: 27px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .seo__card-body-graphic {
         .seo__card-body-table--vertical {

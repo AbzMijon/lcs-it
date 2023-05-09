@@ -27,16 +27,17 @@ function Business() {
             whileInView='visible'
             viewport={{ amount: 0.4, once: true }}
             className='business'
+            id='business'
             variants={motionAnimation}
         >
             <h2 className='business__title'>Business model</h2>
             <div className="business__model">
-                <div className="business__big-coubes" onMouseMove={onMouseMove}>
+                <div className="business__big-coubes lightEffectWrapper" onMouseMove={onMouseMove}>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <div className="business__card business__card--big">
+                    <div className="business__card business__card--big lightEffectWrapper__card">
                         <div 
                             id='light' 
                             className="light" 
@@ -44,12 +45,12 @@ function Business() {
                         </div>
                     </div>
                 </div>
-                <div className="business__keyboard" onMouseMove={onMouseMove}>
+                <div className="business__keyboard lightEffectWrapper" onMouseMove={onMouseMove}>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <div className="business__card business__card--keyboard">
+                    <div className="business__card business__card--keyboard lightEffectWrapper__card">
                         <div 
                             id='light' 
                             className="light" 
@@ -96,12 +97,12 @@ function Business() {
                         </div>
                     </Marquee>
                 </div>
-                <div className="business__mini-coubes" onMouseMove={onMouseMove}>
+                <div className="business__mini-coubes lightEffectWrapper" onMouseMove={onMouseMove}>
                 <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <div className="business__card business__card--mini">
+                    <div className="business__card business__card--mini lightEffectWrapper__card">
                         <div 
                             id='light' 
                             className="light" 

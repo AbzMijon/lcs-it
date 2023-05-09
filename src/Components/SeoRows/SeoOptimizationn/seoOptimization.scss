@@ -42,3 +42,11 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .seo__card {
+        .seo__card-body {
+            height: 135px;
+        }
+    }
+}

@@ -21,7 +21,7 @@ function Design() {
             id='design'
         >
             <motion.h2 className='design__title' variants={motionAnimation}>Design</motion.h2>
-            <motion.p className='design__text' variants={motionAnimation}>As a full-service IT company, we have a UX design team that works closely with our client, design and develop transformative user experiences across all platforms and brand’s touchpoints.</motion.p>
+            <motion.p className='design__text' variants={motionAnimation}>As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</motion.p>
             <motion.ul className='design__types' variants={motionAnimation}>
                 <Marquee
                     delay={0}

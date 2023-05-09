@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const ExperienceCard = forwardRef(({ src, label, onMouseMove, mouse }, ref) => {
     return (
-        <li className='experience__card' onMouseMove={onMouseMove} ref={ref} >
+        <li className='experience__card lightEffectWrapper' onMouseMove={onMouseMove} ref={ref} >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <div className='card' id="ex_card">
+            <div className='card lightEffectWrapper__card' id="ex_card">
                 <img src={src} alt="" />
                 <p className='experience__card-title'>{label}</p>
                 <div 

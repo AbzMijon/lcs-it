@@ -272,15 +272,66 @@
     }
     .seo__pagination {
         .seo__pagination-wrap {
-            width: 65px;
-            height: 65px;
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .seo {
+        max-width: 767px;
+        margin-bottom: 70px;
+        .seo__row {
+            margin-bottom: 50px;
+            column-gap: 20px;
+            .seo__card {
+                height: 365px;
+                .seo__card-header {
+                    padding: 5px 19px;
+                    height: 70px;
+                    .seo__card-volume-btn {
+                        display: none;
+                    }
+                }
+                .seo__card-statistic {
+                    padding: 46px 16px 17px 9px;
+                    .seo__card-kd {
+                        .seo__card-kd-proccent {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                    .seo__card-volume {
+                        text-align: center;
+                        .seo__card-volume-count {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .seo-btn {
+                    position: absolute;
+                    bottom: 24px;
+                }
+            }
+            .seo__card-text {
+                margin: 0 16px;
+            }
+            .seo__card-text-canada {
+                padding: 0;
+            }
+            .seo__card-text-uk {
+                padding: 0;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 500px) {
     .seo {
-        margin-bottom: 40px;
+        margin-bottom: 40px;    
+        padding: 0;
         .seo__title {
             margin-bottom: 30px;
             display: none;

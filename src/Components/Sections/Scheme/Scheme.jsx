@@ -64,7 +64,7 @@ function Scheme() {
                     <ul className='scheme__row-cards'>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Contact us</h3>
-                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, briefly descride your project or ask us a question</p>
+                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, briefly describe your project or ask us a question</p>
                         </li>
                         <li className='scheme__row-card'>
                             <h3 className='scheme__row-title'>Discovery call</h3>

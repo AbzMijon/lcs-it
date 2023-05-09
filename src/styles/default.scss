@@ -109,6 +109,71 @@ h5,
 	}
 }
 
+.lightEffectWrapper {
+	position: relative;
+	.lightEffectWrapper__card {
+		position: relative;
+		.light{
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            transition: opacity .3s;
+            background: radial-gradient(circle at 52.8095px 0px, rgb(255, 255, 255), transparent);
+        }
+        &:hover{
+            .light{
+                opacity: 0.4;
+            }
+        }
+	}
+	span {
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        z-index: 999;
+        &:first-child, &:nth-child(2) {
+            top: 0;
+        }
+        &:first-child, &:nth-child(3) {
+            left: 0;
+        }
+        &:nth-child(2), &:nth-child(4) {
+            right: 0;
+        }
+        &:nth-child(3), &:nth-child(4) {
+            bottom: 0;
+        }
+        &:first-child:hover ~ .lightEffectWrapper__card {
+            transform: perspective(600px) rotateX(10deg) rotateY(-10deg);
+            .light{
+                opacity: 0.4;
+            }
+        }
+        &:nth-child(2):hover ~ .lightEffectWrapper__card {
+            transform: perspective(600px) rotateX(10deg) rotateY(10deg);
+            .light{
+                opacity: 0.4;
+            }
+        }
+        &:nth-child(3):hover ~ .lightEffectWrapper__card {
+            transform: perspective(600px) rotateX(-10deg) rotateY(-10deg);
+            .light{
+                opacity: 0.4;
+            }
+        }
+        &:nth-child(4):hover ~ .lightEffectWrapper__card {
+            transform: perspective(600px) rotateX(-10deg) rotateY(10deg);
+            .light{
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
 	.btn-contact {
 		width: 270px;

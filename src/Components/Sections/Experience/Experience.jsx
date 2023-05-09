@@ -68,7 +68,7 @@ function Experience() {
                     viewport={{ amount: 0.6, once: true }}
                     variants={motionAnimation}
                     className='experience__text'
-                    >LCS-IT is a modern and creative IT company, where products of any complexityand scale are created! Our team consists of only experienced developers, designers and friendly managers who implement all your bold ideas using the latest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7.
+                    >LCS-IT is a modern and creative IT company, where products of any complexity and scale are created! Our team consists of only experienced developers, designers and friendly managers who implement all your bold ideas using the latest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7.
                 </motion.p>
             </div>
             <motion.div 

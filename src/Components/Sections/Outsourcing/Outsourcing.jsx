@@ -41,7 +41,7 @@ function Outsourcing({ setModal }) {
                         return (
                             <motion.li 
                                 variants={motionAnimation}
-                                className={`outsourcing__table-wrapper outsourcing__card-${outsourcingCard.classname}`}
+                                className={`outsourcing__table-wrapper outsourcing__card-${outsourcingCard.classname} lightEffectWrapper`}
                                 onMouseMove={onMouseMove}
                                 key={outsourcingCard.id}
                             >
@@ -49,7 +49,7 @@ function Outsourcing({ setModal }) {
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <div className="outsourcing__card">
+                                <div className="outsourcing__card lightEffectWrapper__card">
                                     <img src={outsourcingCard.icon} alt="" className="outsourcing__img" />
                                     <h4 className='outsourcing__card-name'>{outsourcingCard.title}</h4>
                                     <p className='outsourcing__text'>{outsourcingCard.text}</p>

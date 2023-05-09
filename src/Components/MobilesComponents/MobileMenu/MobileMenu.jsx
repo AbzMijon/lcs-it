@@ -15,9 +15,6 @@ function MobileMenu({ setMobileMenu }) {
         <div className='mobileMenu'>
             <ul className='mobileMenu__list'>
                 <li className='mobileMenu__item' onClick={handleItem}>
-                    <a href="#services">Servises</a>
-                </li>
-                <li className='mobileMenu__item' onClick={handleItem}>
                     <a href="#software">Software development</a>
                 </li>
                 <li className='mobileMenu__item' onClick={handleItem}>
@@ -31,6 +28,9 @@ function MobileMenu({ setMobileMenu }) {
                 </li>
                 <li className='mobileMenu__item' onClick={handleItem}>
                     <a href="#scheme">Scheme of Work</a>
+                </li>
+                <li className='mobileMenu__item' onClick={handleItem}>
+                    <a href="#business">Business model</a>
                 </li>
                 <li className='mobileMenu__item' onClick={handleItem}>
                     <a href="#contacts">CONTACT US</a>
