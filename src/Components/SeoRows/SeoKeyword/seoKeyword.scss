@@ -134,7 +134,14 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 635px) {
+    .seo__card-head, .seo__card-head-icons {
+        .seo__card-head-list {
+            .seo__card-item {
+                margin-right: 47px;
+            }
+        }
+    }
     .seo__card-body-full {
         .seo__card-body-imgElem {
             height: 105px;

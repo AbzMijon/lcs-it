@@ -41,6 +41,14 @@
     }
 }
 
+@media only screen and (max-width: 1060px) {
+    .seo__card {
+        .seo__card-title {
+            padding: 0;
+        }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .seo__card {
         .seo__card-body {

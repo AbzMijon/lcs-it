@@ -63,6 +63,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 3;
         .seo__card-result-img {
             background: #2A2B3A;
             border: 1px solid #3C3D4C;
@@ -79,6 +80,7 @@
         }
     }
     .seo__card-kd {
+        z-index: 3;
         text-align: center;
         .seo__card-kd-proccent {
             font-weight: 500;
@@ -92,6 +94,7 @@
         }
     }
     .seo__card-volume {
+        z-index: 3;
         text-align: center;
         .seo__card-volume-count {
             font-weight: 500;
@@ -103,5 +106,22 @@
             font-size: 14px;
             line-height: 20px;
         }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .seo__card-statistic {
+        height: 182px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .seo__card-head-analysis {
+        .seo__card-volume-btn {
+            display: none;
+        }
+    }
+    .seo__card-statistic {
+        height: 135px;
     }
 }
