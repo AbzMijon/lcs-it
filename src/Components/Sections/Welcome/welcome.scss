@@ -2,7 +2,7 @@
     padding: 0px 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1148px;
+    max-width: 1180px;
     margin: 0 auto;
     padding-top: 260px;
     margin-bottom: 135px;
@@ -42,6 +42,9 @@
             margin-bottom: 29px;
         }
     }
+    .welcome__cube {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -57,9 +60,6 @@
             .welcome__subtitle {
                 margin-bottom: 40px;
             }
-        }
-        .welcome__cube {
-            display: none;
         }
     }
 }

@@ -2,7 +2,8 @@
     margin-bottom: 85px;
     padding-top: 47px;
     .experience__block {
-        max-width: 1148px;
+        max-width: 1180px;
+        padding: 0 10px;
         margin: 0 auto;
         .experience__title {
             position: relative;
@@ -93,16 +94,17 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
     .experience {
         margin-bottom: 50px;
-        padding-top: 0;
         .experience__block {
             padding: 0 20px;
             max-width: 360px;
             margin: 0 auto;
             .experience__title {
                 margin-bottom: 30px;
+                font-size: 24px;
+                line-height: 50px;
             }
             .experience__list {
                 grid-template-columns: repeat(1, 1fr);

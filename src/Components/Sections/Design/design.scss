@@ -4,7 +4,8 @@
     background: url('../../../assets/img/designBg.png') no-repeat;
     background-position: right 205px top 0px;
     .design__title {
-        max-width: 1148px;
+        max-width: 1180px;
+        padding: 0 10px;
         margin: 0 auto;
         margin-bottom: 58px;
     }
@@ -203,6 +204,9 @@
         .swiper .marquee {
             gap: 0px;
         }
+        .marquee {
+            min-width: 0;
+        }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -218,8 +222,7 @@
             font-size: 16px;
             line-height: 24px;
             max-width: 766px;
-            margin: 0 auto;
-            margin-bottom: 78px;
+            margin: 0 auto 78px 20px;
         }
         .design__types {
             margin-bottom: 50px;
