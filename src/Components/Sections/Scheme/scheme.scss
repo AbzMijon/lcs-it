@@ -16,87 +16,36 @@
             justify-content: start;
             align-items: start;
             .scheme__row-icons {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 margin-right: 116px;
-                position: relative;
-                .scheme__row-example {
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-                    position: absolute;
-                    left: -360px;
-                    top: 65px;
-                    .scheme__triangles--transform {
-                        transform: rotate(270deg);
-                        position: relative;
-                        top: 0px;
-                        left: 24px;
-                        margin-left: 8px;
-                    }
-                    
-                }
+            }
+            .scheme__row-example {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                position: absolute;
+                left: -350px;
+                top: 30%;
                 .scheme__row-icon-wrap {
-                    background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%) no-repeat center;
-                    border: 1px solid #2A2B3A;
-                    backdrop-filter: blur(2px);
-                    border-radius: 50%;
                     width: 84px;
                     height: 84px;
+                    border-radius: 50%;
+                    background: linear-gradient(140.55deg, rgba(42, 43, 58, 0.6) 1.17%, rgba(9, 11, 12, 0.6) 79.03%);
+                    border: 1px solid #2A2B3A;
+                    backdrop-filter: blur(2px);
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    transition: 0.2s all;
-                    .scheme__row-icon {
-                        transition: 0.4s all;
-                    }
-                    .scheme__row-icon--active {
-                        filter: brightness(0) saturate(100%) invert(31%) sepia(36%) saturate(4140%) hue-rotate(250deg) brightness(100%) contrast(103%);
-                    }
-                    .scheme-user--active {
-                        position: absolute;
-                        opacity: 0;
-                        z-index: 3;
-                        transition: 0.4s all;
-                        opacity: 1;
-                    }
-                    .scheme-user {
-                        position: absolute;
-                        transition: transform 0.4s;
-                    }
                 }
-                .scheme__row-line {
-                    width: 3px;
-                    height: 156px;
-                    background: #FFF;
-                    border-radius: 100px;
-                    margin: 20px 0;
-                }
-                @keyframes lineAnimation {
-                    0% {
-                        height: 0%;
-                    }
-                    100% {
-                        height: 100%;
-                    }
-                }
-                .scheme__row-line--active {
+                .scheme__triangles--transform {
+                    transform: rotate(270deg);
                     position: relative;
-                    &::after {
-                        content: '';
-                        animation: lineAnimation 0.4s linear;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        background: #9747FF;
-                        width: 100%;
-                        height: 100%;
-                    }
+                    top: 0px;
+                    left: 24px;
+                    margin-left: 8px;
                 }
             }
             .scheme__row-cards {
+                margin-right: 74px;
                 .scheme__row-card + .scheme__row-card {
                     margin-top: 80px;
                 }
@@ -244,7 +193,7 @@
         transform: translateX(100%);
     }
 
-    @media only screen and (max-width: 1850px) {
+    @media only screen and (max-width: 1520px) {
         .scheme {
             overflow-x: hidden;
             .scheme__content {
@@ -270,21 +219,8 @@
                 .scheme__list {
                     margin-right: 59px;
                     .scheme__row-icons {
-                        margin-right: 67px;
-                        .scheme__row-icon-wrap {
-                            width: 63px;
-                            height: 63px;
-                            img {
-                                width: 27px;
-                            }
-                            .scheme__row-rocket {
-                                width: 39px;
-                            }
-                        }
-                        .scheme__row-line {
-                            width: 2px;
-                            height: 117px;
-                        }
+                        margin-right: 59px;
+                        width: 65px;
                     }
                     .scheme__row-cards {
                         .scheme__row-card {
@@ -324,6 +260,9 @@
             margin-bottom: 60px;
             .scheme__content {
                 .scheme__list {
+                    .scheme__row-icons {
+                        margin-right: 35px;
+                    }
                     margin-right: 37px;
                 }
             }
@@ -346,27 +285,9 @@
                     margin-right: 0px;
                     .scheme__row-icons {
                         margin-right: 24px;
+                        width: 52px;
                         .scheme__row-example {
                             display: none;
-                        }
-                        .scheme__row-icon-wrap {
-                            width: 42px;
-                            height: 42px;
-                            .scheme__row-icon {
-                                transition: 0.4s all;
-                                width: 18px;
-                            }
-                            .scheme__row-rocket {
-                                width: 24px;
-                            }
-                            .scheme__row-icon--active {
-                                width: 18px;
-                            }
-                        }
-                        .scheme__row-line {
-                            width: 1.5px;
-                            height: 78px;
-                            margin: 10px 0;
                         }
                     }
                     .scheme__row-cards {

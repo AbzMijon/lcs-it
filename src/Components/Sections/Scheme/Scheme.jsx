@@ -9,6 +9,7 @@ import Lottie from "lottie-react";
 import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import schemeImg from '../../../assets/svg/Scheme_of_Work_2_activ.svg';
 
 function Scheme() {
 
@@ -34,32 +35,17 @@ function Scheme() {
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">
                 <div className="scheme__list">
-                    <div className="scheme__row-icons">
-                        <div className="scheme__row-example">
-                            <div className="scheme__row-icon-wrap">
-                                <img src={userActive} alt="" className='scheme__row-icon scheme-user--active' />
-                                <img src={user} alt="" className='scheme__row-icon scheme-user' />
-                            </div>
-                            <div className="scheme__triangles scheme__triangles--transform">
-                                <div className="scheme__triangle scheme__triangle-mini"></div>
-                                <div className="scheme__triangle scheme__triangle-mid"></div>
-                                <div className="scheme__triangle scheme__triangle-big"></div>
-                            </div>
-                            <img src={schemeActiveExample} alt="" className='scheme__row-example-img' />
-                        </div>
+                    <img src={schemeImg} alt="" className='scheme__row-icons' />
+                    <div className="scheme__row-example">
                         <div className="scheme__row-icon-wrap">
-                            <img src={user} alt="" className='scheme__row-icon scheme__row-icon--active'/>
+                            <img src={user} alt="" className='scheme__row-icon scheme-user' />
                         </div>
-                        <div className='scheme__row-line scheme__row-line--active'></div>
-
-                        <div className="scheme__row-icon-wrap">
-                            <img src={blocknot} alt="" className='scheme__row-icon' />
+                        <div className="scheme__triangles scheme__triangles--transform">
+                            <div className="scheme__triangle scheme__triangle-mini"></div>
+                            <div className="scheme__triangle scheme__triangle-mid"></div>
+                            <div className="scheme__triangle scheme__triangle-big"></div>
                         </div>
-                        <div className='scheme__row-line'></div>
-
-                        <div className="scheme__row-icon-wrap">
-                            <img src={rocket} alt="" className='scheme__row-icon scheme__row-rocket' />
-                        </div>
+                        <img src={schemeActiveExample} alt="" className='scheme__row-example-img' />
                     </div>
                     <ul className='scheme__row-cards'>
                         <li className='scheme__row-card'>

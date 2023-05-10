@@ -8,7 +8,6 @@ import instagram from '../../../assets/svg/inst.svg';
 import linkedIn from '../../../assets/svg/linkedIn.svg';
 import telegram from '../../../assets/svg/telegram.svg';
 import { HiPlus } from 'react-icons/hi';
-import seoKeywordCard3 from '../../../assets/img/seoKeywordCard3.png';
 import seoCreativeLottie from '../../../assets/lottieAnimations/seoCreativeLottie.json';
 import './seoPromotion.scss';
 
