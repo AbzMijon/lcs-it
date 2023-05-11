@@ -3,6 +3,7 @@
     padding-bottom: 329px;
     background: url('../../../assets/img/locationBg.jpg') no-repeat bottom;
     padding-top: 47px;
+    background-size: cover;
     .location__title {
         max-width: 1180px;
         padding: 0 10px;
@@ -119,12 +120,16 @@
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    .location {
+        background-size: contain;
+    }
+}
 
 @media only screen and (max-width: 1060px) {
     .location {
         padding-top: 0px;
         padding-bottom: 230px;
-        background-size: contain;
         .location__title {
             max-width: 1018px;
             padding: 0 20px;
@@ -146,7 +151,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 877px) {
     .location {
         padding-bottom: 210px;
         .location__title {

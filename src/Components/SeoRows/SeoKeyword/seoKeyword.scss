@@ -58,14 +58,10 @@
         flex-direction: column;
         margin-left: 18px;
         align-items: start;
-        .seo__card-body-title, .seo__card-body-subtitle {
+        .seo__card-body-subtitle {
             background: #3C3D4C;
             border-radius: 50px;
             height: 17px;
-        }
-        .seo__card-body-title {
-            width: 100%;
-            margin-bottom: 14px;
         }
         .seo__card-body-subtitle {
             width: 70%;

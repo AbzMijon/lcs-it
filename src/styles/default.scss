@@ -123,6 +123,7 @@ h5,
             position: absolute;
             transition: opacity .3s;
             background: radial-gradient(circle at 52.8095px 0px, rgb(255, 255, 255), transparent);
+			border-radius: 20px;
         }
         &:hover{
             .light{

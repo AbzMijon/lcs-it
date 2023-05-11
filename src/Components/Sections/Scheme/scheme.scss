@@ -279,7 +279,7 @@
         .scheme {
             max-width: 360px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0;
             margin-bottom: 50px;
             overflow-x: initial;
             .scheme__title {
@@ -297,6 +297,7 @@
                         display: none;
                     }
                     .scheme__row-cards {
+                        margin-right: 0;
                         .scheme__row-card + .scheme__row-card {
                             margin-top: 30px;
                         }
