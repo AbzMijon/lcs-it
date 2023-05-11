@@ -1,15 +1,18 @@
 .scheme {
-    max-width: 1180px;
-    padding: 0 10px;
-    margin: 0 auto;
     margin-bottom: 85px;
     position: relative;
     .scheme__title {
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 0 10px;
         margin-bottom: 118px;
     }
     .scheme__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        max-width: 1180px;
+        padding: 0 10px;
+        margin: 0 auto;
         .scheme__list {
             margin-right: 107px;
             display: flex;
@@ -256,9 +259,12 @@
 
     @media only screen and (max-width: 768px) {
         .scheme {
-            max-width: 767px;
             margin-bottom: 60px;
+            .scheme__title {
+                max-width: 767px;
+            }
             .scheme__content {
+                max-width: 767px;
                 .scheme__list {
                     .scheme__row-icons {
                         margin-right: 35px;
@@ -286,9 +292,9 @@
                     .scheme__row-icons {
                         margin-right: 24px;
                         width: 52px;
-                        .scheme__row-example {
-                            display: none;
-                        }
+                    }
+                    .scheme__row-example {
+                        display: none;
                     }
                     .scheme__row-cards {
                         .scheme__row-card + .scheme__row-card {

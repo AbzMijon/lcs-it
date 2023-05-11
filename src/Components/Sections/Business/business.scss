@@ -8,7 +8,7 @@
     }
     .business__model {
         display: grid;
-        grid-template-columns: minmax(204px, 368px) 222px minmax(204px, 465px);
+        grid-template-columns: minmax(204px, 368px) 265px minmax(204px, 465px);
         grid-template-rows: repeat(2, 1fr);
         gap: 30px;
         .business__big-coubes {
@@ -61,7 +61,7 @@
                 .business__team-bg {
                     display: flex;
                     margin: 0 auto;
-                    transform: translateX(-25px);
+                    transform: translateX(0);
                 }
             }
         }
@@ -169,6 +169,7 @@
             margin-bottom: 33px;
         }
         .business__model {
+            grid-template-columns: minmax(204px, 368px) 222px minmax(204px, 465px);
             gap: 25px;
             .business__cards {
                 .business__card + .business__card {
@@ -192,7 +193,6 @@
                     display: flex;
                     align-items: end;
                     .business__team-bg {
-                        transform: translateX(0);
                         position: absolute;
                         top: 10px;
                     }
