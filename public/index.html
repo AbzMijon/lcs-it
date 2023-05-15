@@ -18,9 +18,11 @@
       <script type="module">
         import { Application } from './runtime.js';
         if(window.innerWidth > 1020) {
-          const canvas = document.getElementById('canvas3d');
-          const app = new Application(canvas);
-          app.load('./scene.splinecode');
+          setTimeout(() => {
+            const canvas = document.getElementById('canvas3d');
+            const app = new Application(canvas);
+            app.load('./scene.splinecode');
+          }, 1000)
         }
       </script>
   </body>
