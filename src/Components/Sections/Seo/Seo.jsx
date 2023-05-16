@@ -1,7 +1,4 @@
 import './seo.scss';
-import seoIcon1 from '../../../assets/svg/seoIcon1.svg';
-import seoIcon2 from '../../../assets/svg/seoIcon2.svg';
-import seoIcon3 from '../../../assets/svg/seoIcon3.svg';
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveButton, setPrevNavigation, setNextNavigation } from '../../../store/reducers/seoReducer';
@@ -17,6 +14,7 @@ function Seo({ setModal }) {
     
     const dispatch = useDispatch();
     const seoBtns = useSelector(state => state.seoReducer.seoButtons);
+    const seoIconBtns = useSelector(state => state.seoReducer.seoIconButtons);
     const selectedBtn = seoBtns.find((seoBtn) => seoBtn.active);
 
     const renderSeoCards = (buttonIndex) => {
@@ -41,7 +39,7 @@ function Seo({ setModal }) {
     }
 
     const handleNextNavigation = (btnId) => {
-        if(btnId < 3) {
+        if(btnId < seoBtns.length - 1) {
             dispatch(setNextNavigation(btnId));
         }
     }
@@ -74,15 +72,11 @@ function Seo({ setModal }) {
                     <MobileSeoSelector />
                 </div>
                 <div className="seo__icons">
-                    <button>
-                        <img src={seoIcon1} alt="" className='seo__icons-img' />
-                    </button>
-                    <button>
-                        <img src={seoIcon2} alt="" className='seo__icons-img' />
-                    </button>
-                    <button>
-                        <img src={seoIcon3} alt="" className='seo__icons-img' />
-                    </button>
+                    {seoIconBtns && seoIconBtns.map((iconBtn) => (
+                        <button key={iconBtn.id}>
+                            <img src={iconBtn.img} alt="" className='seo__icons-img' />
+                        </button>
+                    ))}
                 </div>
             </div>
             {renderSeoCards(selectedBtn.id)}

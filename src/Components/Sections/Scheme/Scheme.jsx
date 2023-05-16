@@ -10,12 +10,14 @@ import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import schemeImg from '../../../assets/svg/Scheme_of_Work_2_activ.svg';
+import { useSelector } from 'react-redux';
 
 function Scheme() {
 
     const ref = useRef();
     const isInView = useInView(ref);
     const [animationStart, setAnimationStart] = useState(false);
+    const shemeTextBlocks = useSelector(state => state.schemeReducer.shemeTextBlocks);
     
     useEffect(() => {
         if(isInView) {
@@ -47,19 +49,13 @@ function Scheme() {
                         </div>
                         <img src={schemeActiveExample} alt="" className='scheme__row-example-img' />
                     </div>
-                    <ul className='scheme__row-cards'>
-                        <li className='scheme__row-card'>
-                            <h3 className='scheme__row-title'>Contact us</h3>
-                            <p className='scheme__row-text scheme__row-text--active'>Fill out the contact form, briefly describe your project or ask us a question</p>
-                        </li>
-                        <li className='scheme__row-card'>
-                            <h3 className='scheme__row-title'>Discovery call</h3>
-                            <p className='scheme__row-text' ref={ref}> Our Project Manager will arrange a video meeting with you in order to clarify the project assumptions</p>
-                        </li>
-                        <li className='scheme__row-card'>
-                            <h3 className='scheme__row-title'>Project estimation</h3>
-                            <p className='scheme__row-text'>On the basis of the collected information, we will prepare an estimate of the costs and  duration of the project </p>
-                        </li>
+                    <ul className='scheme__row-cards' ref={ref}>
+                        {shemeTextBlocks && shemeTextBlocks.map((schemeText) => (
+                            <li className='scheme__row-card' key={schemeText.id}>
+                                <h5 className='scheme__row-title'>{schemeText.title}</h5>
+                                <p className='scheme__row-text scheme__row-text--active'>{schemeText.text}</p>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="scheme__ilustration">

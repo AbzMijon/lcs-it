@@ -1,4 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import seoIcon1 from '../../assets/svg/seoIcon1.svg';
+import seoIcon2 from '../../assets/svg/seoIcon2.svg';
+import seoIcon3 from '../../assets/svg/seoIcon3.svg';
 
 const initialState = {
   seoButtons: [
@@ -21,6 +24,20 @@ const initialState = {
       id: 3,
       label: 'Competitor analysis',
       active: true,
+    },
+  ],
+  seoIconButtons: [
+    {
+      id: 0,
+      img: seoIcon1,
+    },
+    {
+      id: 1,
+      img: seoIcon2,
+    },
+    {
+      id: 2,
+      img: seoIcon3,
     },
   ]
 }

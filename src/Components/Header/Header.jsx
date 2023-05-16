@@ -4,11 +4,13 @@ import logo from '../../assets/svg/lcsItLogo.svg';
 import burger from '../../assets/svg/burger.svg';
 import burgerClose from '../../assets/svg/burgerClose.svg';
 import MobileMenu from '../MobilesComponents/MobileMenu/MobileMenu';
+import { useSelector } from 'react-redux';
 
 function Header() {
 
     const [scroll, setScroll] = useState(window.scrollY);
     const [mobileMenu, setMobileMenu] = useState(false);
+    const headerList = useSelector((state) => state.headerReducer.menuList);
     
     const handleScroll = () => {
         setScroll(window.scrollY);
@@ -26,10 +28,9 @@ function Header() {
             </div>
             <nav className="header__nav">
                 <ul className="header__list">
-                    <li className="header__list-item"> <a href="#company">Company</a> </li>
-                    <li className="header__list-item"> <a href="#services">Services</a> </li>
-                    <li className="header__list-item"> <a href="#outsourcing">Outsourcing</a> </li>
-                    <li className="header__list-item"> <a href="#contacts">Contacts</a> </li>
+                    {headerList && headerList.map((headerMenuItem) => (
+                        <li className="header__list-item" key={headerMenuItem.id}> <a href={headerMenuItem.scrollToSection}>{headerMenuItem.title}</a> </li>
+                    ))}
                 </ul>
             </nav>
             {mobileMenu ?
