@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding-top: 260px;
     margin-bottom: 135px;
+    overflow: hidden;
     .welcome__info {
         text-align: start;
         padding-bottom: 20px;
@@ -44,12 +45,6 @@
     }
 }
 
-@media only screen and (max-width: 1150px) {
-    .welcome__cube {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1060px) {
     .welcome {
         max-width: 1018px;
@@ -67,9 +62,20 @@
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .welcome__cube {
+        .cube {
+            transform: translate(-80px, -100px);
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .welcome {
         max-width: 767px;
+    }
+    .welcome__cube {
+        display: none;
     }
 }
 
@@ -79,7 +85,6 @@
         padding: 0 20px;
         padding-top: 160px;
         margin-bottom: 50px;
-        max-width: 360px;
         .welcome__info {
             margin-right: 0px;
             .welcome__skills {

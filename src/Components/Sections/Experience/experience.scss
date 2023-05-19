@@ -27,7 +27,7 @@
 
 @media only screen and (max-width: 1060px) {
     .experience {
-        padding-top: 31px;
+        padding-top: 0px;
         margin-bottom: 40px;
         .experience__block {
             max-width: 1018px;
@@ -79,9 +79,6 @@
                         img {
                             width: 45px;
                         }
-                        .experience__card-title {
-                            white-space: nowrap;
-                        }
                     }
                 }
             }
@@ -94,7 +91,20 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 520px) {
+    .experience {
+        .experience__block {
+            .experience__title {
+                margin-bottom: 30px;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: start;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
     .experience {
         margin-bottom: 50px;
         .experience__block {

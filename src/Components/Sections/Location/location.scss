@@ -191,7 +191,6 @@
         background: none;
         padding-top: 0px;
         .location__title {
-            max-width: 360px;
             margin-bottom: 9px;
         }
         .location__content {
@@ -206,8 +205,8 @@
             }
             .location__card {
                 padding-top: 30px;
-                max-width: 320px;
-                margin: 0 auto;
+                max-width: 100%;
+                margin: 0 20px;
                 .location__card-item {
                     .location__card-icon {
                         margin-right: 20px;

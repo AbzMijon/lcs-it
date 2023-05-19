@@ -168,7 +168,6 @@
         padding-top: 70px;
         overflow: hidden;
         .outsourcing__wrap {
-            max-width: 767px;
             padding: 0 20px;
             .outsourcing__title {
                 margin-bottom: 6px;
@@ -204,7 +203,6 @@
 
 @media only screen and (max-width: 500px) {
     .outsourcing {
-        max-width: 360px;
         padding: 0 20px;
         margin: 0 auto;
         position: relative;
@@ -214,6 +212,7 @@
         .outsourcing__wrap {
             max-width: 1148px;
             margin: 0 auto;
+            padding: 0;
             .outsourcing__title {
                 margin-bottom: 30px;
             }

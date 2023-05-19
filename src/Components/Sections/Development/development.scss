@@ -237,8 +237,6 @@
     .development {
         margin-bottom: 50px;
         .development__title {
-            max-width: 360px;
-            margin: 0 auto;
             margin-bottom: 30px;
         }
         .development__code {
@@ -246,11 +244,10 @@
             .development__blocks {
                 overflow: hidden;
                 margin-bottom: 30px;
-                .development__blocks-code {
-                    margin: 0 20px;
-                }
                 .development__blocks-activityAndDevelopers {
-                    display: none;
+                    .development__blocks-activity-lottie {
+                        display: none;
+                    }
                 }
                 .development__blocks-developers {
                     display: none;

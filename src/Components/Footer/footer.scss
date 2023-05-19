@@ -136,6 +136,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 .footer__terms-item {
+                    white-space: nowrap;
                     &:first-child {
                         grid-column: 1/2;
                     }
@@ -215,9 +216,7 @@
                 display: none;
             }
             .footer__adress-list, .footer__about-list {
-                max-width: 360px;
                 padding: 0 20px;
-                margin: 0 auto;
             }
             .footer__adress-item, .footer__about-item, .footer__folow_item {
                 margin-bottom: 30px;
@@ -235,7 +234,6 @@
             }
             .footer__folow {
                 .footer__folow-list {
-                    max-width: 360px;
                     padding: 0 20px;
                     margin: 0 auto;
                     border-top: none;
@@ -251,13 +249,13 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-row: auto;
-                max-width: 360px;
                 row-gap: 33px;
                 column-gap: 18px;
                 .footer__terms-item--mob {
                     display: block;
                 }
                 .footer__terms-item {
+                    white-space: normal;
                     font-size: 14px;
                     line-height: 135%;
                     letter-spacing: -0.01em;
@@ -266,6 +264,7 @@
                     margin-left: 0px;
                 }
                 .footer__terms-item--reversed {
+                    font-size: 12px;
                     grid-column: 1/2;
                     grid-row: 2/3;
                 }

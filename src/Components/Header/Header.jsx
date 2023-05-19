@@ -11,7 +11,7 @@ function Header() {
     const [scroll, setScroll] = useState(window.scrollY);
     const [mobileMenu, setMobileMenu] = useState(false);
     const headerList = useSelector((state) => state.headerReducer.menuList);
-    
+
     const handleScroll = () => {
         setScroll(window.scrollY);
     };
@@ -21,7 +21,7 @@ function Header() {
     }, []);
 
     return (
-        <header className={!scroll ? "header" : "header header__active"}>
+        <header className={scroll || mobileMenu ? "header header__active" : "header"}>
             <div className="header__logo">
                 <img src={logo} alt="" className='header__logo-img' />
                 <p className='header__logo-name'>LCS-IT</p>

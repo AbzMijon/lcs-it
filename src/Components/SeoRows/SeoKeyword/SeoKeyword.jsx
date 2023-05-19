@@ -18,7 +18,7 @@ function SeoKeyword({ setModal }) {
                     <p className='seo__card-head-title'>Keywords</p>
                     <p>KD%</p>
                 </div>
-                <div className="seo__card-body">
+                <div className="seo__card-body seo__card-body--big-img">
                     <Lottie animationData={seoKeywordLottie} loop={false} />
                 </div>
                 <p className='seo__card-subtitle'>Selection of Keywords</p>

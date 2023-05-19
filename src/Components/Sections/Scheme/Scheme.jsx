@@ -53,7 +53,7 @@ function Scheme() {
                         {shemeTextBlocks && shemeTextBlocks.map((schemeText) => (
                             <li className='scheme__row-card' key={schemeText.id}>
                                 <h5 className='scheme__row-title'>{schemeText.title}</h5>
-                                <p className='scheme__row-text scheme__row-text--active'>{schemeText.text}</p>
+                                <p className='scheme__row-text scheme__row-text'>{schemeText.text}</p>
                             </li>
                         ))}
                     </ul>

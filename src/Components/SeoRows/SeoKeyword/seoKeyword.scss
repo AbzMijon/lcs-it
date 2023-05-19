@@ -143,4 +143,11 @@
             height: 105px;
         }
     }
+    .seo__card-body--big-img {
+        div {
+            svg {
+                width: 270px !important;
+            }
+        }
+    }
 }

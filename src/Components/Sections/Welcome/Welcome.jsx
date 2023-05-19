@@ -3,24 +3,12 @@ import Cube from '../../Cube/Cube';
 import './welcome.scss';
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
 function Welcome({ setModal }) {
 
     const cubeRef = useRef();
     const isCubeInView = useInView(cubeRef);
-
-/*     useEffect(() => {
-        const root = document.getElementById('root');
-        const cube = document.querySelector('.welcome__cube');
-        if(isCubeInView) {
-            root.appendChild(cube);
-        }   else {
-                if(cube && cube.parentNode) {
-                    root.removeChild(cube);
-                }
-        }
-    }, [isCubeInView]); */
 
     return (
         <motion.section 

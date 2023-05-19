@@ -296,7 +296,6 @@
         background: none;
         background-position: none;
         .design__title {
-            max-width: 360px;
             margin: 0 auto;
             margin-bottom: 30px;
         }
@@ -307,6 +306,8 @@
             max-width: 320px;
             margin: 0 auto;
             margin-bottom: 50px;
+            max-width: 100%;
+            padding: 0 20px;
         }
         .design__types {
             margin-bottom: 32px;

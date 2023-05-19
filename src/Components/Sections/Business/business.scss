@@ -202,6 +202,16 @@
                     }
                 }
             }
+            .business__cards--mobile {
+                .business__card {
+                    .business__outstaffing-title {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 135%;
+                        letter-spacing: -0.01em;
+                    }
+                }
+            }
             .business__keyboard, .business__mini-coubes {
                 height: 277px;
             }
@@ -215,7 +225,6 @@
         padding: 0;
         margin-bottom: 50px;
         .business__title {
-            max-width: 360px;
             padding: 0 20px;
             margin: 0 auto;
             margin-bottom: 24px;
