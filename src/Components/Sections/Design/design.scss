@@ -198,6 +198,9 @@
                 margin: 0 35px 0px 35px;
             }
         }
+        .design__mobileRow {
+            display: none;
+        }
         .swiper {
             gap: 0px;
         }
@@ -315,41 +318,57 @@
                 width: 240px;
             }
         }
-            .design__card {
-                width: 320px;
-                height: 448px;
-                .design__card-img--pin {
+        .design__card {
+            width: 320px;
+            height: 448px;
+            .design__card-img--pin {
+                img {
+                    left: -3px;
+                }
+                &:hover {
                     img {
-                        left: -3px;
+                        left: 70px;
                     }
-                    &:hover {
-                        img {
-                            left: 70px;
-                        }
-                    }
-                }
-                .design__card-img--motion {
-                    .design__card-circle--pink {
-                        left: 84px;
-                    }
-                    .design__card-circle--purple {
-                        left: 210px;
-                    }
-                    &:hover {
-                        .design__card-circle--pink {
-                            left: 210px;
-                        }
-                        .design__card-circle--purple {
-                            left: 80px;
-                        }
-                    }
-                }
-                .design__card-title {
-                    margin: 0 25px 26px 25px;
-                }
-                .design__card-text {
-                    margin: 0 25px 0px 25px;
                 }
             }
+            .design__card-img--motion {
+                .design__card-circle--pink {
+                    left: 84px;
+                }
+                .design__card-circle--purple {
+                    left: 210px;
+                }
+                &:hover {
+                    .design__card-circle--pink {
+                        left: 210px;
+                    }
+                    .design__card-circle--purple {
+                        left: 80px;
+                    }
+                }
+            }
+            .design__card-title {
+                margin: 0 25px 26px 25px;
+            }
+            .design__card-text {
+                margin: 0 25px 0px 25px;
+            }
+        }
+        .design__mobileRow {
+            display: block;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            overflow: scroll;
+            gap: 24px;
+            .design__card {
+                min-width: 320px;
+            }
+        }
+    }
+    .design__cards-row {
+        .swiper-design {
+            display: none !important;
+        }
     }
 }
