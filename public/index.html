@@ -17,11 +17,18 @@
     <div id="root"></div>
       <script type="module">
         import { Application } from './runtime.js';
-        if(window.innerWidth > 1020) {
+        import { Application as ApplicationMobile }  from './runtimeMobile.js';
+        if(window.innerWidth > 768) {
           setTimeout(() => {
             const canvas = document.getElementById('canvas3d');
             const app = new Application(canvas);
             app.load('./scene.splinecode');
+          }, 1000)
+        } else {
+          setTimeout(() => {
+            const canvas = document.getElementById('canvas3d');
+            const app = new ApplicationMobile(canvas);
+            app.load('./sceneMobile.splinecode');
           }, 1000)
         }
       </script>

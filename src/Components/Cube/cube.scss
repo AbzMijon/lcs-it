@@ -7,10 +7,6 @@
         top: 0;
         left: 0;
         transform: translateY(-144px);
-/*         #canvas3d {
-            width: 620px !important;
-            height: 620px !important;
-        } */
     }
 }
 .welcome__cube--hidden {
@@ -18,7 +14,10 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .welcome__cube {
-        display: none;
+    .welcome__cube, .welcome__cube--hidden {
+        .cube {
+            position: static;
+            transform: translate(0);
+        }
     }
 }

@@ -10,7 +10,6 @@
     .welcome__info {
         text-align: start;
         padding-bottom: 20px;
-        margin-right: 137px;
         align-self: flex-end;
         z-index: 3;
         .welcome__skills {
@@ -51,7 +50,6 @@
         padding: 160px 20px 0 20px;
         margin-bottom: 109px;
         .welcome__info {
-            margin-right: 54px;
             .welcome__title {
                 font-size: 42px;
             }
@@ -75,7 +73,17 @@
         max-width: 767px;
     }
     .welcome__cube {
-        display: none;
+        .cube {
+            transform: translate(0px);
+        }
+    }
+}
+
+@media only screen and (max-width: 621px) {
+    .welcome__cube {
+        .cube {
+            transform: translateX(-70px);
+        }
     }
 }
 
@@ -83,10 +91,10 @@
     .welcome {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 20px;
-        padding-top: 160px;
+        padding-top: 35px;
         margin-bottom: 50px;
         .welcome__info {
-            margin-right: 0px;
+            grid-row: 2/3;
             .welcome__skills {
                 margin-bottom: 30px;
                 .welcome__skills-item {
@@ -110,6 +118,16 @@
             }
             .welcome__subtitle {
                 margin-bottom: 29px;
+            }
+        }
+        .welcome__cube {
+            height: 350px;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cube {
+                transform: translate(0px, 0px);
             }
         }
     }
