@@ -60,7 +60,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
     .welcome__cube {
         .cube {
             transform: translate(-80px, -100px);
@@ -72,11 +72,6 @@
     .welcome {
         max-width: 767px;
     }
-    .welcome__cube {
-        .cube {
-            transform: translate(0px);
-        }
-    }
 }
 
 @media only screen and (max-width: 621px) {
@@ -87,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 570px) {
     .welcome {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 20px;
