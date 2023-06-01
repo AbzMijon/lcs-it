@@ -80,7 +80,7 @@ function SeoAnalysis({ setModal }) {
                 <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
                         <img src={canadaFlag} alt="" className='seo__card-flag' />
-                        <p className='seo__card-country'>CAN</p>
+                        <p className='seo__card-country'>Can</p>
                         <FiArrowUpRight className='seo__card-arrow' />
                     </div>
                     <button className='seo__card-volume-btn canada-volume'>Volume</button>

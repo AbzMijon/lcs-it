@@ -18,8 +18,11 @@
         border: 1px solid #2A2B3A;
         border-radius: 12px 0px 0px 12px;
         padding: 15px 17px;
+        width: 56px;
         .development__code-logo {
             filter: brightness(0) saturate(100%) invert(70%) sepia(14%) saturate(207%) hue-rotate(201deg) brightness(89%) contrast(90%);
+            width: 22px;
+            height: 20px;
         }
     }
     .development__code-head {
