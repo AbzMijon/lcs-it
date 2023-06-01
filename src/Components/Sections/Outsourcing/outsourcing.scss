@@ -222,6 +222,10 @@
                 grid-template-rows: auto;
                 gap: 30px;
                 padding: 0;
+                .outsourcing__card-btn {
+                    display: flex;
+                    justify-content: center;
+                 }
                 .outsourcing__table-wrapper {
                     position: relative;
                     z-index: 10;
