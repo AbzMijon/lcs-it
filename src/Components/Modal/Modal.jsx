@@ -39,7 +39,12 @@ function Modal({ setModal }) {
 
     const onFormSubmit = (formValues) => {
         console.log(formValues);
-        sendMessage(formValues);
+        var formData = new FormData();
+        formData.append('name',formValues.Name);
+        formData.append('email',formValues.Email);
+        formData.append('message', formValues.Message);
+        formData.append('agree','true');
+        sendMessage(formData);
         setModal(false);
     }
 

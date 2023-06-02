@@ -1,5 +1,6 @@
 import axios from 'axios';
 
-const instance = axios.create({
-	baseURL: 'http://localhost:8000/',
+export const instance = axios.create({
+
+	baseURL: 'http://www.lcs-it.com/feedback/form-processing.php',
 });

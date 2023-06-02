@@ -1,3 +1,8 @@
-import instanse from './instanse';
+import { instance } from './instanse';
 
-export const sendMessage = (formValues) => instanse.post('/users', formValues);
+export const sendMessage = (formValues) => instance.post('', formValues, {
+    maxBodyLength: Infinity,
+    headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+    }
+});
