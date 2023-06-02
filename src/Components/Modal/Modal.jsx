@@ -6,6 +6,7 @@ import modalMessage from '../../assets/svg/modalMessage.svg';
 import { Formik, Form } from 'formik';
 import SendFormikInput from '../FormikInputs/SendFormikInput';
 import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
+import { sendMessage } from '../../api/messageApi';
 
 function Modal({ setModal }) {
 
@@ -36,6 +37,12 @@ function Modal({ setModal }) {
         if(!isValid) return errorsObject;
     }
 
+    const onFormSubmit = (formValues) => {
+        console.log(formValues);
+        sendMessage(formValues);
+        setModal(false);
+    }
+
     return (
         <div className='modal-wrap' onClick={() => setModal(false)}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -45,9 +52,7 @@ function Modal({ setModal }) {
                 </div>
                 <p className='modal__title'>Get in touch</p>
                 <p className='modal__subtitle'>Fill out this short form and our team will get back to you within 24 hours</p>
-                <Formik initialValues={initialFormValues} validate={validateForm} onSubmit={(formValues) => {
-                    setModal(false);
-                }}>
+                <Formik initialValues={initialFormValues} validate={validateForm} onSubmit={(formValues) => onFormSubmit(formValues)}>
                     <Form>
                         <div className='modal__input-wrap'>
                             <SendFormikInput name='Name' type='text' placeholder='Name' required />
