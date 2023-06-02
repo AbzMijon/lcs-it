@@ -54,9 +54,11 @@
     margin-bottom: 20px;
     height: 204px;
     .seo__graphic-bg {
+        width: 100%;
         position: absolute;
-        top: 0;
         left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .seo__card-result {
         display: flex;
@@ -123,5 +125,11 @@
     }
     .seo__card-statistic {
         height: 135px;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    .seo__card-statistic {
+        height: 204px;
     }
 }

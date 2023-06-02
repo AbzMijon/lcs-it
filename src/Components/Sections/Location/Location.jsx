@@ -13,6 +13,7 @@ function Location({ setModal }) {
 
     const dispatch = useDispatch();
     const locationButtons = useSelector((state) => state.locationReducer.locationButtons);
+    const activeLocationButton = locationButtons.find((btn) => btn.active);
 
     return (
         <motion.section
@@ -42,18 +43,18 @@ function Location({ setModal }) {
                     <MobileCountrySelector />
                 </div>
                 <motion.div className="location__card" variants={motionAnimation}>
-                    <ul>
+                    <ul className='location__card-list'>
                         <li className='location__card-item'>
                             <img src={locationPhone} alt="" className='location__card-icon' />
-                            <p className='location__inf'>+44(0)2070 528 406</p>
+                            <p className='location__inf'>{activeLocationButton.tel}</p>
                         </li>
                         <li className='location__card-item'>
                             <img src={locationMain} alt="" className='location__card-icon' />
-                            <p className='location__inf'>info@lcs-it.com</p>
+                            <p className='location__inf'>{activeLocationButton.email}</p>
                         </li>
                         <li className='location__card-item'>
                             <img src={locationLocation} alt="" className='location__card-icon' />
-                            <p className='location__inf'>1 Knightsbridge Green London SW1X 7NE United Kingdom</p>
+                            <p className='location__inf'>{activeLocationButton.adress}</p>
                         </li>
                     </ul>
                     <div className="location__btn">

@@ -332,18 +332,22 @@
                 }
             }
             .design__card-img--motion {
+                width: 155px;
+                margin: 0 auto;
                 .design__card-circle--pink {
-                    left: 84px;
+                    left: 0;
                 }
                 .design__card-circle--purple {
-                    left: 210px;
+                    right: 0;
+                    left: auto;
                 }
                 &:hover {
                     .design__card-circle--pink {
-                        left: 210px;
+                        left: 120px;
                     }
                     .design__card-circle--purple {
-                        left: 80px;
+                        right: 120px;
+                        left: auto;
                     }
                 }
             }
@@ -355,14 +359,14 @@
             }
         }
         .design__mobileRow {
-            display: block;
             display: flex;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
             overflow: scroll;
+            padding: 0 20px;
             gap: 24px;
             .design__card {
-                min-width: 320px;
+                min-width: 100%;
             }
         }
     }
