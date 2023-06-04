@@ -24,21 +24,32 @@ function Modal({ setModal }) {
             isValid = false;
             errorsObject.Name = 'Enter your name';
         }
+        /* if(formValues.Name.length > 20) {
+            isValid = false;
+            errorsObject.Name = 'Long name';
+        } */
         if(!formValues.Email) {
             isValid = false;
             errorsObject.Email = 'Enter a valid Email';
         }
+        /* if(formValues.Email.length > 20) {
+            isValid = false;
+            errorsObject.Email = 'Long email';
+        } */
         if(!formValues.Message) {
             isValid = false;
             errorsObject.Message = 'Enter your message';
         }
+        /* if(formValues.Message.length > 20) {
+            isValid = false;
+            errorsObject.Message = 'Long message';
+        } */
         isValid = false;
 
         if(!isValid) return errorsObject;
     }
 
     const onFormSubmit = (formValues) => {
-        console.log(formValues);
         var formData = new FormData();
         formData.append('name',formValues.Name);
         formData.append('email',formValues.Email);
