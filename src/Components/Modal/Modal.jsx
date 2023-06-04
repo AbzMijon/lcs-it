@@ -7,6 +7,8 @@ import { Formik, Form } from 'formik';
 import SendFormikInput from '../FormikInputs/SendFormikInput';
 import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
 import { sendMessage } from '../../api/messageApi';
+import { useState } from 'react';
+import SuccessSend from '../SuccessSend/SuccessSend';
 
 function Modal({ setModal }) {
 
@@ -56,7 +58,13 @@ function Modal({ setModal }) {
         formData.append('message', formValues.Message);
         formData.append('agree','true');
         sendMessage(formData);
-        setModal(false);
+        setSuccess(true);
+    }
+
+    const [success, setSuccess] = useState(false);
+
+    if(success) {
+        return <SuccessSend setModal={setModal} />
     }
 
     return (
