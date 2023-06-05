@@ -7,8 +7,11 @@ import { Formik, Form } from 'formik';
 import SendFormikInput from '../FormikInputs/SendFormikInput';
 import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
 import { sendMessage } from '../../api/messageApi';
+import axios from 'axios'
 
 function Modal({ setModal }) {
+
+
 
     const initialFormValues = {
         Name: '',
@@ -44,7 +47,26 @@ function Modal({ setModal }) {
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
         formData.append('agree','true');
-        sendMessage(formData);
+
+        let config = {
+            method: 'post',
+            maxBodyLength: Infinity,
+            url: 'http://www.lcs-it.com/feedback/form-processing.php/',
+            headers: { 
+              'X-Requested-With': 'XMLHttpRequest',
+            },
+            data : formData
+          };
+          
+          axios.request(config)
+          .then((response) => {
+            console.log(JSON.stringify(response.data));
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+
+        // sendMessage(formData);
         setModal(false);
     }
 
