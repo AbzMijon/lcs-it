@@ -83,7 +83,7 @@
             font-size: 14px;
             line-height: 135%;
             letter-spacing: -0.01em;
-            font-family: 'code', sans-serif;
+            font-family: 'poppinsRegular', sans-serif;
             color: #fff;
             min-height: 50px;
             caret-color: #9747FF;
@@ -98,13 +98,16 @@
                 color: #F015B0;
             }
         }
+        .input-error {
+            color: #F015B0;
+            position: absolute;
+        }
 
         .modal__input-error ~ .modal__input-icon {
             filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(5583%) hue-rotate(300deg) brightness(92%) contrast(109%);
         }
         
         .modal__input-text {
-            margin-bottom: 36px;
             max-width: 100%;
             resize: none;
             max-height: 140px;
@@ -125,6 +128,7 @@
             width: 100%;
             background-color: #fff;
             color: #000;
+            margin-top: 36px;
             transition: 0.2s all;
             &:hover {
                 background-color: #9747FF;

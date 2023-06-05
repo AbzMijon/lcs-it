@@ -10,7 +10,7 @@ const initialState = {
         src: ukFlag,
         active: true,
         tel: '+44(0)2070 528 406',
-        email: 'info@lcs-it.com',
+        email: 'sales@lcs-it.com',
         adress: '1 Knightsbridge Green London SW1X 7NE United Kingdom',
     },
     {
@@ -19,7 +19,7 @@ const initialState = {
         src: poland,
         active: false,
         tel: '12 444 69 02',
-        email: 'info@lcs-it.com',
+        email: 'sales@lcs-it.com',
         adress: 'ul.Lipowa 3D, 30-702 Cracow',
     },
   ]

@@ -26,26 +26,18 @@ function Modal({ setModal }) {
             isValid = false;
             errorsObject.Name = 'Enter your name';
         }
-        /* if(formValues.Name.length > 20) {
-            isValid = false;
-            errorsObject.Name = 'Long name';
-        } */
         if(!formValues.Email) {
             isValid = false;
             errorsObject.Email = 'Enter a valid Email';
         }
-        /* if(formValues.Email.length > 20) {
+        if(formValues.Message.length < 20) {
             isValid = false;
-            errorsObject.Email = 'Long email';
-        } */
+            errorsObject.Message = 'Short message';
+        }
         if(!formValues.Message) {
             isValid = false;
             errorsObject.Message = 'Enter your message';
         }
-        /* if(formValues.Message.length > 20) {
-            isValid = false;
-            errorsObject.Message = 'Long message';
-        } */
         isValid = false;
 
         if(!isValid) return errorsObject;
