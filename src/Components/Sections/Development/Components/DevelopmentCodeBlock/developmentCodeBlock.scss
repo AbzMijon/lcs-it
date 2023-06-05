@@ -1,4 +1,5 @@
 .development__blocks-code {
+    width: 863px;
     max-width: 873px;
     max-height: 455px;
     background: #0D1117;
@@ -18,7 +19,6 @@
         border: 1px solid #2A2B3A;
         border-radius: 12px 0px 0px 12px;
         padding: 15px 17px;
-        width: 56px;
         .development__code-logo {
             filter: brightness(0) saturate(100%) invert(70%) sepia(14%) saturate(207%) hue-rotate(201deg) brightness(89%) contrast(90%);
             width: 22px;
@@ -54,6 +54,7 @@
     .development__code-main {
         grid-column: 2/13;
         grid-row: 2/13;
+        overflow: hidden;
         .development__code-main-row {
             background: #161B22;
             display: flex;
@@ -253,6 +254,7 @@
 .code__text {
     position: relative;
     padding: 14px 0;
+    overflow: hidden;
 }
 
 .code__str1, .code__str2, .code__str3, .code__str4, .code__str5, .code__str6, .code__str7, .code__str8, .code__str9, .code__str10, .code__str11, .code__str12, .code__str13, .code__str14, .code__str15, .code__str16 {
@@ -394,4 +396,18 @@
 }
 .atribut-value {
     color: #4986CC;
+}
+
+@media only screen and (max-width: 1480px) {
+    .development__blocks-code {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .development__blocks-code {
+        .development__code-left {
+            width: 56px;
+        }
+    }
 }

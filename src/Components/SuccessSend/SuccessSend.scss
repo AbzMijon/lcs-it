@@ -1,0 +1,26 @@
+.successSend {
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: #161B22; 
+    position: relative;
+    width: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 4;
+    &__text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 19px;
+    }
+    &__btn {
+        width: 100%;
+    }
+}

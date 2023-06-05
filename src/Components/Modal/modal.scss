@@ -133,6 +133,11 @@
         }
     }
 }
+.modal__input_err {
+    position: absolute;
+    font-size: 12px;
+    color: #F015B0;
+}
 
 @media only screen and (max-width: 500px) {
     .modal-wrap {

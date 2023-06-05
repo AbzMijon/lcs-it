@@ -7,11 +7,10 @@ import { Formik, Form } from 'formik';
 import SendFormikInput from '../FormikInputs/SendFormikInput';
 import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
 import { sendMessage } from '../../api/messageApi';
-import axios from 'axios'
+import { useState } from 'react';
+import SuccessSend from '../SuccessSend/SuccessSend';
 
 function Modal({ setModal }) {
-
-
 
     const initialFormValues = {
         Name: '',
@@ -27,47 +26,45 @@ function Modal({ setModal }) {
             isValid = false;
             errorsObject.Name = 'Enter your name';
         }
+        /* if(formValues.Name.length > 20) {
+            isValid = false;
+            errorsObject.Name = 'Long name';
+        } */
         if(!formValues.Email) {
             isValid = false;
             errorsObject.Email = 'Enter a valid Email';
         }
+        /* if(formValues.Email.length > 20) {
+            isValid = false;
+            errorsObject.Email = 'Long email';
+        } */
         if(!formValues.Message) {
             isValid = false;
             errorsObject.Message = 'Enter your message';
         }
+        /* if(formValues.Message.length > 20) {
+            isValid = false;
+            errorsObject.Message = 'Long message';
+        } */
         isValid = false;
 
         if(!isValid) return errorsObject;
     }
 
     const onFormSubmit = (formValues) => {
-        console.log(formValues);
         var formData = new FormData();
         formData.append('name',formValues.Name);
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
         formData.append('agree','true');
+        sendMessage(formData);
+        setSuccess(true);
+    }
 
-        let config = {
-            method: 'post',
-            maxBodyLength: Infinity,
-            url: 'http://www.lcs-it.com/feedback/form-processing.php/',
-            headers: { 
-              'X-Requested-With': 'XMLHttpRequest',
-            },
-            data : formData
-          };
-          
-          axios.request(config)
-          .then((response) => {
-            console.log(JSON.stringify(response.data));
-          })
-          .catch((error) => {
-            console.log(error);
-          });
+    const [success, setSuccess] = useState(false);
 
-        // sendMessage(formData);
-        setModal(false);
+    if(success) {
+        return <SuccessSend setModal={setModal} />
     }
 
     return (

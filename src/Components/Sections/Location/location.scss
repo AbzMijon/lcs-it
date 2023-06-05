@@ -1,7 +1,7 @@
 .location {
     position: relative;
     padding-bottom: 329px;
-    background: url('../../../assets/img/locationBG.png') no-repeat bottom;
+    background: url('../../../assets/img/locationBg.webp') no-repeat bottom;
     padding-top: 17px;
     background-size: cover;
     .location__title {
@@ -19,7 +19,7 @@
         display: flex;
         justify-content: start;
         align-items: start;
-        z-index: 14;
+        z-index: 3;
         position: relative;
         .location__selector {
             display: flex;

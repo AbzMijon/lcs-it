@@ -162,7 +162,7 @@ h5,
         width: 50%;
         height: 50%;
         position: absolute;
-        z-index: 999;
+        z-index: 1;
         &:first-child, &:nth-child(2) {
             top: 0;
         }
