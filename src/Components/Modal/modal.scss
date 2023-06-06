@@ -148,6 +148,9 @@
         .modal {
             width: 100vw;
             height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
             max-height: none;
             max-width: none;
             border-radius: 0;
