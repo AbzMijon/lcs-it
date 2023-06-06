@@ -50,7 +50,9 @@ function Development({ setModal }) {
                             </div>
                             <div className="development__keyboard-info development__keyboard-info--planshet" variants={motionAnimation}>
                                 <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
-                                <ContactBtn setModal={setModal}/>
+                                <div className='development__contact'>
+                                    <ContactBtn setModal={setModal}/>
+                                </div>
                             </div>
                         </div>
                         <div className="development__blocks-developers">

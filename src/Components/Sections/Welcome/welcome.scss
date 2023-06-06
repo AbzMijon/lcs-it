@@ -1,7 +1,7 @@
 .welcome {
     padding: 0px 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     max-width: 1180px;
     margin: 0 auto;
     padding-top: 260px;
@@ -10,8 +10,8 @@
     .welcome__info {
         text-align: start;
         padding-bottom: 20px;
-        align-self: flex-end;
         z-index: 3;
+        max-width: 418px;
         .welcome__skills {
             display: flex;
             justify-content: start;
@@ -42,6 +42,10 @@
             margin-bottom: 29px;
         }
     }
+    .welcome__cube-wrap {
+        width: 400px;
+        transform: translateX(-100px);
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -56,6 +60,9 @@
             .welcome__subtitle {
                 margin-bottom: 40px;
             }
+        }
+        .welcome__cube-wrap {
+            transform: translateX(0px);
         }
     }
 }
@@ -84,13 +91,14 @@
 
 @media only screen and (max-width: 570px) {
     .welcome {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
         padding: 0 20px;
         padding-top: 35px;
         margin-bottom: 50px;
         .welcome__info {
-            grid-row: 2/3;
+            max-width: none;
             .welcome__skills {
+                justify-content: space-between;
                 margin-bottom: 30px;
                 .welcome__skills-item {
                     font-size: 10px;
@@ -113,17 +121,26 @@
             }
             .welcome__subtitle {
                 margin-bottom: 29px;
+                color: #E4E5E6;
+            }
+            .welcome__contact {
+                width: 100%;
+                display: flex;
+                justify-content: center;
             }
         }
         .welcome__cube {
             height: 350px;
-            grid-row: 1/2;
             display: flex;
             justify-content: center;
             align-items: center;
             .cube {
                 transform: translate(0px, 0px);
             }
+        }
+        .welcome__cube-wrap {
+            width: auto;
+            margin: 0 auto;
         }
     }
 }

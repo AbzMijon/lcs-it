@@ -25,9 +25,11 @@ function Welcome({ setModal }) {
                 </ul>
                 <motion.h1 className='welcome__title' variants={motionAnimation}>Software  Development</motion.h1>
                 <motion.p className="welcome__subtitle" variants={motionAnimation}>LCS-IT is a prompt solution to issues, complex unique technological developments.</motion.p>
-                <ContactBtn setModal={setModal}/>
+                <div className='welcome__contact'>
+                    <ContactBtn setModal={setModal}/>
+                </div>
             </div>
-            <div ref={cubeRef} className='welcome__cube'>
+            <div ref={cubeRef} className='welcome__cube-wrap'>
                 <Cube isCubeInView={isCubeInView}/>
             </div>
         </motion.section>

@@ -19,7 +19,7 @@ function Footer() {
                     <ul className='footer__adress-list'>
                         <li className='footer__adress-item'>1 Knightsbridge Green London SW1X 7NE United Kingdom</li>
                         <li className='footer__adress-item'>sales@lcs-it.com</li>
-                        <li className='footer__adress-item'> <a href="tel:+44(0)2070528406">+44(0)2070 528 406</a> </li>
+                        <li className='footer__adress-item'> <a href="tel:+442070528406">+44 2070 528 406</a> </li>
                     </ul>
                 </div>
                 <div className="footer__about">

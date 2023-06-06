@@ -44,17 +44,19 @@ function Location({ setModal }) {
                 </div>
                 <motion.div className="location__card" variants={motionAnimation}>
                     <ul className='location__card-list'>
-                        <li className='location__card-item'>
-                            <img src={locationPhone} alt="" className='location__card-icon' />
-                            <p className='location__inf'>{activeLocationButton.tel}</p>
-                        </li>
+                        {activeLocationButton.tel && 
+                            <li className='location__card-item'>
+                                <img src={locationPhone} alt="" className='location__card-icon' />
+                                <pre className='location__inf'>{activeLocationButton?.tel}</pre>
+                            </li>
+                        }
                         <li className='location__card-item'>
                             <img src={locationMain} alt="" className='location__card-icon' />
-                            <p className='location__inf'>{activeLocationButton.email}</p>
+                            <p className='location__inf'>{activeLocationButton?.email}</p>
                         </li>
-                        <li className='location__card-item'>
+                        <li className={activeLocationButton.tel ? 'location__card-item' : 'location__card-item location__card-item-poland'}>
                             <img src={locationLocation} alt="" className='location__card-icon' />
-                            <p className='location__inf'>{activeLocationButton.adress}</p>
+                            <p className='location__inf'>{activeLocationButton?.adress}</p>
                         </li>
                     </ul>
                     <div className="location__btn">
