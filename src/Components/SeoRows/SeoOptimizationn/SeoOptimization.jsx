@@ -42,9 +42,11 @@ function SeoOptimization({ setModal }) {
                         <Lottie animationData={seoOptimizationLottie1} loop={false} className='seo__card-body-img' />
                     }
                 </div>
-                <p className='seo__card-subtitle'>Create Unique Content</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Create Unique Content</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -56,9 +58,11 @@ function SeoOptimization({ setModal }) {
                         <Lottie animationData={seoOptimizationLottie2} loop={false} className='seo__card-body-img' />
                     }
                 </div>
-                <p className='seo__card-subtitle'>Position Tracking</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Position Tracking</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -70,9 +74,11 @@ function SeoOptimization({ setModal }) {
                         <Lottie animationData={seoOptimizationLottie3} loop={false} className='seo__card-body-img' />
                     }
                 </div>
-                <p className='seo__card-subtitle'>Semantic Core Formation</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Semantic Core Formation</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
         </ul>

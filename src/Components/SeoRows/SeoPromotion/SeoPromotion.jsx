@@ -52,9 +52,11 @@ function SeoPromotion ({ setModal }) {
                 <div className="seo__card-body">
                     <Lottie animationData={seoCreativeLottie} loop={false} className='seo__card-body-img' />
                 </div>
-                <p className='seo__card-subtitle'>Creative Creation</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Creative Creation</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -66,9 +68,11 @@ function SeoPromotion ({ setModal }) {
                         <Lottie animationData={seoPromotionLottie1} loop={false} className='seo__card-body-img' />
                     }
                 </div>
-                <p className='seo__card-subtitle'>Competitor Analysis</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Competitor Analysis</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -80,9 +84,11 @@ function SeoPromotion ({ setModal }) {
                         <Lottie animationData={seoPromotionLottie2} loop={false} className='seo__card-body-img' />
                     }
                 </div>
-                <p className='seo__card-subtitle'>Site Audit</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Site Audit</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
         </ul>

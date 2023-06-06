@@ -139,7 +139,7 @@
             }
             .development__keyboard-info {
                 .development__keyboard-text {
-                    max-width: 100%;
+                    max-width: 959px;
                     margin-bottom: 49px;
                 }
             }
@@ -199,6 +199,7 @@
                         display: flex;
                         justify-content: start;
                         align-items: end;
+                        margin-bottom: 0;
                         .development__blocks-activity-lottie {
                             margin-right: 21px;
                             div {
@@ -227,7 +228,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .development {
         margin-bottom: 50px;
         .development__title {
@@ -237,7 +238,7 @@
             overflow: hidden;
             .development__blocks {
                 overflow: hidden;
-                margin-bottom: 30px;
+                margin-bottom: 0px;
                 .development__blocks-activityAndDevelopers {
                     .development__blocks-activity-lottie {
                         display: none;

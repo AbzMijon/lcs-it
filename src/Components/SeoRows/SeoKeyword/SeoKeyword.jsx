@@ -19,11 +19,13 @@ function SeoKeyword({ setModal }) {
                     <p>KD%</p>
                 </div>
                 <div className="seo__card-body seo__card-body--big-img">
-                    <Lottie animationData={seoKeywordLottie} loop={false} />
+                    <Lottie animationData={seoKeywordLottie} loop={false} className='seo__card-body-img' />
                 </div>
-                <p className='seo__card-subtitle'>Selection of Keywords</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Selection of Keywords</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -40,9 +42,11 @@ function SeoKeyword({ setModal }) {
                 <div className="seo__card-body">
                     <Lottie animationData={seoStrategyLottie} loop={false} className='seo__card-body-img' />
                 </div>
-                <p className='seo__card-subtitle'>Strategy Development</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Strategy Development</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -66,9 +70,11 @@ function SeoKeyword({ setModal }) {
                 <div className="seo__card-body">
                     <Lottie animationData={seoCreativeLottie} loop={false} className='seo__card-body-img' />
                 </div>
-                <p className='seo__card-subtitle'>Creative Creation</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-subtitle'>Creative Creation</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
         </ul>

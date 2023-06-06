@@ -40,9 +40,11 @@ function SeoAnalysis({ setModal }) {
                         <p className='seo__card-volume-title'>Volume</p>
                     </div>
                 </div>
-                <p className='seo__card-text'>You have a decent chance of ranking for</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-text'>You have a decent chance of ranking for</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -71,9 +73,11 @@ function SeoAnalysis({ setModal }) {
                         <p className='seo__card-volume-title'>Volume</p>
                     </div>
                 </div>
-                <p className='seo__card-text seo__card-text-uk'>Will bring in targeted traffic</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-text seo__card-text-uk'>Will bring in targeted traffic</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
             <li className='seo__card'>
@@ -102,9 +106,11 @@ function SeoAnalysis({ setModal }) {
                         <p className='seo__card-volume-title'>Volume</p>
                     </div>
                 </div>
-                <p className='seo__card-text seo__card-text-canada'>Will result in a positive ROI</p>
-                <div className='seo-btn'>
-                    <ContactBtn setModal={setModal}/>
+                <div className='seo__card-footer'>
+                    <p className='seo__card-text seo__card-text-canada'>Will result in a positive ROI</p>
+                    <div className='seo-btn'>
+                        <ContactBtn setModal={setModal}/>
+                    </div>
                 </div>
             </li>
         </ul>

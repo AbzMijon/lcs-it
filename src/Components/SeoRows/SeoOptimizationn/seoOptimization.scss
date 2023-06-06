@@ -13,12 +13,19 @@
         }
     }
     .seo__card-subtitle {
-        margin: 18px 26px 22px 26px;
+        margin: 0px 26px 20px 26px;
         color: #fff;
     }
 }
 
 @media only screen and (max-width: 1060px) {
+    .seo {
+        .seo__row {
+            .seo__card-body {
+                height: 182px;
+            }
+        }
+    }
     .seo__card {
         .seo__card-title {
             margin: 0;
@@ -26,9 +33,6 @@
             align-items: center;
             padding: 12px 26px;
             height: 70px;
-        }
-        .seo__card-body {
-            height: 204px;
         }
     }
 }
