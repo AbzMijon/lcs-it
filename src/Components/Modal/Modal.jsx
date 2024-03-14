@@ -6,7 +6,6 @@ import modalMessage from '../../assets/svg/modalMessage.svg';
 import { Formik, Form } from 'formik';
 import SendFormikInput from '../FormikInputs/SendFormikInput';
 import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
-import { sendMessage } from '../../api/messageApi';
 import { useState } from 'react';
 import SuccessSend from '../SuccessSend/SuccessSend';
 
@@ -43,13 +42,21 @@ function Modal({ setModal }) {
         if(!isValid) return errorsObject;
     }
 
-    const onFormSubmit = (formValues) => {
+    const onFormSubmit = async (formValues) => {
         var formData = new FormData();
         formData.append('name',formValues.Name);
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
         formData.append('agree','true');
-        sendMessage(formData);
+
+        await fetch('http://www.lcs-it.com/feedback/form-processing.php/', {
+            maxBodyLength: Infinity,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            method: "POST",
+            body: formData,
+        })
         setSuccess(true);
     }
 

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './outsourcing.scss';
 import ContactBtn from '../../ContactBtn/ContactBtn';
-import outsourcingBg1 from '../../../assets/img/molecula1.png';
-import outsourcingBg2 from '../../../assets/img/molecula2.png';
-import outsourcingBg3 from '../../../assets/img/molecula3.png';
+import outsourcingBg1 from '../../../assets/img/molecula1.webp';
+import outsourcingBg2 from '../../../assets/img/molecula2.webp';
+import outsourcingBg3 from '../../../assets/img/molecula3.webp';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import { OUTSOURCING_CARDS } from '../../../constants/outsourcing';

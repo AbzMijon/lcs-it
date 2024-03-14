@@ -1,10 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './scheme.scss';
-import userActive from '../../../assets/img/userActive.png';
 import user from '../../../assets/svg/user.svg';
-import blocknot from '../../../assets/svg/blaknot.svg';
-import rocket from '../../../assets/svg/rocket.svg';
-import schemeActiveExample from '../../../assets/img/schemeActiveExample.png';
+import schemeActiveExample from '../../../assets/img/schemeActiveExample.webp';
 import Lottie from "lottie-react";
 import animation from "../../../assets/lottieAnimations/shemeAnimation.json";
 import { motion, useInView } from 'framer-motion';

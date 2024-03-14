@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './development.scss';
-import developmentKeyboard from '../../../assets/img/developmentKeyboard.jpg';
+import developmentKeyboard from '../../../assets/img/developmentKeyboard.webp';
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Lottie from "lottie-react";
 import activityLottie from '../../../assets/lottieAnimations/activityLottie.json';

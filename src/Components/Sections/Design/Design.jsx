@@ -1,11 +1,11 @@
 import Marquee from "react-fast-marquee";
-import letterA from '../../../assets/img/letterA.png';
-import server from '../../../assets/img/Server.png';
-import activeServer from '../../../assets/img/activeServer.png';
-import designCard2 from '../../../assets/img/designCard2.png';
+import letterA from '../../../assets/img/letterA.webp';
+import server from '../../../assets/img/Server.webp';
+import activeServer from '../../../assets/img/activeServer.webp';
+import designCard2 from '../../../assets/img/designCard2.webp';
 import { FiArrowUpRight } from 'react-icons/fi';
 import arrow from '../../../assets/svg/arrow.svg';
-import pin from '../../../assets/img/Pin.png';
+import pin from '../../../assets/img/Pin.webp';
 import './design.scss';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './business.scss';
-import teamBg from '../../../assets/img/teamBg.png';
-import grid from '../../../assets/img/grid.png';
+import teamBg from '../../../assets/img/teamBg.webp';
+import grid from '../../../assets/img/grid.webp';
 import outsourcingCard1 from '../../../assets/svg/outsorcingCard6.svg';
 import modelOut from '../../../assets/svg/modelOut.svg';
 import { motion } from 'framer-motion';

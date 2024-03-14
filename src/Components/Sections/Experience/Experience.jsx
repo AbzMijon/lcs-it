@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './experience.scss';
-import experienceCardShield1 from '../../../assets/img/experienceCardShield1.png';
-import experienceCardShield2 from '../../../assets/img/experienceCardShield2.png';
-import experienceCardShield3 from '../../../assets/img/experienceCardShield3.png';
+import experienceCardShield1 from '../../../assets/img/experienceCardShield1.webp';
+import experienceCardShield2 from '../../../assets/img/experienceCardShield2.webp';
+import experienceCardShield3 from '../../../assets/img/experienceCardShield3.webp';
 import Marquee from "react-fast-marquee";
 import { MExperienceCard } from '../../Cards/ExperienceCard/ExperienceCard';
 import { MExperienceSkills } from '../../Cards/ExperienceSkills/ExperienceSkills';
