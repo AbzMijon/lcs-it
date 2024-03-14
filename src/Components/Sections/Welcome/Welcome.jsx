@@ -29,9 +29,9 @@ function Welcome({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </div>
-            <div ref={cubeRef} className='welcome__cube-wrap'>
+{/*             <div ref={cubeRef} className='welcome__cube-wrap'>
                 <Cube isCubeInView={isCubeInView}/>
-            </div>
+            </div> */}
         </motion.section>
     )
 }
