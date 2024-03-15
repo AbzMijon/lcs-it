@@ -46,6 +46,11 @@
         width: 400px;
         transform: translateX(-100px);
     }
+    .welcome__cube-mobile {
+        display: none;
+        width: 239px;
+        margin: 50px auto 30px auto;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -78,6 +83,12 @@
 @media only screen and (max-width: 768px) {
     .welcome {
         max-width: 767px;
+        .welcome__cube-wrap {
+            display: none;
+        }
+        .welcome__cube-mobile {
+            display: block;
+        }
     }
 }
 
@@ -128,20 +139,6 @@
                 display: flex;
                 justify-content: center;
             }
-        }
-        .welcome__cube {
-            height: 350px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .cube {
-                transform: translate(0px, 0px);
-            }
-        }
-        .welcome__cube-wrap {
-            width: auto;
-            height: 350px;
-            margin: 0 auto;
         }
     }
 }

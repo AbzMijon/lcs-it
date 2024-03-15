@@ -3,6 +3,7 @@ import Cube from '../../Cube/Cube';
 import './welcome.scss';
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
+import mobileCubeImg from '../../../assets/img/mobileCube.webp';
 import { useRef } from 'react';
 
 function Welcome({ setModal }) {
@@ -32,6 +33,7 @@ function Welcome({ setModal }) {
             <div ref={cubeRef} className='welcome__cube-wrap'>
                 <Cube isCubeInView={isCubeInView}/>
             </div>
+            <img src={mobileCubeImg} alt='' className='welcome__cube-mobile' />
         </motion.section>
     )
 }
