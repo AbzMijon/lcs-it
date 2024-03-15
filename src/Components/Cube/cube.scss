@@ -1,39 +1,10 @@
 .welcome__cube, .welcome__cube--hidden {
-    position: relative;
     z-index: 3;
     display: block;
-    .cube {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-144px);
+    canvas {
+        transform: scale(1.5);
     }
 }
 .welcome__cube--hidden {
     display: none !important;
-}
-
-@media only screen and (max-width: 1024px) {
-    .welcome__cube, .welcome__cube--hidden {
-        .cube {
-            transform: translateY(-50px);
-            #canvas3d {
-                width: 400px !important;
-                height: 400px !important;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 570px) {
-    .welcome__cube, .welcome__cube--hidden {
-        .cube {
-            position: static;
-            transform: translate(0);
-            #canvas3d {
-                width: 350px !important;
-                height: 350px !important;
-            }
-        }
-    }
 }

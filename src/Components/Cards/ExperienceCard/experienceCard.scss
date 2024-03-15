@@ -42,6 +42,7 @@
 
 @media only screen and (max-width: 650px) {
     .experience__card {
+        pointer-events: none;
         .card {
             .experience__card-title {
                 white-space: normal;
