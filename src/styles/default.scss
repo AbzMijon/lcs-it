@@ -217,6 +217,11 @@ h5,
 	body {
 		background-size: auto;
 	}
+	.lightEffectWrapper {
+		span, .lightEffectWrapper__card .light {
+			display: none;
+		}
+	}
 }
 
 @media only screen and (max-width:400px) {
