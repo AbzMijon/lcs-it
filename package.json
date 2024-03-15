@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.66",
     "formik": "^2.2.9",
     "framer-motion": "^10.11.2",
     "lottie-react": "^2.4.0",
