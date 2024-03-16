@@ -1,6 +1,5 @@
 import { forwardRef } from 'react';
 import './experienceSkills.scss';
-import { motion } from 'framer-motion';
 
 const ExperienceSkills = forwardRef(({ id, src, label }, ref) => {
     return (
@@ -12,4 +11,3 @@ const ExperienceSkills = forwardRef(({ id, src, label }, ref) => {
 })
 
 export default ExperienceSkills;
-export const MExperienceSkills = motion(ExperienceSkills);

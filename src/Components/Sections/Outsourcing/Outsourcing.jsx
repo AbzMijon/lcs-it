@@ -28,8 +28,9 @@ function Outsourcing({ setModal }) {
             viewport={{ amount: 0.2, once: true }}
             className='outsourcing' 
             id='outsourcing'
+            variants={motionAnimation}
         >
-            <motion.div className="outsourcing__wrap" variants={motionAnimation}>
+            <div className="outsourcing__wrap">
                 <h2 className='outsourcing__title'>Outsourcing</h2>
                 <ul
                     className="outsourcing__table"
@@ -63,7 +64,7 @@ function Outsourcing({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                     </li>
                 </ul>
-            </motion.div>
+            </div>
             <img src={outsourcingBg1} alt="" className='outsourcing__bg1' />
             <img src={outsourcingBg2} alt="" className='outsourcing__bg2' />
             <img src={outsourcingBg3} alt="" className='outsourcing__bg3' />

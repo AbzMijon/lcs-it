@@ -19,10 +19,11 @@ function Design() {
             viewport={{ amount: 0.2, once: true }} 
             className='design'
             id='design'
+            variants={motionAnimation}
         >
-            <motion.h2 className='design__title' variants={motionAnimation}>Design</motion.h2>
-            <motion.p className='design__text' variants={motionAnimation}>As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</motion.p>
-            <motion.ul className='design__types' variants={motionAnimation}>
+            <h2 className='design__title'>Design</h2>
+            <p className='design__text'>As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</p>
+            <ul className='design__types'>
                 <Marquee
                     delay={0}
                     speed={30}
@@ -40,8 +41,8 @@ function Design() {
                         )
                     })}
                 </Marquee>
-            </motion.ul>
-            <motion.div variants={motionAnimation} className="design__cards-row">
+            </ul>
+            <div variants={motionAnimation} className="design__cards-row">
                 <Marquee
                     delay={0}
                     speed={30}
@@ -124,7 +125,7 @@ function Design() {
                         <p className='design__card-text'>The process of planning and building the elements of the website. Creation of the overall visual appearance of the website.</p>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </motion.section>
     )
 }

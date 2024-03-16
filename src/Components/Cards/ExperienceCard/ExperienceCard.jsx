@@ -1,6 +1,5 @@
 import { forwardRef } from 'react';
 import './experienceCard.scss';
-import { motion } from 'framer-motion';
 
 const ExperienceCard = forwardRef(({ src, label, onMouseMove, mouse }, ref) => {
     return (
@@ -23,4 +22,3 @@ const ExperienceCard = forwardRef(({ src, label, onMouseMove, mouse }, ref) => {
 });
 
 export default ExperienceCard;
-export const MExperienceCard = motion(ExperienceCard);

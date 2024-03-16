@@ -29,10 +29,11 @@ function Development({ setModal }) {
             viewport={{ amount: 0.2, once: true }}
             className='development'
             id='software'
+            variants={motionAnimation}
         >
-            <motion.h2 variants={motionAnimation} className='development__title'>Software development</motion.h2>
+            <h2 className='development__title'>Software development</h2>
             <div className="development__code">
-                <motion.div className="development__blocks" variants={motionAnimation}>
+                <div className="development__blocks">
                     <div className="development__blocks-overview">
                         {animationStart &&
                             <Lottie animationData={overviewLottie} loop={false} />
@@ -48,7 +49,7 @@ function Development({ setModal }) {
                                     <Lottie animationData={activityLottie} loop={false} />
                                 }
                             </div>
-                            <div className="development__keyboard-info development__keyboard-info--planshet" variants={motionAnimation}>
+                            <div className="development__keyboard-info development__keyboard-info--planshet">
                                 <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
                                 <div className='development__contact'>
                                     <ContactBtn setModal={setModal}/>
@@ -59,19 +60,16 @@ function Development({ setModal }) {
                             <DevelopmentDevelopersBlock />
                         </div>
                     </div>
-                </motion.div>
-                <motion.div 
-                    initial='hidden'
-                    whileInView='visible'
-                    viewport={{ amount: 0.2, once: true }}
+                </div>
+                <div 
                     className="development__keyboard"
                 >
-                    <motion.img src={developmentKeyboard} alt="" variants={motionAnimation} />
-                    <motion.div className="development__keyboard-info" variants={motionAnimation}>
+                    <img src={developmentKeyboard} alt="" />
+                    <div className="development__keyboard-info">
                         <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
                         <ContactBtn setModal={setModal}/>
-                    </motion.div>
-                </motion.div>
+                    </div>
+                </div>
             </div>
         </motion.section>
     )
