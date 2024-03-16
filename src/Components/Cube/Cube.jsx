@@ -1,4 +1,4 @@
-import Spline from '@splinetool/react-spline';
+/* import Spline from '@splinetool/react-spline';
 import './cube.scss';
 
 function Cube({ isCubeInView }) {
@@ -9,4 +9,4 @@ function Cube({ isCubeInView }) {
     )
 }
 
-export default Cube;
+export default Cube; */
