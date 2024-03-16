@@ -4,6 +4,7 @@ import './welcome.scss';
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import { useRef } from 'react';
+import mobileCube from '../../../assets/img/expCard1.jpg';
 
 function Welcome({ setModal }) {
 
@@ -29,9 +30,12 @@ function Welcome({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </div>
-            <div ref={cubeRef} className='welcome__cube-wrap'>
-                <Cube isCubeInView={isCubeInView}/>
-            </div>
+            {window.innerWidth > 650 ? (
+                <div ref={cubeRef} className='welcome__cube-wrap'>
+                    <Cube isCubeInView={isCubeInView}/>
+                </div>
+            ) : null}
+            <img src={mobileCube} alt='' className='welcome__cube-mobile' />
         </motion.section>
     )
 }
