@@ -1,5 +1,5 @@
 import ContactBtn from '../../ContactBtn/ContactBtn';
-/* import Cube from '../../Cube/Cube'; */
+import Cube from '../../Cube/Cube';
 import './welcome.scss';
 import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
@@ -30,11 +30,11 @@ function Welcome({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </div>
-{/*             {window.innerWidth > 650 ? (
+            {window.innerWidth > 650 ? (
                 <div ref={cubeRef} className='welcome__cube-wrap'>
                     <Cube isCubeInView={isCubeInView}/>
                 </div>
-            ) : null} */}
+            ) : null}
             <img src={mobileCube} alt='' className='welcome__cube-mobile' />
         </motion.section>
     )
