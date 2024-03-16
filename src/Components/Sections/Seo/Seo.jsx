@@ -74,7 +74,7 @@ function Seo({ setModal }) {
                 <div className="seo__icons">
                     {seoIconBtns && seoIconBtns.map((iconBtn) => (
                         <button key={iconBtn.id}>
-                            <img src={iconBtn.img} alt="" className='seo__icons-img' />
+                            <img src={iconBtn.img} alt="" className='seo__icons-img' loading="lazy" />
                         </button>
                     ))}
                 </div>

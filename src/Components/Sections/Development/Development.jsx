@@ -64,7 +64,7 @@ function Development({ setModal }) {
                 <div 
                     className="development__keyboard"
                 >
-                    <img src={developmentKeyboard} alt="" />
+                    <img src={developmentKeyboard} alt="" loading="lazy" />
                     <div className="development__keyboard-info">
                         <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
                         <ContactBtn setModal={setModal}/>

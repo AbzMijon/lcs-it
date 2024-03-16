@@ -22,10 +22,11 @@ function Location({ setModal }) {
             viewport={{ amount: 0.3, once: true }}
             className='location' 
             id='contacts'
+            variants={motionAnimation}
         >
-            <motion.h2 className='location__title' variants={motionAnimation}>Our Locations</motion.h2>
+            <h2 className='location__title'>Our Locations</h2>
             <div className="location__content">
-                <motion.div className="location__selector" variants={motionAnimation}>
+                <div className="location__selector">
                     {locationButtons && locationButtons.map((locationBtn) => {
                         return (
                             <div 
@@ -33,36 +34,36 @@ function Location({ setModal }) {
                                 className={locationBtn.active ? "location__selector-uk location__selector--active" : 'location__selector-uk'}
                                 onClick={() => dispatch(setActiveCountry(locationBtn.id))}
                                 >
-                                <img src={locationBtn.src} alt="" className='location__selector-img' />
+                                <img src={locationBtn.src} alt="" className='location__selector-img' loading="lazy" />
                                 <p className='location__selector-name'>{locationBtn.label}</p>
                             </div>
                         )
                     })}
-                </motion.div>
+                </div>
                 <div className='location__selector--mobile'>
                     <MobileCountrySelector />
                 </div>
-                <motion.div className="location__card" variants={motionAnimation}>
+                <div className="location__card">
                     <ul className='location__card-list'>
                         {activeLocationButton.tel && 
                             <li className='location__card-item'>
-                                <img src={locationPhone} alt="" className='location__card-icon' />
+                                <img src={locationPhone} alt="" className='location__card-icon' loading="lazy" />
                                 <pre className='location__inf'>{activeLocationButton?.tel}</pre>
                             </li>
                         }
                         <li className='location__card-item'>
-                            <img src={locationMain} alt="" className='location__card-icon' />
+                            <img src={locationMain} alt="" className='location__card-icon' loading="lazy" />
                             <p className='location__inf'>{activeLocationButton?.email}</p>
                         </li>
                         <li className={activeLocationButton.tel ? 'location__card-item' : 'location__card-item location__card-item-poland'}>
-                            <img src={locationLocation} alt="" className='location__card-icon' />
+                            <img src={locationLocation} alt="" className='location__card-icon' loading="lazy" />
                             <p className='location__inf'>{activeLocationButton?.adress}</p>
                         </li>
                     </ul>
                     <div className="location__btn">
                         <ContactBtn setModal={setModal}/>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </motion.section>
     )

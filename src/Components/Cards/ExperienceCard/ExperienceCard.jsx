@@ -9,7 +9,7 @@ const ExperienceCard = forwardRef(({ src, label, onMouseMove, mouse }, ref) => {
             <span></span>
             <span></span>
             <div className='card lightEffectWrapper__card' id="ex_card">
-                <img src={src} alt="" />
+                <img src={src} alt="" loading="lazy" />
                 <p className='experience__card-title'>{label}</p>
                 <div 
                     id='light' 

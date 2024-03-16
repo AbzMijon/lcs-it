@@ -71,7 +71,7 @@ function Modal({ setModal }) {
             <div className="modal" onClick={(e) => e.stopPropagation()}>
                 <RxCross2 className='modal__close' onClick={() => setModal(false)} />
                 <div className='modal__logo'>
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" loading="lazy" />
                 </div>
                 <p className='modal__title'>Get in touch</p>
                 <p className='modal__subtitle'>Fill out this short form and our team will get back to you within 24 hours</p>
@@ -79,7 +79,7 @@ function Modal({ setModal }) {
                     <Form>
                         <div className='modal__input-wrap'>
                             <SendFormikInput name='Name' type='text' placeholder='Name' required />
-                            <img src={modalUser} alt="" className='modal__input-icon modal__input-name' />
+                            <img src={modalUser} alt="" className='modal__input-icon modal__input-name'  />
                         </div>
                         <div className='modal__input-wrap'>
                             <SendFormikInput name='Email' type='email' placeholder='Email' required />

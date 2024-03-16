@@ -24,7 +24,7 @@ function MobileCountrySelector() {
                 onClick={() => setOpen((prev) => !prev)}
             >
                 <div className="countrySelector__current-container">
-                    <img src={activeCountry.src} alt="" className='countrySelector__currentItem-img' />
+                    <img src={activeCountry.src} alt="" className='countrySelector__currentItem-img' loading="lazy" />
                     <p className='countrySelector__currentItem-name'>{activeCountry.label}</p>
                     {open ?
                         <MdKeyboardArrowUp className='countrySelector__arrow'/>
@@ -39,7 +39,7 @@ function MobileCountrySelector() {
                         return (
                             <li className='countrySelector__item' key={notActiveCountry.id} onClick={() => selectCountry(notActiveCountry.id)}>
                                 <div className="countrySelector__item-container">
-                                    <img src={notActiveCountry.src} alt="" className='countrySelector__item-img' />
+                                    <img src={notActiveCountry.src} alt="" className='countrySelector__item-img' loading="lazy" />
                                     <p className='countrySelector__item-name'>{notActiveCountry.label}</p>
                                     <MdKeyboardArrowDown className='countrySelector__arrow' />
                                 </div>

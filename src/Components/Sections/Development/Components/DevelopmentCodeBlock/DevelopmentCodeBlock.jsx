@@ -25,12 +25,12 @@ function DevelopmentCodeBlock({ animationStart, codeRef }) {
     return (
         <div className="development__blocks-code">
             <div className="development__code-left">
-                <img src={logo} alt="" className='development__code-logo' />
+                <img src={logo} alt="" className='development__code-logo' loading="lazy" />
             </div>
             <div className="development__code-head">
                 <div className='development__code-stroke'>
                     <a href="http://www.lcs-it.com/" className='development__code-str'>http://www.lcs-it.com/</a>
-                    <img src={searchIcon} alt="" className='development__code-loop' />
+                    <img src={searchIcon} alt="" className='development__code-loop' loading="lazy" />
                 </div>
             </div>
             <div className="development__code-main">

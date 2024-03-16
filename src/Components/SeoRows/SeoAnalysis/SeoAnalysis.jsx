@@ -17,17 +17,17 @@ function SeoAnalysis({ setModal }) {
             <li className='seo__card'>
                 <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
-                        <img src={usaFlag} alt="" className='seo__card-flag' />
+                        <img src={usaFlag} alt="" className='seo__card-flag' loading="lazy" />
                         <p className='seo__card-country'>USA</p>
                         <FiArrowUpRight className='seo__card-arrow' />
                     </div>
                     <button className='seo__card-volume-btn usa-volume'>Volume</button>
                 </div>
                 <div className="seo__card-statistic">
-                    <img src={usaLine} alt="" className='seo__graphic-bg' />
+                    <img src={usaLine} alt="" className='seo__graphic-bg' loading="lazy" />
                     <div className="seo__card-result">
                         <div className="seo__card-result-img">
-                            <img src={usaResult} alt="" />
+                            <img src={usaResult} alt="" loading="lazy" />
                         </div>
                         <p className='seo__card-result-title'>Result</p>    
                     </div>
@@ -50,17 +50,17 @@ function SeoAnalysis({ setModal }) {
             <li className='seo__card'>
                 <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
-                        <img src={ukFlag} alt="" className='seo__card-flag' />
+                        <img src={ukFlag} alt="" className='seo__card-flag' loading="lazy" />
                         <p className='seo__card-country'>UK</p>
                         <FiArrowUpRight className='seo__card-arrow' />
                     </div>
                     <button className='seo__card-volume-btn uk-volume'>Volume</button>
                 </div>
                 <div className="seo__card-statistic">
-                    <img src={ukLine} alt="" className='seo__graphic-bg' />
+                    <img src={ukLine} alt="" className='seo__graphic-bg' loading="lazy" />
                     <div className="seo__card-result">
                         <div className="seo__card-result-img">
-                            <img src={ukResult} alt="" />
+                            <img src={ukResult} alt="" loading="lazy" />
                         </div>
                         <p className='seo__card-result-title'>Result</p>
                     </div>
@@ -83,17 +83,17 @@ function SeoAnalysis({ setModal }) {
             <li className='seo__card'>
                 <div className="seo__card-head seo__card-head-analysis">
                     <div className="seo__card-header-left">
-                        <img src={canadaFlag} alt="" className='seo__card-flag' />
+                        <img src={canadaFlag} alt="" className='seo__card-flag' loading="lazy" />
                         <p className='seo__card-country'>Can</p>
                         <FiArrowUpRight className='seo__card-arrow' />
                     </div>
                     <button className='seo__card-volume-btn canada-volume'>Volume</button>
                 </div>
                 <div className="seo__card-statistic">
-                    <img src={canadaLine} alt="" className='seo__graphic-bg' />
+                    <img src={canadaLine} alt="" className='seo__graphic-bg' loading="lazy" />
                     <div className="seo__card-result">
                         <div className="seo__card-result-img">
-                            <img src={canadaResult} alt="" />
+                            <img src={canadaResult} alt="" loading="lazy" />
                         </div>
                         <p className='seo__card-result-title'>Result</p>
                     </div>

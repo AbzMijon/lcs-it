@@ -35,16 +35,16 @@ function SeoPromotion ({ setModal }) {
                 <div className='seo__card-head'>
                     <ul className='seo__card-head-list'>
                         <li className='seo__card-item'>
-                            <img src={facebook} alt="" className='seo__card-list-img' />
+                            <img src={facebook} alt="" className='seo__card-list-img' loading="lazy" />
                         </li>
                         <li className='seo__card-item'>
-                            <img src={instagram} alt="" className='seo__card-list-img' />
+                            <img src={instagram} alt="" className='seo__card-list-img' loading="lazy" />
                         </li>
                         <li className='seo__card-item'>
-                            <img src={linkedIn} alt="" className='seo__card-list-img' />
+                            <img src={linkedIn} alt="" className='seo__card-list-img' loading="lazy" />
                         </li>
                         <li className='seo__card-item'>
-                            <img src={telegram} alt="" className='seo__card-list-img' />
+                            <img src={telegram} alt="" className='seo__card-list-img' loading="lazy" />
                         </li>
                     </ul>
                     <HiPlus className='seo__card-item-plus' />

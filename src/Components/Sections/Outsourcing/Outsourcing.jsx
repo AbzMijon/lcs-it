@@ -47,7 +47,7 @@ function Outsourcing({ setModal }) {
                                 <span></span>
                                 <span></span>
                                 <div className="outsourcing__card lightEffectWrapper__card">
-                                    <img src={outsourcingCard.icon} alt="" className="outsourcing__img" />
+                                    <img src={outsourcingCard.icon} alt="" className="outsourcing__img" loading="lazy" />
                                     <h4 className='outsourcing__card-name'>{outsourcingCard.title}</h4>
                                     <p className='outsourcing__text'>{outsourcingCard.text}</p>
                                     <div 
@@ -61,13 +61,13 @@ function Outsourcing({ setModal }) {
                     })}
                     <li 
                         className="outsourcing__card outsourcing__card-btn">
-                    <ContactBtn setModal={setModal}/>
+                        <ContactBtn setModal={setModal}/>
                     </li>
                 </ul>
             </div>
-            <img src={outsourcingBg1} alt="" className='outsourcing__bg1' />
-            <img src={outsourcingBg2} alt="" className='outsourcing__bg2' />
-            <img src={outsourcingBg3} alt="" className='outsourcing__bg3' />
+            <img src={outsourcingBg1} alt="" className='outsourcing__bg1' loading="lazy" />
+            <img src={outsourcingBg2} alt="" className='outsourcing__bg2' loading="lazy" />
+            <img src={outsourcingBg3} alt="" className='outsourcing__bg3' loading="lazy" />
         </motion.section>
     )
 }

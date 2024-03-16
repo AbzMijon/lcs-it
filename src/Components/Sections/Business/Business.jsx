@@ -60,17 +60,17 @@ function Business() {
                 </div>
                 <div className="business__cards">
                     <div className="business__card business__outstaffing" onMouseMove={onMouseMove}>
-                        <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' />
+                        <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' loading="lazy" />
                         <p className='business__outstaffing-title'>Outstaffing</p>
                     </div>
                     <div className="business__card business__team" onMouseMove={onMouseMove}>
-                        <img src={teamBg} alt="" className='business__team-bg' />
+                        <img src={teamBg} alt="" className='business__team-bg' loading="lazy" />
                         <p className='business__team-title'>Dedicated Team</p>
                     </div>
                     <div className="business__card business__outsorcing" onMouseMove={onMouseMove}>
-                        <img src={modelOut} alt="" className='business__outsorcing-icon' />
+                        <img src={modelOut} alt="" className='business__outsorcing-icon' loading="lazy" />
                         <p className='business__outsorcing-title'>Outsourcing</p>
-                        <img src={grid} alt="" className='business__outsorcing-bg' />
+                        <img src={grid} alt="" className='business__outsorcing-bg' loading="lazy" />
                     </div>
                 </div>
                 <div className='business__cards--mobile'>
@@ -83,17 +83,17 @@ function Business() {
                         direction='right'
                     >
                         <div className="business__outstaffing business__card" onMouseMove={onMouseMove}>
-                            <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' />
+                            <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' loading="lazy" />
                             <p className='business__outstaffing-title'>Outstaffing</p>
                         </div>
                         <div className="business__team business__card" onMouseMove={onMouseMove}>
-                            <img src={teamBg} alt="" className='business__team-bg' />
+                            <img src={teamBg} alt="" className='business__team-bg' loading="lazy" />
                             <h4 className='business__team-title'>Dedicated Team</h4>
                         </div>
                         <div className="business__outsorcing business__card" onMouseMove={onMouseMove}>
-                            <img src={modelOut} alt="" className='business__outsorcing-icon' />
+                            <img src={modelOut} alt="" className='business__outsorcing-icon' loading="lazy" />
                             <h4 className='business__outsorcing-title'>Outsourcing</h4>
-                            <img src={grid} alt="" className='business__outsorcing-bg' />
+                            <img src={grid} alt="" className='business__outsorcing-bg' loading="lazy" />
                         </div>
                     </Marquee>
                 </div>

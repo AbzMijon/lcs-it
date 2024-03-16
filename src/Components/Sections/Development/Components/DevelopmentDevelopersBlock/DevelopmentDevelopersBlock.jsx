@@ -13,7 +13,7 @@ function DevelopmentDevelopersBlock() {
             <ul className='development__developers-list'>
                 <li className='development__developers-item'>
                     <div className="development__developers-main-inf">
-                        <img src={developers1} alt="" className='development__developers-avatar transfer-from' />
+                        <img src={developers1} alt="" className='development__developers-avatar transfer-from' loading="lazy" />
                         <div className="development__developers-inf">
                             <p className='development__developers-transfers'>Tranfers from</p>
                             <p className='development__developers-name'>Matheus Ferrero</p>
@@ -23,7 +23,7 @@ function DevelopmentDevelopersBlock() {
                 </li>
                 <li className='development__developers-item'>
                     <div className="development__developers-main-inf">
-                        <img src={developers2} alt="" className='development__developers-avatar' />
+                        <img src={developers2} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
                             <p className='development__developers-transfers'>Tranfers to</p>
                             <p className='development__developers-name'>Floyd Miles</p>
@@ -33,7 +33,7 @@ function DevelopmentDevelopersBlock() {
                 </li>
                 <li className='development__developers-item'>
                     <div className="development__developers-main-inf">
-                        <img src={developers3} alt="" className='development__developers-avatar' />
+                        <img src={developers3} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
                             <p className='development__developers-transfers'>Tranfers to</p>
                             <p className='development__developers-name'>Jerome Bell</p>
@@ -43,7 +43,7 @@ function DevelopmentDevelopersBlock() {
                 </li>
                 <li className='development__developers-item'>
                     <div className="development__developers-main-inf">
-                        <img src={developers4} alt="" className='development__developers-avatar' />
+                        <img src={developers4} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
                             <p className='development__developers-transfers'>Tranfers to</p>
                             <p className='development__developers-name'>Ralph Edwards</p>

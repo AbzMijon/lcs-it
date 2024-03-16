@@ -11,7 +11,7 @@ function Footer() {
         <footer className='footer'>
             <div className="footer__content">
                 <a href='#company' className="footer__logo">
-                    <img src={logo} alt="" className='footer__logo-img' />
+                    <img src={logo} alt="" className='footer__logo-img' loading="lazy" />
                     <p className='footer__logo-name'>LCS-IT</p>
                 </a>
                 <div className="footer__adress">
@@ -35,19 +35,19 @@ function Footer() {
                     <p className='footer__folow-title'>Follow Us</p>
                     <ul className='footer__folow-list'>
                         <li className='footer__folow-item'>
-                            <img src={facebook} alt="" className='footer__folow-img' />
+                            <img src={facebook} alt="" className='footer__folow-img' loading="lazy" />
                         </li>
                         <li className='footer__folow-item'>
-                            <img src={instagram} alt="" className='footer__folow-img' />
+                            <img src={instagram} alt="" className='footer__folow-img' loading="lazy" />
                         </li>
                         <li className='footer__folow-item'>
-                            <img src={linkedIn} alt="" className='footer__folow-img' />
+                            <img src={linkedIn} alt="" className='footer__folow-img' loading="lazy" />
                         </li>
                         <li className='footer__folow-item'>
-                            <img src={telegram} alt="" className='footer__folow-img' />
+                            <img src={telegram} alt="" className='footer__folow-img' loading="lazy" />
                         </li>
                         <li className='footer__folow-item'>
-                            <img src={gitHub} alt="" className='footer__folow-img' />
+                            <img src={gitHub} alt="" className='footer__folow-img' loading="lazy" />
                         </li>
                     </ul>
                 </div>

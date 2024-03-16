@@ -34,17 +34,17 @@ function Scheme() {
             <h2 className='scheme__title'>Scheme of Work</h2>
             <div className="scheme__content">
                 <div className="scheme__list">
-                    <img src={schemeImg} alt="" className='scheme__row-icons' />
+                    <img src={schemeImg} alt="" className='scheme__row-icons' loading="lazy" />
                     <div className="scheme__row-example">
                         <div className="scheme__row-icon-wrap">
-                            <img src={user} alt="" className='scheme__row-icon scheme-user' />
+                            <img src={user} alt="" className='scheme__row-icon scheme-user' loading="lazy" />
                         </div>
                         <div className="scheme__triangles scheme__triangles--transform">
                             <div className="scheme__triangle scheme__triangle-mini"></div>
                             <div className="scheme__triangle scheme__triangle-mid"></div>
                             <div className="scheme__triangle scheme__triangle-big"></div>
                         </div>
-                        <img src={schemeActiveExample} alt="" className='scheme__row-example-img' />
+                        <img src={schemeActiveExample} alt="" className='scheme__row-example-img' loading="lazy" />
                     </div>
                     <ul className='scheme__row-cards' ref={ref}>
                         {shemeTextBlocks && shemeTextBlocks.map((schemeText) => (

@@ -52,28 +52,28 @@ function Design() {
                 >
                     <div className="design__card">
                         <div className='design__card-img design__card-img--pin'>
-                            <img src={pin} alt="" />
+                            <img src={pin} alt="" loading="lazy" />
                         </div>
                         <p className='design__card-title'>Product Strategy</p>
                         <p className='design__card-text'>We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts.</p>
                     </div>
                     <div className="design__card">
-                        <img src={designCard2} alt="" className='design__card-img' />
-                        <img src={letterA} alt="" className='design__card-img-letter' />
+                        <img src={designCard2} alt="" className='design__card-img' loading="lazy" />
+                        <img src={letterA} alt="" className='design__card-img-letter' loading="lazy" />
                         <p className='design__card-title'>Brand Identity</p>
                         <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--browser'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="" loading="lazy" />
                         </div>
                         <p className='design__card-title'>UI/UX Design</p>
                         <p className='design__card-text'>Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design.</p>
                     </div>
                     <div className="design__card">
                         <div className="design__card-square"></div>
-                        <img src={server} alt="" className='design__card-server-img' />
-                        <img src={activeServer} alt="" className='design__card-server-img--active' />
+                        <img src={server} alt="" className='design__card-server-img' loading="lazy" />
+                        <img src={activeServer} alt="" className='design__card-server-img--active' loading="lazy" />
                         <p className='design__card-logo-title'>Logo</p>
                         <p className='design__card-title'>Prototype</p>
                         <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
@@ -90,28 +90,28 @@ function Design() {
                 <div className="design__mobileRow">
                     <div className="design__card">
                         <div className='design__card-img design__card-img--pin'>
-                            <img src={pin} alt="" />
+                            <img src={pin} alt="" loading="lazy" />
                         </div>
                         <p className='design__card-title'>Product Strategy</p>
                         <p className='design__card-text'>We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts.</p>
                     </div>
                     <div className="design__card">
-                        <img src={designCard2} alt="" className='design__card-img' />
-                        <img src={letterA} alt="" className='design__card-img-letter' />
+                        <img src={designCard2} alt="" className='design__card-img' loading="lazy" />
+                        <img src={letterA} alt="" className='design__card-img-letter' loading="lazy" />
                         <p className='design__card-title'>Brand Identity</p>
                         <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--browser'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="" loading="lazy" />
                         </div>
                         <p className='design__card-title'>UI/UX Design</p>
                         <p className='design__card-text'>Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design.</p>
                     </div>
                     <div className="design__card">
                         <div className="design__card-square"></div>
-                        <img src={server} alt="" className='design__card-server-img' />
-                        <img src={activeServer} alt="" className='design__card-server-img--active' />
+                        <img src={server} alt="" className='design__card-server-img' loading="lazy" />
+                        <img src={activeServer} alt="" className='design__card-server-img--active' loading="lazy" />
                         <p className='design__card-logo-title'>Logo</p>
                         <p className='design__card-title'>Prototype</p>
                         <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
