@@ -35,7 +35,7 @@ function Welcome({ setModal }) {
                     <Cube isCubeInView={isCubeInView}/>
                 </div>
             ) : null}
-            <img src={mobileCube} alt='' className='welcome__cube-mobile' />
+            <img src={mobileCube} alt='' className='welcome__cube-mobile' aria-hidden="true" fetchPriority='high' />
         </motion.section>
     )
 }

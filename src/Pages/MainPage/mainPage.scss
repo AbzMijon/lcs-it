@@ -29,17 +29,15 @@ body {
 }
 
 .swiper {
-    gap: 100px;
     .marquee {
-        gap: 100px;
-        min-width: none;
+        min-width: auto;
     }
 }
 .swiper-design {
     gap: 30px;
     .marquee {
         gap: 30px;
-        min-width: none;
+        min-width: auto;
     }
 }
 .body-scroll-hidden {

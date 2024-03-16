@@ -29,18 +29,14 @@ function Outsourcing({ setModal }) {
             className='outsourcing' 
             id='outsourcing'
         >
-            <div className="outsourcing__wrap">
-                <motion.h2 className='outsourcing__title' variants={motionAnimation}>Outsourcing</motion.h2>
-                <motion.ul 
-                    initial='hidden'
-                    whileInView='visible'
-                    viewport={{ amount: 0.3, once: true }}
+            <motion.div className="outsourcing__wrap" variants={motionAnimation}>
+                <h2 className='outsourcing__title'>Outsourcing</h2>
+                <ul
                     className="outsourcing__table"
                 >
                     {OUTSOURCING_CARDS && OUTSOURCING_CARDS.map((outsourcingCard) => {
                         return (
-                            <motion.li 
-                                variants={motionAnimation}
+                            <li 
                                 className={`outsourcing__table-wrapper outsourcing__card-${outsourcingCard.classname} lightEffectWrapper`}
                                 onMouseMove={onMouseMove}
                                 key={outsourcingCard.id}
@@ -59,16 +55,15 @@ function Outsourcing({ setModal }) {
                                         style={{background: 'radial-gradient(circle at ' + localMousePos.X + 'px ' + localMousePos.Y + 'px, #fff, transparent)'}}>
                                     </div>
                                 </div>
-                            </motion.li>
+                            </li>
                         )
                     })}
-                    <motion.li 
-                        variants={motionAnimation}
+                    <li 
                         className="outsourcing__card outsourcing__card-btn">
                     <ContactBtn setModal={setModal}/>
-                    </motion.li>
-                </motion.ul>
-            </div>
+                    </li>
+                </ul>
+            </motion.div>
             <img src={outsourcingBg1} alt="" className='outsourcing__bg1' />
             <img src={outsourcingBg2} alt="" className='outsourcing__bg2' />
             <img src={outsourcingBg3} alt="" className='outsourcing__bg3' />
