@@ -1,9 +1,6 @@
 .welcome__cube, .welcome__cube--hidden {
     z-index: 3;
     display: block;
-    canvas {
-        transform: scale(1.5);
-    }
 }
 .welcome__cube--hidden {
     display: none !important;
