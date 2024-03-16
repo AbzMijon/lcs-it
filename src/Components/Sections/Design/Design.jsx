@@ -42,7 +42,7 @@ function Design() {
                     })}
                 </Marquee>
             </ul>
-            <div variants={motionAnimation} className="design__cards-row">
+            <div className="design__cards-row">
                 <Marquee
                     delay={0}
                     speed={30}
