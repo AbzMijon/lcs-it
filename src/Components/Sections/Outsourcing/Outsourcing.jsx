@@ -7,6 +7,7 @@ import outsourcingBg3 from '../../../assets/img/molecula3.webp';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import { OUTSOURCING_CARDS } from '../../../constants/outsourcing';
+import OutsourcingCard from '../../Cards/OutsourcingCard/OutsourcingCard';
 
 function Outsourcing({ setModal }) {
 
@@ -37,26 +38,12 @@ function Outsourcing({ setModal }) {
                 >
                     {OUTSOURCING_CARDS && OUTSOURCING_CARDS.map((outsourcingCard) => {
                         return (
-                            <li 
-                                className={`outsourcing__table-wrapper outsourcing__card-${outsourcingCard.classname} lightEffectWrapper`}
-                                onMouseMove={onMouseMove}
+                            <OutsourcingCard
                                 key={outsourcingCard.id}
-                            >
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <div className="outsourcing__card lightEffectWrapper__card">
-                                    <img src={outsourcingCard.icon} alt="" className="outsourcing__img" loading="lazy" />
-                                    <h4 className='outsourcing__card-name'>{outsourcingCard.title}</h4>
-                                    <p className='outsourcing__text'>{outsourcingCard.text}</p>
-                                    <div 
-                                        id='light' 
-                                        className="light" 
-                                        style={{background: 'radial-gradient(circle at ' + localMousePos.X + 'px ' + localMousePos.Y + 'px, #fff, transparent)'}}>
-                                    </div>
-                                </div>
-                            </li>
+                                card={outsourcingCard}
+                                onMouseMove={onMouseMove}
+                                localMousePos={localMousePos}
+                            />
                         )
                     })}
                     <li 
