@@ -47,13 +47,8 @@ function Modal({ setModal }) {
         formData.append('name',formValues.Name);
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
-        formData.append('agree','true');
 
-        await fetch('http://www.lcs-it.com/feedback/form-processing.php/', {
-            maxBodyLength: Infinity,
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-            },
+        await fetch('https://lcs-it.com/feedback/', {
             method: "POST",
             body: formData,
         })
