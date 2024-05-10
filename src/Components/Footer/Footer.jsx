@@ -35,19 +35,9 @@ function Footer() {
                     <p className='footer__folow-title'>Follow Us</p>
                     <ul className='footer__folow-list'>
                         <li className='footer__folow-item'>
-                            <img src={facebook} alt="" className='footer__folow-img' loading="lazy" />
-                        </li>
-                        <li className='footer__folow-item'>
-                            <img src={instagram} alt="" className='footer__folow-img' loading="lazy" />
-                        </li>
-                        <li className='footer__folow-item'>
-                            <img src={linkedIn} alt="" className='footer__folow-img' loading="lazy" />
-                        </li>
-                        <li className='footer__folow-item'>
-                            <img src={telegram} alt="" className='footer__folow-img' loading="lazy" />
-                        </li>
-                        <li className='footer__folow-item'>
-                            <img src={gitHub} alt="" className='footer__folow-img' loading="lazy" />
+                            <a href='https://www.linkedin.com/company/lcs-it-ltd/?originalSubdomain=uk'>
+                                <img src={linkedIn} alt="" className='footer__folow-img' loading="lazy" />
+                            </a>
                         </li>
                     </ul>
                 </div>

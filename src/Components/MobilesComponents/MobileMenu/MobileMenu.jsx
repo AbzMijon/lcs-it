@@ -22,7 +22,9 @@ function MobileMenu({ setMobileMenu }) {
                 <ul className='mobileMenu__folow-list'>
                     {mobileMenuIcons && mobileMenuIcons.map((mobileMenuIcon) => (
                         <li className='mobileMenu__folow-item' key={mobileMenuIcon.id}>
-                            <img src={mobileMenuIcon.img} alt="" className='mobileMenu__folow-img' />
+                            <a href={mobileMenuIcon.link}>
+                                <img src={mobileMenuIcon.img} alt="" className='mobileMenu__folow-img' />
+                            </a>
                         </li>
                     ))}
                 </ul>

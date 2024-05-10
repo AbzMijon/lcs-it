@@ -67,24 +67,9 @@ const initialState = {
     ],
     mobileMenuIcons: [
         {
-            id: 0,
-            img: facebook,
-        },
-        {
             id: 1,
-            img: instagram,
-        },
-        {
-            id: 2,
             img: linkedIn,
-        },
-        {
-            id: 3,
-            img: telegram,
-        },
-        {
-            id: 4,
-            img: gitHub,
+            link: 'https://www.linkedin.com/company/lcs-it-ltd/?originalSubdomain=uk'
         },
     ],
 }
