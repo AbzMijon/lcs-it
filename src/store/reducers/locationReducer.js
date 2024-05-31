@@ -9,7 +9,7 @@ const initialState = {
         label: 'United Kingdom',
         src: ukFlag,
         active: true,
-        tel: '+44 2070 528 406',
+        tel: '+44 2030 318 063',
         email: 'sales@lcs-it.com',
         adress: '1 Knightsbridge Green London SW1X 7NE United Kingdom',
     },
