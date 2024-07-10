@@ -3,6 +3,7 @@ import './mobileSeoSelector.scss';
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveButton } from '../../../store/reducers/seoReducer';
+import { useTranslation } from 'react-i18next';
 
 function MobileSeoSelector() {
 
@@ -11,6 +12,7 @@ function MobileSeoSelector() {
     const notActiveTabs = seoButtons.filter((notActiveTab) => !notActiveTab.active);
     const activeTab = seoButtons.find((notActiveTab) => notActiveTab.active);
     const dispatch = useDispatch();
+    const { t } = useTranslation('mainPage');
 
     const selectTab = (id) => {
         dispatch(setActiveButton(id));
@@ -41,7 +43,7 @@ function MobileSeoSelector() {
                         return (
                             <li className='seoSelector__item' key={notActiveTab.id} onClick={() => selectTab(notActiveTab.id)}>
                                 <div className="seoSelector__item-container">
-                                    <p className='seoSelector__item-name'>{notActiveTab.label}</p>
+                                    <p className='seoSelector__item-name'>{t(`seoSection.tabList.${notActiveTab.label}`)}</p>
                                     <MdKeyboardArrowDown className='seoSelector__arrow' />
                                 </div>
                             </li>

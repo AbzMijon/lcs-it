@@ -1,22 +1,26 @@
+import { useTranslation } from 'react-i18next';
 import developers1 from '../../../../../assets/svg/developers1.svg';
 import developers2 from '../../../../../assets/svg/developers2.svg';
 import developers3 from '../../../../../assets/svg/developers3.svg';
 import developers4 from '../../../../../assets/svg/developers4.svg';
 
 function DevelopmentDevelopersBlock() {
+
+    const { t } = useTranslation('mainPage');
+
     return (
         <div>
             <div className="development__developers-head">
-                <p className='development__developers-title'>Developers</p>
-                <p className='development__developers-all'>See all</p>
+                <p className='development__developers-title'>{t('developmentSection.developers.title')}</p>
+                <p className='development__developers-all'>{t('developmentSection.developers.subtitle')}</p>
             </div>
             <ul className='development__developers-list'>
                 <li className='development__developers-item'>
                     <div className="development__developers-main-inf">
                         <img src={developers1} alt="" className='development__developers-avatar transfer-from' loading="lazy" />
                         <div className="development__developers-inf">
-                            <p className='development__developers-transfers'>Tranfers from</p>
-                            <p className='development__developers-name'>Matheus Ferrero</p>
+                            <p className='development__developers-transfers'>{t('developmentSection.developers.transferFrom')}</p>
+                            <p className='development__developers-name'>{t('developmentSection.developers.firstPerson.name')}</p>
                         </div>
                     </div>
                     <p className='development__developers-position'>Junior</p>
@@ -25,8 +29,8 @@ function DevelopmentDevelopersBlock() {
                     <div className="development__developers-main-inf">
                         <img src={developers2} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
-                            <p className='development__developers-transfers'>Tranfers to</p>
-                            <p className='development__developers-name'>Floyd Miles</p>
+                            <p className='development__developers-transfers'>{t('developmentSection.developers.transferTo')}</p>
+                            <p className='development__developers-name'>{t('developmentSection.developers.secondPerson.name')}</p>
                         </div>
                     </div>
                     <p className='development__developers-mooney'>-$39.65</p>
@@ -35,8 +39,8 @@ function DevelopmentDevelopersBlock() {
                     <div className="development__developers-main-inf">
                         <img src={developers3} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
-                            <p className='development__developers-transfers'>Tranfers to</p>
-                            <p className='development__developers-name'>Jerome Bell</p>
+                            <p className='development__developers-transfers'>{t('developmentSection.developers.transferTo')}</p>
+                            <p className='development__developers-name'>{t('developmentSection.developers.thirdPerson.name')}</p>
                         </div>
                     </div>
                     <p className='development__developers-mooney'>-$29.78</p>
@@ -45,8 +49,8 @@ function DevelopmentDevelopersBlock() {
                     <div className="development__developers-main-inf">
                         <img src={developers4} alt="" className='development__developers-avatar' loading="lazy" />
                         <div className="development__developers-inf">
-                            <p className='development__developers-transfers'>Tranfers to</p>
-                            <p className='development__developers-name'>Ralph Edwards</p>
+                            <p className='development__developers-transfers'>{t('developmentSection.developers.transferTo')}</p>
+                            <p className='development__developers-name'>{t('developmentSection.developers.fouthPerson.name')}</p>
                         </div>
                     </div>
                     <p className='development__developers-mooney'>-$46.61</p>

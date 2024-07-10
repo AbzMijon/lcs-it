@@ -7,22 +7,22 @@ const initialState = {
   seoButtons: [
     {
       id: 0,
-      label: 'Keyword Research',
+      label: 'keyword',
       active: false,
     },
     {
       id: 1,
-      label: 'SEO Promotion',
+      label: 'promotion',
       active: false,
     },
     {
       id: 2,
-      label: 'Optimization',
+      label: 'optimization',
       active: false,
     },
     {
       id: 3,
-      label: 'Competitor analysis',
+      label: 'analysis',
       active: true,
     },
   ],

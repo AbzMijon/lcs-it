@@ -9,22 +9,22 @@ const initialState = {
     menuList: [
         {
             id: 0,
-            title: 'Company',
+            title: 'company',
             scrollToSection: '#company',
         },
         {
             id: 1,
-            title: 'Services',
+            title: 'services',
             scrollToSection: '#services',
         },
         {
             id: 2,
-            title: 'Outsourcing',
+            title: 'outsourcing',
             scrollToSection: '#outsourcing',
         },
         {
             id: 3,
-            title: 'Contacts',
+            title: 'contacts',
             scrollToSection: '#contacts',
         },
     ],

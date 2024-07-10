@@ -9,8 +9,12 @@ import Lottie from "lottie-react";
 import seoKeywordLottie from '../../../assets/lottieAnimations/seoKeywordsLottie.json';
 import seoCreativeLottie from '../../../assets/lottieAnimations/seoCreativeLottie.json';
 import seoStrategyLottie from '../../../assets/lottieAnimations/seoStrategyLottie.json';
+import { useTranslation } from 'react-i18next';
 
 function SeoKeyword({ setModal }) {
+
+    const { t } = useTranslation('mainPage');
+
     return (
         <ul className="seo__row">
             <li className='seo__card'>

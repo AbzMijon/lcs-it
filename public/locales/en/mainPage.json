@@ -1,0 +1,56 @@
+{
+    "welcomeSection": {
+        "title": "Software Development",
+        "subtitle": "LCS-IT is a prompt solution to issues, complex unique technological developments.",
+        "firstSkillTitle": "Functional",
+        "secondSkillTitle": "Perfomance",
+        "thirdSkillTitle": "Usability"
+    },
+    "experienceSection": {
+        "title": "Tremendous experience",
+        "cards": {
+            "devTitle": "Software development",
+            "outsourcingTitle": "Outsourcing",
+            "designTitle": "Design"
+        },
+        "subtitle": "LCS-IT is a modern and creative IT company, where products of any complexity and scale are created! Our team consists of only experienced developers, designers and friendly managers who implement all your bold ideas using the latest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7."
+    },
+    "developmentSection": {
+        "title": "Software development",
+        "subtitle": "We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.",
+        "developers": {
+            "title": "Developers",
+            "subtitle": "See all",
+            "transferFrom": "Tranfers from",
+            "transferTo": "Tranfers to",
+            "firstPerson": {
+                "name": "Matheus Ferrero"
+            },
+            "secondPerson": {
+                "name": "Floyd Miles"
+            },
+            "thirdPerson": {
+                "name": "Jerome Bell"
+            },
+            "fouthPerson": {
+                "name": "Ralph Edwards"
+            }
+        }
+    },
+    "outsourcingSection": {
+        "title": "Outsourcing",
+        "sharp": "The power of C# stems from its universality. Because it’s used by various frameworks.",
+        "react": "React.js/AngularJS is one of the most popular toolkits for web development. Based on open source code",
+        "mob": "Expertise in the industry allows us to be a reliable partner in the development of your mobile application",
+        "java": "Java is the world’s most commonly used language for developing corporate solutions.",
+        "php": "PHP is one of the main backend languages. It’s hard to find a site that doesn’t use this language."
+    },
+    "seoSection": {
+        "tabList": {
+            "keyword": "Ключевые слова",
+            "promotion": "SEO продвижение",
+            "optimization": "Оптимизация",
+            "analysis": "Анализ конкурентов"
+        }
+    }
+}

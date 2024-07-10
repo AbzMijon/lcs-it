@@ -1,0 +1,9 @@
+{
+    "headerList": {
+        "company": "Company",
+        "services": "Services",
+        "outsourcing": "Outsourcing",
+        "contacts": "Contacts"
+    },
+    "logo": "LCS-IT"
+}

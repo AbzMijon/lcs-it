@@ -5,11 +5,14 @@ import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import mobileCube from '../../../assets/img/mobileCube.webp';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Welcome({ setModal }) {
 
     const cubeRef = useRef();
     const isCubeInView = useInView(cubeRef);
+    const { t, i18n } = useTranslation('mainPage');
+    console.log('Hello', i18n.language)
 
     return (
         <motion.section 
@@ -21,12 +24,12 @@ function Welcome({ setModal }) {
         >
             <div className="welcome__info">
                 <ul className="welcome__skills">
-                    <li className="welcome__skills-item">Functional</li>
-                    <li className="welcome__skills-item">Perfomance</li>
-                    <li className="welcome__skills-item">Usability</li>
+                    <li className="welcome__skills-item">{t('welcomeSection.firstSkillTitle')}</li>
+                    <li className="welcome__skills-item">{t('welcomeSection.secondSkillTitle')}</li>
+                    <li className="welcome__skills-item">{t('welcomeSection.thirdSkillTitle')}</li>
                 </ul>
-                <h1 className='welcome__title'>Software  Development</h1>
-                <p className="welcome__subtitle">LCS-IT is a prompt solution to issues, complex unique technological developments.</p>
+                <h1 className='welcome__title'>{t('welcomeSection.title')}</h1>
+                <p className="welcome__subtitle">{t('welcomeSection.subtitle')}</p>
                 <div className='welcome__contact'>
                     <ContactBtn setModal={setModal}/>
                 </div>

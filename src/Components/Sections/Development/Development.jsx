@@ -9,12 +9,14 @@ import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import DevelopmentCodeBlock from './Components/DevelopmentCodeBlock/DevelopmentCodeBlock';
 import DevelopmentDevelopersBlock from './Components/DevelopmentDevelopersBlock/DevelopmentDevelopersBlock';
+import { useTranslation } from 'react-i18next';
 
 function Development({ setModal }) {
 
     const [animationStart, setAnimationStart] = useState(false);
     const ref = useRef();
     const isInView = useInView(ref);
+    const { t } = useTranslation('mainPage');
 
     useEffect(() => {
         if(isInView) {
@@ -31,7 +33,7 @@ function Development({ setModal }) {
             id='software'
             variants={motionAnimation}
         >
-            <h2 className='development__title'>Software development</h2>
+            <h2 className='development__title'>{t('developmentSection.title')}</h2>
             <div className="development__code">
                 <div className="development__blocks">
                     <div className="development__blocks-overview">
@@ -50,7 +52,7 @@ function Development({ setModal }) {
                                 }
                             </div>
                             <div className="development__keyboard-info development__keyboard-info--planshet">
-                                <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
+                                <p className="development__keyboard-text">{t('developmentSection.subtitle')}</p>
                                 <div className='development__contact'>
                                     <ContactBtn setModal={setModal}/>
                                 </div>
@@ -66,7 +68,7 @@ function Development({ setModal }) {
                 >
                     <img src={developmentKeyboard} alt="" loading="lazy" />
                     <div className="development__keyboard-info">
-                        <p className="development__keyboard-text">We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.</p>
+                        <p className="development__keyboard-text">{t('developmentSection.subtitle')}</p>
                         <ContactBtn setModal={setModal}/>
                     </div>
                 </div>
