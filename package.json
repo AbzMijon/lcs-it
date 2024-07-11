@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "@splinetool/react-spline": "^2.2.6",
     "formik": "^2.2.9",
     "framer-motion": "^10.11.2",
     "i18next-http-backend": "^2.5.2",
