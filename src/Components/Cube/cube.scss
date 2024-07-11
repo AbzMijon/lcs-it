@@ -5,3 +5,19 @@
 .welcome__cube--hidden {
     display: none !important;
 }
+
+video {
+    width: 450px;
+}
+
+@media only screen and (max-width: 1060px) {
+    video {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    video {
+        margin: 40px auto;
+    }
+}

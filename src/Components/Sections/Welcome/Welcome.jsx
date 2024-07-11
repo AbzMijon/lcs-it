@@ -6,6 +6,7 @@ import { motionAnimation } from '../../../constants/motionAnimation';
 import mobileCube from '../../../assets/img/mobileCube.webp';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import sectionBg from '../../../assets/img/sectionBgMain.webp';
 
 function Welcome({ setModal }) {
 
@@ -21,6 +22,7 @@ function Welcome({ setModal }) {
             className='welcome'
             variants={motionAnimation}
         >
+            <img src={sectionBg} alt='' className="welcome__bg" />
             <div className="welcome__info">
                 <ul className="welcome__skills">
                     <li className="welcome__skills-item">{t('welcomeSection.firstSkillTitle')}</li>
@@ -33,12 +35,9 @@ function Welcome({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </div>
-            {window.innerWidth > 650 ? (
-                <div ref={cubeRef} className='welcome__cube-wrap'>
-                    <Cube isCubeInView={isCubeInView}/>
-                </div>
-            ) : null}
-            <img src={mobileCube} alt='' className='welcome__cube-mobile' fetchpriority='high' />
+            <div ref={cubeRef} className='welcome__cube-wrap'>
+                <Cube isCubeInView={isCubeInView}/>
+            </div>
         </motion.section>
     )
 }

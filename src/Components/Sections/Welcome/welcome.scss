@@ -2,11 +2,21 @@
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: end;
     max-width: 1180px;
     margin: 0 auto;
     padding-top: 260px;
     margin-bottom: 135px;
     overflow: hidden;
+    .welcome__bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: none;
+        max-height: 100%;
+        width: 100%;
+    }
     .welcome__info {
         text-align: start;
         padding-bottom: 20px;
@@ -48,11 +58,20 @@
     }
 }
 
+@media only screen and (max-width: 1600px) {
+    .welcome {
+        .welcome__bg {
+            width: auto;
+        }
+    }
+}
+
 @media only screen and (max-width: 1060px) {
     .welcome {
         max-width: 1018px;
         padding: 160px 20px 0 20px;
         margin-bottom: 109px;
+        align-items: center;
         .welcome__info {
             .welcome__title {
                 font-size: 42px;
@@ -61,8 +80,8 @@
                 margin-bottom: 40px;
             }
         }
-        .welcome__cube-wrap {
-            transform: translateX(0px);
+        .welcome__bg {
+            top: -60px;
         }
     }
 }
@@ -81,6 +100,7 @@
         padding: 0 20px;
         padding-top: 35px;
         margin-bottom: 50px;
+        align-items: end;
         .welcome__info {
             max-width: none;
             .welcome__skills {
@@ -115,7 +135,7 @@
             }
         }
         .welcome__cube-wrap {
-            display: none;
+            width: 100%;
         }
     }
 }
