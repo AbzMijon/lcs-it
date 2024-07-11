@@ -47,10 +47,127 @@
     },
     "seoSection": {
         "tabList": {
-            "keyword": "Ключевые слова",
-            "promotion": "SEO продвижение",
-            "optimization": "Оптимизация",
-            "analysis": "Анализ конкурентов"
+            "keyword": "Keyword Research",
+            "promotion": "SEO Promotion",
+            "optimization": "Optimization",
+            "analysis": "Competitor analysis"
+        },
+        "cards": {
+            "keywords": {
+                "firstCard": {
+                    "title": "Keywords",
+                    "kd": "KD%",
+                    "subtitle": "Selection of Keywords"
+                },
+                "secondCard": {
+                    "title": "Product",
+                    "subtitle": "Strategy Development"
+                },
+                "thirdCard": {
+                    "subtitle": "Creative Creation"
+                }
+            },
+            "promotion": {
+                "firstCard": {
+                    "subtitle": "Creative Creation"
+                },
+                "secondCard": {
+                    "title": "Discover your competitors",
+                    "subtitle": "Competitor Analysis"
+                },
+                "thirdCard": {
+                    "title": "Competitor Analysis",
+                    "subtitle": "Site Audit"
+                }
+            },
+            "optimization": {
+                "firstCard": {
+                    "title": "Content creation and distribution",
+                    "subtitle": "Create Unique Content"
+                },
+                "secondCard": {
+                    "title": "Track a website's daily rankings",
+                    "subtitle": "Position Tracking"
+                },
+                "thirdCard": {
+                    "title": "Website's structure construction",
+                    "subtitle": "Semantic Core Formation"
+                }
+            },
+            "analysis": {
+                "volume": "Volume",
+                "result": "Result",
+                "kpd": "KD",
+                "firstCard": {
+                    "subtitle": "You have a decent chance of ranking for"
+                },
+                "secondCard": {
+                    "subtitle": "Will bring in targeted traffic"
+                },
+                "thirdCard": {
+                    "subtitle": "Will result in a positive ROI"
+                }
+            }
         }
+    },
+    "designSection": {
+        "title": "Design",
+        "subtitle": "As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.",
+        "skillsList": {
+            "graphic": "Graphic Design",
+            "branding": "Branding",
+            "analysis": "Competitor Analysis",
+            "design": "Packaging Design",
+            "media": "Social Media",
+            "digital": "Digital Advertising",
+            "ux": "UX/UI"
+        },
+        "cardsList": {
+            "card1": {
+                "title": "Product Strategy",
+                "subtitle": "We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts."
+            },
+            "card2": {
+                "title": "Brand Identity",
+                "subtitle": "We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd."
+            },
+            "card3": {
+                "title": "UI/UX Design",
+                "subtitle": "Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design"
+            },
+            "card4": {
+                "logo": "Logo",
+                "title": "Prototype",
+                "subtitle": "We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd."
+            },
+            "card5": {
+                "title": "Web Design",
+                "subtitle": "The process of planning and building the elements of the website. Creation of the overall visual appearance of the website."
+            }
+        }
+    },
+    "schemaWorkSection": {
+        "title": "Scheme of Work",
+        "firstBlock": {
+            "title": "Contact us",
+            "subtitle": "Fill out the contact form, briefly describe your project or ask us a question"
+        },
+        "secondBlock": {
+            "title": "Discovery call",
+            "subtitle": "Our Project Manager will arrange a video meeting with you in order to clarify the project assumptions"
+        },
+        "thirdBlock": {
+            "title": "Project estimation",
+            "subtitle": "On the basis of the collected information, we will prepare an estimate of the costs and duration of the project"
+        }
+    },
+    "businessSection": {
+        "title": "Business model",
+        "cardTitle1": "Outstaffing",
+        "cardTitle2": "Dedicated Team",
+        "cardTitle3": "Outsourcing"
+    },
+    "locationSection": {
+        "title": "Our Locations"
     }
 }

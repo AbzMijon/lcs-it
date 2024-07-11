@@ -28,7 +28,7 @@ function MobileSeoSelector() {
             <div className="seoSelector__currentItem-container">
                 <h2 className='seoSelector__title'>SEO</h2>
                 <div className='seoSelector__currentItem'>
-                        <p className='seoSelector__currentItem-name'>{activeTab.label}</p>
+                        <p className='seoSelector__currentItem-name'>{t(`seoSection.tabList.${activeTab.label}`)}</p>
                         {open ?
                             <MdKeyboardArrowUp className='seoSelector__arrow'/>
                         :

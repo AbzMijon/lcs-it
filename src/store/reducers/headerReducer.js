@@ -1,9 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import facebook from '../../assets/svg/facebook.svg';
-import instagram from '../../assets/svg/inst.svg';
 import linkedIn from '../../assets/svg/linkedIn.svg';
-import telegram from '../../assets/svg/telegram.svg';
-import gitHub from '../../assets/svg/github.svg';
 
 const initialState = {
     menuList: [
@@ -31,37 +27,37 @@ const initialState = {
     mobileMenuList: [
         {
             id: 0,
-            title: 'Software development',
+            title: 'development',
             scrollToSection: '#software',
         },
         {
             id: 1,
-            title: 'Outsourcing',
+            title: 'outsourcing',
             scrollToSection: '#outsourcing',
         },
         {
             id: 2,
-            title: 'SEO',
+            title: 'seo',
             scrollToSection: '#seo',
         },
         {
             id: 3,
-            title: 'Design',
+            title: 'design',
             scrollToSection: '#design',
         },
         {
             id: 4,
-            title: 'Scheme of Work',
+            title: 'scheme',
             scrollToSection: '#scheme',
         },
         {
             id: 5,
-            title: 'Business model',
+            title: 'business',
             scrollToSection: '#business',
         },
         {
             id: 6,
-            title: 'CONTACT US',
+            title: 'contacts',
             scrollToSection: '#contacts',
         },
     ],

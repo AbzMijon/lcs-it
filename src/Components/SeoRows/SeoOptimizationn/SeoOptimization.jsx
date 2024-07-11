@@ -5,12 +5,15 @@ import seoOptimizationLottie1 from '../../../assets/lottieAnimations/Lottie_Crea
 import seoOptimizationLottie2 from '../../../assets/lottieAnimations/position.json';
 import seoOptimizationLottie3 from '../../../assets/lottieAnimations/core.json';
 import './seoOptimization.scss';
+import { useTranslation } from 'react-i18next';
 
 function SeoOptimization({ setModal }) {
 
     const [showImgCard1, setShowImgCard1] = useState(true);
     const [showImgCard2, setShowImgCard2] = useState(true);
     const [showImgCard3, setShowImgCard3] = useState(true);
+
+    const { t } = useTranslation('mainPage');
 
     const sethiddentImgCard1 = () => {
         setShowImgCard1(false);
@@ -35,7 +38,7 @@ function SeoOptimization({ setModal }) {
         <ul className="seo__row">
             <li className='seo__card'>
                 <div className="seo__card-head">
-                    <p className="seo__card-title">Content creation and distribution</p>
+                    <p className="seo__card-title">{t('seoSection.cards.optimization.firstCard.title')}</p>
                 </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard1}>
                     {showImgCard1 &&
@@ -43,7 +46,7 @@ function SeoOptimization({ setModal }) {
                     }
                 </div>
                 <div className='seo__card-footer'>
-                    <p className='seo__card-subtitle'>Create Unique Content</p>
+                    <p className='seo__card-subtitle'>{t('seoSection.cards.optimization.firstCard.subtitle')}</p>
                     <div className='seo-btn'>
                         <ContactBtn setModal={setModal}/>
                     </div>
@@ -51,7 +54,7 @@ function SeoOptimization({ setModal }) {
             </li>
             <li className='seo__card'>
                 <div className="seo__card-head">
-                    <p className="seo__card-title">Track a website's daily rankings</p>
+                    <p className="seo__card-title">{t('seoSection.cards.optimization.secondCard.title')}</p>
                 </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard2}>
                     {showImgCard2 &&
@@ -59,7 +62,7 @@ function SeoOptimization({ setModal }) {
                     }
                 </div>
                 <div className='seo__card-footer'>
-                    <p className='seo__card-subtitle'>Position Tracking</p>
+                    <p className='seo__card-subtitle'>{t('seoSection.cards.optimization.secondCard.subtitle')}</p>
                     <div className='seo-btn'>
                         <ContactBtn setModal={setModal}/>
                     </div>
@@ -67,7 +70,7 @@ function SeoOptimization({ setModal }) {
             </li>
             <li className='seo__card'>
                 <div className="seo__card-head">
-                    <p className="seo__card-title">Website's structure construction</p>
+                    <p className="seo__card-title">{t('seoSection.cards.optimization.thirdCard.title')}</p>
                 </div>
                 <div className="seo__card-body" onClick={sethiddentImgCard3}>
                     {showImgCard3 &&
@@ -75,7 +78,7 @@ function SeoOptimization({ setModal }) {
                     }
                 </div>
                 <div className='seo__card-footer'>
-                    <p className='seo__card-subtitle'>Semantic Core Formation</p>
+                    <p className='seo__card-subtitle'>{t('seoSection.cards.optimization.thirdCard.subtitle')}</p>
                     <div className='seo-btn'>
                         <ContactBtn setModal={setModal}/>
                     </div>

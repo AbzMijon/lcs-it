@@ -3,7 +3,12 @@
         "company": "Company",
         "services": "Services",
         "outsourcing": "Outsourcing",
-        "contacts": "Contacts"
+        "contacts": "Contacts",
+        "development": "Software development",
+        "seo": "SEO",
+        "design": "Design",
+        "scheme": "Scheme of Work",
+        "business": "Business model"
     },
     "logo": "LCS-IT"
 }

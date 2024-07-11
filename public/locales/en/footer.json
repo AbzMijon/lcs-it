@@ -1,0 +1,25 @@
+{
+    "adress": {
+        "title": "Adress",
+        "adress": "1 Knightsbridge Green London SW1X 7NE United Kingdom",
+        "email": "sales@lcs-it.com",
+        "phone": "+44 2030 318 063"
+    },
+    "about": {
+        "title": "About",
+        "list": {
+            "item1": "Company",
+            "item2": "Services",
+            "item3": "Outsourcing",
+            "item4": "Contacts"
+        }
+    },
+    "followUs": {
+        "title": "Follow Us"
+    },
+    "terms": {
+        "reserved": "All right reserved 2022 Ⓒ LCS-IT",
+        "policy": "Privacy policy",
+        "term": "Term of use"
+    }
+}

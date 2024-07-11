@@ -17,6 +17,7 @@
             justify-content: start;
             align-items: center;
             margin-bottom: 40px;
+            gap: 32px;
             .welcome__skills-item {
                 background: #3C3D4C;
                 border-radius: 100px;
@@ -30,9 +31,6 @@
                 &:hover {
                     background-color: #9747FF;
                 }
-            }
-            .welcome__skills-item + .welcome__skills-item {
-                margin-left: 32px;
             }
         }
         .welcome__title {
@@ -88,6 +86,8 @@
             .welcome__skills {
                 justify-content: space-between;
                 margin-bottom: 30px;
+                gap: 21px;
+                flex-wrap: wrap;
                 .welcome__skills-item {
                     font-size: 10px;
                     line-height: 15px;
@@ -97,9 +97,6 @@
                     &:hover {
                         background-color: #9747FF;
                     }
-                }
-                .welcome__skills-item + .welcome__skills-item {
-                    margin-left: 21px;
                 }
             }
             .welcome__title {

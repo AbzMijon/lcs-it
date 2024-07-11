@@ -11,8 +11,7 @@ function Welcome({ setModal }) {
 
     const cubeRef = useRef();
     const isCubeInView = useInView(cubeRef);
-    const { t, i18n } = useTranslation('mainPage');
-    console.log('Hello', i18n.language)
+    const { t } = useTranslation('mainPage');
 
     return (
         <motion.section 

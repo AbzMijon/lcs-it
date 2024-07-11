@@ -8,6 +8,7 @@ import { motion, useInView } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import schemeImg from '../../../assets/svg/Scheme_of_Work_2_activ.svg';
 import { useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 function Scheme() {
 
@@ -15,6 +16,7 @@ function Scheme() {
     const isInView = useInView(ref);
     const [animationStart, setAnimationStart] = useState(false);
     const shemeTextBlocks = useSelector(state => state.schemeReducer.shemeTextBlocks);
+    const { t } = useTranslation('mainPage');
     
     useEffect(() => {
         if(isInView) {
@@ -31,7 +33,7 @@ function Scheme() {
             variants={motionAnimation}
             id='scheme'
         >
-            <h2 className='scheme__title'>Scheme of Work</h2>
+            <h2 className='scheme__title'>{t('schemaWorkSection.title')}</h2>
             <div className="scheme__content">
                 <div className="scheme__list">
                     <img src={schemeImg} alt="" className='scheme__row-icons' loading="lazy" />
@@ -49,8 +51,8 @@ function Scheme() {
                     <ul className='scheme__row-cards' ref={ref}>
                         {shemeTextBlocks && shemeTextBlocks.map((schemeText) => (
                             <li className='scheme__row-card' key={schemeText.id}>
-                                <h5 className='scheme__row-title'>{schemeText.title}</h5>
-                                <p className='scheme__row-text scheme__row-text'>{schemeText.text}</p>
+                                <h5 className='scheme__row-title'>{t(`${schemeText.title}`)}</h5>
+                                <p className='scheme__row-text scheme__row-text'>{t(`${schemeText.text}`)}</p>
                             </li>
                         ))}
                     </ul>
