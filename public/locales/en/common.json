@@ -19,5 +19,11 @@
         },
         "button": "Submit",
         "successMessage": "Thank you for your message, the answer will come soon!"
+    },
+    "cookie": {
+        "text": "This website uses cookies for analytics, personalization and advertising. By continuing to browse, you agree to our use of cookies. To learn more click",
+        "setings": "Cookies Settings",
+        "accept": "Accept All",
+        "policy": "Cookie Policy"
     }
 }

@@ -12,11 +12,17 @@ video {
 
 @media only screen and (max-width: 1060px) {
     video {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    video {
         width: 200px;
     }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 620px) {
     video {
         margin: 40px auto;
     }
