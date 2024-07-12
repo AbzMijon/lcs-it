@@ -17,6 +17,7 @@
             "error": "Enter your message",
             "shortMessage": "Short message"
         },
-        "button": "Submit"
+        "button": "Submit",
+        "successMessage": "Thank you for your message, the answer will come soon!"
     }
 }

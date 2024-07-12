@@ -12,7 +12,8 @@ import { useTranslation } from 'react-i18next';
 
 function Modal({ setModal }) {
 
-    const { t } = useTranslation('common');
+    const { i18n, t } = useTranslation('common');
+    const requestUrl = i18n?.language === 'en' ? 'https://lcs-it.com/feedback/' : 'https://lcs.by/feedback/form-processing.php/';
 
     const initialFormValues = {
         Name: '',
@@ -50,7 +51,7 @@ function Modal({ setModal }) {
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
 
-        await fetch('https://lcs-it.com/feedback/', {
+        await fetch(requestUrl, {
             method: "POST",
             body: formData,
         })
