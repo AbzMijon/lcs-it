@@ -10,7 +10,7 @@ i18n
     .init({
             ns: ['common', 'home'],
             defaultNS,
-            fallbackLng: 'ru', //change version of sites
+            fallbackLng: 'en', //change version of sites
             debug: true,
             detection: {
             order: ['querystring', 'cookie'],
