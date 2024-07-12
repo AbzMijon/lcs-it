@@ -6,7 +6,7 @@ import { motionAnimation } from '../../../constants/motionAnimation';
 import mobileCube from '../../../assets/img/mobileCube.webp';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import sectionBg from '../../../assets/img/sectionBgMain.webp';
+import sectionBg from '../../../assets/img/sectionMainBg.webp';
 
 function Welcome({ setModal }) {
 
