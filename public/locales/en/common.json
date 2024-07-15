@@ -1,0 +1,29 @@
+{
+    "contactBtn": "Contact Us",
+    "scrollDown": "scroll down",
+    "modal": {
+        "title": "Get in touch",
+        "subtitle": "Fill out this short form and our team will get back to you within 24 hours",
+        "name": {
+            "placeholder": "Name",
+            "error": "Enter your name"
+        },
+        "email": {
+            "placeholder": "Email",
+            "error": "Enter a valid Email"
+        },
+        "message": {
+            "placeholder": "Message",
+            "error": "Enter your message",
+            "shortMessage": "Short message"
+        },
+        "button": "Submit",
+        "successMessage": "Thank you for your message, the answer will come soon!"
+    },
+    "cookie": {
+        "text": "This website uses cookies for analytics, personalization and advertising. By continuing to browse, you agree to our use of cookies. To learn more click",
+        "setings": "Cookies Settings",
+        "accept": "Accept All",
+        "policy": "Cookie Policy"
+    }
+}

@@ -7,6 +7,7 @@ import modelOut from '../../../assets/svg/modelOut.svg';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import Marquee from 'react-fast-marquee';
+import { useTranslation } from 'react-i18next';
 
 function Business() {
 
@@ -14,6 +15,8 @@ function Business() {
         X   : 0,
         Y   : 0,
     });
+
+    const { t } = useTranslation('mainPage');
 
     const onMouseMove = (event) => {
         const localX = event.clientX - event.currentTarget.offsetLeft;
@@ -30,7 +33,7 @@ function Business() {
             id='business'
             variants={motionAnimation}
         >
-            <h2 className='business__title'>Business model</h2>
+            <h2 className='business__title'>{t('businessSection.title')}</h2>
             <div className="business__model">
                 <div className="business__big-coubes lightEffectWrapper" onMouseMove={onMouseMove}>
                     <span></span>
@@ -61,15 +64,15 @@ function Business() {
                 <div className="business__cards">
                     <div className="business__card business__outstaffing" onMouseMove={onMouseMove}>
                         <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' loading="lazy" />
-                        <p className='business__outstaffing-title'>Outstaffing</p>
+                        <p className='business__outstaffing-title'>{t('businessSection.cardTitle1')}</p>
                     </div>
                     <div className="business__card business__team" onMouseMove={onMouseMove}>
                         <img src={teamBg} alt="" className='business__team-bg' loading="lazy" />
-                        <p className='business__team-title'>Dedicated Team</p>
+                        <p className='business__team-title'>{t('businessSection.cardTitle2')}</p>
                     </div>
                     <div className="business__card business__outsorcing" onMouseMove={onMouseMove}>
                         <img src={modelOut} alt="" className='business__outsorcing-icon' loading="lazy" />
-                        <p className='business__outsorcing-title'>Outsourcing</p>
+                        <p className='business__outsorcing-title'>{t('businessSection.cardTitle3')}</p>
                         <img src={grid} alt="" className='business__outsorcing-bg' loading="lazy" />
                     </div>
                 </div>
@@ -84,15 +87,15 @@ function Business() {
                     >
                         <div className="business__outstaffing business__card" onMouseMove={onMouseMove}>
                             <img src={outsourcingCard1} alt="" className='business__outstaffing-icon' loading="lazy" />
-                            <p className='business__outstaffing-title'>Outstaffing</p>
+                            <p className='business__outstaffing-title'>{t('businessSection.cardTitle1')}</p>
                         </div>
                         <div className="business__team business__card" onMouseMove={onMouseMove}>
                             <img src={teamBg} alt="" className='business__team-bg' loading="lazy" />
-                            <h4 className='business__team-title'>Dedicated Team</h4>
+                            <h4 className='business__team-title'>{t('businessSection.cardTitle2')}</h4>
                         </div>
                         <div className="business__outsorcing business__card" onMouseMove={onMouseMove}>
                             <img src={modelOut} alt="" className='business__outsorcing-icon' loading="lazy" />
-                            <h4 className='business__outsorcing-title'>Outsourcing</h4>
+                            <h4 className='business__outsorcing-title'>{t('businessSection.cardTitle3')}</h4>
                             <img src={grid} alt="" className='business__outsorcing-bg' loading="lazy" />
                         </div>
                     </Marquee>

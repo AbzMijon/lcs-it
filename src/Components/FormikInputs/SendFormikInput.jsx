@@ -7,7 +7,7 @@ function SendFormikInput(props) {
                   <input 
                         {...props} 
                         {...field} 
-                        placeholder={meta.touched && meta.error ? meta.error : props.name} 
+                        placeholder={meta.touched && meta.error ? meta.error : props.placeholder} 
                         className={meta.touched && meta.error ? 'modal__input modal__input-error' : 'modal__input'} 
                   />
             </>

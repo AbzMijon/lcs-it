@@ -17,31 +17,31 @@ import jsIcon from '../assets/svg/skillsJs.svg';
 export const SKILLS_TYPES = [
     {
         id: 0,
-        label: 'Graphic Design',
+        label: 'graphic',
     },
     {
         id: 1,
-        label: 'Branding',
+        label: 'branding',
     },
     {
         id: 2,
-        label: 'Competitor Analysis',
+        label: 'analysis',
     },
     {
         id: 3,
-        label: 'Packaging Design',
+        label: 'design',
     },
     {
         id: 4,
-        label: 'Social Media',
+        label: 'media',
     },
     {
         id: 5,
-        label: 'Digital Advertising',
+        label: 'digital',
     },
     {
         id: 6,
-        label: 'UX/UI',
+        label: 'ux',
     },
 ];
 

@@ -2,11 +2,22 @@
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: end;
     max-width: 1180px;
     margin: 0 auto;
     padding-top: 260px;
     margin-bottom: 135px;
     overflow: hidden;
+    .welcome__bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: none;
+        max-height: 100%;
+        width: 100vw;
+        height: 100%;
+    }
     .welcome__info {
         text-align: start;
         padding-bottom: 20px;
@@ -17,6 +28,7 @@
             justify-content: start;
             align-items: center;
             margin-bottom: 40px;
+            gap: 32px;
             .welcome__skills-item {
                 background: #3C3D4C;
                 border-radius: 100px;
@@ -30,9 +42,6 @@
                 &:hover {
                     background-color: #9747FF;
                 }
-            }
-            .welcome__skills-item + .welcome__skills-item {
-                margin-left: 32px;
             }
         }
         .welcome__title {
@@ -55,6 +64,7 @@
         max-width: 1018px;
         padding: 160px 20px 0 20px;
         margin-bottom: 109px;
+        align-items: center;
         .welcome__info {
             .welcome__title {
                 font-size: 42px;
@@ -63,8 +73,8 @@
                 margin-bottom: 40px;
             }
         }
-        .welcome__cube-wrap {
-            transform: translateX(0px);
+        .welcome__bg {
+            top: -60px;
         }
     }
 }
@@ -77,17 +87,20 @@
     }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 620px) {
     .welcome {
         flex-direction: column-reverse;
         padding: 0 20px;
         padding-top: 35px;
         margin-bottom: 50px;
+        align-items: end;
         .welcome__info {
             max-width: none;
             .welcome__skills {
                 justify-content: space-between;
                 margin-bottom: 30px;
+                gap: 21px;
+                flex-wrap: wrap;
                 .welcome__skills-item {
                     font-size: 10px;
                     line-height: 15px;
@@ -97,9 +110,6 @@
                     &:hover {
                         background-color: #9747FF;
                     }
-                }
-                .welcome__skills-item + .welcome__skills-item {
-                    margin-left: 21px;
                 }
             }
             .welcome__title {
@@ -118,7 +128,7 @@
             }
         }
         .welcome__cube-wrap {
-            display: none;
+            width: 100%;
         }
     }
 }

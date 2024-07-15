@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import { OUTSOURCING_CARDS } from '../../../constants/outsourcing';
 import OutsourcingCard from '../../Cards/OutsourcingCard/OutsourcingCard';
+import { useTranslation } from 'react-i18next';
 
 function Outsourcing({ setModal }) {
 
@@ -15,6 +16,8 @@ function Outsourcing({ setModal }) {
         X   : 0,
         Y   : 0,
     });
+
+    const { t } = useTranslation('mainPage');
 
     const onMouseMove = (event) => {
         const localX = event.clientX - event.currentTarget.offsetLeft;
@@ -32,7 +35,7 @@ function Outsourcing({ setModal }) {
             variants={motionAnimation}
         >
             <div className="outsourcing__wrap">
-                <h2 className='outsourcing__title'>Outsourcing</h2>
+                <h2 className='outsourcing__title'>{t('outsourcingSection.title')}</h2>
                 <ul
                     className="outsourcing__table"
                 >

@@ -3,6 +3,8 @@ import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import './mobileCountrySelector.scss';
 import { setActiveCountry } from '../../../store/reducers/locationReducer';
+import { useTranslation } from 'react-i18next';
+import belarusIcon from '../../../assets/svg/BelarusIcon.svg';
 
 function MobileCountrySelector() {
 
@@ -12,6 +14,8 @@ function MobileCountrySelector() {
     const notActiveCountries = locationButtons?.filter((locBtn) => !locBtn.active);
     const dispatch = useDispatch();
 
+    const { i18n } = useTranslation();
+
     const selectCountry = (id) => {
         dispatch(setActiveCountry(id));
         setOpen(false);
@@ -19,35 +23,48 @@ function MobileCountrySelector() {
 
     return (
         <div className='countrySelector'>
-            <div 
-                className={open ? "countrySelector__current countrySelector__current--active" : "countrySelector__current"} 
-                onClick={() => setOpen((prev) => !prev)}
-            >
-                <div className="countrySelector__current-container">
-                    <img src={activeCountry.src} alt="" className='countrySelector__currentItem-img' loading="lazy" />
-                    <p className='countrySelector__currentItem-name'>{activeCountry.label}</p>
-                    {open ?
-                        <MdKeyboardArrowUp className='countrySelector__arrow'/>
-                    :
-                        <MdKeyboardArrowDown className='countrySelector__arrow'/>
+            {i18n?.language === 'en' ? (
+                <>
+                    <div 
+                        className={open ? "countrySelector__current countrySelector__current--active" : "countrySelector__current"} 
+                        onClick={() => setOpen((prev) => !prev)}
+                    >
+                        <div className="countrySelector__current-container">
+                            <img src={activeCountry.src} alt="" className='countrySelector__currentItem-img' loading="lazy" />
+                            <p className='countrySelector__currentItem-name'>{activeCountry.label}</p>
+                            {open ?
+                                <MdKeyboardArrowUp className='countrySelector__arrow'/>
+                            :
+                                <MdKeyboardArrowDown className='countrySelector__arrow'/>
+                            }
+                        </div>
+                    </div>
+                    {open &&
+                        <ul className='countrySelector__list'>
+                            {notActiveCountries && notActiveCountries.map((notActiveCountry) => {
+                                return (
+                                    <li className='countrySelector__item' key={notActiveCountry.id} onClick={() => selectCountry(notActiveCountry.id)}>
+                                        <div className="countrySelector__item-container">
+                                            <img src={notActiveCountry.src} alt="" className='countrySelector__item-img' loading="lazy" />
+                                            <p className='countrySelector__item-name'>{notActiveCountry.label}</p>
+                                            <MdKeyboardArrowDown className='countrySelector__arrow' />
+                                        </div>
+                                    </li>
+                                )
+                            })}
+                        </ul>
                     }
-                </div>
-            </div>
-            {open &&
-                <ul className='countrySelector__list'>
-                    {notActiveCountries && notActiveCountries.map((notActiveCountry) => {
-                        return (
-                            <li className='countrySelector__item' key={notActiveCountry.id} onClick={() => selectCountry(notActiveCountry.id)}>
-                                <div className="countrySelector__item-container">
-                                    <img src={notActiveCountry.src} alt="" className='countrySelector__item-img' loading="lazy" />
-                                    <p className='countrySelector__item-name'>{notActiveCountry.label}</p>
-                                    <MdKeyboardArrowDown className='countrySelector__arrow' />
-                                </div>
-                            </li>
-                        )
-                    })}
-                </ul>
-            }
+                </>
+            ) : (
+                <div 
+                        className={"countrySelector__current countrySelector__current--active"} 
+                    >
+                        <div className="countrySelector__current-container">
+                            <img src={belarusIcon} alt="" className='countrySelector__currentItem-img' loading="lazy" />
+                            <p className='countrySelector__currentItem-name'>Беларусь</p>
+                        </div>
+                    </div>
+            )}
         </div>
     )
 }

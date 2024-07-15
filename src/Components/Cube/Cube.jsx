@@ -1,14 +1,12 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import './cube.scss';
+import cube from '../../assets/video/cube.webm';
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-function Cube({ isCubeInView }) {
+function Cube() {
     return (
-        <div className={isCubeInView ? "welcome__cube" : "welcome__cube welcome__cube--hidden"} fetchpriority='high'>
-            <Suspense>
-                <Spline scene="https://prod.spline.design/aMm7nD09t3VjF49r/scene.splinecode" />
-            </Suspense>
+        <div className={"welcome__cube"} fetchpriority='high'>
+            <video src={cube} autoPlay loop muted defaultmuted preload="auto" playsInline />
         </div>
     )
 }

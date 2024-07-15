@@ -10,8 +10,12 @@ import './design.scss';
 import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import { SKILLS_TYPES } from '../../../constants/skillsCards';
+import { useTranslation } from "react-i18next";
 
 function Design() {
+
+    const { t } = useTranslation('mainPage');
+
     return (
         <motion.section
             initial='hidden'
@@ -21,8 +25,8 @@ function Design() {
             id='design'
             variants={motionAnimation}
         >
-            <h2 className='design__title'>Design</h2>
-            <p className='design__text'>As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.</p>
+            <h2 className='design__title'>{t('designSection.title')}</h2>
+            <p className='design__text'>{t('designSection.subtitle')}</p>
             <ul className='design__types'>
                 <Marquee
                     delay={0}
@@ -36,7 +40,7 @@ function Design() {
                         return (
                             <li className='design__types-item' key={skillType.id}>
                                 <FiArrowUpRight className='design__types-arrow'/>
-                                <p>{skillType.label}</p>
+                                <p>{t(`designSection.skillsList.${skillType.label}`)}</p>
                             </li>
                         )
                     })}
@@ -54,37 +58,37 @@ function Design() {
                         <div className='design__card-img design__card-img--pin'>
                             <img src={pin} alt="" loading="lazy" />
                         </div>
-                        <p className='design__card-title'>Product Strategy</p>
-                        <p className='design__card-text'>We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card1.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card1.subtitle')}</p>
                     </div>
                     <div className="design__card">
                         <img src={designCard2} alt="" className='design__card-img' loading="lazy" />
                         <img src={letterA} alt="" className='design__card-img-letter' loading="lazy" />
-                        <p className='design__card-title'>Brand Identity</p>
-                        <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card2.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card2.subtitle')} </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--browser'>
                             <img src={arrow} alt="" loading="lazy" />
                         </div>
-                        <p className='design__card-title'>UI/UX Design</p>
-                        <p className='design__card-text'>Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card3.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card3.subtitle')}</p>
                     </div>
                     <div className="design__card">
                         <div className="design__card-square"></div>
                         <img src={server} alt="" className='design__card-server-img' loading="lazy" />
                         <img src={activeServer} alt="" className='design__card-server-img--active' loading="lazy" />
-                        <p className='design__card-logo-title'>Logo</p>
-                        <p className='design__card-title'>Prototype</p>
-                        <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
+                        <p className='design__card-logo-title'>{t('designSection.cardsList.card4.logo')}</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card4.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card4.subtitle')} </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--motion'>
                             <span className='design__card-circle design__card-circle--pink'></span>
                             <span className='design__card-circle design__card-circle--purple'></span>
                         </div>
-                        <p className='design__card-title'>Web Design</p>
-                        <p className='design__card-text'>The process of planning and building the elements of the website. Creation of the overall visual appearance of the website.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card5.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card5.subtitle')}</p>
                     </div>
                 </Marquee>
                 <div className="design__mobileRow">
@@ -92,37 +96,37 @@ function Design() {
                         <div className='design__card-img design__card-img--pin'>
                             <img src={pin} alt="" loading="lazy" />
                         </div>
-                        <p className='design__card-title'>Product Strategy</p>
-                        <p className='design__card-text'>We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card1.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card1.subtitle')}</p>
                     </div>
                     <div className="design__card">
                         <img src={designCard2} alt="" className='design__card-img' loading="lazy" />
                         <img src={letterA} alt="" className='design__card-img-letter' loading="lazy" />
-                        <p className='design__card-title'>Brand Identity</p>
-                        <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card2.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card2.subtitle')} </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--browser'>
                             <img src={arrow} alt="" loading="lazy" />
                         </div>
-                        <p className='design__card-title'>UI/UX Design</p>
-                        <p className='design__card-text'>Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card3.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card3.subtitle')}</p>
                     </div>
                     <div className="design__card">
                         <div className="design__card-square"></div>
                         <img src={server} alt="" className='design__card-server-img' loading="lazy" />
                         <img src={activeServer} alt="" className='design__card-server-img--active' loading="lazy" />
-                        <p className='design__card-logo-title'>Logo</p>
-                        <p className='design__card-title'>Prototype</p>
-                        <p className='design__card-text'>We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd. </p>
+                        <p className='design__card-logo-title'>{t('designSection.cardsList.card4.logo')}</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card4.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card4.subtitle')} </p>
                     </div>
                     <div className="design__card">
                         <div className='design__card-img design__card-img--motion'>
                             <span className='design__card-circle design__card-circle--pink'></span>
                             <span className='design__card-circle design__card-circle--purple'></span>
                         </div>
-                        <p className='design__card-title'>Web Design</p>
-                        <p className='design__card-text'>The process of planning and building the elements of the website. Creation of the overall visual appearance of the website.</p>
+                        <p className='design__card-title'>{t('designSection.cardsList.card5.title')}</p>
+                        <p className='design__card-text'>{t('designSection.cardsList.card5.subtitle')}</p>
                     </div>
                 </div>
             </div>

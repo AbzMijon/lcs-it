@@ -1,0 +1,173 @@
+{
+    "welcomeSection": {
+        "title": "Software Development",
+        "subtitle": "LCS-IT is a prompt solution to issues, complex unique technological developments.",
+        "firstSkillTitle": "Functional",
+        "secondSkillTitle": "Perfomance",
+        "thirdSkillTitle": "Usability"
+    },
+    "experienceSection": {
+        "title": "Tremendous experience",
+        "cards": {
+            "devTitle": "Software development",
+            "outsourcingTitle": "Outsourcing",
+            "designTitle": "Design"
+        },
+        "subtitle": "LCS-IT is a modern and creative IT company, where products of any complexity and scale are created! Our team consists of only experienced developers, designers and friendly managers who implement all your bold ideas using the latest technology. We implement, maintain, and service. We provide an On-Demand Developers service. On call 24/7."
+    },
+    "developmentSection": {
+        "title": "Software development",
+        "subtitle": "We design new experience from physical and digital products and the company overall. We create brands that are attached to people, new, useful and unique products.",
+        "developers": {
+            "title": "Developers",
+            "subtitle": "See all",
+            "transferFrom": "Tranfers from",
+            "transferTo": "Tranfers to",
+            "firstPerson": {
+                "name": "Matheus Ferrero"
+            },
+            "secondPerson": {
+                "name": "Floyd Miles"
+            },
+            "thirdPerson": {
+                "name": "Jerome Bell"
+            },
+            "fouthPerson": {
+                "name": "Ralph Edwards"
+            }
+        }
+    },
+    "outsourcingSection": {
+        "title": "Outsourcing",
+        "sharp": "The power of C# stems from its universality. Because it’s used by various frameworks.",
+        "react": "React.js/AngularJS is one of the most popular toolkits for web development. Based on open source code",
+        "mob": "Expertise in the industry allows us to be a reliable partner in the development of your mobile application",
+        "java": "Java is the world’s most commonly used language for developing corporate solutions.",
+        "php": "PHP is one of the main backend languages. It’s hard to find a site that doesn’t use this language."
+    },
+    "seoSection": {
+        "tabList": {
+            "keyword": "Keyword Research",
+            "promotion": "SEO Promotion",
+            "optimization": "Optimization",
+            "analysis": "Competitor analysis"
+        },
+        "cards": {
+            "keywords": {
+                "firstCard": {
+                    "title": "Keywords",
+                    "kd": "KD%",
+                    "subtitle": "Selection of Keywords"
+                },
+                "secondCard": {
+                    "title": "Product",
+                    "subtitle": "Strategy Development"
+                },
+                "thirdCard": {
+                    "subtitle": "Creative Creation"
+                }
+            },
+            "promotion": {
+                "firstCard": {
+                    "subtitle": "Creative Creation"
+                },
+                "secondCard": {
+                    "title": "Discover your competitors",
+                    "subtitle": "Competitor Analysis"
+                },
+                "thirdCard": {
+                    "title": "Competitor Analysis",
+                    "subtitle": "Site Audit"
+                }
+            },
+            "optimization": {
+                "firstCard": {
+                    "title": "Content creation and distribution",
+                    "subtitle": "Create Unique Content"
+                },
+                "secondCard": {
+                    "title": "Track a website's daily rankings",
+                    "subtitle": "Position Tracking"
+                },
+                "thirdCard": {
+                    "title": "Website's structure construction",
+                    "subtitle": "Semantic Core Formation"
+                }
+            },
+            "analysis": {
+                "volume": "Volume",
+                "result": "Result",
+                "kpd": "KD",
+                "firstCard": {
+                    "subtitle": "You have a decent chance of ranking for"
+                },
+                "secondCard": {
+                    "subtitle": "Will bring in targeted traffic"
+                },
+                "thirdCard": {
+                    "subtitle": "Will result in a positive ROI"
+                }
+            }
+        }
+    },
+    "designSection": {
+        "title": "Design",
+        "subtitle": "As a full-service IT company, we have a UX design team that works closely with our clients to define, design and develop transformative user experiences across all platforms and brand’s touchpoints.",
+        "skillsList": {
+            "graphic": "Graphic Design",
+            "branding": "Branding",
+            "analysis": "Competitor Analysis",
+            "design": "Packaging Design",
+            "media": "Social Media",
+            "digital": "Digital Advertising",
+            "ux": "UX/UI"
+        },
+        "cardsList": {
+            "card1": {
+                "title": "Product Strategy",
+                "subtitle": "We help to build your brand’s mission, vision and values while creating your unique identity and position in the market. We love to make people feel something by crafting stories that connect to people’s hearts."
+            },
+            "card2": {
+                "title": "Brand Identity",
+                "subtitle": "We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd."
+            },
+            "card3": {
+                "title": "UI/UX Design",
+                "subtitle": "Boost your brand awareness and customer loyalties, increase product revenues and conversion rates with the implementation of user experience and user interface design"
+            },
+            "card4": {
+                "logo": "Logo",
+                "title": "Prototype",
+                "subtitle": "We help your brand find its voice and communicate your values to inspire customers to choose you, by creating a unique identity for you which helps you stand out from the crowd."
+            },
+            "card5": {
+                "title": "Web Design",
+                "subtitle": "The process of planning and building the elements of the website. Creation of the overall visual appearance of the website."
+            }
+        }
+    },
+    "schemaWorkSection": {
+        "title": "Scheme of Work",
+        "firstBlock": {
+            "title": "Contact us",
+            "subtitle": "Fill out the contact form, briefly describe your project or ask us a question"
+        },
+        "secondBlock": {
+            "title": "Discovery call",
+            "subtitle": "Our Project Manager will arrange a video meeting with you in order to clarify the project assumptions"
+        },
+        "thirdBlock": {
+            "title": "Project estimation",
+            "subtitle": "On the basis of the collected information, we will prepare an estimate of the costs and duration of the project"
+        }
+    },
+    "businessSection": {
+        "title": "Business model",
+        "cardTitle1": "Outstaffing",
+        "cardTitle2": "Dedicated Team",
+        "cardTitle3": "Outsourcing"
+    },
+    "locationSection": {
+        "title": "Our Locations"
+    }
+}

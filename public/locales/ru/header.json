@@ -1,0 +1,14 @@
+{
+    "headerList": {
+        "company": "Компания",
+        "services": "Услуги",
+        "outsourcing": "Аутсорсинг",
+        "contacts": "Контакты",
+        "development": "Разработка ПО",
+        "seo": "SEO",
+        "design": "Дизайн",
+        "scheme": "Схема работы",
+        "business": "Бизнес модель"
+    },
+    "logo": "LCS-GROUP"
+}

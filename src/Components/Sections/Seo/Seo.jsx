@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
 import MobileSeoSelector from '../../MobilesComponents/MobileSeoSelector/MobileSeoSelector';
 import SeoOptimization from '../../SeoRows/SeoOptimizationn/SeoOptimization';
+import { useTranslation } from 'react-i18next';
 
 function Seo({ setModal }) {
     
@@ -16,6 +17,7 @@ function Seo({ setModal }) {
     const seoBtns = useSelector(state => state.seoReducer.seoButtons);
     const seoIconBtns = useSelector(state => state.seoReducer.seoIconButtons);
     const selectedBtn = seoBtns.find((seoBtn) => seoBtn.active);
+    const { t } = useTranslation('mainPage')
 
     const renderSeoCards = (buttonIndex) => {
         switch(buttonIndex) {
@@ -63,7 +65,7 @@ function Seo({ setModal }) {
                                 className={seoBtn.active ? 'seo__navigate-btn seo__navigate-btn--active' : 'seo__navigate-btn'}
                                 onClick={() => dispatch(setActiveButton(seoBtn.id))}
                             >
-                                {seoBtn.label}
+                                {t(`seoSection.tabList.${seoBtn.label}`)}
                             </button>
                         )
                     })}

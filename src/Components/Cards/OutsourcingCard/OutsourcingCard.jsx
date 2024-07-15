@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 function OutsourcingCard({ card, onMouseMove, localMousePos }) {
+
+    const { t } = useTranslation('mainPage');
+
     return (
         <li
             className={`outsourcing__table-wrapper outsourcing__card-${card.classname} lightEffectWrapper`}
@@ -11,7 +16,7 @@ function OutsourcingCard({ card, onMouseMove, localMousePos }) {
             <div className="outsourcing__card lightEffectWrapper__card">
                 <img src={card.icon} alt="" className="outsourcing__img" loading="lazy" />
                 <h4 className='outsourcing__card-name'>{card.title}</h4>
-                <p className='outsourcing__text'>{card.text}</p>
+                <p className='outsourcing__text'>{t(`outsourcingSection.${card.classname}`)}</p>
                 <div
                     id='light'
                     className="light"
