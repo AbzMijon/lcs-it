@@ -1,17 +1,13 @@
 import ContactBtn from '../../ContactBtn/ContactBtn';
 import Cube from '../../Cube/Cube';
 import './welcome.scss';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { motionAnimation } from '../../../constants/motionAnimation';
-import mobileCube from '../../../assets/img/mobileCube.webp';
-import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import sectionBg from '../../../assets/img/sectionMainBg.webp';
 
 function Welcome({ setModal }) {
 
-    const cubeRef = useRef();
-    const isCubeInView = useInView(cubeRef);
     const { t } = useTranslation('mainPage');
 
     return (
@@ -35,8 +31,8 @@ function Welcome({ setModal }) {
                     <ContactBtn setModal={setModal}/>
                 </div>
             </div>
-            <div ref={cubeRef} className='welcome__cube-wrap'>
-                <Cube isCubeInView={isCubeInView}/>
+            <div className='welcome__cube-wrap'>
+                <Cube />
             </div>
         </motion.section>
     )

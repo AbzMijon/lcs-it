@@ -3,10 +3,10 @@ import './cube.scss';
 import cube from '../../assets/video/cube.webm';
 
 
-function Cube({ isCubeInView }) {
+function Cube() {
     return (
-        <div className={isCubeInView ? "welcome__cube" : "welcome__cube welcome__cube--hidden"} fetchpriority='high'>
-            <video src={cube} autoPlay loop muted />
+        <div className={"welcome__cube"} fetchpriority='high'>
+            <video src={cube} autoPlay loop muted defaultmuted preload="auto" playsInline />
         </div>
     )
 }
