@@ -9,11 +9,12 @@ import SendFormikTextArea from '../FormikInputs/SendFormikTextArea';
 import { useState } from 'react';
 import SuccessSend from '../SuccessSend/SuccessSend';
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 function Modal({ setModal }) {
 
     const { i18n, t } = useTranslation('common');
-    const requestUrl = i18n?.language === 'en' ? 'https://lcs-it.com/feedback/' : 'https://lcs.by/feedback/form-processing.php/';
+    const requestUrl = i18n?.language === 'en' ? 'https://lcs-it.com/feedback/' : 'https://lcs.by/feedback/';
 
     const initialFormValues = {
         Name: '',
@@ -51,11 +52,16 @@ function Modal({ setModal }) {
         formData.append('email',formValues.Email);
         formData.append('message', formValues.Message);
 
-        await fetch(requestUrl, {
-            method: "POST",
-            body: formData,
+        axios.post(requestUrl, i18n?.language === 'en' ? formData : {
+            name: formValues?.Name, 
+            email: formValues?.Email, 
+            message: formValues?.Message
+        }).then(() => {
+            setSuccess(true);
+        }).catch(() => {
+            console.log('ошибка')
         })
-        setSuccess(true);
+        
     }
 
     const [success, setSuccess] = useState(false);
@@ -87,7 +93,7 @@ function Modal({ setModal }) {
                             <SendFormikTextArea name='Message' placeholder={t('modal.message.placeholder')} required />
                             <img src={modalMessage} alt="" className='modal__input-icon modal__input-text' />
                         </div>
-                        <button className='btn-contact modal__btn'>{t('modal.button')}</button>
+                        <button className='btn-contact modal__btn' type='submit'>{t('modal.button')}</button>
                     </Form>
                 </Formik>
             </div>
